@@ -23,19 +23,8 @@ export default function MobileHero() {
                 </p>
             </div>
 
-            {/* Centered App-like Image Focus */}
-            <div className="relative z-10 w-full max-w-[220px] aspect-[3/4] flex-1 min-h-[150px] flex items-center justify-center filter drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] opacity-95 my-4">
-                {/* Using the first frame of the animation as the static optimized asset */}
-                <Image
-                    src="/frames/mobile/frame_000.webp"
-                    alt="Fresh Lemonade"
-                    width={800}
-                    height={800}
-                    className="object-contain w-full h-auto translate-y-8"
-                    priority
-                    fetchPriority="high"
-                />
-            </div>
+            {/* Removed Centered Image for Mobile to prioritize speed and UI layout */}
+            <div className="flex-1 min-h-[50px] md:hidden" />
 
             <div className="relative z-10 w-full max-w-[320px] flex flex-col gap-3 mt-auto mb-4">
                 <a

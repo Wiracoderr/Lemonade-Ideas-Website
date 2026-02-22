@@ -34,16 +34,36 @@ export default function StitchLayout() {
                         </div>
                     </div>
                     <div className="lg:w-1/2 lg:pl-12 w-full">
-                        {/* Contenedor estándar de YouTube tipo WordPress optimizado con lazy loading */}
+                        {/* YouTube Facade for Mobile Performance Optimization */}
                         <div className="bg-black rounded-xl shadow-[0_0_40px_rgba(0,0,0,0.3)] aspect-video w-full flex items-center justify-center relative overflow-hidden border-8 border-white p-1">
-                            <iframe
-                                className="w-full h-full absolute inset-0 bg-black"
-                                src="https://www.youtube.com/embed/TZverr1QZUk?rel=0"
-                                title="YouTube video embed"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                loading="lazy"
-                            ></iframe>
+                            {!isPlaying ? (
+                                <div
+                                    className="absolute inset-0 z-20 cursor-pointer group"
+                                    onClick={() => setIsPlaying(true)}
+                                >
+                                    <Image
+                                        src="/YT-home.webp"
+                                        alt="Watch Video"
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
+                                        <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110">
+                                            <svg className="w-8 h-8 text-white fill-current ml-1" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <iframe
+                                    className="w-full h-full absolute inset-0 bg-black z-30"
+                                    src="https://www.youtube.com/embed/TZverr1QZUk?autoplay=1&rel=0"
+                                    title="YouTube video embed"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            )}
                         </div>
                     </div>
                 </div>
