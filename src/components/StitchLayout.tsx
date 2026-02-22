@@ -178,7 +178,7 @@ export default function StitchLayout() {
                 </div>
             </section>
 
-            <section className="py-24 bg-white dark:bg-gray-900 relative">
+            <section className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 text-center select-none pointer-events-none opacity-50">
                     <span className="text-[8rem] lg:text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 uppercase leading-none">Portfolio</span>
                 </div>
@@ -305,7 +305,7 @@ export default function StitchLayout() {
                 </div>
             </section>
 
-            <section className="py-24 bg-white dark:bg-gray-900 border-t-8 border-yellow-400">
+            <section className="py-24 bg-white dark:bg-gray-900 border-t-8 border-yellow-400 overflow-hidden">
                 <div className="container mx-auto px-4 text-center">
                     <div className="relative mb-16 inline-block">
                         <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#1e3a29] dark:text-white uppercase relative z-10">
