@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { motion, useTransform, useMotionValue } from "framer-motion";
-import Image from "next/image";
 
 export default function CameraScroll() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -46,9 +45,17 @@ export default function CameraScroll() {
     useEffect(() => {
         async function loadManifest() {
             try {
-                const res = await fetch("/frames/manifest.json");
+                const isMobile = window.innerWidth < 768;
+                const manifestUrl = isMobile ? "/frames/manifest-mobile.json" : "/frames/manifest-desktop.json";
+
+                const res = await fetch(manifestUrl);
                 if (!res.ok) throw new Error("Manifest not found");
-                const urls: string[] = await res.json();
+                let urls: string[] = await res.json();
+
+                // Mobile Optimization: Load only every 4th frame (20 frames total)
+                if (isMobile) {
+                    urls = urls.filter((_, i) => i % 4 === 0);
+                }
 
                 let loadedCount = 0;
                 const loadedFrames: HTMLImageElement[] = [];
@@ -105,37 +112,16 @@ export default function CameraScroll() {
                 const img = frames[frameIndexRef.current];
                 if (img) {
                     ctx.clearRect(0, 0, rect.width, rect.height);
+                    // Images are now pre-cropped to 1:1, drawing is simpler
+                    ctx.drawImage(img, 0, 0, rect.width, rect.height);
 
-                    const imgAspect = img.width / img.height;
-                    const canvasAspect = rect.width / rect.height;
-                    let drawWidth = rect.width;
-                    let drawHeight = rect.height;
-                    let offsetX = 0;
-                    let offsetY = 0;
-
-                    if (imgAspect > canvasAspect) {
-                        // Image is relatively wider. Scale to fit height, crop width (cover).
-                        drawHeight = rect.height;
-                        drawWidth = rect.height * imgAspect;
-                        offsetX = (rect.width - drawWidth) / 2;
-                        offsetY = 0;
-                    } else {
-                        // Image is relatively taller. Scale to fit width, crop height (cover).
-                        drawWidth = rect.width;
-                        drawHeight = rect.width / imgAspect;
-                        offsetX = 0;
-                        offsetY = (rect.height - drawHeight) / 2;
-                    }
-
-                    ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
-
-                    // Mask the "Veo" watermark in the bottom right corner with the background color
+                    // Mask the "Veo" watermark in the bottom right corner
                     ctx.fillStyle = "#020202";
-                    const maskWidth = drawWidth * 0.2; // Cover 20% of width
-                    const maskHeight = drawHeight * 0.15; // Cover 15% of height
+                    const maskWidth = rect.width * 0.2;
+                    const maskHeight = rect.height * 0.15;
                     ctx.fillRect(
-                        offsetX + drawWidth - maskWidth,
-                        offsetY + drawHeight - maskHeight,
+                        rect.width - maskWidth,
+                        rect.height - maskHeight,
                         maskWidth,
                         maskHeight
                     );

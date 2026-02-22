@@ -6,8 +6,8 @@
   --color-primary-light: #2e523e;
   --color-surface-light: #eef6f8;
   --color-surface-dark: #1f2937;
-  --font-display: "Oswald", sans-serif;
-  --font-body: "Roboto", sans-serif;
+  --font-display: var(--font-oswald);
+  --font-body: var(--font-roboto);
 }
 
 :root {
