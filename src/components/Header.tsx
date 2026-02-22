@@ -4,11 +4,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, FileText } from "lucide-react";
+import { Mail, Phone, FileText, Menu, X } from "lucide-react";
 import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
 
 export default function Header() {
     const [isVisible, setIsVisible] = useState(true);
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,6 +26,15 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll, { passive: true });
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
+    // Prevent body scroll when mobile menu is open
+    useEffect(() => {
+        if (isMobileMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+    }, [isMobileMenuOpen]);
 
     return (
         <header className="w-full sticky top-0 bg-white shadow-sm font-sans z-[100]">
@@ -94,7 +104,7 @@ export default function Header() {
                     />
                 </Link>
 
-                {/* Links */}
+                {/* Links (Hidden on Mobile) */}
                 <nav className="hidden lg:flex items-center gap-5 text-[13px] font-bold text-gray-700 tracking-tight">
                     <Link href="#" className="hover:text-[#0f3b1b] transition-colors">SEO</Link>
                     <Link href="#" className="hover:text-[#0f3b1b] transition-colors">SEO ChatGpt</Link>
@@ -106,11 +116,74 @@ export default function Header() {
                     <Link href="#" className="hover:text-[#0f3b1b] transition-colors">Contact</Link>
                 </nav>
 
-                {/* CTA */}
-                <button className="bg-[#0f3b1b] hover:bg-[#164e26] text-white px-6 py-3 text-xs font-bold tracking-widest transition-colors rounded-sm ml-4">
+                {/* CTA (Hidden on Mobile) */}
+                <button className="hidden lg:block bg-[#0f3b1b] hover:bg-[#164e26] text-white px-6 py-3 text-xs font-bold tracking-widest transition-colors rounded-sm ml-4">
                     VIEW OUR PRICING
                 </button>
+
+                {/* Mobile Hamburger Button */}
+                <button
+                    className="lg:hidden text-[#0f3b1b] p-2"
+                    onClick={() => setIsMobileMenuOpen(true)}
+                    aria-label="Open Menu"
+                >
+                    <Menu size={28} />
+                </button>
             </div>
+
+            {/* Mobile Menu Overlay */}
+            <AnimatePresence>
+                {isMobileMenuOpen && (
+                    <motion.div
+                        initial={{ opacity: 0, x: "100%" }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: "100%" }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="fixed inset-0 z-[200] bg-[#1e3a29] text-white flex flex-col"
+                    >
+                        {/* Mobile Menu Header */}
+                        <div className="flex items-center justify-between p-6">
+                            <span className="font-display font-bold text-xl text-yellow-400 tracking-widest uppercase">
+                                MENU
+                            </span>
+                            <button
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-white p-2 hover:text-yellow-400 transition-colors"
+                                aria-label="Close Menu"
+                            >
+                                <X size={32} />
+                            </button>
+                        </div>
+
+                        {/* Mobile Menu Links */}
+                        <div className="flex-1 flex flex-col items-center justify-center gap-6 px-6 overflow-y-auto pb-12">
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">SEO</Link>
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">SEO ChatGpt</Link>
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Google Ads</Link>
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Social Media (SMM)</Link>
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Branding</Link>
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Websites</Link>
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Blogs</Link>
+                            <div className="w-16 h-1 bg-yellow-400 my-4" />
+                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl text-yellow-400 font-bold uppercase tracking-wide hover:text-white transition-colors">Contact Us</Link>
+
+                            {/* Mobile Menu CTA */}
+                            <button
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="mt-4 w-full max-w-[280px] bg-yellow-400 text-[#1e3a29] font-bold py-4 rounded text-sm tracking-widest uppercase hover:bg-white transition-colors"
+                            >
+                                VIEW OUR PRICING
+                            </button>
+
+                            <div className="flex gap-6 mt-8">
+                                <Link href="https://www.facebook.com/lemonadeidea/" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-yellow-400"><BrandFacebook size={24} /></Link>
+                                <Link href="https://www.instagram.com/lemonade.ideas" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-yellow-400"><BrandInstagram size={24} /></Link>
+                                <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-yellow-400"><BrandYoutube size={24} /></Link>
+                            </div>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </header>
     );
 }
