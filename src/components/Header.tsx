@@ -86,9 +86,11 @@ export default function Header() {
                     <Image
                         src="/logos/PNGs - SVGs/4x/Asset 2@4x-8.png"
                         alt="Lemonade Ideas"
-                        fill
-                        className="object-contain object-left"
+                        width={256}
+                        height={64}
+                        className="object-contain object-left w-64 h-auto"
                         priority
+                        fetchPriority="high"
                     />
                 </Link>
 

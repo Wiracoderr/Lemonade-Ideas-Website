@@ -60,7 +60,7 @@ export default function StitchLayout() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Service Cards */}
                         <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="SEO" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO.avif" />
+                            <img alt="SEO" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO.avif" />
                             {/* Base overlay for dark contrast */}
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             {/* Bottom 20% blur/gradient for text legibility like Stitch */}
@@ -71,7 +71,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="SEO ChatGPT" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO Chat GPT.avif" />
+                            <img alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO Chat GPT.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -80,7 +80,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Google Ads Management" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1654277041042-8927699fcfd2.avif" />
+                            <img alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1654277041042-8927699fcfd2.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -89,7 +89,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Website Design" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1678690832311-bb6e361989ca.avif" />
+                            <img alt="Website Design" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1678690832311-bb6e361989ca.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -98,7 +98,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Social Media Management" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/social media management.avif" />
+                            <img alt="Social Media Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/social media management.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -107,7 +107,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Branding & Strategy" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/Branding.avif" />
+                            <img alt="Branding & Strategy" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/Branding.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -121,7 +121,7 @@ export default function StitchLayout() {
 
             <section className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-[#1e3a29] border-b-8 border-yellow-400 overflow-hidden">
                 <div className="lg:w-[55%] relative h-[300px] lg:h-full z-10">
-                    <img alt="City View" className="w-full h-full object-cover scale-x-[-1]" src="/images/home-image.avif" />
+                    <img alt="City View" width={1000} height={500} className="w-full h-full object-cover scale-x-[-1]" src="/images/home-image.avif" />
                     <div className="absolute inset-0 bg-blue-900 bg-opacity-60 mix-blend-multiply"></div>
                 </div>
                 <div className="lg:w-auto lg:flex-1 bg-[#1e3a29] relative flex items-center lg:-ml-28 lg:pl-32 p-10 z-20">
@@ -167,7 +167,7 @@ export default function StitchLayout() {
                     </div>
                     <div className="lg:w-1/2">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center">
-                            <img alt="PPC Analytics Dashboard" className="w-full h-auto object-contain" src="/images/ppc-dashboard.webp" />
+                            <img alt="PPC Analytics Dashboard" width={800} height={500} className="w-full h-auto object-contain" src="/images/ppc-dashboard.webp" />
                         </div>
                     </div>
                 </div>
@@ -186,13 +186,13 @@ export default function StitchLayout() {
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                         <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 1" className="w-full h-auto" src="/portfolio/1.png" />
+                            <img alt="Portfolio Item 1" width={400} height={300} className="w-full h-auto" src="/portfolio/1.png" />
                         </div>
                         <div className="bg-[#fff7f0] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 2" className="w-full h-auto" src="/portfolio/2.png" />
+                            <img alt="Portfolio Item 2" width={400} height={300} className="w-full h-auto" src="/portfolio/2.png" />
                         </div>
                         <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 3" className="w-full h-auto" src="/portfolio/3.png" />
+                            <img alt="Portfolio Item 3" width={400} height={300} className="w-full h-auto" src="/portfolio/3.png" />
                         </div>
                     </div>
                     <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
@@ -317,7 +317,7 @@ export default function StitchLayout() {
                             </p>
                             <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">FNATHAN R., CO-FOUNDER OF A TECH STARTUP</div>
                             <div className="flex justify-center items-center gap-2">
-                                <img alt="Google" className="h-6" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
+                                <img alt="Google" width={24} height={24} className="h-6 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
                                 <div className="text-yellow-400 text-xs">
                                     <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
                                 </div>
@@ -331,7 +331,7 @@ export default function StitchLayout() {
                             </p>
                             <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">SAMANTHA J., COO OF A B2B SAAS COMPANY</div>
                             <div className="flex justify-center items-center gap-2">
-                                <img alt="Google" className="h-6" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
+                                <img alt="Google" width={24} height={24} className="h-6 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
                                 <div className="text-yellow-400 text-xs">
                                     <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
                                 </div>
@@ -345,7 +345,7 @@ export default function StitchLayout() {
                             </p>
                             <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">OLIVIA S., OWNER OF A HANDMADE JEWELRY BRAND</div>
                             <div className="flex justify-center items-center gap-2">
-                                <img alt="Google" className="h-6" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
+                                <img alt="Google" width={24} height={24} className="h-6 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
                                 <div className="text-yellow-400 text-xs">
                                     <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
                                 </div>
@@ -385,7 +385,7 @@ export default function StitchLayout() {
                                     <span className="text-sm font-medium text-gray-700">I&apos;m not a robot</span>
                                 </div>
                                 <div className="flex flex-col items-center pr-2">
-                                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" className="w-8" alt="reCAPTCHA" />
+                                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={32} height={32} className="w-8 h-auto" alt="reCAPTCHA" />
                                     <span className="text-[8px] text-gray-500 mt-1">reCAPTCHA</span>
                                     <span className="text-[6px] text-gray-400">Privacy - Terms</span>
                                 </div>
@@ -407,7 +407,7 @@ export default function StitchLayout() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Column 1: Logo & CTA */}
                         <div className="flex flex-col">
-                            <img src="/logos/PNGs - SVGs/SVG/Asset 2.svg" alt="Lemonade Ideas Marketing Agency" className="h-8 w-auto mb-6 object-contain self-start" />
+                            <img src="/logos/PNGs - SVGs/SVG/Asset 2.svg" width={200} height={32} alt="Lemonade Ideas Marketing Agency" className="h-8 w-auto mb-6 object-contain self-start" />
                             <p className="text-xs font-bold mb-6 max-w-[200px] leading-relaxed opacity-90">
                                 SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$
                             </p>
