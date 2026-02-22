@@ -108,16 +108,27 @@ export default function CameraScroll() {
                 let loaded = EAGER_FRAMES;
                 const restUrls = urls.slice(EAGER_FRAMES);
 
-                await Promise.all(
-                    restUrls.map((url, offset) =>
-                        preloadImage(url).then((img) => {
-                            if (cancelled) return;
-                            framesRef.current[EAGER_FRAMES + offset] = img;
-                            loaded++;
-                            setLoadingProgress(Math.round((loaded / urls.length) * 100));
-                        })
-                    )
-                );
+                // Load remaining frames in small chunks so we don't choke the mobile CPU/Network.
+                const CHUNK_SIZE = 4;
+                for (let i = 0; i < restUrls.length; i += CHUNK_SIZE) {
+                    if (cancelled) return;
+
+                    // Yield to the main thread briefly so the page stays interactive 
+                    await new Promise(resolve => setTimeout(resolve, 20));
+
+                    const chunk = restUrls.slice(i, i + CHUNK_SIZE);
+                    await Promise.all(
+                        chunk.map((url, chunkOffset) =>
+                            preloadImage(url).then((img) => {
+                                if (cancelled) return;
+                                framesRef.current[EAGER_FRAMES + i + chunkOffset] = img;
+                                loaded++;
+                                setLoadingProgress(Math.round((loaded / urls.length) * 100));
+                            })
+                        )
+                    );
+                }
+
                 if (!cancelled) setFullyLoaded(true);
             } catch (err) {
                 console.error("[CameraScroll] Error loading frames:", err);
