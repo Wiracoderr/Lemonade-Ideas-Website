@@ -1,6 +1,13 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from './SocialIcons';
 
 export default function StitchLayout() {
+    const [isPlaying, setIsPlaying] = useState(false);
+
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
             <section className="relative bg-[#1e3a29] py-20 lg:py-32 overflow-hidden">
@@ -27,11 +34,16 @@ export default function StitchLayout() {
                         </div>
                     </div>
                     <div className="lg:w-1/2 lg:pl-12 w-full">
-                        <div className="bg-white rounded-lg shadow-2xl p-2 aspect-video w-full flex items-center justify-center relative group cursor-pointer">
-                            <div className="absolute inset-0 bg-black bg-opacity-5 group-hover:bg-opacity-10 transition"></div>
-                            <div className="w-20 h-14 bg-red-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
-                                <i className="fas fa-play text-white text-2xl ml-1"></i>
-                            </div>
+                        {/* Contenedor estándar de YouTube tipo WordPress optimizado con lazy loading */}
+                        <div className="bg-black rounded-xl shadow-[0_0_40px_rgba(0,0,0,0.3)] aspect-video w-full flex items-center justify-center relative overflow-hidden border-8 border-white p-1">
+                            <iframe
+                                className="w-full h-full absolute inset-0 bg-black"
+                                src="https://www.youtube.com/embed/TZverr1QZUk?rel=0"
+                                title="YouTube video embed"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                loading="lazy"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
@@ -154,29 +166,8 @@ export default function StitchLayout() {
                         <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">Learn More</a>
                     </div>
                     <div className="lg:w-1/2">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img alt="PPC Analytics" className="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" />
-                            <div className="absolute inset-0 bg-blue-900 bg-opacity-30 flex items-center justify-center">
-                                <div className="absolute bottom-10 right-10 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-2xl scale-75 md:scale-100 origin-bottom-right">
-                                    <div className="flex items-center gap-4 mb-4">
-                                        <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center">
-                                            <div className="w-6 h-6 rounded-full border-4 border-green-500 border-t-transparent animate-spin"></div>
-                                        </div>
-                                        <div>
-                                            <div className="text-white font-bold">Optimization Active</div>
-                                            <div className="text-white/60 text-xs">Real-time bidding...</div>
-                                        </div>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <div className="h-2 w-48 bg-white/20 rounded-full overflow-hidden">
-                                            <div className="h-full bg-green-500 w-[85%] animate-pulse"></div>
-                                        </div>
-                                        <div className="h-2 w-32 bg-white/20 rounded-full overflow-hidden">
-                                            <div className="h-full bg-blue-500 w-[60%]"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center">
+                            <img alt="PPC Analytics Dashboard" className="w-full h-auto object-contain" src="/images/ppc-dashboard.webp" />
                         </div>
                     </div>
                 </div>
@@ -208,84 +199,104 @@ export default function StitchLayout() {
                 </div>
             </section>
 
-            <section className="bg-[#1e3a29] text-white pb-32 pt-20 relative overflow-hidden">
+            <section className="bg-[#1e3a29] text-white pb-32 pt-24 lg:pt-36 relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
-                    <div className="flex flex-col mb-16 relative">
-                        {/* Vertical Text decoration */}
-                        <div className="absolute top-0 -left-10 md:left-0 h-full flex flex-col justify-start opacity-[0.03] select-none pointer-events-none">
-                            <span style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }} className="text-8xl md:text-[10rem] font-bold tracking-widest leading-none font-display uppercase">WHO WE ARE</span>
+                    <div className="flex flex-col mb-20 relative">
+                        {/* Giant background text exactly as requested */}
+                        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -z-0 opacity-[0.03] select-none pointer-events-none w-full flex flex-col justify-center">
+                            <span className="text-[12rem] md:text-[18rem] lg:text-[22rem] font-bold tracking-tighter leading-[0.8] font-display uppercase block -ml-4 whitespace-nowrap">
+                                WHO WE
+                            </span>
+                            <span className="text-[12rem] md:text-[18rem] lg:text-[22rem] font-bold tracking-tighter leading-[0.8] font-display uppercase block ml-0 md:ml-32 whitespace-nowrap">
+                                ARE
+                            </span>
                         </div>
-                        <div className="z-10 pl-6 md:pl-32">
-                            <h4 className="text-sm font-bold tracking-wider mb-4 uppercase">ABOUT US</h4>
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight uppercase max-w-4xl">
-                                WE BELIEVE BETTER RESULTS SHOULDN&apos;T HAVE TO COST MORE.
+
+                        <div className="relative z-10 pl-4 lg:pl-[10%] mb-4">
+                            <h4 className="text-[0.85rem] font-bold tracking-[0.2em] mb-4 uppercase text-white/90">ABOUT US</h4>
+                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] uppercase max-w-4xl tracking-tight">
+                                WE BELIEVE BETTER<br className="hidden md:block" />
+                                RESULTS SHOULDN&apos;T HAVE<br className="hidden md:block" />
+                                TO COST MORE.
                             </h2>
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 pl-0 md:pl-20 mt-12">
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true, amount: 0.1 }}
+                        variants={{
+                            hidden: {},
+                            visible: { transition: { staggerChildren: 0.15 } }
+                        }}
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10"
+                    >
                         {/* Card 1 */}
-                        <div className="bg-[#ffcc33] text-[#1e3a29] p-8 text-center rounded flex flex-col items-center">
-                            <div className="text-sm font-bold mb-6">01.</div>
-                            <div className="text-5xl mb-6">
-                                {/* Using an SVG approximation for the seal with checkmark */}
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">01.</div>
+                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                                <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:scale-110 transition-transform duration-300">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                    <polyline points="9 12 11 14 15 10"></polyline>
+                                    <path d="M9 12l2 2 4-4"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold uppercase mb-4 font-display">IMPACT</h3>
-                            <p className="text-sm leading-relaxed font-medium">We focus on strategies that maximize impact on your visibility and growth.</p>
-                        </div>
+                            <h3 className="text-lg font-bold uppercase mb-4 font-display">IMPACT</h3>
+                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">We focus on strategies that maximize impact on your visibility and growth.</p>
+                        </motion.div>
 
                         {/* Card 2 */}
-                        <div className="bg-[#ffcc33] text-[#1e3a29] p-8 text-center rounded flex flex-col items-center">
-                            <div className="text-sm font-bold mb-6">02.</div>
-                            <div className="text-5xl mb-6">
-                                {/* SVG approximation for the diverging arrows */}
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <path d="M12 18v-6"></path>
-                                    <path d="M12 12l-4-4"></path>
-                                    <path d="M12 12l4-4"></path>
-                                    <path d="M12 2v6"></path>
-                                    <path d="M12 8L8 4"></path>
-                                    <path d="M12 8l4-4"></path>
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">02.</div>
+                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                                <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:scale-110 transition-transform duration-300">
+                                    <path d="M12 21v-8" />
+                                    <path d="M12 13V4" />
+                                    <path d="M9 7l3-3 3 3" />
+                                    <path d="M12 13l-5-5" />
+                                    <path d="M4 10l3-2 2 3" />
+                                    <path d="M12 13l5-5" />
+                                    <path d="M20 10l-3-2-2 3" />
+                                    <path d="M9 21h6" />
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold uppercase mb-4 font-display">AFFORDABILITY</h3>
-                            <p className="text-sm leading-relaxed font-medium">Our pricing is structured in a way that makes sense for both you based on what you are receiving.</p>
-                        </div>
+                            <h3 className="text-lg font-bold uppercase mb-4 font-display">AFFORDABILITY</h3>
+                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">Our pricing is structured in a way that makes sense for both you based on what you are receiving.</p>
+                        </motion.div>
 
                         {/* Card 3 */}
-                        <div className="bg-[#ffcc33] text-[#1e3a29] p-8 text-center rounded flex flex-col items-center">
-                            <div className="text-sm font-bold mb-6">03.</div>
-                            <div className="text-5xl mb-6">
-                                {/* SVG approximation for the gear tree network */}
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">03.</div>
+                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                                <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:rotate-90 transition-transform duration-500">
                                     <circle cx="12" cy="12" r="3"></circle>
                                     <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold uppercase mb-4 font-display">NO CONTRACTS</h3>
-                            <p className="text-sm leading-relaxed font-medium">We believe great results, not contracts, are what should keep our clients around.</p>
-                        </div>
+                            <h3 className="text-lg font-bold uppercase mb-4 font-display">NO CONTRACTS</h3>
+                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">We believe great results, not contracts, are what should keep our clients around.</p>
+                        </motion.div>
 
                         {/* Card 4 */}
-                        <div className="bg-[#ffcc33] text-[#1e3a29] p-8 text-center rounded flex flex-col items-center">
-                            <div className="text-sm font-bold mb-6">04.</div>
-                            <div className="text-5xl mb-6">
-                                {/* SVG approximation for the growing bar chart */}
-                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                    <line x1="18" y1="20" x2="18" y2="10"></line>
-                                    <line x1="12" y1="20" x2="12" y2="4"></line>
-                                    <line x1="6" y1="20" x2="6" y2="14"></line>
-                                    <polyline points="4 8 10 2 16 8"></polyline>
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">04.</div>
+                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                                <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
+                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:-translate-y-2 transition-transform duration-300">
+                                    <path d="M6 20v-5"></path>
+                                    <path d="M18 20v-8"></path>
+                                    <path d="M12 20V4"></path>
+                                    <path d="M8 8l4-4 4 4"></path>
+                                    <path d="M4 20h16"></path>
                                 </svg>
                             </div>
-                            <h3 className="text-xl font-bold uppercase mb-4 font-display">RESPONSIVENESS</h3>
-                            <p className="text-sm leading-relaxed font-medium">Good communication is what builds a good relationship. We take pride in our level of responsiveness</p>
-                        </div>
-                    </div>
+                            <h3 className="text-lg font-bold uppercase mb-4 font-display">RESPONSIVENESS</h3>
+                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">Good communication is what builds a good relationship. We take pride in our level of responsiveness</p>
+                        </motion.div>
+                    </motion.div>
                 </div>
             </section>
 
@@ -344,65 +355,119 @@ export default function StitchLayout() {
                 </div>
             </section>
 
-            <div className="bg-[#1e3a29] text-white">
-                <div className="py-12 text-center border-t border-white/10">
-                    <h2 className="text-3xl lg:text-5xl font-display font-bold uppercase">HAVE QUESTIONS? WE'VE GOT ANSWERS!</h2>
-                </div>
-                <div className="container mx-auto px-4 pb-12">
-                    <div className="flex justify-center mb-8">
-                        <a className="bg-yellow-400 text-[#1e3a29] font-bold py-3 px-10 rounded uppercase hover:bg-yellow-500 transition shadow-lg" href="#">Schedule A Call</a>
+            {/* Contact Form Section */}
+            <section className="relative py-20 lg:py-28 bg-cover bg-center overflow-hidden" style={{ backgroundImage: "url('/images/ppc-analytics-bg.webp')" }}>
+                {/* Dark green overlay matrix effect */}
+                <div className="absolute inset-0 bg-[#0c2a16]/50 mix-blend-multiply"></div>
+                <div className="absolute inset-0 bg-green-900/20 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0c2a16]/40 to-[#1e3a29]/55"></div>
+
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="text-center mb-12">
+                        <h5 className="text-white font-bold tracking-widest text-2xl mb-2 uppercase">CONTACT US</h5>
+                        <h2 className="text-white text-3xl md:text-5xl font-display font-bold uppercase tracking-wide mt-4">HAVE QUESTIONS? WE&apos;VE GOT ANSWERS!</h2>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/20 pt-12">
-                        <div>
-                            <div className="flex items-center gap-2 mb-6">
-                                <div className="relative w-8 h-8">
-                                    <svg className="w-full h-full text-green-500 fill-current" viewBox="0 0 100 100">
-                                        <path d="M50 0 A50 50 0 1 0 50 100 A50 50 0 1 0 50 0 Z" fill="#84cc16"></path>
-                                        <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#facc15"></path>
-                                    </svg>
+
+                    <form className="max-w-4xl mx-auto flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Name" className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="email" placeholder="Email Address" className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="tel" placeholder="Phone" className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" placeholder="Website" className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                        </div>
+                        <textarea placeholder="Message" rows={5} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"></textarea>
+
+                        <div className="mt-2 flex flex-col md:flex-row items-center justify-between gap-6 relative">
+                            {/* Mock reCAPTCHA */}
+                            <div className="bg-[#f9f9f9] border border-gray-300 p-3 py-2 rounded flex items-center justify-between shadow-sm w-[300px]">
+                                <div className="flex items-center gap-3">
+                                    <input type="checkbox" title="I am not a robot" className="w-6 h-6 ml-2 cursor-pointer bg-white border border-gray-300 rounded" />
+                                    <span className="text-sm font-medium text-gray-700">I&apos;m not a robot</span>
                                 </div>
-                                <div>
-                                    <h3 className="font-display font-bold text-xl leading-none">Lemonade<span className="font-light">ideas</span></h3>
-                                    <p className="text-[0.5rem] tracking-widest uppercase opacity-70">Marketing Agency</p>
+                                <div className="flex flex-col items-center pr-2">
+                                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" className="w-8" alt="reCAPTCHA" />
+                                    <span className="text-[8px] text-gray-500 mt-1">reCAPTCHA</span>
+                                    <span className="text-[6px] text-gray-400">Privacy - Terms</span>
                                 </div>
                             </div>
-                            <p className="text-sm opacity-80 mb-6">SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$</p>
+
+                            {/* Centered Submit Button */}
+                            <div className="md:absolute md:left-1/2 md:-translate-x-1/2">
+                                <button type="button" className="bg-[#facc15] hover:bg-[#eab308] text-[#1e3a29] font-bold py-3 px-12 rounded transition-colors text-[13px] uppercase tracking-wider shadow-[0_4px_14px_0_rgba(250,204,21,0.39)]">
+                                    SUBMIT
+                                </button>
+                            </div>
                         </div>
+                    </form>
+                </div>
+            </section>
+
+            <div className="bg-[#eef7f8] text-[#1e3a29] pt-16 pb-12">
+                <div className="container mx-auto px-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {/* Column 1: Logo & CTA */}
+                        <div className="flex flex-col">
+                            <img src="/logos/PNGs - SVGs/SVG/Asset 2.svg" alt="Lemonade Ideas Marketing Agency" className="h-8 w-auto mb-6 object-contain self-start" />
+                            <p className="text-xs font-bold mb-6 max-w-[200px] leading-relaxed opacity-90">
+                                SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$
+                            </p>
+                            <a href="#" className="font-bold text-sm flex items-center gap-1 hover:text-green-700 transition">
+                                SCHEDULE A CALL <span className="text-green-700 text-lg leading-none">&raquo;</span>
+                            </a>
+                        </div>
+
+                        {/* Column 2: Contact Details */}
                         <div>
-                            <h4 className="font-bold text-lg mb-6 uppercase font-display">CONTACT DETAILS</h4>
-                            <ul className="space-y-4 text-sm">
-                                <li className="flex items-center gap-2"><i className="fas fa-phone-alt opacity-70"></i> +1 (424) 877-3789</li>
-                                <li className="flex items-center gap-2"><i className="fas fa-envelope opacity-70"></i> sales@lemonadeideas.com</li>
-                                <li className="opacity-80 leading-relaxed pt-2">
+                            <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">CONTACT DETAILS</h4>
+                            <ul className="space-y-4 text-[13px] font-semibold opacity-90">
+                                <li className="flex items-center gap-3"><i className="fas fa-phone-alt text-green-700"></i> +1 (424) 877-3789</li>
+                                <li className="flex items-center gap-3"><i className="fa-regular fa-envelope text-green-700"></i> sales@lemonadeideas.com</li>
+                                <li className="leading-relaxed pt-2">
                                     209 21st Place Santa Monica 90402<br />California USA
                                 </li>
                             </ul>
+                            <div className="flex gap-2 mt-6">
+                                <a href="https://www.facebook.com/lemonadeidea/" aria-label="Facebook" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1e3a29] text-white flex items-center justify-center hover:bg-green-700 transition-colors">
+                                    <BrandFacebook size={14} />
+                                </a>
+                                <a href="https://www.instagram.com/lemonade.ideas" aria-label="Instagram" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1e3a29] text-white flex items-center justify-center hover:bg-green-700 transition-colors">
+                                    <BrandInstagram size={14} />
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" aria-label="YouTube" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1e3a29] text-white flex items-center justify-center hover:bg-green-700 transition-colors">
+                                    <BrandYoutube size={14} />
+                                </a>
+                                <a href="http://www.linkedin.com/in/lemonade-ideas-080122348" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1e3a29] text-white flex items-center justify-center hover:bg-green-700 transition-colors">
+                                    <BrandLinkedin size={14} />
+                                </a>
+                            </div>
                         </div>
+
+                        {/* Column 3: Quick Links */}
                         <div>
-                            <h4 className="font-bold text-lg mb-6 uppercase font-display">QUICK LINKS</h4>
-                            <ul className="space-y-3 text-sm opacity-80">
-                                <li><a className="hover:text-yellow-400 transition" href="#">Reviews</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">White Label Resellers</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Referral Program</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Blogs</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Terms of Service</a></li>
+                            <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">QUICK LINKS</h4>
+                            <ul className="space-y-3 text-[13px] font-medium text-gray-700">
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Reviews</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">White Label Resellers</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Referral Program</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Blogs</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Terms of Service</a></li>
                             </ul>
                         </div>
+
+                        {/* Column 4: Our Services */}
                         <div>
-                            <h4 className="font-bold text-lg mb-6 uppercase font-display">OUR SERVICES</h4>
-                            <ul className="space-y-3 text-sm opacity-80 mb-6">
-                                <li><a className="hover:text-yellow-400 transition" href="#">Guaranteed Ranking™</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">SEO</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Google Ads Management</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Website Design</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Social Media Management</a></li>
-                                <li><a className="hover:text-yellow-400 transition" href="#">Branding & Strategy</a></li>
+                            <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">OUR SERVICES</h4>
+                            <ul className="space-y-3 text-[13px] font-medium text-gray-700 mb-6">
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Guranteed Ranking™</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">SEO</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Google Ads Management</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Website Design</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Social Media Management</a></li>
+                                <li><a className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Branding & Strategy</a></li>
                             </ul>
+                            <a href="#" className="inline-block bg-[#1e3a29] text-white font-bold py-2 px-6 text-xs uppercase rounded hover:bg-green-800 transition">CONTACT US</a>
                         </div>
                     </div>
-                </div>
-                <div className="bg-black/20 py-4 text-center text-xs opacity-60">
-                    <p>© 2025 All Rights Reserved | Lemonade ideas</p>
                 </div>
             </div>
         </div>

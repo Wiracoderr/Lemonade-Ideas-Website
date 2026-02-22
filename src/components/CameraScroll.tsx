@@ -219,8 +219,8 @@ export default function CameraScroll() {
             <div
                 className="sticky top-0 h-screen w-full overflow-hidden flex flex-col md:flex-row items-center justify-between"
                 style={{
-                    backgroundColor: "#000000",
-                    backgroundImage: 'url("https://www.transparenttextures.com/patterns/fabric-of-squares.png")',
+                    backgroundColor: "#1e3a1a",
+                    backgroundImage: 'url("https://www.transparenttextures.com/patterns/tasky.png")',
                 }}
             >
                 {/* ── Left: Text Content ─────────────────────────────────── */}

@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, Phone, FileText, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Mail, Phone, FileText } from "lucide-react";
+import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
 
 export default function Header() {
     const [isVisible, setIsVisible] = useState(true);
@@ -60,17 +61,17 @@ export default function Header() {
                                 style={{ clipPath: "polygon(20px 0, 100% 0, 100% 100%, 0% 100%)", marginLeft: "-20px" }}
                             >
                                 <span className="text-[10px] tracking-wider font-bold mr-2">FOLLOW US ON :</span>
-                                <Link href="https://www.facebook.com/lemonadeidea/" className="bg-white text-[#0f3b1b] p-1 rounded-full hover:bg-yellow-400 transition-colors">
-                                    <Facebook size={12} className="fill-[#0f3b1b]" />
+                                <Link href="https://www.facebook.com/lemonadeidea/" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                    <BrandFacebook size={12} />
                                 </Link>
-                                <Link href="https://www.instagram.com/lemonade.ideas" className="bg-white text-[#0f3b1b] p-1 rounded-full hover:bg-yellow-400 transition-colors">
-                                    <Instagram size={12} />
+                                <Link href="https://www.instagram.com/lemonade.ideas" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                    <BrandInstagram size={12} />
                                 </Link>
-                                <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" className="bg-white text-[#0f3b1b] p-1 rounded-full hover:bg-yellow-400 transition-colors">
-                                    <Youtube size={12} className="fill-[#0f3b1b]" />
+                                <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                    <BrandYoutube size={12} />
                                 </Link>
-                                <Link href="http://www.linkedin.com/in/lemonade-ideas-080122348" className="bg-white text-[#0f3b1b] p-1 rounded-full hover:bg-yellow-400 transition-colors">
-                                    <Linkedin size={12} className="fill-[#0f3b1b]" />
+                                <Link href="http://www.linkedin.com/in/lemonade-ideas-080122348" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                    <BrandLinkedin size={12} />
                                 </Link>
                             </div>
                         </div>
