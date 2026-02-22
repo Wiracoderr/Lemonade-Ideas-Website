@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lemonade Ideas - Internet Marketing Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e3a29", // Dark Green from screenshots
+                        secondary: "#facc15", // Yellow accent
+                        "primary-light": "#2e523e",
+                        "background-light": "#ffffff",
+                        "background-dark": "#111827",
+                        "surface-light": "#eef6f8", // Light blueish tint
+                        "surface-dark": "#1f2937",
+                    },
+                    fontFamily: {
+                        display: ["Oswald", "sans-serif"],
+                        body: ["Roboto", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop')",
+                    }
+                },
+            },
+        };
+    </script>
+<style>
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .text-outline-faint {
+            -webkit-text-stroke: 1px rgba(0,0,0,0.05);
+            color: transparent;
+        }
+        .clip-slant-right {
+            clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+        }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+    </style>
+</head>
+<body class="font-body bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-100 overflow-x-hidden">
+<div class="bg-surface-light dark:bg-surface-dark border-b border-gray-200 dark:border-gray-700 py-2 hidden md:block">
+<div class="container mx-auto px-4 flex justify-between items-center text-xs font-medium text-gray-600 dark:text-gray-300">
+<div class="flex space-x-6">
+<span class="flex items-center gap-1"><i class="fas fa-envelope text-primary dark:text-green-400"></i> sales@lemonadeideas.com</span>
+<span class="flex items-center gap-1"><i class="fas fa-phone text-primary dark:text-green-400"></i> Schedule A Call</span>
+<span class="flex items-center gap-1"><i class="fas fa-file-contract text-primary dark:text-green-400"></i> No Contracts. Affordable Prices. Built for Small Business.</span>
+</div>
+<div class="flex items-center space-x-3">
+<span class="font-bold mr-2 text-primary dark:text-white">FOLLOW US ON :</span>
+<a class="bg-white dark:bg-gray-600 rounded-full p-1 w-6 h-6 flex items-center justify-center hover:text-primary transition" href="#"><i class="fab fa-facebook-f text-xs"></i></a>
+<a class="bg-white dark:bg-gray-600 rounded-full p-1 w-6 h-6 flex items-center justify-center hover:text-primary transition" href="#"><i class="fab fa-instagram text-xs"></i></a>
+<a class="bg-white dark:bg-gray-600 rounded-full p-1 w-6 h-6 flex items-center justify-center hover:text-primary transition" href="#"><i class="fab fa-youtube text-xs"></i></a>
+<a class="bg-white dark:bg-gray-600 rounded-full p-1 w-6 h-6 flex items-center justify-center hover:text-primary transition" href="#"><i class="fab fa-linkedin-in text-xs"></i></a>
+</div>
+</div>
+</div>
+<header class="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<div class="flex items-center gap-2">
+<div class="relative w-10 h-10">
+<svg class="w-full h-full text-green-500 fill-current" viewBox="0 0 100 100">
+<path d="M50 0 A50 50 0 1 0 50 100 A50 50 0 1 0 50 0 Z" fill="#84cc16"></path>
+<path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#facc15"></path>
+</svg>
+</div>
+<div>
+<h1 class="font-display font-bold text-2xl tracking-tight leading-none text-gray-800 dark:text-white">Lemonade<span class="font-light">ideas</span></h1>
+<p class="text-[0.6rem] tracking-widest text-gray-500 uppercase">Marketing Agency</p>
+</div>
+</div>
+<nav class="hidden lg:flex space-x-6 text-sm font-bold text-gray-600 dark:text-gray-300">
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">SEO</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">SEO ChatGPT</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">Google Ads</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">SMM</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">Branding</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">Websites</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">Blogs</a>
+<a class="hover:text-primary dark:hover:text-green-400 transition" href="#">Contact</a>
+</nav>
+<a class="hidden md:inline-block bg-primary hover:bg-primary-light text-white font-bold py-2 px-6 rounded text-sm transition duration-300" href="#">
+                VIEW OUR PRICING
+            </a>
+<button class="lg:hidden text-gray-600 dark:text-gray-300">
+<i class="fas fa-bars text-2xl"></i>
+</button>
+</div>
+</header>
+<section class="relative bg-primary py-20 lg:py-32 overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80')] bg-cover bg-center"></div>
+<div class="absolute inset-0 z-0 bg-gradient-to-r from-primary via-primary to-transparent opacity-90"></div>
+<div class="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">
+<div class="lg:w-1/2 mb-10 lg:mb-0">
+<div class="text-white border-2 border-white/20 inline-block px-4 py-1 text-4xl mb-6 font-display font-bold uppercase tracking-widest opacity-30 select-none">
+                    Lemonade Ideas
+                </div>
+<h2 class="text-4xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
+                    INTERNET MARKETING THAT'S <span class="text-secondary">FAST</span>, <span class="text-secondary">AFFORDABLE</span>, AND DRIVES YOU LEADS!
+                </h2>
+<p class="text-white text-lg mb-8 opacity-90 font-light">
+                    Are you ready for "Lemonade Ideas"? We can't wait to help you grow.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded shadow-lg transition duration-300" href="#">
+                        SPEAK WITH OUR EXPERT
+                    </a>
+<a class="border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded transition duration-300" href="#">
+                        SEE OUR PRICING
+                    </a>
+</div>
+</div>
+<div class="lg:w-1/2 lg:pl-12 w-full">
+<div class="bg-white rounded-lg shadow-2xl p-2 aspect-video w-full flex items-center justify-center relative group cursor-pointer">
+<div class="absolute inset-0 bg-black bg-opacity-5 group-hover:bg-opacity-10 transition"></div>
+<div class="w-20 h-14 bg-red-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+<i class="fas fa-play text-white text-2xl ml-1"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
+<div class="absolute top-10 left-0 right-0 text-center select-none pointer-events-none">
+<span class="text-[12rem] font-display font-bold text-gray-50 dark:text-gray-800 opacity-80 uppercase leading-none">Services</span>
+</div>
+<div class="container mx-auto px-4 relative z-10">
+<h2 class="text-4xl lg:text-5xl font-display font-bold text-center text-primary dark:text-white mb-16 uppercase">
+                Internet Marketing Services
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+<img alt="SEO" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuxwvV8ovTr4KfWeG2GDS5vHBozkD1n9oiU8F9wvjUKwsRMRODsv1TKI6wvTxPZCHcyxUeKvXdyMrwe1TDB2G5evTCBAJv7-wexsDCc-sPr5HQsBVFf-6XXqI5Zx4KqyuwLLyr3Cj5fFLCz1-reGZwY7zFOg1Hcr85OOxmii29hSDzaFyJlpPC9_kh07MQzUAclR8FEYL_ZQ0DSUQ8rOeYym6ZfS-AQMqhK3jGEjhHUAEkrJvdkwaylP5ogQTG6aEWC2YD_zYLYPlC"/>
+<div class="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h3 class="text-xl font-display font-bold text-secondary mb-2">SEO</h3>
+<span class="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+<img alt="SEO ChatGPT" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcVprLB_I1wLeEkfbjmpYnMJbCFRQsZ5dO1jjC5GF8IKNVP9yHhOnBeInr7Cpa1oQSlzg9fOTl8F72e8EKgdJ7Jqu-ahgwDl86NESHgA5GZDiNC2pEqNdC-9IUDPaKeT-Yqybq63jhdLJOs0Dbn1R28ckAGPU16SLtQ3-u1YW5ei-14-tmMVcSG4d8cw1ATvjFsHrcpcwrCTWO9MVNmOtev198WMrmTXBqFpxm1iOzalBh84a1GigPLA_pNYmaCyygTQjlPMzRl1f_"/>
+<div class="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h3 class="text-xl font-display font-bold text-secondary mb-2">SEO CHATGPT</h3>
+<span class="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+<img alt="Google Ads Management" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2H26yjQSDBKqn2RouMDfhVkxcCKChQdVYOEtVPZEA4CKBAIzcDCGi-DOYo1zKto8abVJQZ3KmM_VseA0uZxDndtn97ZSeiGWsXvAvJUm311bg1H3ob5dwuLFa4eUg-GWFUqVCDloGAsBNPTJUTdX0gRXFB9mcnsu2vQTQgAINTHeKIFJIoJ8642sVpLatgO2maHTmg0JIVBkERW0mzdW40yi2heuwAFLvENdxmN6wuBFPCpmJuc54BNxcFNk2ieA6KTLlwLt0nYPy"/>
+<div class="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h3 class="text-xl font-display font-bold text-secondary mb-2">GOOGLE ADS MANAGEMENT</h3>
+<span class="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+<img alt="Website Design" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZR8llxk8wkg474P0kF65raR5woeWrRJElpvcPAlCmBiJuNO_eRUWU-ukcdeu42kZxGqJ_gB63m1QH-o8EKuabg5ixVSSxPf8p9S9xeas9h3B5FvXTlB2GAdtDwlu8ebGkqMBkuKEEeTFn0nFmuXi2dCyAgq3QF_gAlIlkMP45wdT1IqxyCP2d6HdreIrx1LC6raJVbXqe7ZghT6caGvMuGB1nRrBguqktTdsSU7BXhaIxp225z7_hVTVuYh0ULeZUxwRjjIgDQ9xv"/>
+<div class="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h3 class="text-xl font-display font-bold text-secondary mb-2">WEBSITE DESIGN</h3>
+<span class="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+<img alt="Social Media Management" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB97nXenn3okG94DYFKD_c35nwZXd74Au5u7wvUH0WiEpX_g6HN3dyXrHenLy1x6hrj0jKsDMeqKpWqjT_XI1umO57c1EnxYiDFY6pT4QMBBCxH3yXqleaPtBe65NJfgJEu7KePrNmME-WixY9UljbtF_LoLLshb0fzItj3WJRRbOhmL2D2vQakJKO-DnIs3CUa-L8x7nhDuqK9zbxHwGbwgnRVQL62Yo7lZQNLwzKhE3pxORHaIYY4jNbv7XlKmgEPeOQ5e0M-xHAD"/>
+<div class="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h3 class="text-xl font-display font-bold text-secondary mb-2">SOCIAL MEDIA MANAGEMENT</h3>
+<span class="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
+</div>
+</div>
+<div class="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+<img alt="Branding &amp; Strategy" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfR0i9AfBVGu3dBhIDOs8limGw2M9Ic05MaHzuaf0CdizgIBXoMKqpkwmP4qal_28YJr17bRUcV4z_R3kCe4UJHy19TB-1VIllc5TL8nbzsN5N_wr8uPQ_xdJk0cqCge3sou4Sb7-JSrz01_pCmqYQuIEsrEyUUNaFhELKHDptzBwVwQ46kLYpRQs5kPavskXiJHrPI3Mtzg79HNiJuE5-BOwB8X5lGafxTxHf07GT-n-VvdBel940IPlZQfW7fuuMGnMb7ggCgGA9"/>
+<div class="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 text-center">
+<h3 class="text-xl font-display font-bold text-secondary mb-2">BRANDING &amp; STRATEGY</h3>
+<span class="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-white dark:bg-gray-800">
+<div class="lg:w-1/2 relative h-[300px] lg:h-full">
+<img alt="City View" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBclmBjUwSuLjONWhx6UljfxQl0382A2MxAuq-i0FQKS0sIHu_nAv7dNb9vVgBOLJdCCkqhfUMZmnnkgiS8Ngcms7aUxMNia_WLTD87blGfAabgFanGGRogOWz6tbGlTrpdYbl0ITCpIEqNo152BV_3TVpk583JTLKFtYu6PKpJm_0xxBCP5geF4bGcoUBuJBzl060ns6wM3yl01QzVNeL9QKJbsXhtJ0xkFe4cNmFa-v6SIzTTM4KGAI2jub14bJsQx0Pf1hY9388C"/>
+<div class="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
+</div>
+<div class="lg:w-1/2 bg-primary relative flex items-center lg:-ml-20 lg:pl-24 p-10 z-10 clip-path-lg-slant">
+<div class="absolute inset-y-0 -left-20 w-40 bg-primary transform -skew-x-12 hidden lg:block"></div>
+<div class="relative z-10 text-white max-w-lg">
+<h3 class="text-2xl font-bold mb-4 font-display">With GUARANTEED RANKING ™, You Don't Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h3>
+<ul class="space-y-3 mb-8 text-sm opacity-90">
+<li class="flex items-start gap-2"><i class="fas fa-circle text-[0.4rem] mt-2"></i> Target hundreds of keywords simultaneously</li>
+<li class="flex items-start gap-2"><i class="fas fa-circle text-[0.4rem] mt-2"></i> Achieve rankings quickly (typically within 7 weeks)</li>
+<li class="flex items-start gap-2"><i class="fas fa-circle text-[0.4rem] mt-2"></i> Clear, affordable, and fixed monthly pricing</li>
+<li class="flex items-start gap-2"><i class="fas fa-circle text-[0.4rem] mt-2"></i> No long-term contract or cancellation fees</li>
+<li class="flex items-start gap-2"><i class="fas fa-circle text-[0.4rem] mt-2"></i> 100% U.S.-based team for personalized service</li>
+</ul>
+<a class="bg-white text-primary font-bold py-2 px-6 rounded text-sm hover:bg-gray-200 transition" href="#">LEARN MORE</a>
+</div>
+</div>
+</section>
+<section class="py-20 bg-surface-light dark:bg-surface-dark">
+<div class="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2">
+<div class="border-l-4 border-green-600 pl-6 mb-8">
+<h2 class="text-3xl lg:text-4xl font-display font-bold text-primary dark:text-white uppercase mb-4">Google Ads Management (PPC)</h2>
+<p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+                        See leads coming through in less than 2 weeks! With Google Ads, you can advertise your business where it matters most — at the very top of Google search results. Our campaigns age like a fine wine and only get better with time. Plus, our pricing drops off in month 4 - check it out!
+                    </p>
+<p class="font-bold text-gray-800 dark:text-gray-200 text-sm">
+                        Hundreds of campaigns built.<br/>
+                        Millions of dollars made for our clients.
+                    </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-8 mb-8">
+<div>
+<div class="text-4xl lg:text-5xl font-bold text-green-500 mb-1">4,000+</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm">Monthly leads generated</p>
+</div>
+<div>
+<div class="text-4xl lg:text-5xl font-bold text-green-500 mb-1">90%</div>
+<p class="text-gray-600 dark:text-gray-400 text-sm">Percentage of clients seeing leads in the first week</p>
+</div>
+</div>
+<a class="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">Learn More</a>
+</div>
+<div class="lg:w-1/2">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl">
+<img alt="Analytics Dashboard" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoz-Lljn09Ihs3zBDm-3UqoNFlGOqJTWqJmuvDTuMpCm7BtdEsLJHuwpM8fyZwYLp2C9BC9ZYhObomoxk1yQT_7cvJfS0sg6FQ-8zYJEIxjgAs7Z1fUsVKuDwUqKbjCCG8sQyDBNnBaYT6zErGzrXtQEWrvlBRH1CAJrvT8GPGsCmC6x-eQiROZcsip8Iyu1knK_iQvUZ7vo3SCuZfRd1KzKocoL-ipUleFkuGcEAsh_gvbnrocjitIy8iPZ_9UeKaNExm_aO01UeA"/>
+<div class="absolute inset-0 bg-blue-900 bg-opacity-40 flex items-center justify-center">
+<div class="border border-white/30 bg-white/10 backdrop-blur-sm p-4 rounded-lg w-3/4">
+<div class="flex items-end justify-between h-32 gap-2 mb-2">
+<div class="w-full bg-blue-400/50 h-[30%] rounded-t"></div>
+<div class="w-full bg-blue-400/60 h-[50%] rounded-t"></div>
+<div class="w-full bg-blue-400/80 h-[40%] rounded-t"></div>
+<div class="w-full bg-green-400 h-[80%] rounded-t shadow-[0_0_10px_rgba(74,222,128,0.5)]"></div>
+<div class="w-full bg-blue-400/70 h-[60%] rounded-t"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-gray-900 relative">
+<div class="absolute top-0 left-0 right-0 text-center select-none pointer-events-none opacity-50">
+<span class="text-[8rem] lg:text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 uppercase leading-none">Portfolio</span>
+</div>
+<div class="container mx-auto px-4 relative z-10 text-center">
+<h2 class="text-4xl lg:text-5xl font-display font-bold text-primary dark:text-white mb-4 uppercase inline-block bg-white dark:bg-gray-900 px-4">
+                Website Design
+            </h2>
+<p class="text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
+                Our experienced team specializes in developing modern WordPress websites. Below are samples of our work:
+            </p>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+<div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center">
+<img alt="Portfolio Item 1" class="max-w-full shadow-lg rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe-LlOfYjN7L04OKs4w6gp0t9pqV5JowltX0Q6_rRsRgX1trXhrc-8-AypjPhFlB9iXDMdwZ-rpafBXj_1_S4jJ0r4qUXpQV_HuHNhCCfPlE6k86-evE9uPsWPUuItpr9iKSSpbEsvfCSUNsV1G3cFP1t1tH4jKBcv5lJJUr9qmYoWuL9FK7KYn84UhSZQSdEnhPWMeonu1tCVo0kMsY70-j040Gp4SlctK6n3l5JCQYTTIO61kPChczIZzBQddHwakkVASAUSEg3N"/>
+</div>
+<div class="bg-orange-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center">
+<img alt="Portfolio Item 2" class="max-w-full shadow-lg rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQtyH3cUadTKF7bi9LXzvUKnjuMKbEoSzQKPGMwoJe-aQXF00KrsAbJPFq1zrjbUJLuBFekQivbUxNz-IaXyo07Hd3Wh2iSzxdbyS7xx6Fe4fJy10pQZ3c3siWIZFQkt3klUu1LVbZ_WqJu1lP3IizE3Hm7IVKT7W8LGeZBxf2w672Y2AcHef0AwOyMHqqdchwrgiakv676sVa_17ylU65kFOeC4amSrNXJP-aJiPF0LKDyM-VF8Z2ikpUM-psKGUJIPTNizS9DOca"/>
+</div>
+<div class="bg-blue-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center">
+<img alt="Portfolio Item 3" class="max-w-full shadow-lg rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCIph2du_b6K1AXbvgyvqQVfi6qQhNneDuIHzCno59J9KgZswYngHi93mIFaEmD0SqRoy-32DjcchtUgu6TKIwXCen4uiqGH-nr4CJSRh2ppz1GOz35sKiXaKhvNp_xFF-p6p9ti5FQFkZnqcLXp-GH6mXEeQzYGiMTx5g2BgX1368Lea53C5a6EqMceMl5MrztVD3nxZVfdtJPEoBZM7Xy_z-GzHXZRMx_29sRjtxSLzYVvfPW2tJhInosgkVtl9UxaNFYbvIwewb"/>
+</div>
+</div>
+<a class="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
+</div>
+</section>
+<section class="bg-primary text-white pb-20 pt-32 relative">
+<div class="container mx-auto px-4 relative -top-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<div class="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
+<div class="text-sm font-bold mb-4 opacity-70">01.</div>
+<div class="text-4xl mb-4"><i class="fas fa-check-circle"></i></div>
+<h3 class="text-xl font-bold uppercase mb-4 font-display">IMPACT</h3>
+<p class="text-sm leading-relaxed opacity-90">We focus on strategies that maximize impact on your visibility and growth.</p>
+</div>
+<div class="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
+<div class="text-sm font-bold mb-4 opacity-70">02.</div>
+<div class="text-4xl mb-4"><i class="fas fa-arrows-alt"></i></div>
+<h3 class="text-xl font-bold uppercase mb-4 font-display">AFFORDABILITY</h3>
+<p class="text-sm leading-relaxed opacity-90">Our pricing is structured in a way that makes sense for both you based on what you are receiving.</p>
+</div>
+<div class="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
+<div class="text-sm font-bold mb-4 opacity-70">03.</div>
+<div class="text-4xl mb-4"><i class="fas fa-file-signature"></i></div>
+<h3 class="text-xl font-bold uppercase mb-4 font-display">NO CONTRACTS</h3>
+<p class="text-sm leading-relaxed opacity-90">We believe great results, not contracts, are what should keep our clients around.</p>
+</div>
+<div class="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
+<div class="text-sm font-bold mb-4 opacity-70">04.</div>
+<div class="text-4xl mb-4"><i class="fas fa-signal"></i></div>
+<h3 class="text-xl font-bold uppercase mb-4 font-display">RESPONSIVENESS</h3>
+<p class="text-sm leading-relaxed opacity-90">Good communication is what builds a good relationship. We take pride in our level of responsiveness.</p>
+</div>
+</div>
+</div>
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl lg:text-5xl font-display font-bold uppercase leading-tight max-w-4xl mx-auto">
+<span class="text-white opacity-60 text-sm block mb-4 tracking-widest font-body">ABOUT US</span>
+                We Believe Better Results Shouldn't Have To Cost More.
+            </h2>
+<div class="absolute bottom-0 left-10 text-9xl font-bold text-white opacity-5 hidden lg:block pointer-events-none">CHOICE</div>
+</div>
+</section>
+<section class="py-24 bg-white dark:bg-gray-900">
+<div class="container mx-auto px-4 text-center">
+<div class="relative mb-16 inline-block">
+<h2 class="text-4xl lg:text-5xl font-display font-bold text-primary dark:text-white uppercase relative z-10">
+                    Hear What Our Clients Are Saying
+                </h2>
+<span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[5rem] lg:text-[8rem] font-bold text-gray-100 dark:text-gray-800 -z-0 whitespace-nowrap">REVIEWS</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+<div class="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
+<i class="fas fa-quote-left text-primary dark:text-green-500 text-4xl mb-6"></i>
+<h3 class="font-bold text-lg mb-4 text-primary dark:text-white">BRANDING THAT MAKES A STATEMENT!</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        Lemonade Ideas helped us completely rebrand our business with a new logo, messaging, and brand identity. The results were stunning – we now have a strong, recognizable brand that resonates with our target audience. We've received so many compliments!
+                    </p>
+<div class="font-bold text-xs uppercase mb-4 text-primary dark:text-green-400">FNATHAN R., CO-FOUNDER OF A TECH STARTUP</div>
+<div class="flex justify-center items-center gap-2">
+<img alt="Google" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbD8nOhjw7A4ES8pPIxsn-cACA9CFdCEfrzBQtkggIWqWqlYU2LRASZYnpOG30acxKNz9vj7k65ZygvlHspTkLs6lXeF3_GXgDjAmHv8IfL5NlAvNma0af1HFLE_UyDaLW0TJuVzxLsbFiiGLZr17jm5Nd_NTkAgfIv0Gs2keZ0hKhBlaxCNpYddSJM3yIp_Wl0be1vZGjeLrq2l8KLqyFMMsSyORRhoX6lDvf1EoXZ5KCqUp8HbSMC1lQKGm6ziQARaY9uJ4IhZjU"/>
+<div class="text-yellow-400 text-xs">
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<div class="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
+<i class="fas fa-quote-left text-primary dark:text-green-500 text-4xl mb-6"></i>
+<h3 class="font-bold text-lg mb-4 text-primary dark:text-white">THE BEST MARKETING AGENCY WE'VE WORKED WITH!</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        We've worked with multiple marketing agencies in the past, but none have delivered the results that Lemonade Ideas has. From SEO to Google Ads, website design to branding, their team is top-notch. They genuinely care about our success.
+                    </p>
+<div class="font-bold text-xs uppercase mb-4 text-primary dark:text-green-400">SAMANTHA J., COO OF A B2B SAAS COMPANY</div>
+<div class="flex justify-center items-center gap-2">
+<img alt="Google" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIjxcFn8I8yHzkWq6ymNfLkOcENSkPTgNZnjJiQJogS5UTnC6jW_srR_XGsgT0MJh0frkQKqwmmgZCZvqFVRHXcFN_0rPtcu1LLgxq2fUPAj-q2E86cVvv17Qbclhc9GJPPJPil_mXPRe4aPgL8QT6OwEM6VX_V4USzXt3Wt0EwCiuQDYwAVPP9EoWc7Lk7I9zJFDIK-p3_mOWYll0c_bRe0sVw3UQ_C_JDRTZYdzz9Y65AgZyDb8PyQRZkG4WpYoTamkPjDK-ej6K"/>
+<div class="text-yellow-400 text-xs">
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+<div class="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
+<i class="fas fa-quote-left text-primary dark:text-green-500 text-4xl mb-6"></i>
+<h3 class="font-bold text-lg mb-4 text-primary dark:text-white">SOCIAL MEDIA THAT CREATES REAL ENGAGEMENT!</h3>
+<p class="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        We tried running social media ourselves but struggled to gain traction. Lemonade Ideas took over our content strategy, and in just three months, our Instagram following doubled, engagement tripled, and we started generating sales directly.
+                    </p>
+<div class="font-bold text-xs uppercase mb-4 text-primary dark:text-green-400">OLIVIA S., OWNER OF A HANDMADE JEWELRY BRAND</div>
+<div class="flex justify-center items-center gap-2">
+<img alt="Google" class="h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Ox6wiWWcJYkPhcb9sAm4GnfY9HmPVxKvu1CHITLrxh2kuy6Kqw1hcqGipxLsWPx7qryWz8N3e_9JnbFJ2CLS-AneUabbqVQDyusvB-vAY9DVPVJtqGiu5DEV5v9m0ww6ASUOyP6_fTPZ6fT-LOR1jQX_7HUQ8yqg_w9S4M5qbjUZhc21jKs--A1xTws2Pa4UykmxBuyvgd_XdMb-kenDu7uUT0t16Hd-tUbMX3kcasDx25f4t82PKybPnCzvgT4VOFogoSuo7JOa"/>
+<div class="text-yellow-400 text-xs">
+<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+<a class="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">Read More Reviews</a>
+</div>
+</section>
+<section class="py-24 bg-surface-light dark:bg-surface-dark relative overflow-hidden">
+<div class="absolute inset-0 flex justify-center items-center pointer-events-none opacity-5">
+<span class="text-[20rem] font-bold text-primary dark:text-white">FAQ</span>
+</div>
+<div class="container mx-auto px-4 relative z-10">
+<h2 class="text-4xl lg:text-5xl font-display font-bold text-primary dark:text-white text-center mb-12 uppercase">
+                Frequently Asked Questions
+            </h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+<div class="space-y-4">
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
+<span class="font-bold text-sm text-gray-800 dark:text-gray-200">How much do your services cost?</span>
+<i class="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
+<span class="font-bold text-sm text-gray-800 dark:text-gray-200">What makes you different than other companies?</span>
+<i class="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
+<span class="font-bold text-sm text-gray-800 dark:text-gray-200">How fast can you get me on page 1 of Google?</span>
+<i class="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+</div>
+</div>
+<div class="space-y-4">
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
+<span class="font-bold text-sm text-gray-800 dark:text-gray-200">Do you provide a free consultation?</span>
+<i class="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
+<span class="font-bold text-sm text-gray-800 dark:text-gray-200">Do you offer performance-based marketing services?</span>
+<i class="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+</div>
+<div class="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
+<span class="font-bold text-sm text-gray-800 dark:text-gray-200">Do you require long-term contracts?</span>
+<i class="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="bg-primary/95 text-white">
+<div class="py-12 text-center bg-primary">
+<p class="text-sm uppercase tracking-widest mb-2 opacity-80">CONTACT US</p>
+<h2 class="text-3xl lg:text-5xl font-display font-bold uppercase">HAVE QUESTIONS? WE'VE GOT ANSWERS!</h2>
+</div>
+<div class="container mx-auto px-4 pb-12">
+<div class="bg-white/5 p-8 rounded-lg mb-16 border border-white/10 backdrop-blur-sm max-w-4xl mx-auto">
+<form class="space-y-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="w-full p-3 rounded bg-white text-gray-800 border-none focus:ring-2 focus:ring-secondary" placeholder="Name" type="text"/>
+<input class="w-full p-3 rounded bg-white text-gray-800 border-none focus:ring-2 focus:ring-secondary" placeholder="Email Address" type="email"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<input class="w-full p-3 rounded bg-white text-gray-800 border-none focus:ring-2 focus:ring-secondary" placeholder="Phone" type="tel"/>
+<input class="w-full p-3 rounded bg-white text-gray-800 border-none focus:ring-2 focus:ring-secondary" placeholder="Website" type="text"/>
+</div>
+<textarea class="w-full p-3 rounded bg-white text-gray-800 border-none focus:ring-2 focus:ring-secondary" placeholder="Message" rows="4"></textarea>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-4">
+<div class="bg-white text-gray-600 px-4 py-2 rounded flex items-center gap-2 border border-gray-300">
+<div class="w-5 h-5 border-2 border-gray-300 rounded"></div>
+<span class="text-xs">I'm not a robot</span>
+<div class="ml-auto flex flex-col items-center text-[0.5rem] leading-none text-gray-400">
+<img alt="recaptcha" class="w-5 mb-1 grayscale opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQmqXwGPwhJsm_629y2N9EcZYz9DKHxoUBDE7mlvlSuL7T7eHRMN6F4M7QRj0QfJwIfC9BjYBTu4nk3HYBtGvq7MssI9Sl86pkEj8lQ0Yl8le4avCZYIjuKULGzu1Al2N3cPNbetfYTxm-gSwx7gwjTbr9x2Gl_7rjHFfwQL0U3xPZBzK9MrWy4ZXnqKE2j-bZZ69-P2yM7KZ2HOAUA-Cd1oMeO1KajrZR6hgyZZdjf6j4N_vtApkDi2nhcwbBSsg2dLYksvU4qqpK"/>
+                                reCAPTCHA
+                            </div>
+</div>
+<button class="bg-secondary text-primary font-bold py-3 px-10 rounded uppercase hover:bg-yellow-400 transition w-full md:w-auto shadow-lg" type="submit">Submit</button>
+</div>
+</form>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/20 pt-12">
+<div>
+<div class="flex items-center gap-2 mb-6">
+<div class="relative w-8 h-8">
+<svg class="w-full h-full text-green-500 fill-current" viewBox="0 0 100 100">
+<path d="M50 0 A50 50 0 1 0 50 100 A50 50 0 1 0 50 0 Z" fill="#84cc16"></path>
+<path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#facc15"></path>
+</svg>
+</div>
+<div>
+<h3 class="font-display font-bold text-xl leading-none">Lemonade<span class="font-light">ideas</span></h3>
+<p class="text-[0.5rem] tracking-widest uppercase opacity-70">Marketing Agency</p>
+</div>
+</div>
+<p class="text-sm opacity-80 mb-6">SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$</p>
+<a class="font-bold text-sm hover:text-secondary transition flex items-center gap-1" href="#">SCHEDULE A CALL <i class="fas fa-angle-double-right text-xs"></i></a>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6 uppercase font-display">CONTACT DETAILS</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-center gap-2"><i class="fas fa-phone-alt opacity-70"></i> +1 (424) 877-3789</li>
+<li class="flex items-center gap-2"><i class="fas fa-envelope opacity-70"></i> sales@lemonadeideas.com</li>
+<li class="opacity-80 leading-relaxed pt-2">
+                            209 21st Place Santa Monica 90402<br/>California USA
+                        </li>
+</ul>
+<div class="flex space-x-3 mt-6">
+<a class="bg-primary-light hover:bg-secondary hover:text-primary transition rounded-full w-8 h-8 flex items-center justify-center" href="#"><i class="fab fa-facebook-f text-xs"></i></a>
+<a class="bg-primary-light hover:bg-secondary hover:text-primary transition rounded-full w-8 h-8 flex items-center justify-center" href="#"><i class="fab fa-instagram text-xs"></i></a>
+<a class="bg-primary-light hover:bg-secondary hover:text-primary transition rounded-full w-8 h-8 flex items-center justify-center" href="#"><i class="fab fa-youtube text-xs"></i></a>
+<a class="bg-primary-light hover:bg-secondary hover:text-primary transition rounded-full w-8 h-8 flex items-center justify-center" href="#"><i class="fab fa-linkedin-in text-xs"></i></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6 uppercase font-display">QUICK LINKS</h4>
+<ul class="space-y-3 text-sm opacity-80">
+<li><a class="hover:text-secondary transition" href="#">Reviews</a></li>
+<li><a class="hover:text-secondary transition" href="#">White Label Resellers</a></li>
+<li><a class="hover:text-secondary transition" href="#">Referral Program</a></li>
+<li><a class="hover:text-secondary transition" href="#">Blogs</a></li>
+<li><a class="hover:text-secondary transition" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-6 uppercase font-display">OUR SERVICES</h4>
+<ul class="space-y-3 text-sm opacity-80 mb-6">
+<li><a class="hover:text-secondary transition" href="#">Guaranteed Ranking™</a></li>
+<li><a class="hover:text-secondary transition" href="#">SEO</a></li>
+<li><a class="hover:text-secondary transition" href="#">Google Ads Management</a></li>
+<li><a class="hover:text-secondary transition" href="#">Website Design</a></li>
+<li><a class="hover:text-secondary transition" href="#">Social Media Management</a></li>
+<li><a class="hover:text-secondary transition" href="#">Branding &amp; Strategy</a></li>
+</ul>
+<a class="bg-primary-light border border-white/20 hover:bg-white hover:text-primary transition font-bold py-2 px-6 rounded text-xs uppercase inline-block" href="#">CONTACT US</a>
+</div>
+</div>
+</div>
+<div class="bg-black/20 py-4 text-center text-xs opacity-60">
+<p>© 2025 All Rights Reserved | Lemonade ideas</p>
+</div>
+</div>
+
+</body></html>
