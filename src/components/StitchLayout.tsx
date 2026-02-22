@@ -59,7 +59,7 @@ export default function StitchLayout() {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Service Cards */}
-                        <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <img alt="SEO" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO.avif" />
                             {/* Base overlay for dark contrast */}
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
@@ -70,7 +70,7 @@ export default function StitchLayout() {
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </div>
-                        <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <img alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO Chat GPT.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -79,7 +79,7 @@ export default function StitchLayout() {
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </div>
-                        <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <img alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1654277041042-8927699fcfd2.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -88,7 +88,7 @@ export default function StitchLayout() {
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </div>
-                        <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <img alt="Website Design" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1678690832311-bb6e361989ca.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -97,7 +97,7 @@ export default function StitchLayout() {
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </div>
-                        <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <img alt="Social Media Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/social media management.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -106,7 +106,7 @@ export default function StitchLayout() {
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </div>
-                        <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <img alt="Branding & Strategy" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/Branding.avif" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -120,12 +120,17 @@ export default function StitchLayout() {
             </section>
 
             <section className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-[#1e3a29] border-b-8 border-yellow-400 overflow-hidden">
-                <div className="lg:w-[55%] relative h-[300px] lg:h-full z-10">
-                    <img alt="City View" width={1000} height={500} className="w-full h-full object-cover scale-x-[-1]" src="/images/home-image.avif" />
-                    <div className="absolute inset-0 bg-blue-900 bg-opacity-60 mix-blend-multiply"></div>
+                {/* Image on Mobile stacks neatly on top of the text block */}
+                <div className="w-full lg:w-[55%] relative h-[250px] lg:h-full z-10">
+                    <img alt="City View" width={1000} height={500} className="w-full h-full object-cover md:scale-x-[-1]" src="/images/home-image.avif" />
+                    <div className="absolute inset-0 bg-blue-900 bg-opacity-40 lg:bg-opacity-60 mix-blend-multiply"></div>
                 </div>
-                <div className="lg:w-auto lg:flex-1 bg-[#1e3a29] relative flex items-center lg:-ml-28 lg:pl-32 p-10 z-20">
-                    <div className="absolute inset-y-0 -left-16 lg:-left-24 w-32 lg:w-48 bg-[#1e3a29] transform -skew-x-12 hidden lg:block origin-bottom shadow-[-15px_0_20px_rgba(0,0,0,0.3)]"></div>
+                {/* On mobile: standard padding and no negative margins. On PC: strict overlap structure */}
+                <div className="w-full lg:w-auto lg:flex-1 bg-[#1e3a29] relative flex items-center lg:-ml-28 lg:pl-32 p-8 lg:p-10 z-20">
+                    <div className="absolute top-0 left-0 w-full h-full hidden lg:block" style={{
+                        background: 'linear-gradient(to right, #1e3a29 0%, #1e3a29 40%, transparent 100%)',
+                        zIndex: -1
+                    }} />
                     <div className="relative z-30 text-white max-w-lg">
                         <h3 className="text-2xl font-bold mb-4 font-display">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h3>
                         <ul className="space-y-5 mb-8 text-[17.5px] font-medium opacity-90">

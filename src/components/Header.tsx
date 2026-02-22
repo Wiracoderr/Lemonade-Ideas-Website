@@ -90,15 +90,14 @@ export default function Header() {
             </AnimatePresence>
 
             {/* MAIN NAV BAR */}
-            <div className="max-w-[1400px] mx-auto px-6 h-[90px] flex items-center justify-between">
+            <div className="max-w-[1400px] mx-auto px-4 lg:px-6 h-[80px] lg:h-[90px] flex items-center justify-between">
                 {/* Logo */}
-                <Link href="/" className="relative w-64 h-16 flex-shrink-0">
+                <Link href="/" className="relative w-48 lg:w-64 h-12 lg:h-16 flex-shrink-0">
                     <Image
                         src="/logos/PNGs - SVGs/4x/Asset 2@4x-8.png"
                         alt="Lemonade Ideas"
-                        width={256}
-                        height={64}
-                        className="object-contain object-left w-64 h-auto"
+                        fill
+                        className="object-contain object-left"
                         priority
                         fetchPriority="high"
                     />
