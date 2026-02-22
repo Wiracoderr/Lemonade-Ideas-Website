@@ -70,7 +70,7 @@ export default function StitchLayout() {
             </section>
 
             <section className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
-                <div className="absolute top-10 left-0 right-0 text-center select-none pointer-events-none">
+                <div className="absolute top-10 left-0 right-0 text-center select-none pointer-events-none hidden md:block">
                     <span className="text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 opacity-100 uppercase leading-none">Services</span>
                 </div>
                 <div className="container mx-auto px-4 relative z-10">
@@ -80,7 +80,13 @@ export default function StitchLayout() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Service Cards */}
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="SEO" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO.avif" />
+                            <Image
+                                src="/services/SEO.avif"
+                                alt="SEO"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover transition duration-500 group-hover:scale-110"
+                            />
                             {/* Base overlay for dark contrast */}
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             {/* Bottom 20% blur/gradient for text legibility like Stitch */}
@@ -109,7 +115,13 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Website Design" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1678690832311-bb6e361989ca.avif" />
+                            <Image
+                                src="/services/photo-1678690832311-bb6e361989ca.avif"
+                                alt="Website Design"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover transition duration-500 group-hover:scale-110"
+                            />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -118,7 +130,13 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Social Media Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/social media management.avif" />
+                            <Image
+                                src="/services/social media management.avif"
+                                alt="Social Media Management"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover transition duration-500 group-hover:scale-110"
+                            />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -127,7 +145,13 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Branding & Strategy" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/Branding.avif" />
+                            <Image
+                                src="/services/Branding.avif"
+                                alt="Branding & Strategy"
+                                fill
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                className="object-cover transition duration-500 group-hover:scale-110"
+                            />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -142,7 +166,13 @@ export default function StitchLayout() {
             <section className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-[#1e3a29] border-b-8 border-yellow-400 overflow-hidden">
                 {/* Image on Mobile stacks neatly on top of the text block */}
                 <div className="w-full lg:w-[55%] relative h-[250px] lg:h-full z-10">
-                    <img alt="City View" width={1000} height={500} className="w-full h-full object-cover md:scale-x-[-1]" src="/images/home-image.avif" />
+                    <Image
+                        src="/images/home-image.avif"
+                        alt="City View"
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 55vw"
+                        className="object-cover md:scale-x-[-1]"
+                    />
                     <div className="absolute inset-0 bg-blue-900 bg-opacity-40 lg:bg-opacity-60 mix-blend-multiply"></div>
                 </div>
                 {/* On mobile: standard padding and no negative margins. On PC: strict overlap structure */}
@@ -191,15 +221,21 @@ export default function StitchLayout() {
                         <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">Learn More</a>
                     </div>
                     <div className="lg:w-1/2">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center">
-                            <img alt="PPC Analytics Dashboard" width={800} height={500} className="w-full h-auto object-contain" src="/images/ppc-dashboard.webp" />
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center h-[300px] lg:h-[500px] w-full">
+                            <Image
+                                src="/images/ppc-dashboard.webp"
+                                alt="PPC Analytics Dashboard"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-contain"
+                            />
                         </div>
                     </div>
                 </div>
             </section>
 
             <section className="py-24 bg-white dark:bg-gray-900 relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 text-center select-none pointer-events-none opacity-50">
+                <div className="absolute top-0 left-0 right-0 text-center select-none pointer-events-none opacity-50 hidden md:block">
                     <span className="text-[8rem] lg:text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 uppercase leading-none">Portfolio</span>
                 </div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
@@ -210,14 +246,32 @@ export default function StitchLayout() {
                         Our experienced team specializes in developing modern WordPress websites. Below are samples of our work:
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                        <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 1" width={400} height={300} className="w-full h-auto" src="/portfolio/1.png" />
+                        <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center relative min-h-[250px]">
+                            <Image
+                                src="/portfolio/1.png"
+                                alt="Portfolio Item 1"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                className="object-contain p-4"
+                            />
                         </div>
-                        <div className="bg-[#fff7f0] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 2" width={400} height={300} className="w-full h-auto" src="/portfolio/2.png" />
+                        <div className="bg-[#fff7f0] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center relative min-h-[250px]">
+                            <Image
+                                src="/portfolio/2.png"
+                                alt="Portfolio Item 2"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                className="object-contain p-4"
+                            />
                         </div>
-                        <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 3" width={400} height={300} className="w-full h-auto" src="/portfolio/3.png" />
+                        <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center relative min-h-[250px]">
+                            <Image
+                                src="/portfolio/3.png"
+                                alt="Portfolio Item 3"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                className="object-contain p-4"
+                            />
                         </div>
                     </div>
                     <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
@@ -228,7 +282,7 @@ export default function StitchLayout() {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="flex flex-col mb-20 relative">
                         {/* Giant background text exactly as requested */}
-                        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -z-0 opacity-[0.03] select-none pointer-events-none w-full flex flex-col justify-center">
+                        <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -z-0 opacity-[0.03] select-none pointer-events-none w-full flex-col justify-center hidden md:flex">
                             <span className="text-[12rem] md:text-[18rem] lg:text-[22rem] font-bold tracking-tighter leading-[0.8] font-display uppercase block -ml-4 whitespace-nowrap">
                                 WHO WE
                             </span>
@@ -331,7 +385,7 @@ export default function StitchLayout() {
                         <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#1e3a29] dark:text-white uppercase relative z-10">
                             Hear What Our Clients Are Saying
                         </h2>
-                        <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[5rem] lg:text-[8rem] font-bold text-gray-100 dark:text-gray-800 -z-0 whitespace-nowrap">REVIEWS</span>
+                        <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[5rem] lg:text-[8rem] font-bold text-gray-100 dark:text-gray-800 -z-0 whitespace-nowrap hidden md:block">REVIEWS</span>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
                         <div className="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
