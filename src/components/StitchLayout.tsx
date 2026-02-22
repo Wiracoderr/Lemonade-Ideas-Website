@@ -26,16 +26,12 @@ export default function StitchLayout() {
                             </a>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 lg:pl-12 w-full relative z-20">
-                        <div className="bg-white rounded-lg shadow-2xl p-2 aspect-video w-full">
-                            <iframe
-                                className="w-full h-full rounded bg-black"
-                                src="https://www.youtube.com/embed/TZverr1QZUk?start=9"
-                                title="YouTube video player"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen>
-                            </iframe>
+                    <div className="lg:w-1/2 lg:pl-12 w-full">
+                        <div className="bg-white rounded-lg shadow-2xl p-2 aspect-video w-full flex items-center justify-center relative group cursor-pointer">
+                            <div className="absolute inset-0 bg-black bg-opacity-5 group-hover:bg-opacity-10 transition"></div>
+                            <div className="w-20 h-14 bg-red-600 rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition duration-300">
+                                <i className="fas fa-play text-white text-2xl ml-1"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,11 +110,12 @@ export default function StitchLayout() {
             <section className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-[#1e3a29] border-b-8 border-yellow-400 overflow-hidden">
                 <div className="lg:w-[55%] relative h-[300px] lg:h-full z-10">
                     <img alt="City View" className="w-full h-full object-cover scale-x-[-1]" src="/images/home-image.avif" />
+                    <div className="absolute inset-0 bg-blue-900 bg-opacity-60 mix-blend-multiply"></div>
                 </div>
                 <div className="lg:w-auto lg:flex-1 bg-[#1e3a29] relative flex items-center lg:-ml-28 lg:pl-32 p-10 z-20">
                     <div className="absolute inset-y-0 -left-16 lg:-left-24 w-32 lg:w-48 bg-[#1e3a29] transform -skew-x-12 hidden lg:block origin-bottom shadow-[-15px_0_20px_rgba(0,0,0,0.3)]"></div>
                     <div className="relative z-30 text-white max-w-lg">
-                        <h3 className="text-2xl font-bold mb-4 font-display">With GUARANTEED RANKING ™, You Don't Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h3>
+                        <h3 className="text-2xl font-bold mb-4 font-display">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h3>
                         <ul className="space-y-5 mb-8 text-[17.5px] font-medium opacity-90">
                             <li className="flex items-start">Target hundreds of keywords simultaneously</li>
                             <li className="flex items-start">Achieve rankings quickly (typically within 7 weeks)</li>
@@ -131,18 +128,8 @@ export default function StitchLayout() {
                 </div>
             </section>
 
-            {/* Marketing Services List Section */}
-            <section
-                className="py-24 relative overflow-hidden"
-                style={{
-                    backgroundColor: '#eaf7fd',
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Cg fill='none' stroke='%23d1e9f5' stroke-width='1.5' stroke-opacity='0.6'%3E%3Cpath d='M-100 100 L800 1000 M-100 150 L800 1050 M-100 200 L800 1100'/%3E%3Crect x='100' y='100' width='50' height='50' transform='rotate(45 125 125)'/%3E%3Ccircle cx='400' cy='300' r='100' stroke-dasharray='10 5'/%3E%3Cpath d='M0 0 L800 600' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E")`,
-                    backgroundAttachment: 'fixed',
-                    backgroundSize: 'cover',
-                    position: 'relative'
-                }}
-            >
-                <div className="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center gap-12">
+            <section className="py-20 bg-[#eef6f8] dark:bg-gray-800">
+                <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
                     <div className="lg:w-1/2">
                         <div className="border-l-4 border-green-600 pl-6 mb-8">
                             <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#1e3a29] dark:text-white uppercase mb-4">Google Ads Management (PPC)</h2>
@@ -168,15 +155,25 @@ export default function StitchLayout() {
                     </div>
                     <div className="lg:w-1/2">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img alt="Analytics Dashboard" className="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoz-Lljn09Ihs3zBDm-3UqoNFlGOqJTWqJmuvDTuMpCm7BtdEsLJHuwpM8fyZwYLp2C9BC9ZYhObomoxk1yQT_7cvJfS0sg6FQ-8zYJEIxjgAs7Z1fUsVKuDwUqKbjCCG8sQyDBNnBaYT6zErGzrXtQEWrvlBRH1CAJrvT8GPGsCmC6x-eQiROZcsip8Iyu1knK_iQvUZ7vo3SCuZfRd1KzKocoL-ipUleFkuGcEAsh_gvbnrocjitIy8iPZ_9UeKaNExm_aO01UeA" />
-                            <div className="absolute inset-0 bg-blue-900 bg-opacity-40 flex items-center justify-center">
-                                <div className="border border-white/30 bg-white/10 backdrop-blur-sm p-4 rounded-lg w-3/4">
-                                    <div className="flex items-end justify-between h-32 gap-2 mb-2">
-                                        <div className="w-full bg-blue-400/50 h-[30%] rounded-t"></div>
-                                        <div className="w-full bg-blue-400/60 h-[50%] rounded-t"></div>
-                                        <div className="w-full bg-blue-400/80 h-[40%] rounded-t"></div>
-                                        <div className="w-full bg-green-400 h-[80%] rounded-t shadow-[0_0_10px_rgba(74,222,128,0.5)]"></div>
-                                        <div className="w-full bg-blue-400/70 h-[60%] rounded-t"></div>
+                            <img alt="PPC Analytics" className="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000" />
+                            <div className="absolute inset-0 bg-blue-900 bg-opacity-30 flex items-center justify-center">
+                                <div className="absolute bottom-10 right-10 bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-2xl scale-75 md:scale-100 origin-bottom-right">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center">
+                                            <div className="w-6 h-6 rounded-full border-4 border-green-500 border-t-transparent animate-spin"></div>
+                                        </div>
+                                        <div>
+                                            <div className="text-white font-bold">Optimization Active</div>
+                                            <div className="text-white/60 text-xs">Real-time bidding...</div>
+                                        </div>
+                                    </div>
+                                    <div className="space-y-3">
+                                        <div className="h-2 w-48 bg-white/20 rounded-full overflow-hidden">
+                                            <div className="h-full bg-green-500 w-[85%] animate-pulse"></div>
+                                        </div>
+                                        <div className="h-2 w-32 bg-white/20 rounded-full overflow-hidden">
+                                            <div className="h-full bg-blue-500 w-[60%]"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -197,17 +194,17 @@ export default function StitchLayout() {
                         Our experienced team specializes in developing modern WordPress websites. Below are samples of our work:
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                        <div className="bg-[#e5f5fd] dark:bg-gray-800 rounded-lg flex items-center justify-center overflow-hidden">
-                            <img alt="Portfolio Item 1" className="w-full object-cover" src="/portfolio/1.png" />
+                        <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
+                            <img alt="Portfolio Item 1" className="w-full h-auto" src="/portfolio/1.png" />
                         </div>
-                        <div className="bg-[#fff1e5] dark:bg-gray-800 rounded-lg flex items-center justify-center overflow-hidden">
-                            <img alt="Portfolio Item 2" className="w-full object-cover" src="/portfolio/2.png" />
+                        <div className="bg-[#fff7f0] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
+                            <img alt="Portfolio Item 2" className="w-full h-auto" src="/portfolio/2.png" />
                         </div>
-                        <div className="bg-[#e5f5fd] dark:bg-gray-800 rounded-lg flex items-center justify-center overflow-hidden">
-                            <img alt="Portfolio Item 3" className="w-full object-cover" src="/portfolio/3.png" />
+                        <div className="bg-[#eaf7fd] dark:bg-gray-800 p-4 lg:p-8 rounded-lg flex items-center justify-center">
+                            <img alt="Portfolio Item 3" className="w-full h-auto" src="/portfolio/3.png" />
                         </div>
                     </div>
-                    <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
+                    <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
                 </div>
             </section>
 
@@ -221,7 +218,7 @@ export default function StitchLayout() {
                         <div className="z-10 pl-6 md:pl-32">
                             <h4 className="text-sm font-bold tracking-wider mb-4 uppercase">ABOUT US</h4>
                             <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-tight uppercase max-w-4xl">
-                                WE BELIEVE BETTER RESULTS SHOULDN'T HAVE TO COST MORE.
+                                WE BELIEVE BETTER RESULTS SHOULDN&apos;T HAVE TO COST MORE.
                             </h2>
                         </div>
                     </div>
@@ -357,11 +354,18 @@ export default function StitchLayout() {
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/20 pt-12">
                         <div>
-                            <img
-                                src="/logos/SVG/Asset-1.svg"
-                                alt="Lemonade Ideas"
-                                className="h-16 w-auto mb-6 -ml-4"
-                            />
+                            <div className="flex items-center gap-2 mb-6">
+                                <div className="relative w-8 h-8">
+                                    <svg className="w-full h-full text-green-500 fill-current" viewBox="0 0 100 100">
+                                        <path d="M50 0 A50 50 0 1 0 50 100 A50 50 0 1 0 50 0 Z" fill="#84cc16"></path>
+                                        <path d="M50 10 L90 50 L50 90 L10 50 Z" fill="#facc15"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="font-display font-bold text-xl leading-none">Lemonade<span className="font-light">ideas</span></h3>
+                                    <p className="text-[0.5rem] tracking-widest uppercase opacity-70">Marketing Agency</p>
+                                </div>
+                            </div>
                             <p className="text-sm opacity-80 mb-6">SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$</p>
                         </div>
                         <div>
