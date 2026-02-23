@@ -11,7 +11,10 @@ export default function StitchLayout() {
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
             <section className="relative bg-[#1e3a29] py-20 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 z-0 opacity-20 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center"></div>
+                <div className="hidden md:block absolute inset-0 z-0 opacity-20 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center"></div>
+                <div className="md:hidden absolute inset-0 z-0 opacity-20">
+                    <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-center" priority />
+                </div>
                 <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#1e3a29] via-[#1e3a29] to-transparent opacity-90"></div>
                 <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/2 mb-10 lg:mb-0">

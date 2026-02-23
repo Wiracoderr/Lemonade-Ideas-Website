@@ -64,7 +64,10 @@ export default function MarketingServices() {
             {/* Section 2 inside guide */}
             <div className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-white dark:bg-gray-800 mt-20">
                 <div className="lg:w-1/2 relative h-[300px] lg:h-full">
-                    <div className="absolute inset-0 z-0 opacity-100 bg-[url('/images/hero-bg.jpg')] bg-cover bg-left"></div>
+                    <div className="hidden md:block absolute inset-0 z-0 opacity-100 bg-[url('/images/hero-bg.jpg')] bg-cover bg-left"></div>
+                    <div className="md:hidden absolute inset-0 z-0 opacity-100">
+                        <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-left" />
+                    </div>
                     <div className="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
                 </div>
                 <div className="lg:w-1/2 bg-primary relative flex items-center lg:-ml-20 lg:pl-24 p-10 z-10 clip-slant-right">

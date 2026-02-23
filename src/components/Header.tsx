@@ -95,10 +95,9 @@ export default function Header() {
                 {/* Logo */}
                 <Link href="/" className="relative w-48 lg:w-64 h-12 lg:h-16 flex-shrink-0">
                     <Image
-                        src="/logos/PNGs - SVGs/4x/Asset 2@4x-8.png"
+                        src="/logos/SVG/Logo-2.svg"
                         alt="Lemonade Ideas"
                         fill
-                        sizes="(max-width: 768px) 250px, 350px"
                         className="object-contain object-left"
                         priority
                         fetchPriority="high"
