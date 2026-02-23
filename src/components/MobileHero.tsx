@@ -15,8 +15,9 @@ export default function MobileHero() {
                 <span className="text-yellow-400 font-bold tracking-[0.2em] text-[10px] mb-2 uppercase drop-shadow-md">
                     Welcome to Lemonade Ideas
                 </span>
-                <h1 className="text-white font-display font-black text-4xl sm:text-5xl leading-[1.1] tracking-tight uppercase max-w-sm drop-shadow-xl px-2">
-                    ALL YOU NEED IS <span className="text-yellow-400 block mt-1">FRESH</span> IDEAS.
+                <h1 className="text-white font-display font-black text-4xl sm:text-5xl leading-[1.1] tracking-tight uppercase max-w-sm drop-shadow-xl px-2 text-center">
+                    ALL YOU NEED IS<br />
+                    <span className="text-yellow-400">FRESH</span> IDEAS.
                 </h1>
                 <p className="mt-3 text-white/90 font-medium text-xs sm:text-sm leading-relaxed max-w-[280px] drop-shadow-md">
                     Premium internet marketing that&apos;s fast, affordable, and drives you real leads.

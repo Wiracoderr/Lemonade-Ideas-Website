@@ -7,13 +7,15 @@ export default function MarketingHero() {
 
     return (
         <section className="relative bg-primary py-20 lg:py-32 overflow-hidden">
-            <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80')] bg-cover bg-center"></div>
+            <div className="absolute inset-0 z-0 opacity-20 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center"></div>
             <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary via-primary to-transparent opacity-90"></div>
             <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">
                 <div className="lg:w-1/2 mb-10 lg:mb-0">
 
                     <h2 className="text-4xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-                        INTERNET MARKETING THAT&apos;S <span className="text-secondary">FAST</span>, <span className="text-secondary">AFFORDABLE</span>, AND DRIVES YOU LEADS!
+                        <span className="block">INTERNET MARKETING</span>
+                        <span className="block">THAT&apos;S <span className="text-secondary">FAST</span>, <span className="text-secondary">AFFORDABLE</span>,</span>
+                        <span className="block">AND DRIVES YOU LEADS!</span>
                     </h2>
                     <p className="text-white text-lg mb-8 opacity-90 font-light">
                         Are you ready for &quot;Lemonade Ideas&quot;? We can&apos;t wait to help you grow.

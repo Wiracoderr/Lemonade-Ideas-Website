@@ -11,18 +11,20 @@ export default function StitchLayout() {
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
             <section className="relative bg-[#1e3a29] py-20 lg:py-32 overflow-hidden">
-                <div className="absolute inset-0 z-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80')] bg-cover bg-center"></div>
+                <div className="absolute inset-0 z-0 opacity-20 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center"></div>
                 <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#1e3a29] via-[#1e3a29] to-transparent opacity-90"></div>
                 <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">
                     <div className="lg:w-1/2 mb-10 lg:mb-0">
                         <div className="text-white border-2 border-white/20 inline-block px-4 py-1 text-4xl mb-6 font-display font-bold uppercase tracking-widest opacity-30 select-none">
                             Lemonade Ideas
                         </div>
-                        <h2 className="text-4xl lg:text-6xl font-display font-bold text-white leading-tight mb-6">
-                            INTERNET MARKETING THAT'S <span className="text-yellow-400">FAST</span>, <span className="text-yellow-400">AFFORDABLE</span>, AND DRIVES YOU LEADS!
+                        <h2 className="text-3xl lg:text-5xl font-display font-bold text-white leading-tight mb-6 whitespace-nowrap">
+                            INTERNET MARKETING<br />
+                            THAT&apos;S <span className="text-yellow-400">FAST</span>, <span className="text-yellow-400">AFFORDABLE</span>,<br />
+                            AND DRIVES YOU LEADS!
                         </h2>
                         <p className="text-white text-lg mb-8 opacity-90 font-light">
-                            Are you ready for "Lemonade Ideas"? We can't wait to help you grow.
+                            Are you ready for &quot;Lemonade Ideas&quot;? We can&apos;t wait to help you grow.
                         </p>
                         <div className="flex flex-wrap gap-4">
                             <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3 px-8 rounded shadow-lg transition duration-300" href="#">
@@ -97,7 +99,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/SEO Chat GPT.avif" />
+                            <Image src="/services/SEO Chat GPT.avif" alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -106,7 +108,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <img alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="/services/photo-1654277041042-8927699fcfd2.avif" />
+                            <Image src="/services/photo-1654277041042-8927699fcfd2.avif" alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -173,7 +175,7 @@ export default function StitchLayout() {
                         sizes="(max-width: 1024px) 100vw, 55vw"
                         className="object-cover md:scale-x-[-1]"
                     />
-                    <div className="absolute inset-0 bg-blue-900 bg-opacity-40 lg:bg-opacity-60 mix-blend-multiply"></div>
+
                 </div>
                 {/* On mobile: standard padding and no negative margins. On PC: strict overlap structure */}
                 <div className="w-full lg:w-auto lg:flex-1 bg-[#1e3a29] relative flex items-center lg:-ml-28 lg:pl-32 p-8 lg:p-10 z-20">
@@ -392,7 +394,7 @@ export default function StitchLayout() {
                             <i className="fas fa-quote-left text-[#1e3a29] dark:text-green-500 text-4xl mb-6"></i>
                             <h3 className="font-bold text-lg mb-4 text-[#1e3a29] dark:text-white">BRANDING THAT MAKES A STATEMENT!</h3>
                             <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                Lemonade Ideas helped us completely rebrand our business with a new logo, messaging, and brand identity. The results were stunning – we now have a strong, recognizable brand that resonates with our target audience. We've received so many compliments!
+                                Lemonade Ideas helped us completely rebrand our business with a new logo, messaging, and brand identity. The results were stunning – we now have a strong, recognizable brand that resonates with our target audience. We&apos;ve received so many compliments!
                             </p>
                             <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">FNATHAN R., CO-FOUNDER OF A TECH STARTUP</div>
                             <div className="flex justify-center items-center gap-2">
@@ -404,9 +406,9 @@ export default function StitchLayout() {
                         </div>
                         <div className="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
                             <i className="fas fa-quote-left text-[#1e3a29] dark:text-green-500 text-4xl mb-6"></i>
-                            <h3 className="font-bold text-lg mb-4 text-[#1e3a29] dark:text-white">THE BEST MARKETING AGENCY WE'VE WORKED WITH!</h3>
+                            <h3 className="font-bold text-lg mb-4 text-[#1e3a29] dark:text-white">THE BEST MARKETING AGENCY WE&apos;VE WORKED WITH!</h3>
                             <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                We've worked with multiple marketing agencies in the past, but none have delivered the results that Lemonade Ideas has. From SEO to Google Ads, website design to branding, their team is top-notch. They genuinely care about our success.
+                                We&apos;ve worked with multiple marketing agencies in the past, but none have delivered the results that Lemonade Ideas has. From SEO to Google Ads, website design to branding, their team is top-notch. They genuinely care about our success.
                             </p>
                             <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">SAMANTHA J., COO OF A B2B SAAS COMPANY</div>
                             <div className="flex justify-center items-center gap-2">

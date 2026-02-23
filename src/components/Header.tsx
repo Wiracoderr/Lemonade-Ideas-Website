@@ -42,11 +42,12 @@ export default function Header() {
             <AnimatePresence>
                 {isVisible && (
                     <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 40, opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
+                        initial={{ scaleY: 0, opacity: 0 }}
+                        animate={{ scaleY: 1, opacity: 1 }}
+                        exit={{ scaleY: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="flex w-full overflow-hidden relative"
+                        style={{ transformOrigin: "top", overflow: "hidden", height: 40 }}
+                        className="flex w-full relative"
                     >
                         <div className="flex w-full h-10 text-[11px] font-semibold tracking-wide">
                             {/* Left Side (Light Blue) */}
@@ -97,6 +98,7 @@ export default function Header() {
                         src="/logos/PNGs - SVGs/4x/Asset 2@4x-8.png"
                         alt="Lemonade Ideas"
                         fill
+                        sizes="(max-width: 768px) 250px, 350px"
                         className="object-contain object-left"
                         priority
                         fetchPriority="high"

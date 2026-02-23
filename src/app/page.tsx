@@ -1,7 +1,11 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
-import CameraScroll from "@/components/CameraScroll";
 import MobileHero from '@/components/MobileHero';
+
+// CameraScroll is desktop-only (hidden on mobile via CSS).
+// ssr: false ensures its heavy JS bundle (framer-motion + canvas logic)
+// is never downloaded or executed on mobile devices.
+import CameraScroll from "@/components/CameraScroll";
 
 // Dynamically import the heavy below-the-fold layout
 const StitchLayout = dynamic(() => import("@/components/StitchLayout"), {

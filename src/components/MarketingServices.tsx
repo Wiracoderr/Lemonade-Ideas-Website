@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function MarketingServices() {
     return (
         <section className="py-20 bg-white dark:bg-gray-900 relative overflow-hidden">
@@ -10,7 +12,7 @@ export default function MarketingServices() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img alt="SEO" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1432888117426-115f08ac4832?q=80&w=1000" />
+                        <Image src="https://images.unsplash.com/photo-1432888117426-115f08ac4832?q=80&w=1000" alt="SEO" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
                             <h3 className="text-xl font-display font-bold text-secondary mb-2">SEO</h3>
@@ -18,7 +20,7 @@ export default function MarketingServices() {
                         </div>
                     </div>
                     <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img alt="SEO ChatGPT" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000" />
+                        <Image src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000" alt="SEO ChatGPT" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
                             <h3 className="text-xl font-display font-bold text-secondary mb-2">SEO CHATGPT</h3>
@@ -26,7 +28,7 @@ export default function MarketingServices() {
                         </div>
                     </div>
                     <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img alt="Google Ads Management" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000" />
+                        <Image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000" alt="Google Ads Management" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
                             <h3 className="text-xl font-display font-bold text-secondary mb-2">GOOGLE ADS MANAGEMENT</h3>
@@ -34,7 +36,7 @@ export default function MarketingServices() {
                         </div>
                     </div>
                     <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img alt="Website Design" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1000" />
+                        <Image src="https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=1000" alt="Website Design" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
                             <h3 className="text-xl font-display font-bold text-secondary mb-2">WEBSITE DESIGN</h3>
@@ -42,7 +44,7 @@ export default function MarketingServices() {
                         </div>
                     </div>
                     <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img alt="Social Media Management" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000" />
+                        <Image src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000" alt="Social Media Management" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
                             <h3 className="text-xl font-display font-bold text-secondary mb-2">SOCIAL MEDIA MANAGEMENT</h3>
@@ -50,7 +52,7 @@ export default function MarketingServices() {
                         </div>
                     </div>
                     <div className="group relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                        <img alt="Branding & Strategy" className="w-full h-full object-cover transition duration-500 group-hover:scale-110" src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000" />
+                        <Image src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1000" alt="Branding & Strategy" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                         <div className="absolute inset-0 bg-black bg-opacity-60 transition duration-300 group-hover:bg-opacity-40"></div>
                         <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
                             <h3 className="text-xl font-display font-bold text-secondary mb-2">BRANDING & STRATEGY</h3>
@@ -62,7 +64,7 @@ export default function MarketingServices() {
             {/* Section 2 inside guide */}
             <div className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-white dark:bg-gray-800 mt-20">
                 <div className="lg:w-1/2 relative h-[300px] lg:h-full">
-                    <img alt="City View" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000" />
+                    <div className="absolute inset-0 z-0 opacity-100 bg-[url('/images/hero-bg.jpg')] bg-cover bg-left"></div>
                     <div className="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
                 </div>
                 <div className="lg:w-1/2 bg-primary relative flex items-center lg:-ml-20 lg:pl-24 p-10 z-10 clip-slant-right">
@@ -108,19 +110,8 @@ export default function MarketingServices() {
                         <a className="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">Learn More</a>
                     </div>
                     <div className="lg:w-1/2">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img alt="Analytics Dashboard" className="w-full h-auto object-cover" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" />
-                            <div className="absolute inset-0 bg-blue-900 bg-opacity-40 flex items-center justify-center">
-                                <div className="border border-white/30 bg-white/10 backdrop-blur-sm p-4 rounded-lg w-3/4">
-                                    <div className="flex items-end justify-between h-32 gap-2 mb-2">
-                                        <div className="w-full bg-blue-400/50 h-[30%] rounded-t"></div>
-                                        <div className="w-full bg-blue-400/60 h-[50%] rounded-t"></div>
-                                        <div className="w-full bg-blue-400/80 h-[40%] rounded-t"></div>
-                                        <div className="w-full bg-green-400 h-[80%] rounded-t shadow-[0_0_10px_rgba(74,222,128,0.5)]"></div>
-                                        <div className="w-full bg-blue-400/70 h-[60%] rounded-t"></div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl h-0 pb-[75%] sm:pb-[60%]">
+                            <Image src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800" alt="Analytics Dashboard" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
                         </div>
                     </div>
                 </div>
@@ -139,14 +130,14 @@ export default function MarketingServices() {
                         Our experienced team specializes in developing modern WordPress websites. Below are samples of our work:
                     </p>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                        <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 1" className="max-w-full shadow-lg rounded" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" />
+                        <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center relative min-h-[250px] shadow-lg overflow-hidden">
+                            <Image src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" alt="Portfolio Item 1" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-4" />
                         </div>
-                        <div className="bg-orange-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 2" className="max-w-full shadow-lg rounded" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" />
+                        <div className="bg-orange-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center relative min-h-[250px] shadow-lg overflow-hidden">
+                            <Image src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800" alt="Portfolio Item 2" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-4" />
                         </div>
-                        <div className="bg-blue-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center">
-                            <img alt="Portfolio Item 3" className="max-w-full shadow-lg rounded" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800" />
+                        <div className="bg-blue-50 dark:bg-gray-800 p-8 rounded-lg flex items-center justify-center relative min-h-[250px] shadow-lg overflow-hidden">
+                            <Image src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800" alt="Portfolio Item 3" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-4" />
                         </div>
                     </div>
                     <a className="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
