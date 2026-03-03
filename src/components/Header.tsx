@@ -134,54 +134,59 @@ export default function Header() {
             {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isMobileMenuOpen && (
-                    <motion.div
-                        initial={{ opacity: 0, x: "100%" }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: "100%" }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className="fixed inset-0 z-[200] bg-[#1e3a29] text-white flex flex-col"
-                    >
-                        {/* Mobile Menu Header */}
-                        <div className="flex items-center justify-between p-6">
-                            <span className="font-display font-bold text-xl text-yellow-400 tracking-widest uppercase">
-                                MENU
-                            </span>
-                            <button
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-white p-2 hover:text-yellow-400 transition-colors"
-                                aria-label="Close Menu"
-                            >
-                                <X size={32} />
-                            </button>
-                        </div>
+                    <>
+                        {/* Dark Overlay Background */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="fixed inset-0 z-[190] bg-black/60"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            aria-hidden="true"
+                        />
 
-                        {/* Mobile Menu Links */}
-                        <div className="flex-1 flex flex-col items-center justify-center gap-6 px-6 overflow-y-auto pb-12">
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">SEO</Link>
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">SEO ChatGpt</Link>
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Google Ads</Link>
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Social Media (SMM)</Link>
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Branding</Link>
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Websites</Link>
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-3xl font-bold uppercase tracking-wide hover:text-yellow-400 transition-colors">Blogs</Link>
-                            <div className="w-16 h-1 bg-yellow-400 my-4" />
-                            <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-2xl text-yellow-400 font-bold uppercase tracking-wide hover:text-white transition-colors">Contact Us</Link>
-
-                            {/* Mobile Menu CTA */}
-                            <button
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="mt-4 w-full max-w-[280px] bg-yellow-400 text-[#1e3a29] font-bold py-4 rounded text-sm tracking-widest uppercase hover:bg-white transition-colors"
-                            >
-                                VIEW OUR PRICING
-                            </button>
-
-                            <div className="flex gap-6 mt-8">
-                                <Link href="https://www.facebook.com/lemonadeidea/" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-yellow-400"><BrandFacebook size={24} /></Link>
-                                <Link href="https://www.instagram.com/lemonade.ideas" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-yellow-400"><BrandInstagram size={24} /></Link>
-                                <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" onClick={() => setIsMobileMenuOpen(false)} className="text-white hover:text-yellow-400"><BrandYoutube size={24} /></Link>
+                        {/* Left-Side Drawer Menu */}
+                        <motion.div
+                            initial={{ opacity: 0, x: "-100%" }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: "-100%" }}
+                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                            className="fixed inset-y-0 left-0 w-[80%] max-w-sm z-[200] bg-[#f4f7f6] text-black flex flex-col shadow-2xl"
+                        >
+                            {/* Mobile Menu Header */}
+                            <div className="flex items-center justify-between p-6 pb-8">
+                                <div className="flex items-center">
+                                    <img src="/images/mobile-menu-logo.svg" alt="Lemonade Ideas Logo" className="h-6 w-auto object-contain" />
+                                </div>
+                                <button
+                                    onClick={() => setIsMobileMenuOpen(false)}
+                                    className="text-cyan-100 hover:text-cyan-300 transition-colors"
+                                    aria-label="Close Menu"
+                                >
+                                    <X size={28} />
+                                </button>
                             </div>
-                        </div>
-                    </motion.div>
+
+                            {/* Mobile Menu Links */}
+                            <div className="flex-1 flex flex-col items-start gap-8 px-8 overflow-y-auto pb-12">
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SEO</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SEO ChatGpt</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Google Ads</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SMM</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Branding</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Websites</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Blogs</Link>
+                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Contact</Link>
+
+                                <div className="mt-8 flex gap-6">
+                                    <Link href="https://www.facebook.com/lemonadeidea/" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandFacebook size={24} /></Link>
+                                    <Link href="https://www.instagram.com/lemonade.ideas" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandInstagram size={24} /></Link>
+                                    <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandYoutube size={24} /></Link>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </>
                 )}
             </AnimatePresence>
         </header>

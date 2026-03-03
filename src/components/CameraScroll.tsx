@@ -231,7 +231,7 @@ export default function CameraScroll() {
                 className="sticky top-0 h-screen w-full overflow-hidden flex flex-col md:flex-row items-center justify-between"
                 style={{
                     backgroundColor: "#1e3a1a",
-                    backgroundImage: 'url("https://www.transparenttextures.com/patterns/tasky.png")',
+                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 5C20 5 25 10 25 15C25 20 20 25 20 25C20 25 15 20 15 15C15 10 20 5 20 5Z' fill='%23284d23' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E")`,
                 }}
             >
                 {/* ── Left: Text Content ─────────────────────────────────── */}
@@ -239,9 +239,9 @@ export default function CameraScroll() {
                     style={{ opacity: overlayOpacity, y: overlayY }}
                     className="relative z-20 flex flex-col items-center justify-center text-center p-6 w-full md:w-1/2 h-full"
                 >
-                    <h1 className="text-[2.6rem] md:text-[4.025rem] font-bold text-white tracking-tight leading-tight mt-16 md:mt-0">
+                    <h1 className="text-[3.5rem] md:text-[5.4rem] font-black text-white tracking-wide leading-[1.1] mt-16 md:mt-0 drop-shadow-lg">
                         All you need is <br />
-                        <span className="text-[2.15rem] md:text-[3.16rem] text-white/70 font-light italic mt-2 block">
+                        <span className="text-[2.9rem] md:text-[4.2rem] text-yellow-400 font-light italic mt-2 block drop-shadow-md">
                             fresh ideas.
                         </span>
                     </h1>

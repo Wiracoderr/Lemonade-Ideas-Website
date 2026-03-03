@@ -1,4 +1,19 @@
 @import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @media (min-width: 1024px) {
+    .custom-diagonal-slant {
+      -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%) !important;
+      clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%) !important;
+    }
+
+    .custom-diagonal-shadow {
+      filter: drop-shadow(-15px 0px 20px rgba(0, 0, 0, 0.6)) !important;
+    }
+  }
+}
 
 @theme {
   --color-primary: #1e3a29;

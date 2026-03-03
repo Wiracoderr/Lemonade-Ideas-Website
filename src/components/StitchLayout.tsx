@@ -10,37 +10,73 @@ export default function StitchLayout() {
 
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
-            <section className="relative bg-[#1e3a29] py-20 lg:py-32 overflow-hidden">
-                <div className="hidden md:block absolute inset-0 z-0 opacity-20 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center"></div>
-                <div className="md:hidden absolute inset-0 z-0 opacity-20">
-                    <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-center" priority />
+            <section className="relative bg-[#3a281e] py-24 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
+                {/* 1. Full-width Background Image (Office) */}
+                <div className="absolute inset-0 z-0">
+                    <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-center opacity-70" priority />
                 </div>
-                <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#1e3a29] via-[#1e3a29] to-transparent opacity-90"></div>
-                <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">
-                    <div className="lg:w-1/2 mb-10 lg:mb-0">
-                        <div className="text-white border-2 border-white/20 inline-block px-4 py-1 text-4xl mb-6 font-display font-bold uppercase tracking-widest opacity-30 select-none">
-                            Lemonade Ideas
-                        </div>
-                        <h2 className="text-3xl lg:text-5xl font-display font-bold text-white leading-tight mb-6 whitespace-nowrap">
+
+                {/* 2. Authentic SVG Curved Background (Using User's Custom "Mesa de trabajo 1.svg" Vectors) */}
+                <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden lg:flex flex-col lg:flex-row items-center justify-center">
+                    <svg
+                        className="absolute inset-0 h-full w-full scale-[1.10] origin-center"
+                        preserveAspectRatio="none"
+                        viewBox="0 0 2827.17 1136.96"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1245.42,165.26c-54.04-66.95-121.2-122.75-197.52-163.48H449C246.54,109.83,108.65,324.01,108.65,570.59s134.59,455.59,333.05,564.86l-1.25,1.51h1610.79L1245.84,164.74l-.43.52Z"
+                            fill="#1e3a29"
+                        />
+                    </svg>
+                </div>
+
+                {/* 3. Solid Ghost Text Watermark ("LEMONADE IDEAS" strictly centered inside the green mass) */}
+                <div className="absolute inset-0 z-0 pointer-events-none hidden lg:flex items-center justify-center pl-[12%] pb-[8%]">
+                    <svg width="70%" height="auto" viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid meet" className="max-w-[1100px] opacity-100">
+                        <text
+                            x="50%"
+                            y="140"
+                            textAnchor="middle"
+                            className="font-display font-black"
+                            fontSize="130"
+                            fill="rgba(255,255,255,0.06)"
+                            letterSpacing="0.02em"
+                        >
+                            LEMONADE IDEAS
+                        </text>
+                    </svg>
+                </div>
+
+                <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
+                    {/* Left Column (Text) */}
+                    <div className="lg:w-[55%] mb-16 lg:mb-0 relative z-10 pl-2 lg:pl-8">
+                        {/* 4. Dense Typography */}
+                        <h2 className="text-[2.5rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1] mb-8 uppercase tracking-tight relative z-10">
                             INTERNET MARKETING<br />
-                            THAT&apos;S <span className="text-yellow-400">FAST</span>, <span className="text-yellow-400">AFFORDABLE</span>,<br />
+                            THAT&apos;S <span className="text-[#ffcc33]">FAST</span>, <span className="text-[#ffcc33]">AFFORDABLE</span>,<br />
                             AND DRIVES YOU LEADS!
                         </h2>
-                        <p className="text-white text-lg mb-8 opacity-90 font-light">
+                        <p className="text-white text-[15px] font-bold tracking-wide mb-12 opacity-100 drop-shadow-md">
                             Are you ready for &quot;Lemonade Ideas&quot;? We can&apos;t wait to help you grow.
                         </p>
-                        <div className="flex flex-wrap gap-4">
-                            <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3 px-8 rounded shadow-lg transition duration-300" href="#">
+
+                        {/* 5. Clean Buttons */}
+                        <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
+                            <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="#">
                                 SPEAK WITH OUR EXPERT
                             </a>
-                            <a className="border-2 border-white text-white hover:bg-white hover:text-[#1e3a29] font-bold py-3 px-8 rounded transition duration-300" href="#">
+                            <a className="text-white hover:text-[#ffcc33] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="#">
                                 SEE OUR PRICING
                             </a>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 lg:pl-12 w-full">
-                        {/* YouTube Facade for Mobile Performance Optimization */}
-                        <div className="bg-black rounded-xl shadow-[0_0_40px_rgba(0,0,0,0.3)] aspect-video w-full flex items-center justify-center relative overflow-hidden border-8 border-white p-1">
+
+                    {/* Right Column (Video/Image Container) */}
+                    <div className="lg:w-[45%] w-full relative z-10 flex justify-end pr-2 lg:pr-6">
+                        {/* 6. Thick white frame, removed giant red play button (kept minimal) */}
+                        <div className="bg-black/90 shadow-[0_30px_60px_rgba(0,0,0,0.6)] aspect-[16/10] w-full max-w-[580px] flex items-center justify-center relative overflow-hidden border-[4px] lg:border-[6px] border-white">
                             {!isPlaying ? (
                                 <div
                                     className="absolute inset-0 z-20 cursor-pointer group"
@@ -50,11 +86,12 @@ export default function StitchLayout() {
                                         src="/YT-home.webp"
                                         alt="Watch Video"
                                         fill
-                                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
+                                    {/* Subtle play indicator instead of giant red block */}
                                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
-                                        <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-2xl transition-transform group-hover:scale-110">
-                                            <svg className="w-8 h-8 text-white fill-current ml-1" viewBox="0 0 24 24">
+                                        <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
+                                            <svg className="w-8 h-8 text-[#1e3a29] fill-current ml-1" viewBox="0 0 24 24">
                                                 <path d="M8 5v14l11-7z" />
                                             </svg>
                                         </div>
@@ -62,9 +99,10 @@ export default function StitchLayout() {
                                 </div>
                             ) : (
                                 <iframe
-                                    className="w-full h-full absolute inset-0 bg-black z-30"
+                                    className="w-full h-full absolute inset-0 z-30"
                                     src="https://www.youtube.com/embed/TZverr1QZUk?autoplay=1&rel=0"
-                                    title="YouTube video embed"
+                                    title="Lemonade Ideas Video"
+                                    frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen
                                 ></iframe>
@@ -168,44 +206,107 @@ export default function StitchLayout() {
                 </div>
             </section>
 
-            <section className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-[#1e3a29] border-b-8 border-yellow-400 overflow-hidden">
-                {/* Image on Mobile stacks neatly on top of the text block */}
-                <div className="w-full lg:w-[55%] relative h-[250px] lg:h-full z-10">
-                    <Image
-                        src="/images/home-image.avif"
-                        alt="City View"
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 55vw"
-                        className="object-cover md:scale-x-[-1]"
-                    />
+            {/* Section 2 (Guaranteed Ranking Full Bleed) */}
+            <div className="relative w-full mt-10 bg-[#1e3a29]">
 
-                </div>
-                {/* On mobile: standard padding and no negative margins. On PC: strict overlap structure */}
-                <div className="w-full lg:w-auto lg:flex-1 bg-[#1e3a29] relative flex items-center lg:-ml-28 lg:pl-32 p-8 lg:p-10 z-20">
-                    <div className="absolute top-0 left-0 w-full h-full hidden lg:block" style={{
-                        background: 'linear-gradient(to right, #1e3a29 0%, #1e3a29 40%, transparent 100%)',
-                        zIndex: -1
-                    }} />
-                    <div className="relative z-30 text-white max-w-lg">
-                        <h3 className="text-2xl font-bold mb-4 font-display">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h3>
-                        <ul className="space-y-5 mb-8 text-[17.5px] font-medium opacity-90">
-                            <li className="flex items-start">Target hundreds of keywords simultaneously</li>
-                            <li className="flex items-start">Achieve rankings quickly (typically within 7 weeks)</li>
-                            <li className="flex items-start">Clear, affordable, and fixed monthly pricing</li>
-                            <li className="flex items-start">No long-term contract or cancellation fees</li>
-                            <li className="flex items-start">100% U.S.-based team for personalized service</li>
-                        </ul>
-                        <a className="bg-white text-[#1e3a29] font-bold py-2 px-6 rounded text-sm hover:bg-gray-200 transition" href="#">LEARN MORE</a>
+                {/* DESKTOP VERSION (HTML + CSS Layout) - True Elementor Replica */}
+                <div className="hidden lg:flex relative w-full overflow-hidden bg-[#ebf0f2] py-12 xl:py-20">
+
+                    {/* Background Image: Absolute and covers the entire section padding area */}
+                    <div className="absolute inset-0 w-full h-full z-0">
+                        <Image
+                            src="/images/Home-Image-SEO.avif"
+                            alt="City connection guaranteed ranking"
+                            fill
+                            quality={100}
+                            sizes="100vw"
+                            className="object-cover object-center"
+                            style={{ opacity: 0.9, mixBlendMode: 'multiply', transform: 'scaleX(-1)' }}
+                        />
+                    </div>
+
+                    {/* Content Container: Flex to the right */}
+                    <div className="relative z-10 w-full flex justify-end">
+
+                        {/* The Solid Green Box: Standard rectangle, no complex clip-path that breaks content */}
+                        <div className="w-[58%] xl:w-[52%] bg-[#1a3121] relative flex flex-col justify-center shadow-2xl">
+
+                            {/* The Diagonal Cut Shape (Elementor Pseudo-element Replica) 
+                                This is a purely decorative triangle attached to the left edge of the green box. 
+                            */}
+                            <div
+                                className="absolute top-0 left-[-80px] xl:left-[-140px] w-[81px] xl:w-[141px] h-full bg-[#1a3121]"
+                                style={{ clipPath: 'polygon(100% 0, 100% 100%, 0% 100%)' }}
+                            ></div>
+
+                            {/* Text Content */}
+                            <div className="w-full py-16 xl:py-20 pr-8 xl:pr-32 pl-8 xl:pl-16 relative z-20">
+                                <h3 className="text-[2.5rem] xl:text-[46px] font-black mb-4 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">
+                                    GUARANTEED RANKING<sup className="text-xl xl:text-2xl font-bold ml-1">™</sup>
+                                </h3>
+                                <h4 className="text-[15px] xl:text-[16.5px] font-bold mb-8 font-display text-white leading-relaxed pr-8 drop-shadow">
+                                    With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.
+                                </h4>
+                                <ul className="mb-10 space-y-3.5 text-[13.5px] xl:text-[14.5px] font-bold text-white/95 list-none ml-1">
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Target hundreds of keywords simultaneously</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Achieve rankings quickly (typically within 7 weeks)</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Clear, affordable, and fixed monthly pricing</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">No long-term contract or cancellation fees</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">100% U.S.-based team for personalized service</li>
+                                </ul>
+                                <div>
+                                    <a className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+
+                {/* MOBILE VERSION (HTML Text) - Keeping exactly as was */}
+                <div className="lg:hidden relative w-full min-h-[550px] flex items-center overflow-hidden bg-[#1e3a29]">
+                    <div className="absolute top-0 left-0 w-[120%] h-full z-0">
+                        <Image
+                            src="/images/Home-Image-SEO.avif"
+                            alt="City connection guaranteed ranking"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="120vw"
+                            className="object-cover object-left"
+                            style={{ backgroundColor: '#f4f8fb' }}
+                        />
+                        <div className="absolute inset-0 bg-black/70 pointer-events-none"></div>
+                    </div>
+
+                    <div className="relative z-10 w-full flex justify-end">
+                        <div className="w-full flex flex-col justify-center py-16 px-8 sm:px-12">
+                            <div className="text-white w-full max-w-[650px]">
+                                <h3 className="text-[2rem] sm:text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">
+                                    GUARANTEED RANKING&nbsp;<span className="text-xl sm:text-2xl font-bold font-sans align-top">™</span>
+                                </h3>
+                                <h4 className="text-[15px] sm:text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h4>
+                                <ul className="space-y-3 mb-10 text-[13px] sm:text-[14px] font-semibold opacity-100 drop-shadow">
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Target hundreds of keywords simultaneously</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Achieve rankings quickly (typically within 7 weeks)</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Clear, affordable, and fixed monthly pricing</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>No long-term contract or cancellation fees</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>100% U.S.-based team for personalized service</span></li>
+                                </ul>
+                                <a className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <section className="py-20 bg-[#eef6f8] dark:bg-gray-800">
                 <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
-                    <div className="lg:w-1/2">
-                        <div className="border-l-4 border-green-600 pl-6 mb-8">
+                    <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                        <div className="border-l-0 lg:border-l-4 border-green-600 pl-0 lg:pl-6 mb-8 w-full">
                             <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#1e3a29] dark:text-white uppercase mb-4">Google Ads Management (PPC)</h2>
-                            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+                            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm mx-auto lg:mx-0">
                                 See leads coming through in less than 2 weeks! With Google Ads, you can advertise your business where it matters most — at the very top of Google search results. Our campaigns age like a fine wine and only get better with time. Plus, our pricing drops off in month 4 - check it out!
                             </p>
                             <p className="font-bold text-gray-800 dark:text-gray-200 text-sm">
@@ -213,25 +314,39 @@ export default function StitchLayout() {
                                 Millions of dollars made for our clients.
                             </p>
                         </div>
-                        <div className="flex flex-col sm:flex-row gap-8 mb-8">
-                            <div>
+                        <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-8 mb-10 w-full">
+                            <div className="flex flex-col items-center lg:items-start">
                                 <div className="text-4xl lg:text-5xl font-bold text-green-500 mb-1">4,000+</div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">Monthly leads generated</p>
                             </div>
-                            <div>
+                            <div className="flex flex-col items-center lg:items-start">
                                 <div className="text-4xl lg:text-5xl font-bold text-green-500 mb-1">90%</div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">Percentage of clients seeing leads in the first week</p>
                             </div>
                         </div>
-                        <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block" href="#">Learn More</a>
+
+                        <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="#">Learn More</a>
+
+                        {/* MOBILE-ONLY IMAGE INSERTION (Laptop with charts) */}
+                        <div className="block lg:hidden relative w-full rounded-2xl overflow-hidden shadow-xl aspect-[4/3] mt-2 border-2 border-transparent">
+                            <Image
+                                src="/images/seo-mobile-opt.webp"
+                                alt="SEO Laptop Analytics"
+                                fill
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </div>
-                    <div className="lg:w-1/2">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center h-[300px] lg:h-[500px] w-full">
+
+                    {/* DESKTOP-ONLY IMAGE (Original Dashboard) */}
+                    <div className="hidden lg:flex lg:w-1/2">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl flex justify-center items-center h-[500px] w-full">
                             <Image
                                 src="/images/ppc-dashboard.webp"
                                 alt="PPC Analytics Dashboard"
                                 fill
-                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                sizes="50vw"
                                 className="object-contain"
                             />
                         </div>
@@ -296,12 +411,11 @@ export default function StitchLayout() {
                             </span>
                         </div>
 
-                        <div className="relative z-10 pl-4 lg:pl-[10%] mb-4">
-                            <h4 className="text-[0.85rem] font-bold tracking-[0.2em] mb-4 uppercase text-white/90">ABOUT US</h4>
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1] uppercase max-w-4xl tracking-tight">
-                                WE BELIEVE BETTER<br className="hidden md:block" />
-                                RESULTS SHOULDN&apos;T HAVE<br className="hidden md:block" />
-                                TO COST MORE.
+                        <div className="relative z-10 px-4 md:px-0 md:pl-[10%] mb-16 text-center md:text-left">
+                            <h4 className="text-[1rem] font-black tracking-widest mb-4 uppercase text-[#d1e8da] font-display">ABOUT US</h4>
+                            <h2 className="text-5xl md:text-6xl lg:text-[6.6rem] font-display font-black text-white leading-[0.9] uppercase max-w-5xl tracking-normal mx-auto md:mx-0">
+                                WE BELIEVE BETTER RESULTS SHOULDN&apos;T <br className="hidden md:block" />
+                                HAVE TO COST MORE.
                             </h2>
                         </div>
                     </div>
@@ -314,71 +428,69 @@ export default function StitchLayout() {
                             hidden: {},
                             visible: { transition: { staggerChildren: 0.15 } }
                         }}
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 relative z-10"
                     >
                         {/* Card 1 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
-                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">01.</div>
-                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">01.</div>
+                            <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
-                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:scale-110 transition-transform duration-300">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                    <path d="M9 12l2 2 4-4"></path>
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:scale-110 transition-transform duration-300">
+                                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                                    <path d="m9 12 2 2 4-4" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-bold uppercase mb-4 font-display">IMPACT</h3>
-                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">We focus on strategies that maximize impact on your visibility and growth.</p>
+                            <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">IMPACT</h3>
+                            <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">We focus on strategies that maximize impact on your visibility and growth.</p>
                         </motion.div>
 
                         {/* Card 2 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
-                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">02.</div>
-                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">02.</div>
+                            <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
-                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:scale-110 transition-transform duration-300">
-                                    <path d="M12 21v-8" />
-                                    <path d="M12 13V4" />
-                                    <path d="M9 7l3-3 3 3" />
-                                    <path d="M12 13l-5-5" />
-                                    <path d="M4 10l3-2 2 3" />
-                                    <path d="M12 13l5-5" />
-                                    <path d="M20 10l-3-2-2 3" />
-                                    <path d="M9 21h6" />
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:scale-110 transition-transform duration-300">
+                                    <path d="M8 3v3a2 2 0 0 1-2 2H3" />
+                                    <path d="M21 8h-3a2 2 0 0 1-2-2V3" />
+                                    <path d="M3 16h3a2 2 0 0 0 2 2v3" />
+                                    <path d="M16 21v-3a2 2 0 0 0 2-2h3" />
+                                    <path d="M12 9v6" />
+                                    <path d="M9 12h6" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-bold uppercase mb-4 font-display">AFFORDABILITY</h3>
-                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">Our pricing is structured in a way that makes sense for both you based on what you are receiving.</p>
+                            <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">AFFORDABILITY</h3>
+                            <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">Our pricing is structured in a way that makes sense for both you based on what you are receiving.</p>
                         </motion.div>
 
                         {/* Card 3 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
-                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">03.</div>
-                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">03.</div>
+                            <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
-                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:rotate-90 transition-transform duration-500">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:rotate-90 transition-transform duration-500">
+                                    <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-bold uppercase mb-4 font-display">NO CONTRACTS</h3>
-                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">We believe great results, not contracts, are what should keep our clients around.</p>
+                            <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">NO CONTRACTS</h3>
+                            <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">We believe great results, not contracts, are what should keep our clients around.</p>
                         </motion.div>
 
                         {/* Card 4 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] p-8 lg:p-10 text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
-                            <div className="text-xs font-bold mb-6 tracking-widest uppercase">04.</div>
-                            <div className="text-5xl mb-8 relative flex justify-center w-full">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                            <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">04.</div>
+                            <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
-                                <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:-translate-y-2 transition-transform duration-300">
-                                    <path d="M6 20v-5"></path>
-                                    <path d="M18 20v-8"></path>
-                                    <path d="M12 20V4"></path>
-                                    <path d="M8 8l4-4 4 4"></path>
-                                    <path d="M4 20h16"></path>
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="relative z-10 group-hover:-translate-y-2 transition-transform duration-300">
+                                    <path d="M3 3v18h18" />
+                                    <path d="m19 9-5 5-4-4-3 3" />
+                                    <path d="M19 9h-6" />
+                                    <path d="M19 9v6" />
+                                    <circle cx="12" cy="6" r="3" />
                                 </svg>
                             </div>
-                            <h3 className="text-lg font-bold uppercase mb-4 font-display">RESPONSIVENESS</h3>
-                            <p className="text-[14px] leading-relaxed font-semibold opacity-90 mx-auto max-w-[90%]">Good communication is what builds a good relationship. We take pride in our level of responsiveness</p>
+                            <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">RESPONSIVENESS</h3>
+                            <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">Good communication is what builds a good relationship. We take pride in our level of responsiveness</p>
                         </motion.div>
                     </motion.div>
                 </div>
@@ -392,47 +504,103 @@ export default function StitchLayout() {
                         </h2>
                         <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[5rem] lg:text-[8rem] font-bold text-gray-100 dark:text-gray-800 -z-0 whitespace-nowrap hidden md:block">REVIEWS</span>
                     </div>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                        <div className="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
-                            <i className="fas fa-quote-left text-[#1e3a29] dark:text-green-500 text-4xl mb-6"></i>
-                            <h3 className="font-bold text-lg mb-4 text-[#1e3a29] dark:text-white">BRANDING THAT MAKES A STATEMENT!</h3>
-                            <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                Lemonade Ideas helped us completely rebrand our business with a new logo, messaging, and brand identity. The results were stunning – we now have a strong, recognizable brand that resonates with our target audience. We&apos;ve received so many compliments!
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
+                        {/* Card 1: Plumbing */}
+                        <div className="bg-[#e2edd3] dark:bg-gray-800 p-8 pt-14 pb-12 text-center relative rounded shadow-sm flex flex-col items-center h-full">
+                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1e3a29] opacity-90">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                            </div>
+                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1e3a29] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
+                                BRANDING THAT MAKES A STATEMENT!
+                            </h3>
+                            <p className="text-[15px] font-semibold text-gray-800 dark:text-gray-300 mb-10 leading-[1.8] px-2 flex-grow">
+                                Lemonade Ideas helped us completely rebrand our plumbing business with a new logo, messaging, and identity. The results were stunning – we now have a strong brand that resonates with homeowners. We&apos;ve received so many compliments!
                             </p>
-                            <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">FNATHAN R., CO-FOUNDER OF A TECH STARTUP</div>
-                            <div className="flex justify-center items-center gap-2">
-                                <img alt="Google" width={24} height={24} className="h-6 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
-                                <div className="text-yellow-400 text-xs">
-                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1e3a29] dark:text-green-400">
+                                NATHAN R., OWNER OF A PLUMBING CO.
+                            </div>
+                            <div className="flex flex-col items-center justify-center gap-2 mt-auto">
+                                <img alt="Google" className="h-[26px]" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" />
+                                <div className="flex gap-1 text-[#fbbc05]">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
                                 </div>
                             </div>
-                        </div>
-                        <div className="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
-                            <i className="fas fa-quote-left text-[#1e3a29] dark:text-green-500 text-4xl mb-6"></i>
-                            <h3 className="font-bold text-lg mb-4 text-[#1e3a29] dark:text-white">THE BEST MARKETING AGENCY WE&apos;VE WORKED WITH!</h3>
-                            <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                We&apos;ve worked with multiple marketing agencies in the past, but none have delivered the results that Lemonade Ideas has. From SEO to Google Ads, website design to branding, their team is top-notch. They genuinely care about our success.
-                            </p>
-                            <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">SAMANTHA J., COO OF A B2B SAAS COMPANY</div>
-                            <div className="flex justify-center items-center gap-2">
-                                <img alt="Google" width={24} height={24} className="h-6 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
-                                <div className="text-yellow-400 text-xs">
-                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
-                                </div>
+                            <div className="absolute bottom-6 right-6 text-black/10">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
                             </div>
                         </div>
-                        <div className="bg-green-50 dark:bg-gray-800 p-8 text-center relative rounded-lg">
-                            <i className="fas fa-quote-left text-[#1e3a29] dark:text-green-500 text-4xl mb-6"></i>
-                            <h3 className="font-bold text-lg mb-4 text-[#1e3a29] dark:text-white">SOCIAL MEDIA THAT CREATES REAL ENGAGEMENT!</h3>
-                            <p className="text-sm text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                                We tried running social media ourselves but struggled to gain traction. Lemonade Ideas took over our content strategy, and in just three months, our Instagram following doubled, engagement tripled, and we started generating sales directly.
+
+                        {/* Card 2: HVAC */}
+                        <div className="bg-[#e2edd3] dark:bg-gray-800 p-8 pt-14 pb-12 text-center relative rounded shadow-sm flex flex-col items-center h-full">
+                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1e3a29] opacity-90">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                            </div>
+                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1e3a29] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
+                                THE BEST MARKETING AGENCY WE&apos;VE WORKED WITH!
+                            </h3>
+                            <p className="text-[15px] font-semibold text-gray-800 dark:text-gray-300 mb-10 leading-[1.8] px-2 flex-grow">
+                                We&apos;ve worked with multiple agencies in the past, but none delivered the results Lemonade Ideas has. From SEO to Google Ads, their team is top-notch. They consistently go above and beyond to keep our HVAC dispatch board full.
                             </p>
-                            <div className="font-bold text-xs uppercase mb-4 text-[#1e3a29] dark:text-green-400">OLIVIA S., OWNER OF A HANDMADE JEWELRY BRAND</div>
-                            <div className="flex justify-center items-center gap-2">
-                                <img alt="Google" width={24} height={24} className="h-6 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" />
-                                <div className="text-yellow-400 text-xs">
-                                    <i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i>
+                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1e3a29] dark:text-green-400">
+                                SAMANTHA J., HVAC BUSINESS FOUNDER
+                            </div>
+                            <div className="flex flex-col items-center justify-center gap-2 mt-auto">
+                                <img alt="Google" className="h-[26px]" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" />
+                                <div className="flex gap-1 text-[#fbbc05]">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
                                 </div>
+                            </div>
+                            <div className="absolute bottom-6 right-6 text-black/10">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                            </div>
+                        </div>
+
+                        {/* Card 3: General Contractor */}
+                        <div className="bg-[#e2edd3] dark:bg-gray-800 p-8 pt-14 pb-12 text-center relative rounded shadow-sm flex flex-col items-center h-full">
+                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1e3a29] opacity-90">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
+                            </div>
+                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1e3a29] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
+                                SOCIAL MEDIA THAT CREATES REAL ENGAGEMENT!
+                            </h3>
+                            <p className="text-[15px] font-semibold text-gray-800 dark:text-gray-300 mb-10 leading-[1.8] px-2 flex-grow">
+                                We tried running local ads ourselves but struggled to get qualified leads. Lemonade took over our content strategy, and in just months, our phone started ringing with high-ticket remodeling jobs. They know exactly how to connect with our audience!
+                            </p>
+                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1e3a29] dark:text-green-400">
+                                MICHAEL S., GENERAL CONTRACTOR
+                            </div>
+                            <div className="flex flex-col items-center justify-center gap-2 mt-auto">
+                                <img alt="Google" className="h-[26px]" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" />
+                                <div className="flex gap-1 text-[#fbbc05]">
+                                    {[...Array(5)].map((_, i) => (
+                                        <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="absolute bottom-6 right-6 text-black/10">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+                                </svg>
                             </div>
                         </div>
                     </div>

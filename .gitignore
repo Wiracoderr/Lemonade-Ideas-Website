@@ -38,4 +38,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+next-env.d.ts\n# Unused reference files\n_Unused_Reference_Files/\n
+# Unused reference files
+_Unused_Reference_Files/
+

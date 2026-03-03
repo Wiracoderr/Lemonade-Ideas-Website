@@ -61,27 +61,70 @@ export default function MarketingServices() {
                     </div>
                 </div>
             </div>
-            {/* Section 2 inside guide */}
-            <div className="relative h-auto lg:h-[500px] flex flex-col lg:flex-row bg-white dark:bg-gray-800 mt-20">
-                <div className="lg:w-1/2 relative h-[300px] lg:h-full">
-                    <div className="hidden md:block absolute inset-0 z-0 opacity-100 bg-[url('/images/hero-bg.jpg')] bg-cover bg-left"></div>
-                    <div className="md:hidden absolute inset-0 z-0 opacity-100">
-                        <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-left" />
+            {/* Section 2 inside guide (Guaranteed Ranking Full Bleed) */}
+            <div className="relative w-full mt-10 bg-[#1e3a29]">
+
+                {/* DESKTOP VERSION (Baked-in image + Hotspot) */}
+                {/* This approach keeps the height constant, centering the massive 4213px image. 
+                    Normal screens will crop the sides, and zooming out reveals them. */}
+                <div className="hidden lg:flex w-full h-[550px] xl:h-[650px] 2xl:h-[700px] justify-center overflow-hidden bg-[#1e3a29] relative">
+                    {/* Inner container locking the exact aspect ratio of the 4213x1080 original image */}
+                    <div className="relative h-full aspect-[4213/1080] flex-shrink-0">
+                        <Image
+                            src="/images/Mesa de trabajo 1.webp"
+                            alt="City connection guaranteed ranking"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="(max-width: 3000px) 100vw, 4213px"
+                            className="object-cover"
+                        />
+                        {/* Hotspot mapped exactly to the white "LEARN MORE" button area reported by the subagent */}
+                        <a
+                            href="#"
+                            className="absolute z-10 block cursor-pointer transition-colors duration-300 hover:bg-white/20 rounded-sm"
+                            style={{
+                                left: '57%',
+                                top: '72%',
+                                width: '15%',
+                                height: '8%'
+                            }}
+                            title="Learn More"
+                            aria-label="Learn More about Guaranteed Ranking"
+                        ></a>
                     </div>
-                    <div className="absolute inset-0 bg-blue-900 bg-opacity-20"></div>
                 </div>
-                <div className="lg:w-1/2 bg-primary relative flex items-center lg:-ml-20 lg:pl-24 p-10 z-10 clip-slant-right">
-                    <div className="absolute inset-y-0 -left-20 w-40 bg-primary transform -skew-x-12 hidden lg:block"></div>
-                    <div className="relative z-10 text-white max-w-lg">
-                        <h3 className="text-2xl font-bold mb-4 font-display">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h3>
-                        <ul className="space-y-3 mb-8 text-sm opacity-90">
-                            <li className="flex items-start gap-2"><i className="fas fa-circle text-[0.4rem] mt-2"></i> Target hundreds of keywords simultaneously</li>
-                            <li className="flex items-start gap-2"><i className="fas fa-circle text-[0.4rem] mt-2"></i> Achieve rankings quickly (typically within 7 weeks)</li>
-                            <li className="flex items-start gap-2"><i className="fas fa-circle text-[0.4rem] mt-2"></i> Clear, affordable, and fixed monthly pricing</li>
-                            <li className="flex items-start gap-2"><i className="fas fa-circle text-[0.4rem] mt-2"></i> No long-term contract or cancellation fees</li>
-                            <li className="flex items-start gap-2"><i className="fas fa-circle text-[0.4rem] mt-2"></i> 100% U.S.-based team for personalized service</li>
-                        </ul>
-                        <a className="bg-white text-primary font-bold py-2 px-6 rounded text-sm hover:bg-gray-200 transition" href="#">LEARN MORE</a>
+
+                {/* MOBILE VERSION (HTML Text) - Keeping exactly as was */}
+                <div className="lg:hidden relative w-full min-h-[550px] flex items-center overflow-hidden bg-[#1e3a29]">
+                    <div className="absolute top-0 left-0 w-[120%] h-full z-0">
+                        <Image
+                            src="/images/Mesa de trabajo 1.webp"
+                            alt="City connection guaranteed ranking"
+                            fill
+                            priority
+                            quality={100}
+                            sizes="120vw"
+                            className="object-cover object-left"
+                        />
+                        <div className="absolute inset-0 bg-black/60 pointer-events-none"></div>
+                    </div>
+
+                    <div className="relative z-10 w-full flex justify-end">
+                        <div className="w-full flex flex-col justify-center py-16 px-8 sm:px-12">
+                            <div className="text-white w-full max-w-[650px]">
+                                <h3 className="text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">GUARANTEED RANKING&nbsp;™</h3>
+                                <h4 className="text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h4>
+                                <ul className="space-y-3 mb-10 text-[14px] font-semibold opacity-100 drop-shadow">
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Target hundreds of keywords simultaneously</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Achieve rankings quickly (typically within 7 weeks)</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Clear, affordable, and fixed monthly pricing</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>No long-term contract or cancellation fees</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>100% U.S.-based team for personalized service</span></li>
+                                </ul>
+                                <a className="inline-block bg-[#f4f7f6] text-[#0a2315] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">LEARN MORE</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
