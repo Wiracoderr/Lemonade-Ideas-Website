@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, FileText, Menu, X } from "lucide-react";
 import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
 
 export default function Header() {
+    const pathname = usePathname();
     const [isVisible, setIsVisible] = useState(true);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -105,15 +107,15 @@ export default function Header() {
                 </Link>
 
                 {/* Links (Hidden on Mobile) */}
-                <nav className="hidden lg:flex items-center gap-5 text-[13px] font-bold text-gray-700 tracking-tight">
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">SEO</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">SEO ChatGpt</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">Google Ads</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">SMM</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">Branding</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">Websites</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">Blogs</Link>
-                    <Link href="#" className="hover:text-[#0f3b1b] transition-colors">Contact</Link>
+                <nav className="hidden lg:flex items-center gap-5 text-[13px] font-bold tracking-tight">
+                    <Link href="/seo" className={`transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SEO</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">SEO ChatGpt</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Google Ads</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">SMM</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Branding</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Websites</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Blogs</Link>
+                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Contact</Link>
                 </nav>
 
                 {/* CTA (Hidden on Mobile) */}
@@ -170,7 +172,7 @@ export default function Header() {
 
                             {/* Mobile Menu Links */}
                             <div className="flex-1 flex flex-col items-start gap-8 px-8 overflow-y-auto pb-12">
-                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SEO</Link>
+                                <Link href="/seo" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SEO</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SEO ChatGpt</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Google Ads</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SMM</Link>
