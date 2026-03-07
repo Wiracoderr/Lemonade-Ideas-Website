@@ -63,7 +63,7 @@ export default function StitchLayout() {
 
                         {/* 5. Clean Buttons */}
                         <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
-                            <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="#">
+                            <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
                                 SPEAK WITH OUR EXPERT
                             </a>
                             <a className="text-white hover:text-[#ffcc33] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="#">

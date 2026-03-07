@@ -50,7 +50,7 @@ export default function SEOLandingPage() {
             {/* ... Existing header ... */}
             <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
                 <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
-                    <SEOText>GUARANTEEDRANKING ™ OR SEO? FIND OUT WHICH IS BEST FOR YOU!</SEOText>
+                    <SEOText>FIND OUT WHY YOUR COMPANY NEEDS SEO OPTIMIZATION</SEOText>
                 </div>
                 <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
                     Watch Video
@@ -131,11 +131,11 @@ export default function SEOLandingPage() {
             </header>
 
 
-            <section className="py-20 px-4 bg-white dark:bg-gray-900 relative">
+            <section className="py-20 px-4 bg-white dark:bg-gray-900 relative overflow-hidden">
                 <div className="max-w-6xl mx-auto relative z-10">
                     <div className="text-center mb-16 relative">
                         <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-8">
-                            <span className="text-[100px] md:text-[180px] font-[Oswald] font-bold uppercase text-gray-400 tracking-tighter leading-none">
+                            <span className="text-6xl md:text-[180px] font-[Oswald] font-bold uppercase text-gray-400 tracking-tighter leading-none whitespace-nowrap">
                                 PERFORMANCE
                             </span>
                         </div>
@@ -340,11 +340,11 @@ export default function SEOLandingPage() {
                 </div>
             </section>
 
-            <section className="py-24 px-4 bg-white dark:bg-gray-900" id="pricing">
+            <section className="py-24 px-4 bg-white dark:bg-gray-900 relative overflow-hidden" id="pricing">
                 <div className="max-w-[1240px] mx-auto">
                     <div className="mb-6 flex flex-col items-center">
                         <div className="relative h-20 md:h-28 w-full flex justify-center items-center overflow-hidden mb-8">
-                            <span className="text-7xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-200 dark:text-gray-800 tracking-widest absolute select-none pointer-events-none opacity-80">
+                            <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-200 dark:text-gray-800 tracking-widest absolute select-none pointer-events-none opacity-80 whitespace-nowrap">
                                 Pricing
                             </span>
                             <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white tracking-tight text-center">
@@ -429,19 +429,19 @@ export default function SEOLandingPage() {
 
                         {/* Bottom Get Started Button */}
                         <div className="px-6 md:px-8 pb-8 pt-2">
-                            <button className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3">
+                            <a href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
                                 Get Started <i className="fas fa-arrow-right"></i>
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="py-20 px-4 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700">
+            <section className="py-20 px-4 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700 relative overflow-hidden">
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-16 relative">
                         <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
-                            <span className="text-8xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter">
+                            <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
                                 FAQ
                             </span>
                         </div>
@@ -516,13 +516,16 @@ export default function SEOLandingPage() {
                         <SEOText>Along with SEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</SEOText>
                     </p>
 
-                    <button className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5">
+                    <a
+                        href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
+                        className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5"
+                    >
                         <img src="/images/icon-call.svg" alt="Phone Outline Icon" className="w-[50px] h-[50px] object-contain shrink-0" />
                         <div className="flex flex-col items-start pr-4 pt-1">
                             <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">SPEAK WITH OUR EXPERT</span>
                             <span className="text-[26px] leading-none tracking-normal">SCHEDULE A CALL</span>
                         </div>
-                    </button>
+                    </a>
                 </div>
             </section>
 
