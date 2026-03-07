@@ -141,8 +141,7 @@ export default function SEOLandingPage() {
             <FaqSection faqs={faqs} />
             <CTASection />
 
-            {/* Script tag injection for Font Awesome */}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+            {/* Removed blocking FontAwesome script tag, it's now handled via CSS in layout.tsx */}
         </div>
     );
 }

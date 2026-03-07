@@ -159,7 +159,7 @@ export default function Header() {
                             {/* Mobile Menu Header */}
                             <div className="flex items-center justify-between p-6 pb-8">
                                 <div className="flex items-center">
-                                    <img src="/images/mobile-menu-logo.svg" alt="Lemonade Ideas Logo" className="h-6 w-auto object-contain" />
+                                    <img src="/logos/SVG/Logo-2.svg" alt="Lemonade Ideas Logo" className="h-6 w-auto object-contain" />
                                 </div>
                                 <button
                                     onClick={() => setIsMobileMenuOpen(false)}
