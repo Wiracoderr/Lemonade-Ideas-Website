@@ -65,6 +65,7 @@ export default function SEOLandingPage() {
                         alt="SEO Strategy"
                         fill
                         className="object-cover object-center"
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         priority
                     />
                     {/* Dark Green overlay at 60% opacity to give a strong green tint */}
@@ -330,11 +331,13 @@ export default function SEOLandingPage() {
                     </div>
 
                     <div className="lg:w-1/2 relative group px-4">
-                        {/* Removed the background blur, kept the image drop shadow and tight rounded corners */}
-                        <img
-                            alt="Person working on laptop with charts"
-                            className="rounded-[2rem] shadow-2xl w-full object-cover h-[500px] md:h-[600px] border-8 border-white dark:border-gray-800 relative z-10"
+                        <Image
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOHV42t8HQs5NXzKWUuisrYOkA5TLkbfQWl-aZhFI-X6r2WRxcDsrrMvaEKJZDNsza4nMpUdWPtKcA2n1ACQTFpbsFnQ2TM_dxS7TgLlyEy6YE4FwKDqfS-jhohLH6y9dwhwp4PbdCvsiwy_WWaxU-IavFtzLag1AHi8R7jGXqBCX5DjNX1s86e7nuoqI2VnftWPcguCxumgE4ZZu-JrnIucXzyMoqE40qsyMSFNjCwLn5qKlCoeRGaRWqUqO3C16uaWvWMv2d164"
+                            alt="Person working on laptop with charts"
+                            width={800}
+                            height={600}
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                            className="rounded-[2rem] shadow-2xl w-full object-cover h-[500px] md:h-[600px] border-8 border-white dark:border-gray-800 relative z-10"
                         />
                     </div>
                 </div>

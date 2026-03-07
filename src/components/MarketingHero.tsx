@@ -10,7 +10,14 @@ export default function MarketingHero() {
         <section className="relative bg-primary py-20 lg:py-32 overflow-hidden">
             <div className="hidden md:block absolute inset-0 z-0 opacity-20 bg-[url('/images/hero-bg.jpg')] bg-cover bg-center"></div>
             <div className="md:hidden absolute inset-0 z-0 opacity-20">
-                <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-center" priority />
+                <Image
+                    src="/images/hero-bg.jpg"
+                    alt="Background"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover object-center"
+                    priority
+                />
             </div>
             <div className="absolute inset-0 z-0 bg-gradient-to-r from-primary via-primary to-transparent opacity-90"></div>
             <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center">

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import "./globals.css";
@@ -50,8 +51,8 @@ export default function RootLayout({
           imagesizes="(max-width: 767px) 400px, 1080px"
           fetchpriority="high"
         />
-        {/* Font Awesome globally loaded for standard icons */}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+        {/* Font Awesome globally loaded for standard icons without blocking critical render path */}
+        <Script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" strategy="lazyOnload" />
       </head>
       <body
         className={`${inter.variable} ${oswald.variable} antialiased selection:bg-yellow-500/30 bg-[#020202] text-white/90 flex flex-col min-h-screen`}
