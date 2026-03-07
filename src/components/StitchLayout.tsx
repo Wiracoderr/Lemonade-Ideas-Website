@@ -10,8 +10,8 @@ export default function StitchLayout() {
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
             <section className="relative bg-[#3a281e] py-24 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
-                {/* 1. Full-width Background Image (Office) */}
-                <div className="absolute inset-0 z-0">
+                {/* 1. Full-width Background Image (Office) - Hidden on mobile to optimize LCP */}
+                <div className="absolute inset-0 z-0 hidden md:block">
                     <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-center opacity-70" priority />
                 </div>
 
@@ -126,7 +126,7 @@ export default function StitchLayout() {
                                 src="/services/SEO.avif"
                                 alt="SEO"
                                 fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover transition duration-500 group-hover:scale-110"
                             />
                             {/* Base overlay for dark contrast */}
@@ -139,7 +139,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <Image src="/services/SEO Chat GPT.avif" alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 33vw" />
+                            <Image src="/services/SEO Chat GPT.avif" alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -148,7 +148,7 @@ export default function StitchLayout() {
                             </div>
                         </div>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
-                            <Image src="/services/photo-1654277041042-8927699fcfd2.avif" alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 100vw, 33vw" />
+                            <Image src="/services/photo-1654277041042-8927699fcfd2.avif" alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -161,7 +161,7 @@ export default function StitchLayout() {
                                 src="/services/photo-1678690832311-bb6e361989ca.avif"
                                 alt="Website Design"
                                 fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover transition duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
@@ -176,7 +176,7 @@ export default function StitchLayout() {
                                 src="/services/social media management.avif"
                                 alt="Social Media Management"
                                 fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover transition duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
@@ -191,7 +191,7 @@ export default function StitchLayout() {
                                 src="/services/Branding.avif"
                                 alt="Branding & Strategy"
                                 fill
-                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
                                 className="object-cover transition duration-500 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
@@ -270,9 +270,8 @@ export default function StitchLayout() {
                             src="/images/Home-Image-SEO.avif"
                             alt="City connection guaranteed ranking"
                             fill
-                            priority
-                            quality={100}
-                            sizes="120vw"
+                            quality={80}
+                            sizes="(max-width: 768px) 100vw, 120vw"
                             className="object-cover object-left"
                             style={{ backgroundColor: '#f4f8fb' }}
                         />
@@ -332,7 +331,7 @@ export default function StitchLayout() {
                                 src="/images/seo-mobile-opt.webp"
                                 alt="SEO Laptop Analytics"
                                 fill
-                                sizes="100vw"
+                                sizes="(max-width: 768px) 50vw, 100vw"
                                 className="object-cover"
                             />
                         </div>
@@ -370,7 +369,7 @@ export default function StitchLayout() {
                                 src="/portfolio/1.png"
                                 alt="Portfolio Item 1"
                                 fill
-                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                                 className="object-contain p-4"
                             />
                         </div>
@@ -379,7 +378,7 @@ export default function StitchLayout() {
                                 src="/portfolio/2.png"
                                 alt="Portfolio Item 2"
                                 fill
-                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                                 className="object-contain p-4"
                             />
                         </div>
@@ -388,7 +387,7 @@ export default function StitchLayout() {
                                 src="/portfolio/3.png"
                                 alt="Portfolio Item 3"
                                 fill
-                                sizes="(max-width: 1024px) 100vw, 33vw"
+                                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 100vw, 33vw"
                                 className="object-contain p-4"
                             />
                         </div>
