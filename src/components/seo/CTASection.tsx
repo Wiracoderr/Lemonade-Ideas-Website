@@ -40,7 +40,7 @@ export default function CTASection({ subtitleContent }: CTASectionProps) {
 
                 {/* Hand-drawn yellow underline SVG graphic */}
                 <div className="flex justify-center mb-10 w-full">
-                    <img src="/images/layer-1.png" alt="underline" className="h-4 object-contain opacity-90" />
+                    <img src="/images/layer-1.png" alt="underline" width={200} height={16} className="h-4 object-contain opacity-90" />
                 </div>
 
                 <p className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]">

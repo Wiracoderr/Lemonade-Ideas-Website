@@ -60,7 +60,7 @@ export default function GetStartedPage() {
                     </h1>
                     {/* Yellow decorative scribble */}
                     <div className="flex justify-center mt-2">
-                        <img src="/images/layer-1.png" alt="underline" className="h-4 object-contain opacity-90" />
+                        <img src="/images/layer-1.png" alt="underline" width={200} height={16} className="h-4 object-contain opacity-90" />
                     </div>
                 </div>
 

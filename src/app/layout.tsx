@@ -51,7 +51,15 @@ export default function RootLayout({
           fetchPriority="high"
         />
         {/* Font Awesome globally loaded for standard icons via CSS to prevent render blocking on mobile */}
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link 
+          rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+          media="print"
+          onLoad={(e:React.SyntheticEvent<HTMLLinkElement>) => { e.currentTarget.media = 'all'; }}
+        />
+        <noscript>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        </noscript>
       </head>
       <body
         className={`${inter.variable} ${oswald.variable} antialiased selection:bg-yellow-500/30 bg-[#020202] text-white/90 flex flex-col min-h-screen`}

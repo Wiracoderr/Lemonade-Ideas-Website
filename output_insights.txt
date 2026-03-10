@@ -1,0 +1,372 @@
+Informe  del 10 mar 2026, 18:19:19
+Descubre lo que experimentan tus usuarios reales No hay datos
+Diagnostica problemas de rendimientohttps://lemonade-ideas-website.vercel.app/seochatgpt Analizar
+Los valores son estimaciones y pueden variar. La puntuación del
+rendimiento se calcula  directamente a partir de estas métricas. Ver
+calculadora.
+0–49 50–89 90–100
+Rendimient o
+70
+Accesibilidad
+94
+Prácticas
+recomendadas
+96
+SEO
+100
+70
+Rendimiento
+MÉTRICAS Ampliar vista
+First Contentful P aint Renderizado del mayor elemento con contenido
+PageSpeed Insights Copiar enlace Documentos
+Mostrar auditorías relacionadas con: AllFCPLCPTBTCLS2,6 s 6,2 s
+Total Blocking Time
+10 msCambios de diseño acumulados
+0
+Speed Index
+5,2 s
+Captured at 10 mar 2026, 18:19 GMT-4
+ Moto G P ower emulado with Lighthouse 13.0.1
+ Sesión de una sola página
+Carga inicial de la página
+ Limitación de 4G lenta
+ Using HeadlessChromium 145.0.7632.116 with lr
+ESTADÍSTICAS
+Solicitudes que bloquean el renderizado  —Ahorro estimado de 150 ms
+Las solicitudes están bloqueando el renderizado inicial de la página, lo que puede retrasar el L CP. Si se posponen o se insertan , estas solicitudes
+de red pueden salir de la ruta crítica. LCPFCPSin puntuar
+Descubrimiento de solicitudes de L CP
+Optimiza el L CP haciendo descubrible  la imagen de L CP desde el HTML directamente y evita la carga en diferido LCPSin puntuar
+carga en diferido no aplicada
+Se debe aplicar fetchpriority=high
+La solicitud es visible en el documento inicial
+SEO ChatGPT S trategyvercel.app Propio 13,6 KiB 170 ms
+…chunks/5f69447b72ef4183.css?dpl=dpl_E4cws… 13,6 KiB 170 ms
+(lemonade-ideas-website.vercel.app)
+URLTamaño de la
+transfer enciaDuración
+MóvilOrdenador
+PageSpeed Insights Copiar enlace Documentos
+<img alt="SEO ChatGPT Strategy" decoding="async" data-nimg="fill" class="object-cover object-center"
+style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="(max-width: 768px) 100vw, 50vw"
+srcset="/_next/image?url=%2Fimages%2Fpicture-for-google-ads1.webp&amp;w=256&amp;q=75&amp;dpl=d…"
+src="https://lemonade-ideas-website.vercel.app/_next/image?url=%2Fimages%2Fpict…">
+Árbol de dependencia de red
+Evita encadenar solicitudes críticas  reduciendo la longitud de las cadenas, disminuyendo el tamaño de los recursos o posponiendo la descarga de
+recursos innecesarios para mejorar la carga de la página. LCPSin puntuar
+Latencia de ruta crítica máxima:  377 ms
+Navegación inicial
+/seochatgpt  - 213 ms, 15,84 KiB
+…chunks/5f69447b72ef4183.css?dpl=dpl_E4cws…  - 377 ms, 13,63 KiB
+Orígenes preconectados
+Las sugerencias para establecer conexión previamente  ayudan al navegador a establecer una conexión antes de que se cargue la página, lo que ahorra tiempo al
+hacer la primera solicitud a ese origen. A continuación se indican los orígenes con los que la página ha establecido conexión previamente.
+No hay orígenes con los que se haya establecido conexión previamente
+Candidatos para establecer conexión previamente
+Añade sugerencias para establecer conexión previamente  con tus orígenes más importantes, pero intenta usar 4 como máximo.
+Visualización de fuentes  —Ahorro estimado de 20 ms
+Te recomendamos asignar el valor swap o optional a font-display  para asegurarte de que el texto se vea de forma coherente. swap se puede
+optimizar aún más para mitigar los cambios de diseño con anulaciones de métricas de fuente .FCPSin puntuar
+Mejorar la entrega de imágenes  —Ahorro estimado de 513 KiB
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)https://www.transparenttextures.com 280 ms
+Cloudflare CDN Cdn 
+…webfonts/fa-solid-900.woff2 20 ms
+…webfonts/fa-regular-400.woff2 20 ms
+(cdnjs.cloudflare.com)
+(cdnjs.cloudflare.com)Origen Ahorr o estimado de L CP
+URL Ahorr o estimado
+PageSpeed Insights Copiar enlace Documentos
+Si se reduce el tiempo de descarga de las imágenes, se puede mejorar el tiempo de carga percibido de la página y el L CP. Más información sobre
+la optimización del tamaño de las imágenes LCPFCPSin puntuar
+vercel.app Propio 541,6 KiB 512,5 KiB
+City Skyline
+<img src="/images/seochatgpt-
+banner.png" alt="City Skyline"
+class="w-full h-full object-
+cover object-center"
+style="object-position:center 40%">/images/seochatgpt-banner.png
+495,2 KiB 475,3 KiB
+Usar un formato de imagen moderno (W ebP, A VIF) o
+aumentar la compresión de la imagen podría mejorar el
+tamaño de descarga de esta imagen.475,3 KiB
+Team Planning SEO ChatGPT
+<img alt="Team Planning SEO
+ChatGPT" loading="lazy"
+decoding="async" data-
+nimg="fill" class="object-cover"
+style="position: absolute; height: 100%; width:
+100%; inset: 0px;" sizes="(max-width: 768px) 100vw,
+50vw" srcset="/_next/image?url=%2Fimages%2Fseo-
+chatgpt-geo-
+cropped.webp&amp;w=256&amp;q=75&amp;dpl=d…"
+src="https://lemonade-ideas-
+website.vercel.app/_next/image?
+url=%2Fimages%2Fseo-…">/_next/image?url=… 28,9 KiB 24,1 KiB
+Este archivo de imagen es más grande de lo necesario
+(622x786) para las dimensiones mostradas (243x339). Usa
+imágenes adaptables para reducir el tamaño de descarga
+de la imagen.24,1 KiB
+Data Analytics Dashboard
+<img alt="Data Analytics
+Dashboard" decoding="async"
+data-nimg="fill" class="object-
+cover object-left"
+style="position: absolute; height: 100%; width:
+100%; inset: 0px;" sizes="100vw"
+srcset="/_next/image?url=%2Fimages%2Fseo-chatgpt-
+strategies-optimized.webp&amp;w=400&amp;q…"
+src="https://lemonade-ideas-
+website.vercel.app/_next/image?
+url=%2Fimages%2Fseo-…">/_next/image?url=… 17,4 KiB 13,1 KiB
+(lemonade-ideas-
+website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)URLTamaño del
+recursoAhorr o estimado
+PageSpeed Insights Copiar enlace Documentos
+JavaScript antiguo  —Ahorro estimado de 14 KiB
+Los polyfills y los transforms permiten que los navegadores antiguos utilicen las nuevas funciones de JavaScript. Sin embargo, muchos de estos
+polyfills y transforms no son necesarios para los navegadores modernos. T e recomendamos que modifiques tu proceso de compilación de
+JavaScript para que no transpile las funciones de Baseline , a menos que sepas que debes admitir navegadores antiguos. Descubre por qué la
+mayoría de los sitios pueden implementar código ES6+ sin transpilación .LCPFCPSin puntuar
+Desglose de L CP
+Cada subparte tiene estrategias de mejora específicas . Lo ideal es que la mayor parte del tiempo de L CP se dedique a cargar los recursos, no a los
+retrasos. LCPSin puntuar
+SEO ChatGPT S trategy
+<img alt="SEO ChatGPT Strategy" decoding="async" data-nimg="fill" class="object-cover object-center"
+style="position: absolute; height: 100%; width: 100%; inset: 0px;" sizes="(max-width: 768px) 100vw, 50vw"
+srcset="/_next/image?url=%2Fimages%2Fpicture-for-google-ads1.webp&amp;w=256&amp;q=75&amp;dpl=d…"
+src="https://lemonade-ideas-website.vercel.app/_next/image?url=%2Fimages%2Fpict…">Aumentar el factor de compresión de la imagen podría
+mejorar su tamaño de descarga.13,1 KiB
+vercel.app Propio 13,7 KiB
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws… 13,7 KiB
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:6558 Array.prototype.at
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:5946 Array.prototype.flat
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:6059 Array.prototype.flatMap
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:6435 Object.fromEntries
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:6693 Object.hasOwn
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:5688 String.prototype.trimEnd
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws…:1:5603 String.prototype.trimStart
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+Time to First Byte 0 ms
+Retraso de carga de recursos 200 ms
+Duración de la carga del recurso 240 ms
+Retraso de renderizado de elementos 1900 ms
+URLTamaño del
+recursoAhorr o estimado
+URL Bytes desper diciados
+Subp arte Duración
+PageSpeed Insights Copiar enlace Documentos
+Terceros
+El código de terceros puede afectar mucho a la velocidad de carga. Reduce y aplaza la carga del código de terceros  para priorizar el contenido de
+tu página. Sin puntuar
+Estas estadísticas también están disponibles en el panel R endimiento de Chrome DevT ools. Graba una traza  para ver información más detallada.Cloudflare CDN Cdn 192 KiB 0 ms
+…webfonts/fa-solid-900.woff2 148 KiB 0 ms
+…webfonts/fa-regular-400.woff2 25 KiB 0 ms
+…css/all.min.css 19 KiB 0 ms
+transparenttextures.com 1 KiB 0 ms
+/patterns/cubes.png 1 KiB 0 ms
+(cdnjs.cloudflare.com)
+(cdnjs.cloudflare.com)
+(cdnjs.cloudflare.com)
+(www. transparenttextures.com)
+DIAGNÓSTICOS
+Reduce el contenido JavaScript que no se use  —Ahorro estimado de 54 KiB
+Reduce el contenido JavaScript que no se use y retrasa la carga de secuencias de comandos hasta que se necesiten. Así, se reducirán los bytes
+consumidos por la actividad de red. Consulta cómo reducir el contenido de JavaScript que no se use LCPFCPSin puntuar
+Reduce el contenido CSS que no se use  —Ahorro estimado de 18 KiB
+Reduce las reglas que no se usen de las hojas de estilo y retrasa las reglas CSS que no se utilicen para el contenido de la parte visible a primera
+vista. Así, se reducirán los bytes consumidos por la actividad de red. Consulta cómo reducir el contenido de CSS que no se use LCPFCP
+Sin puntuarvercel.app Propio 116,1 KiB 54,0 KiB
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws… 70,6 KiB 29,0 KiB
+…chunks/1649b224d3dc07c3.js?dpl=dpl_E4cws… 45,5 KiB 25,0 KiB
+(lemonade-ideas-website.vercel.app)
+(lemonade-ideas-website.vercel.app)
+Cloudflare CDN Cdn 18,2 KiB 18,1 KiBTercero Tamaño de la transfer encia Tiempo del hilo pr incip al
+URLTamaño de la
+transferenciaAhorro estimado
+URLTamaño de la
+transferenciaAhorro estimado
+PageSpeed Insights Copiar enlace Documentos
+Los elementos de imagen no tienen width y height explícitos
+En los elementos de imagen, especifica un ancho y una altura explícitos para reducir los cambios de diseño y mejorar el CLS. Consulta cómo
+configurar las dimensiones de una imagen CLSSin puntuar
+Evita tareas largas del hilo principal  —1 tarea larga encontrada
+Enumera las tareas más largas del hilo principal, lo que es útil para identificar las que más contribuyen a la latencia. Consulta cómo evitar tareas
+largas del hilo principal TBTSin puntuar
+Consulta más información sobre el rendimiento de tu aplicación. Estos datos no afectan directamente  a la puntuación del rendimiento.…css/all.min.css 18,2 KiB 18,1 KiB
+(cdnjs.cloudflare.com)
+vercel.app Propio
+underline
+<img src="/images/layer-1.png" alt="underline" class="h-4 object-contain opacity-90">/images/layer-1.png
+(lemonade-ideas-website.vercel.app)
+vercel.app Propio 61 ms
+…chunks/25df93df54190ff3.js?dpl=dpl_E4cws… 7051 ms 61 ms
+(lemonade-ideas-website.vercel.app)
+AUDITORÍAS APROBADAS (15) Mostrar
+Accesibilidad
+94URLTamaño de la
+transferenciaAhorro estimado
+URL
+URL Hora de inicio Duración
+PageSpeed Insights Copiar enlace Documentos
+Estas comprobaciones permiten identificar oportunidades para mejorar la
+accesibilidad de tu aplicación web . La detección automática solo puede
+detectar un subconjunto de problemas y no garantiza la accesibilidad de tu
+aplicación web, por lo que también te recomendamos que hagas pruebas
+manuales .
+NOMBRES Y ETIQUETAS
+Los enlaces no tienen nombres reconocibles
+Usar textos de enlace (y textos alternativos para las imágenes, si estas se usan como enlaces) que sean reconocibles, únicos y que se puedan
+seleccionar mejora la experiencia de navegación de los usuarios de lectores de pantalla. Consulta cómo hacer que los enlaces sean accesibles
+A continuación se indican consejos para mejorar la semántica de los controles de tu aplicación. Estos consejos pueden mejorar la experiencia de los usuarios de tecnologías de
+asistencia, como los lectores de pantalla.div.flex > div.flex > div.w-[380px] > a.bg-white
+<a class="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-…" href="https://www.facebook.com/lemonadeidea/">
+div.flex > div.flex > div.w-[380px] > a.bg-white
+<a class="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-…"
+href="https://www.instagram.com/lemonade.ideas">
+div.flex > div.flex > div.w-[380px] > a.bg-white
+<a class="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-…"
+href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg">
+div.flex > div.flex > div.w-[380px] > a.bg-white
+<a class="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-…" href="http://www.linkedin.com/in/lemonade-
+ideas-080122348">
+NAVEGACIÓN
+Los elementos de encabezado no aparecen en orden secuencial descendente
+Los títulos ordenados correctamente que no saltan niveles transmiten la estructura semántica de la página, lo que facilita la navegación y la
+comprensión para los usuarios que usan tecnologías asistenciales. Más información sobre el orden de los encabezadosElementos con errores
+PageSpeed Insights Copiar enlace Documentos
+Aquí tienes consejos para facilitar el desplazamiento con el teclado en tu aplicación.CONTACT DET AILS
+<h4 class="font-bold text-[13px] mb-6 uppercase tracking-wide">
+ELEMENTOS ADICIONALES QUE SE DEBEN COMPROBAR MANUALMENTE (10) Mostrar
+Estos elementos se ocupan de áreas que las herramientas de prueba automáticas no pueden analizar. Consulta más información sobre cómo revisar la accesibilidad  en nuestra
+guía.
+AUDITORÍAS APROBADAS (21) Ocultar
+Los atributos [aria-*] coinciden con sus funciones
+[aria-hidden="true"] no se encuentra en el documento <body>
+Todos los elementos [role] tienen los atributos [aria-*] obligatorios
+Los valores de [role] son válidos
+Los atributos [aria-*] tienen valores válidos
+Los atributos [aria-*] son válidos y están bien escritos
+Los botones tienen nombres accesibles
+Los elementos de imagen tienen atributos [alt]
+[user-scalable="no"] no se utiliza en el elemento <meta name="viewport"> y el valor del atributo [maximum-scale] no es inferior a 5.
+Los atributos ARIA se usan como se especifica para la función del elemento
+Los elementos [aria-hidden="true"] no contienen ningún elemento inferior seleccionable
+Los elementos solo usan atributos ARIA permitidos
+Los colores de fondo y de primer plano tienen una relación de contraste adecuada
+El documento tiene un elemento <title>
+El elemento <html> tiene un atributo [lang]
+El atributo [lang] del elemento <html> tiene un valor válidoElementos con errores
+PageSpeed Insights Copiar enlace Documentos
+Las listas contienen únicamente elementos <li> y elementos que admiten secuencias de comandos ( <script> y <template>).
+Los elementos de lista ( <li>) están incluidos dentro de elementos superiores <ul>, <ol> o <menu>
+Las áreas táctiles deben tener un tamaño y un espaciado suficientes.
+El documento tiene un punto de referencia principal.
+No se han usado roles de ARIA obsoletos
+NO APLICABLE (37) Ocultar
+Los valores de [accesskey] son únicos
+Los elementos button, link y menuitem tienen nombres accesibles
+Los elementos con role="dialog" o role="alertdialog" tienen nombres accesibles.
+Los campos de entrada ARIA tienen nombres accesibles
+Los elementos meter de ARIA tienen nombres accesibles
+Los elementos progressbar de ARIA tienen nombres accesibles
+Los elementos con un [role] ARIA que requieren que los elementos secundarios contengan un [role] específico tienen todos los elementos
+secundarios necesarios.
+Los atributos [role] están incluidos en los elementos principales correspondientes
+Los elementos con el atributo role=text no tienen descendientes enfocables.
+Los campos de interruptores ARIA tienen nombres accesibles
+Los elementos tooltip de ARIA tienen nombres accesibles
+Los elementos treeitem de ARIA tienen nombres accesibles
+La página contiene un encabezado, un enlace de omisión o una región de punto de referencia
+Los elementos <dl> contienen únicamente grupos de <dt> y <dd> o elementos <script>, <template> o <div> ordenados correctamente.
+Los elementos de la lista de definiciones están incluidos dentro de elementos <dl>
+Los ID de ARIA son únicos
+PageSpeed Insights Copiar enlace Documentos
+Ningún campo de formulario tiene varias etiquetas
+Los elementos <frame> o <iframe> tienen un título
+El elemento <html> tiene un atributo [xml:lang] con el mismo idioma base que el atributo [lang].
+Los botones de entrada tienen texto reconocible.
+Los elementos <input type="image"> tienen texto [alt]
+Los elementos de formulario tienen etiquetas asociadas
+Los enlaces se distinguen sin depender del color.
+El documento no usa <meta http-equiv="refresh">
+Los elementos <object> tienen texto alternativo
+Los elementos <select> tienen elementos <label> asociados.
+Los enlaces de salto son enfocables.
+No hay ningún elemento con un valor de [tabindex] superior a 0
+Las celdas de un elemento <table> que usan el atributo [headers] hacen referencia a otras celdas de la misma tabla.
+Los elementos <th> y los elementos con atributos [role="columnheader"/"rowheader"] contienen las celdas de datos que describen.
+Los atributos [lang] tienen un valor válido
+Los elementos <video> contienen un elemento <track> con el atributo [kind="captions"]
+Las tablas tienen contenido diferente en el atributo summary y en <caption>.
+Todos los elementos <heading> incluyen contenido.
+Usa roles de ARIA solo en elementos compatibles
+Los elementos de imagen no tienen atributos [alt] que sean texto redundante.
+Los enlaces idénticos tienen la misma finalidad.
+PageSpeed Insights Copiar enlace Documentos
+Prácticas r ecomendadas
+96
+GENERAL
+Se han registrado errores del navegador en la consola
+Los errores registrados en la consola indican que hay problemas sin resolver. Pueden proceder de solicitudes fallidas de la red y otros errores del
+navegador. Más información sobre estos errores en la auditoría de diagnóstico de la consola
+vercel.app Propio
+/images/T exture.png:1:0 Failed to load resource: the server responded with a status of 404 (Not Found)
+(lemonade-ideas-website.vercel.app)
+CONFIANZA Y SEGURIDAD
+Asegura que la CSP sea efectiva frente a ataques XSS
+Asegúrate de que el aislamiento de orígenes sea adecuado con C OOP
+Mitiga el secuestro de clics con XFO o CSP
+Mitigar el XSS basado en DOM con T rusted T ypes
+AUDITORÍAS APROBADAS (12) Mostrar
+NO APLICABLE (3) MostrarFuente Descripción
+PageSpeed Insights Copiar enlace Documentos
+Estas comprobaciones aseguran que tu página siga las recomendaciones
+básicas sobre optimización en buscadores. Hay muchos otros factores
+adicionales que Lighthouse no valora aquí y que pueden afectar a tu
+posicionamiento en las búsquedas, como el rendimiento en las Métricas
+web principales . Consulta más información sobre las Directrices básicas de
+la Búsqueda de Google .SEO
+100
+ELEMENTOS ADICIONALES QUE SE DEBEN COMPROBAR MANUALMENTE (1) Ocultar
+Los datos estructurados son válidos
+Ejecuta la Herramienta de prueba de datos estructurados  para validar los datos estructurados. Más información sobre los datos estructurados
+Sin puntuar
+Ejecuta estos validadores adicionales en tu sitio web para comprobar más prácticas recomendadas de SEO.
+AUDITORÍAS APROBADAS (8) Ocultar
+No se ha bloqueado la indexación de la página
+El documento tiene un elemento <title>
+El documento tiene una metadescripción
+El código de estado HT TP de la página es válido
+Los enlaces tienen texto descriptivo
+Los enlaces son rastreables
+PageSpeed Insights Copiar enlace Documentos
+Más información en PageSpeed Insights
+Novedades
+Documentación
+Más información sobre el rendimiento web
+Haz preguntas en Stack Overflow
+Lista de distribuciónContenido relacionado
+Actualizaciones
+Aspectos básicos de la Web
+Casos de éxito
+PódcastsContacto
+Twitter
+YouTube
+Chrome Firebase Todos los productos
+Política de Términos y Privacidad
+Para obtener más información, consulta las Políticas del Sitio Google Developers.Los elementos de imagen tienen atributos [alt]
+El documento tiene un atributo hreflang válido
+NO APLICABLE (2) Ocultar
+robots.txt es válido
+El documento tiene un atributo rel=canonical válido
+PageSpeed Insights Copiar enlace Documentos

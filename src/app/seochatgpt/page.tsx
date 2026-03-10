@@ -81,6 +81,7 @@ export default function SeoChatGptPage() {
                 className="object-cover object-center"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
+                fetchPriority="high"
             />
             {/* Dark Green overlay at 60% opacity to give a strong green tint */}
             <div className="absolute inset-0 bg-[#143d1f]/80"></div>

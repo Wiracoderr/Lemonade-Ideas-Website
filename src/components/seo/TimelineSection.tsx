@@ -81,7 +81,7 @@ export default function TimelineSection() {
 
                 <div className="lg:w-1/2 relative group px-4">
                     <Image
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOHV42t8HQs5NXzKWUuisrYOkA5TLkbfQWl-aZhFI-X6r2WRxcDsrrMvaEKJZDNsza4nMpUdWPtKcA2n1ACQTFpbsFnQ2TM_dxS7TgLlyEy6YE4FwKDqfS-jhohLH6y9dwhwp4PbdCvsiwy_WWaxU-IavFtzLag1AHi8R7jGXqBCX5DjNX1s86e7nuoqI2VnftWPcguCxumgE4ZZu-JrnIucXzyMoqE40qsyMSFNjCwLn5qKlCoeRGaRWqUqO3C16uaWvWMv2d164"
+                        src="/images/person-laptop-charts.webp"
                         alt="Person working on laptop with charts"
                         width={800}
                         height={600}
