@@ -46,9 +46,9 @@ export default function RootLayout({
           href="/frames/desktop/frame_000.webp"
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore — imagesrcset / imagesizes are valid HTML but not yet in React types
-          imagesrcset="/frames/mobile/frame_000.webp 767w, /frames/desktop/frame_000.webp 768w"
-          imagesizes="(max-width: 767px) 400px, 1080px"
-          fetchpriority="high"
+          imageSrcSet="/frames/mobile/frame_000.webp 767w, /frames/desktop/frame_000.webp 768w"
+          imageSizes="(max-width: 767px) 400px, 1080px"
+          fetchPriority="high"
         />
         {/* Font Awesome globally loaded for standard icons via CSS to prevent render blocking on mobile */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />

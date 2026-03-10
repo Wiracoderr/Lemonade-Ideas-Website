@@ -10,8 +10,12 @@ export default function FaqSection({ faqs }: { faqs: { question: string, answer:
     };
 
     return (
-        <section className="py-20 px-4 bg-white dark:bg-gray-800 border-t border-gray-100 dark:border-gray-700 relative overflow-hidden">
-            <div className="max-w-4xl mx-auto">
+        <section className="py-20 px-4 relative overflow-hidden border-t border-gray-100 dark:border-gray-700">
+            {/* Background color and texture to match SEO Timeline */}
+            <div className="absolute inset-0 bg-[#eff8fa] dark:bg-gray-900 z-0"></div>
+            <div className="absolute inset-0 opacity-40 z-0 mix-blend-multiply dark:mix-blend-screen bg-[url('/images/layer-1.png')] bg-[length:45%_100%] bg-left bg-no-repeat"></div>
+
+            <div className="max-w-4xl mx-auto relative z-10">
                 <div className="text-center mb-16 relative">
                     <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
                         <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">

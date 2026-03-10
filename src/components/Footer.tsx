@@ -61,7 +61,7 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">OUR SERVICES</h4>
                         <ul className="space-y-3 text-[13px] font-medium text-gray-700 mb-6">
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Guranteed Ranking™</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seochatgpt">SEO ChatGPT™</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seo">SEO</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Google Ads Management</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Website Design</Link></li>

@@ -113,14 +113,14 @@ export default function MarketingServices() {
                     <div className="relative z-10 w-full flex justify-end">
                         <div className="w-full flex flex-col justify-center py-16 px-8 sm:px-12">
                             <div className="text-white w-full max-w-[650px]">
-                                <h3 className="text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">GUARANTEED RANKING&nbsp;™</h3>
-                                <h4 className="text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h4>
+                                <h3 className="text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">SEO CHATGPT™</h3>
+                                <h4 className="text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With SEO CHATGPT™, You Don&apos;t Pay A Monthly Fee Until We Get You In Top AI Answers For 100+ Prompts.</h4>
                                 <ul className="space-y-3 mb-10 text-[14px] font-semibold opacity-100 drop-shadow">
-                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Target hundreds of keywords simultaneously</span></li>
-                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Achieve rankings quickly (typically within 7 weeks)</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Target hundreds of AI prompts simultaneously</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Achieve AI presence quickly (typically within 7 weeks)</span></li>
                                     <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Clear, affordable, and fixed monthly pricing</span></li>
                                     <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>No long-term contract or cancellation fees</span></li>
-                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>100% U.S.-based team for personalized service</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>100% AI-focused team for personalized service</span></li>
                                 </ul>
                                 <a className="inline-block bg-[#f4f7f6] text-[#0a2315] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">LEARN MORE</a>
                             </div>

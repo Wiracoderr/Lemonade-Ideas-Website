@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function StitchLayout() {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -138,7 +139,7 @@ export default function StitchLayout() {
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </div>
-                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <Link href="/seochatgpt" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image src="/services/SEO Chat GPT.avif" alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -146,7 +147,7 @@ export default function StitchLayout() {
                                 <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">SEO CHATGPT</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
-                        </div>
+                        </Link>
                         <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
                             <Image src="/services/photo-1654277041042-8927699fcfd2.avif" alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
@@ -241,17 +242,17 @@ export default function StitchLayout() {
                             {/* Text Content */}
                             <div className="w-full py-16 xl:py-20 pr-8 xl:pr-32 pl-8 xl:pl-16 relative z-20">
                                 <h3 className="text-[2.5rem] xl:text-[46px] font-black mb-4 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">
-                                    GUARANTEED RANKING<sup className="text-xl xl:text-2xl font-bold ml-1">™</sup>
+                                    SEO CHATGPT™
                                 </h3>
                                 <h4 className="text-[15px] xl:text-[16.5px] font-bold mb-8 font-display text-white leading-relaxed pr-8 drop-shadow">
-                                    With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.
+                                    With SEO CHATGPT™, You Don&apos;t Pay A Monthly Fee Until We Get You In Top AI Answers For 100+ Prompts.
                                 </h4>
                                 <ul className="mb-10 space-y-3.5 text-[13.5px] xl:text-[14.5px] font-bold text-white/95 list-none ml-1">
-                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Target hundreds of keywords simultaneously</li>
-                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Achieve rankings quickly (typically within 7 weeks)</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Target hundreds of AI prompts simultaneously</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Achieve AI presence quickly (typically within 7 weeks)</li>
                                     <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">Clear, affordable, and fixed monthly pricing</li>
                                     <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">No long-term contract or cancellation fees</li>
-                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">100% U.S.-based team for personalized service</li>
+                                    <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">100% AI-focused team for personalized service</li>
                                 </ul>
                                 <div>
                                     <a className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">
@@ -282,15 +283,15 @@ export default function StitchLayout() {
                         <div className="w-full flex flex-col justify-center py-16 px-8 sm:px-12">
                             <div className="text-white w-full max-w-[650px]">
                                 <h3 className="text-[2rem] sm:text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">
-                                    GUARANTEED RANKING&nbsp;<span className="text-xl sm:text-2xl font-bold font-sans align-top">™</span>
+                                    SEO CHATGPT™
                                 </h3>
-                                <h4 className="text-[15px] sm:text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With GUARANTEED RANKING ™, You Don&apos;t Pay A Monthly Fee Until We Get You On Page 1 For 100+ Keywords.</h4>
+                                <h4 className="text-[15px] sm:text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With SEO CHATGPT™, You Don&apos;t Pay A Monthly Fee Until We Get You In Top AI Answers For 100+ Prompts.</h4>
                                 <ul className="space-y-3 mb-10 text-[13px] sm:text-[14px] font-semibold opacity-100 drop-shadow">
-                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Target hundreds of keywords simultaneously</span></li>
-                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Achieve rankings quickly (typically within 7 weeks)</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Target hundreds of AI prompts simultaneously</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Achieve AI presence quickly (typically within 7 weeks)</span></li>
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>Clear, affordable, and fixed monthly pricing</span></li>
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>No long-term contract or cancellation fees</span></li>
-                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>100% U.S.-based team for personalized service</span></li>
+                                    <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>100% AI-focused team for personalized service</span></li>
                                 </ul>
                                 <a className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">LEARN MORE</a>
                             </div>

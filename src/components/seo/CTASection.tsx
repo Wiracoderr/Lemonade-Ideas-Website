@@ -7,7 +7,15 @@ const SEOText = ({ children }: { children: React.ReactNode }) => {
     return <>{children}</>;
 };
 
-export default function CTASection() {
+interface CTASectionProps {
+    subtitleContent?: React.ReactNode;
+}
+
+export default function CTASection({ subtitleContent }: CTASectionProps) {
+    const defaultSubtitle = (
+        <SEOText>Along with SEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</SEOText>
+    );
+
     return (
         <section className="bg-[#143d1f] py-24 px-4 relative overflow-hidden">
             {/* Texture Map Overlay */}
@@ -36,7 +44,7 @@ export default function CTASection() {
                 </div>
 
                 <p className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]">
-                    <SEOText>Along with SEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</SEOText>
+                    {subtitleContent || defaultSubtitle}
                 </p>
 
                 <a
