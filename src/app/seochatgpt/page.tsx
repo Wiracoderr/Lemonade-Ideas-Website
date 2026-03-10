@@ -64,7 +64,7 @@ export default function SeoChatGptPage() {
       {/* BEGIN: Hero Section (Matching SEO Page Layout) */}
       <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
         <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
-            FIND OUT WHY YOUR COMPANY NEEDS SEO OPTIMIZATION
+            FIND OUT WHY YOUR COMPANY NEEDS GEO OPTIMIZATION
         </div>
         <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
             Watch Video
