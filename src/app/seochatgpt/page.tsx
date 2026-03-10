@@ -222,21 +222,23 @@ export default function SeoChatGptPage() {
       {/* BEGIN: Feature Grid & City Background */}
       {/* BEGIN: Feature Grid & City Background */}
       {/* BEGIN: Feature Grid & City Background */}
-      <section className="relative w-full overflow-hidden">
-        {/* City Background Area covering the entire section */}
-        <div className="absolute inset-0 z-0">
-          {/* Mobile Background */}
+      <section className="relative w-full overflow-hidden bg-[#0c1811]">
+        {/* Mobile Background Area - restricted height to prevent center-point from dropping below cards */}
+        <div className="absolute top-0 left-0 right-0 h-[65vh] md:hidden z-0">
           <img
             src="/images/seochatgpt-banner-mobile.png"
             alt="City Skyline"
-            className="w-full h-full object-cover block md:hidden"
-            style={{ objectPosition: 'center 40%' }}
+            className="w-full h-full object-cover object-center"
           />
-          {/* Desktop Background */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0c1811] to-transparent"></div>
+        </div>
+
+        {/* Desktop Background Area covering the entire section */}
+        <div className="absolute inset-0 z-0 hidden md:block">
           <img
             src="/images/seochatgpt-banner.png"
             alt="City Skyline"
-            className="w-full h-full object-cover object-center hidden md:block"
+            className="w-full h-full object-cover object-center"
             style={{ objectPosition: 'center 40%' }}
           />
         </div>
