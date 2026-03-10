@@ -342,10 +342,10 @@ export default function SeoChatGptPage() {
       {/* END: Local AI Section */}
 
       {/* BEGIN: Proven Strategies Section */}
-      <section className="relative w-full min-h-[700px] flex items-center bg-black overflow-hidden group">
+      <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#113a1c] lg:bg-black overflow-hidden group">
         
-        {/* Full Width Background Image */}
-        <div className="absolute inset-0 z-0">
+        {/* Desktop Full Width Background Image */}
+        <div className="absolute inset-0 z-0 hidden lg:block">
           <Image 
             src="/images/seo-chatgpt-strategies-optimized.webp"
             alt="Data Analytics Dashboard"
@@ -357,8 +357,8 @@ export default function SeoChatGptPage() {
 
         {/* Angled Dark Green Content Container Overlay (Floating on right side) */}
         {/* Uses clip-path to create the angled left edge on large screens */}
-        <div className="relative z-10 w-full lg:w-3/5 lg:ml-auto bg-[#113a1c]/95 lg:bg-[#113a1c]
-                        p-8 md:p-16 lg:p-20 xl:py-24 xl:px-24 mb-12 lg:mb-0 lg:my-16 xl:my-24 lg:mr-0
+        <div className="relative z-10 w-full lg:w-3/5 lg:ml-auto bg-[#113a1c]
+                        p-8 md:p-16 lg:p-20 xl:py-24 xl:px-24 mb-0 lg:my-16 xl:my-24 lg:mr-0
                         flex flex-col justify-center
                         [clip-path:none] lg:[clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]">
             
@@ -385,6 +385,16 @@ export default function SeoChatGptPage() {
               </ul>
             </div>
             
+        </div>
+
+        {/* Mobile Specific Bottom Image */}
+        <div className="w-full relative block lg:hidden h-[450px] md:h-[550px]">
+          <Image 
+            src="/images/seo-chatgpt-strategies-mobile.webp"
+            alt="Data Analytics Mobile Dashboard"
+            fill
+            className="object-cover"
+          />
         </div>
       </section>
       {/* END: Proven Strategies Section */}
