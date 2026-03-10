@@ -391,7 +391,7 @@ export default function SeoChatGptPage() {
         {/* Mobile Specific Bottom Image */}
         <div className="w-full relative block lg:hidden h-[450px] md:h-[550px]">
           <Image 
-            src="/images/seo-chatgpt-strategies-mobile.webp"
+            src="/images/bg2-mobile.webp"
             alt="Data Analytics Mobile Dashboard"
             fill
             className="object-cover"
