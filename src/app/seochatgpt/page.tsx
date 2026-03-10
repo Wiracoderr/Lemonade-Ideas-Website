@@ -225,10 +225,18 @@ export default function SeoChatGptPage() {
       <section className="relative w-full overflow-hidden">
         {/* City Background Area covering the entire section */}
         <div className="absolute inset-0 z-0">
+          {/* Mobile Background */}
+          <img
+            src="/images/seochatgpt-banner-mobile.png"
+            alt="City Skyline"
+            className="w-full h-full object-cover block md:hidden"
+            style={{ objectPosition: 'center 40%' }}
+          />
+          {/* Desktop Background */}
           <img
             src="/images/seochatgpt-banner.png"
             alt="City Skyline"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-center hidden md:block"
             style={{ objectPosition: 'center 40%' }}
           />
         </div>
