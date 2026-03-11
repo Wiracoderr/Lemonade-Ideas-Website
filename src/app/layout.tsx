@@ -9,6 +9,8 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "600", "700"],
   display: "swap",
+  preload: true,
+  fallback: ['system-ui', 'arial'],
 });
 
 const oswald = Oswald({
@@ -16,6 +18,8 @@ const oswald = Oswald({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   display: "swap",
+  preload: true,
+  fallback: ['sans-serif'],
 });
 
 export const metadata: Metadata = {
