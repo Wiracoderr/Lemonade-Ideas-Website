@@ -4,7 +4,7 @@ export default function SmmTimelineSection() {
     return (
         <section className="py-20 bg-blue-50/50 font-sans" data-purpose="timeline">
             <div className="container mx-auto px-4 max-w-5xl">
-                <div className="pl-6 border-l-8 border-[#ccff00] mb-12">
+                <div className="pl-6 border-l-8 border-[#0a2e15] mb-12">
                     <h2 className="text-3xl font-extrabold text-[#0d2a1a] uppercase leading-none">
                         The Social Media Management Timeline
                     </h2>

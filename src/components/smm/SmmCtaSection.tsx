@@ -9,9 +9,9 @@ export default function SmmCtaSection() {
                 <h2 className="text-4xl lg:text-5xl font-black text-blue-50/50 uppercase leading-none mb-2">Grow your business with expert</h2>
                 <h2 className="text-4xl lg:text-5xl font-black text-blue-50/50 uppercase leading-none mb-12">Social Media Management</h2>
                 {/* CTA Button Box */}
-                <div className="inline-block bg-[#ccff00] p-2 rounded-xl">
+                <div className="inline-block bg-[#0a2e15] p-2 rounded-xl">
                     <Link href="#contact" className="bg-white px-10 py-5 rounded-lg flex items-center gap-4 hover:bg-gray-50 transition-colors group">
-                        <span className="bg-[#ccff00] p-3 rounded-full text-[#0d2a1a] shadow-sm transform group-hover:scale-110 transition-transform">
+                        <span className="bg-[#0a2e15] p-3 rounded-full text-white shadow-sm transform group-hover:scale-110 transition-transform">
                             <Phone size={24} className="fill-current" />
                         </span>
                         <div className="text-left">
