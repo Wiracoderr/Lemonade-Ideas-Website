@@ -110,7 +110,7 @@ export default function Header() {
                 <nav className="hidden lg:flex items-center gap-5 text-[13px] font-bold tracking-tight">
                     <Link href="/seo" className={`transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SEO</Link>
                     <Link href="/seochatgpt" className={`transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SEO ChatGpt</Link>
-                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Google Ads</Link>
+                    <Link href="/google-ads" className={`transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Google Ads</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">SMM</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Branding</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Websites</Link>
@@ -174,7 +174,7 @@ export default function Header() {
                             <div className="flex-1 flex flex-col items-start gap-8 px-8 overflow-y-auto pb-12">
                                 <Link href="/seo" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SEO</Link>
                                 <Link href="/seochatgpt" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SEO ChatGpt</Link>
-                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Google Ads</Link>
+                                <Link href="/google-ads" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Google Ads</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">SMM</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Branding</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Websites</Link>
