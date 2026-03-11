@@ -42,3 +42,14 @@ next-env.d.ts\n# Unused reference files\n_Unused_Reference_Files/\n
 # Unused reference files
 _Unused_Reference_Files/
 
+# Diagnostic Files (Ignored to prevent Tailwind v4 CSS scanner crashes)
+verify_*.html
+temp_html.txt
+lh-report.json
+output_insights.txt
+pagespeed_extracted.txt
+parse_lcp*.js
+parse_lcp*.py
+*.report.html
+build_err*.txt
+

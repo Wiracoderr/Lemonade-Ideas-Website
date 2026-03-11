@@ -8,7 +8,7 @@ export default function TimelineSection() {
         <section className="py-20 px-4 relative border-y border-gray-100 dark:border-gray-700 overflow-hidden">
             {/* Background color and texture */}
             <div className="absolute inset-0 bg-[#eff8fa] dark:bg-gray-900 z-0"></div>
-            <div className="absolute inset-0 opacity-40 z-0 mix-blend-multiply dark:mix-blend-screen bg-[url('/images/layer-1.png')] bg-[length:45%_100%] bg-left bg-no-repeat"></div>
+            <div className="absolute inset-0 opacity-40 z-0 mix-blend-multiply dark:mix-blend-screen bg-[url(/images/layer-1.png)] bg-[length:45%_100%] bg-left bg-no-repeat"></div>
 
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 items-center relative z-10">
                 <div className="lg:w-1/2 space-y-10">
