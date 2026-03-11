@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import Image from 'next/image';
+import Image, { getImageProps } from 'next/image';
 import Link from 'next/link';
 import FaqSection from "@/components/seo/FaqSection";
 import CTASection from "@/components/seo/CTASection";
@@ -40,6 +40,26 @@ export default function SeoChatGptPage() {
       }
   ];
 
+  const commonProps = { alt: 'SEO ChatGPT Strategy', priority: true };
+  const {
+    props: { srcSet: desktopSrcSet, ...desktopRest },
+  } = getImageProps({
+    ...commonProps,
+    src: '/images/picture-for-google-ads1.webp',
+    width: 1920,
+    height: 1080,
+    className: 'object-cover object-center w-full h-full',
+  });
+  const {
+    props: { srcSet: mobileSrcSet, ...mobileRest },
+  } = getImageProps({
+    ...commonProps,
+    src: '/images/hero-mobile-optimized.webp',
+    width: 800,
+    height: 800,
+    className: 'object-cover object-center w-full h-full',
+  });
+
   return (
     <div className="font-sans text-slate-900 overflow-x-hidden">
       {/* Inline styles for custom gradients/backgrounds extracted from HTML */}
@@ -72,37 +92,18 @@ export default function SeoChatGptPage() {
       </div>
 
       <header className="bg-[#143d1f] text-white relative overflow-hidden">
-        {/* Background Image & Green Overlay */}
-        {/* Desktop View (Preloads standard image + applies CSS overlay) */}
-        <div className="absolute inset-0 z-0 hidden md:block">
-            <Image
-                src="/images/picture-for-google-ads1.webp"
-                alt="SEO ChatGPT Strategy"
-                fill
-                className="object-cover object-center"
-                sizes="50vw"
-                priority
-                fetchPriority="high"
-            />
-            {/* Dark Green overlay at 80% opacity to give a strong green tint */}
-            <div className="absolute inset-0 bg-[#143d1f]/80"></div>
+        {/* Background Image & Green Overlay via Architecture-level Art Direction */}
+        <div className="absolute inset-0 z-0">
+          <picture>
+            <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
+            <source media="(max-width: 767px)" srcSet={mobileSrcSet} />
+            <img {...mobileRest} className="object-cover object-center w-full h-full" alt="SEO ChatGPT Strategy" />
+          </picture>
         </div>
 
-        {/* Desktop Texture */}
+        {/* Desktop Custom Overlay & Texture */}
+        <div className="absolute inset-0 bg-[#143d1f]/80 z-0 hidden md:block"></div>
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0 hidden md:block"></div>
-
-        {/* Mobile View (Baked-in pre-rendered image, NO CSS overlays) */}
-        <div className="absolute inset-0 z-0 md:hidden">
-            <Image
-                src="/images/hero-mobile-optimized.webp"
-                alt="SEO ChatGPT Strategy"
-                fill
-                className="object-cover object-center"
-                sizes="100vw"
-                priority
-                fetchPriority="high"
-            />
-        </div>
         <div className="max-w-7xl mx-auto px-4 pt-16 pb-28 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-12 xl:gap-16">
                 <div className="w-full lg:w-[45%] space-y-5">
