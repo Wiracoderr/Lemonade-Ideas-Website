@@ -1,62 +1,132 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import { Check } from 'lucide-react';
+
 
 export default function SmmPricingSection() {
     return (
-        <section className="py-24 bg-white font-sans" data-purpose="pricing">
-            <div className="container mx-auto px-4 text-center mb-12">
-                <h2 className="text-5xl md:text-7xl font-black text-gray-100 uppercase select-none mb-[-1.5rem]">Pricing</h2>
-                <p className="text-gray-600 font-bold relative z-10 text-lg">Know exactly what you&apos;re getting and how much it costs—no surprises.</p>
-            </div>
-            <div className="container mx-auto px-4 max-w-6xl">
-                <div className="bg-blue-50/50 rounded-xl overflow-hidden shadow-sm border border-blue-100">
-                    <div className="p-8 text-center border-b border-blue-100">
-                        <h3 className="text-[#0d2a1a] font-black uppercase tracking-tight text-lg">Our pricing is structured to help you succeed. Once we get your campaign running smoothly you will see a reduction in our management fee.</h3>
+        <section className="py-24 px-4 bg-white relative overflow-hidden font-sans" id="pricing" data-purpose="pricing">
+            <div className="max-w-[1240px] mx-auto">
+                <div className="mb-6 flex flex-col items-center text-center">
+                    <div className="relative w-full flex justify-center items-center mb-10 pt-8 mt-12">
+                        <span className="text-7xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-100 tracking-widest absolute select-none pointer-events-none opacity-80 whitespace-nowrap">
+                            Pricing
+                        </span>
+                        <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#143d1f] tracking-tight text-center">
+                            SOCIAL MEDIA PRICING
+                        </h2>
                     </div>
-                    <div className="bg-[#34a853] py-3 text-center">
-                        <span className="text-white font-black uppercase text-sm tracking-widest">Social Media Management Plan</span>
+
+                    <p className="text-[#333] w-full text-[15px] md:text-[16.8px] font-[Roboto] text-center tracking-wide leading-[1.8]">
+                        Know exactly what you&apos;re getting and how much it costs—no surprises. Our pricing is structured to help you succeed. Once we get your campaign running smoothly you will see a reduction in our management fee.
+                    </p>
+                </div>
+
+                <div className="bg-[#f0f9fa] rounded-2xl shadow-xl overflow-hidden border border-gray-100 mt-12 w-full max-w-[1400px]">
+                    {/* Top Green Banner */}
+                    <div className="bg-[#38a149] py-5 text-center shadow-inner">
+                        <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
+                            SOCIAL MEDIA MANAGEMENT PLAN
+                        </h3>
                     </div>
-                    <div className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-blue-200">
-                        {/* Tier 1 */}
-                        <div className="p-10 text-center flex flex-col items-center">
-                            <h4 className="font-black text-[#0d2a1a] uppercase text-sm tracking-wide">Starter Package</h4>
-                            <div className="text-5xl font-black text-[#0d2a1a] my-6">$1000</div>
-                            <ul className="text-left w-full space-y-4 text-[15px] text-gray-600 font-semibold mb-8 flex-1">
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> 1-2 platforms</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> 10-15 posts / month</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Basic Engagement</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Monthly reporting</li>
+
+                    {/* Split White Cards - 3 columns for SMM */}
+                    <div className="p-6 md:p-8 flex flex-col lg:flex-row gap-6 md:gap-8">
+                        {/* Column 1: Starter */}
+                        <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
+                            <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
+                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">STARTER PACKAGE</h4>
+                                <div className="flex justify-center items-center gap-2">
+                                    <span className="text-4xl md:text-5xl font-bold text-gray-900 font-[Oswald]">$1000</span>
+                                </div>
+                            </div>
+                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-gray-600 font-[Roboto] flex-grow">
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">1-2 platforms</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">10-15 posts / month</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Basic Engagement</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Monthly reporting</span>
+                                </li>
                             </ul>
                         </div>
-                        {/* Tier 2 */}
-                        <div className="p-10 text-center flex flex-col items-center bg-white shadow-inner">
-                            <h4 className="font-black text-[#0d2a1a] uppercase text-sm tracking-wide">Growth Package</h4>
-                            <div className="text-5xl font-black text-[#0d2a1a] my-6">$1500</div>
-                            <ul className="text-left w-full space-y-4 text-[15px] text-gray-600 font-semibold mb-8 flex-1">
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> 2-3 platforms</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> 20-25 posts / month</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Engagement + basic ad management</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Bi-weekly reporting</li>
+
+                        {/* Column 2: Growth */}
+                        <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
+                            <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
+                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">GROWTH PACKAGE</h4>
+                                <div className="flex justify-center items-center gap-2">
+                                    <span className="text-4xl md:text-5xl font-bold text-gray-900 font-[Oswald]">$1500</span>
+                                </div>
+                            </div>
+                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-gray-600 font-[Roboto] flex-grow">
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">2-3 platforms</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">20-25 posts / month</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Engagement + basic ad management</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Bi-weekly reporting</span>
+                                </li>
                             </ul>
                         </div>
-                        {/* Tier 3 */}
-                        <div className="p-10 text-center flex flex-col items-center">
-                            <h4 className="font-black text-[#0d2a1a] uppercase text-sm tracking-wide">Comprehensive Package</h4>
-                            <div className="text-5xl font-black text-[#0d2a1a] my-6">$3000</div>
-                            <ul className="text-left w-full space-y-4 text-[15px] text-gray-600 font-semibold mb-8 flex-1">
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> 3+ platforms</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> 30+ posts / month</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Engagement, ads, influencer partnerships</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Weekly reporting and custom strategy</li>
-                                <li className="flex items-start gap-3"><Check size={20} className="text-[#34a853] shrink-0 mt-0.5" /> Video creation &amp; editing (2 per month)</li>
+                        
+                        {/* Column 3: Comprehensive */}
+                        <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
+                            <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
+                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">COMPREHENSIVE PACKAGE</h4>
+                                <div className="flex justify-center items-center gap-2">
+                                    <span className="text-4xl md:text-5xl font-bold text-gray-900 font-[Oswald]">$3000</span>
+                                </div>
+                            </div>
+                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-gray-600 font-[Roboto] flex-grow">
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">3+ platforms</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">30+ posts / month</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Engagement, ads, influencer partnerships</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Weekly reporting and custom strategy</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <span className="leading-snug">Video creation &amp; editing (2 per month)</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <Link href="#contact" className="block w-full bg-[#0d2a1a] text-center py-5 hover:bg-black transition-colors">
-                        <span className="text-white font-black uppercase text-[15px] tracking-[0.2em]">GET STARTED →</span>
-                    </Link>
+
+                    {/* Bottom Get Started Button */}
+                    <div className="px-6 md:px-8 pb-8 pt-2">
+                        <Link href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
+                            GET STARTED <i className="fas fa-arrow-right"></i>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>
