@@ -14,7 +14,7 @@ const SmmExperienceSection = dynamic(() => import('@/components/smm/SmmExperienc
 const SmmFeaturesSection = dynamic(() => import('@/components/smm/SmmFeaturesSection'), { ssr: true });
 const SmmDarkExperienceSection = dynamic(() => import('@/components/smm/SmmDarkExperienceSection'), { ssr: true });
 const SmmPricingSection = dynamic(() => import('@/components/smm/SmmPricingSection'), { ssr: true });
-const SmmAddOnsSection = dynamic(() => import('@/components/smm/SmmAddOnsSection'), { ssr: true });
+
 const SmmFaqSection = dynamic(() => import('@/components/smm/SmmFaqSection'), { ssr: true });
 const SmmCtaSection = dynamic(() => import('@/components/smm/SmmCtaSection'), { ssr: true });
 
@@ -28,7 +28,7 @@ export default function SocialMediaManagementPage() {
             <SmmFeaturesSection />
             <SmmDarkExperienceSection />
             <SmmPricingSection />
-            <SmmAddOnsSection />
+
             <SmmFaqSection />
             <SmmCtaSection />
         </main>
