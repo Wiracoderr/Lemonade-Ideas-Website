@@ -156,7 +156,7 @@ export default function SeoChatGptPage() {
       {/* END: Intro Copy */}
 
       {/* BEGIN: GEO Framework */}
-      <section className="bg-white pb-24">
+      <section className="bg-white pb-24 mobile-content-visibility">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="bg-[#eff8fa] rounded-[24px] p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-8 lg:gap-16 items-start relative overflow-hidden shadow-sm">
             
@@ -221,9 +221,7 @@ export default function SeoChatGptPage() {
       {/* END: GEO Framework */}
 
       {/* BEGIN: Feature Grid & City Background */}
-      {/* BEGIN: Feature Grid & City Background */}
-      {/* BEGIN: Feature Grid & City Background */}
-      <section className="relative w-full overflow-hidden bg-[#0c1811]">
+      <section className="relative w-full overflow-hidden bg-[#0c1811] mobile-content-visibility">
         {/* Mobile Background Area - restricted height to prevent center-point from dropping below cards */}
         <div className="absolute top-0 left-0 right-0 h-[65vh] md:hidden z-0">
           <img
@@ -330,7 +328,7 @@ export default function SeoChatGptPage() {
       {/* END: Feature Grid */}
 
       {/* BEGIN: Local AI Section */}
-      <section className="w-full bg-white py-48 text-center">
+      <section className="w-full bg-white py-48 text-center mobile-content-visibility">
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-[56px] md:text-[72px] font-[Oswald] font-bold text-[#143d1f] mb-12 uppercase tracking-tight leading-tight">
             HYPER-LOCAL AI RELEVANCE WHEN USERS ASK CHATGPT
@@ -352,7 +350,7 @@ export default function SeoChatGptPage() {
             alt="Data Analytics Dashboard"
             fill
             className="object-cover object-left"
-            priority
+            loading="lazy"
           />
         </div>
 
@@ -395,13 +393,14 @@ export default function SeoChatGptPage() {
             alt="Data Analytics Mobile Dashboard"
             fill
             className="object-cover"
+            loading="lazy"
           />
         </div>
       </section>
       {/* END: Proven Strategies Section */}
 
       {/* BEGIN: Pricing Section */}
-      <section className="py-24 px-4 bg-white relative overflow-hidden" id="pricing">
+      <section className="py-24 px-4 bg-white relative overflow-hidden mobile-content-visibility" id="pricing">
           <div className="max-w-[1240px] mx-auto">
               <div className="mb-6 flex flex-col items-center">
                   <div className="relative h-20 md:h-28 w-full flex justify-center items-center overflow-hidden mb-8">
@@ -499,15 +498,19 @@ export default function SeoChatGptPage() {
       {/* END: Pricing Section */}
 
       {/* BEGIN: FAQ Section */}
-      <FaqSection faqs={faqs} />
+      <div className="mobile-content-visibility">
+          <FaqSection faqs={faqs} />
+      </div>
       {/* END: FAQ Section */}
 
       {/* BEGIN: CTA Section */}
-      <CTASection 
-          subtitleContent={
-              <>Along with GEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</>
-          } 
-      />
+      <div className="mobile-content-visibility">
+          <CTASection 
+              subtitleContent={
+                  <>Along with GEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</>
+              } 
+          />
+      </div>
       {/* END: CTA Section */}
     </div>
   );
