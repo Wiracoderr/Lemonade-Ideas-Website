@@ -40,8 +40,8 @@ export default function GoogleAdsPricingSection() {
 
                 <div className="w-full relative block lg:hidden h-[450px] md:h-[550px] order-last">
                     <Image 
-                        src="/images/mesa-de-trabajo-1-100-mobile.webp"
-                        alt="Leverage Expertise Mobile"
+                        src="/images/picture-for-google-ads-1-mobile.webp"
+                        alt="Leverage Expertise Mobile - Cropped"
                         fill
                         className="object-cover"
                         loading="lazy"
