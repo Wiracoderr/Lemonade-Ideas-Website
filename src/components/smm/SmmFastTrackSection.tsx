@@ -4,13 +4,19 @@ export default function SmmFastTrackSection() {
     return (
         <section className="py-20 bg-white font-sans" data-purpose="fast-track">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12 max-w-6xl">
-                <div className="md:w-1/2">
-                    <img 
-                        alt="Person using tablet" 
-                        className="rounded-lg shadow-xl w-full h-auto object-cover" 
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGy4K9K7k7TvvrZ9OiIua4GxRTPUUoS7Y8QISucrV20YzVOUIokLxX236STa0rsew706G2Z2MfpHJhBf-OlgJWopyEn6vjCpa2XbkwOsFwZrzVoquIpWR-_tGmh-pmrXeFffFH49gU0Lv0a8D5ljqCHKMrJ-p3ZfMJIq8ll2C6VQxwNX22V-HkRC0cswLQZTfRXLiWLzRNez6pXNLfpZXqXOvKraIRJGc2ELAw7MZcx5dfYp-dA6x-9u55c-TtFd8jF0hdrw-Jzfo"
-                        loading="lazy"
-                    />
+                <div className="md:w-1/2 w-full">
+                    {/* Responsive Picture Box for separate desktop/mobile intrinsic images */}
+                    <div className="w-full relative aspect-[4/3] rounded-lg shadow-xl overflow-hidden">
+                        <picture>
+                             <source media="(max-width: 768px)" srcSet="/images/smm-fast-track-mobile.webp" />
+                             <img 
+                                 src="/images/smm-fast-track.webp" 
+                                 alt="Person using tablet" 
+                                 className="object-cover w-full h-full absolute inset-0" 
+                                 loading="lazy"
+                             />
+                        </picture>
+                    </div>
                 </div>
                 <div className="md:w-1/2">
                     <div className="pl-6 border-l-8 border-[#0a2e15]">

@@ -15,6 +15,7 @@ export default function SmmTimelineSection() {
                                 fill 
                                 className="object-cover" 
                                 sizes="(max-width: 768px) 100vw, 50vw" 
+                                loading="lazy"
                             />
                         </div>
                         <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-lg hidden md:block">
@@ -24,6 +25,7 @@ export default function SmmTimelineSection() {
                                 fill 
                                 className="object-cover" 
                                 sizes="50vw" 
+                                loading="lazy"
                             />
                         </div>
                         <div className="relative w-full aspect-[16/10] rounded-lg overflow-hidden shadow-lg hidden md:block">
@@ -33,6 +35,7 @@ export default function SmmTimelineSection() {
                                 fill 
                                 className="object-cover" 
                                 sizes="50vw" 
+                                loading="lazy"
                             />
                         </div>
                     </div>

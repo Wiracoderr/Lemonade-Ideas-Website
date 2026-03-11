@@ -32,7 +32,7 @@ export default function SmmExperienceSection() {
             {/* Mobile Image */}
             <div className="relative w-full aspect-video mt-12 lg:hidden block">
                  <Image
-                    src="/images/smm-experience.webp"
+                    src="/images/smm-experience-mobile.webp"
                     alt="Social Media Management Experience"
                     fill
                     className="object-cover"
