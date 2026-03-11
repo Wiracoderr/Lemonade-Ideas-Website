@@ -1,0 +1,1 @@
+const fs = require('fs'); const data = JSON.parse(fs.readFileSync('lh-report.json', 'utf8')); const lcp = data.audits['largest-contentful-paint-element']; if (lcp && lcp.details && lcp.details.items) { console.log(lcp.details.items[0].node.snippet); } else { console.log('Not found'); }

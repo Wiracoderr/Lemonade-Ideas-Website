@@ -127,6 +127,8 @@ export default function SeoChatGptPage() {
                                     alt="Watch Video"
                                     fill
                                     className="object-cover scale-[1.03] transition-transform duration-700 group-hover:scale-[1.08]"
+                                    loading="lazy"
+                                    fetchPriority="low"
                                 />
                                 <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                     <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
