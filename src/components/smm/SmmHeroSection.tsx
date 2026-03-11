@@ -36,7 +36,7 @@ export default function SmmHeroSection() {
                     </div>
                     <div className="w-full lg:w-[55%] pl-0">
                         {/* Video box structurally matching homepage with a white border and straight edges */}
-                        <div className="aspect-video bg-black/40 shadow-[0_30px_60px_rgba(0,0,0,0.6)] w-full max-w-[900px] flex items-center justify-center relative overflow-hidden border-[2px] lg:border-[4px] border-white/20 hover:border-white/50 transition-colors ml-auto cursor-pointer group rounded-lg lg:rounded-xl">
+                        <div className="aspect-video bg-black/90 shadow-[0_30px_60px_rgba(0,0,0,0.6)] w-full max-w-[900px] flex items-center justify-center relative overflow-hidden border-[4px] lg:border-[6px] border-white ml-auto">
                             {!isPlaying ? (
                                 <div
                                     className="absolute inset-0 z-20 cursor-pointer group"
