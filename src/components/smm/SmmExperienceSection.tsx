@@ -8,7 +8,7 @@ export default function SmmExperienceSection() {
                     <h2 className="text-2xl md:text-3xl font-extrabold text-white uppercase leading-snug italic">
                         &quot;I&apos;ve tried social media management before. What makes this different?&quot;
                     </h2>
-                    <p className="text-gray-300 mt-6 max-w-lg text-[15px] font-medium leading-relaxed">
+                    <p className="text-gray-200 mt-6 max-w-2xl text-[19.5px] font-medium leading-relaxed">
                         Social media management can be incredibly effective when done right, and that&apos;s where we shine. With experience running hundreds of successful campaigns, we know how to craft strategies that deliver real results. Whether you&apos;re starting fresh or need help refining your current approach, we&apos;ll ensure your social media presence is optimized for success. Already have an existing campaign? Let us review it and provide expert recommendations to help you reach your goals!
                     </p>
                 </div>
