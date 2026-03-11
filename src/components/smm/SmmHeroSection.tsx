@@ -39,12 +39,12 @@ export default function SmmHeroSection() {
                 <div className="max-w-7xl mx-auto px-4 pt-16 pb-28 relative z-10">
                     <div className="flex flex-col lg:flex-row items-center gap-12 xl:gap-16">
                         {/* Text Section relative z-20 to be above the video on small overlap */}
-                        <div className="w-full lg:w-[45%] space-y-5 relative z-20">
-                            <h1 className="text-[26px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-[Oswald] font-bold uppercase leading-[1.1] tracking-normal drop-shadow-sm text-white max-w-xl">
-                                BOOST YOUR SOCIAL<br />
-                                MEDIA PRESENCE AND<br />
-                                DRIVE RESULTS FAST WITH <br className="hidden lg:block"/>
-                                <span className="text-[#38b04d]">EXPERT MANAGEMENT</span>
+                        <div className="w-full lg:w-[45%] space-y-5 relative z-20 flex flex-col items-center md:items-start text-center md:text-left">
+                            <h1 className="text-[26px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-[Oswald] font-bold uppercase leading-[1.1] tracking-normal drop-shadow-sm text-white max-w-[90%] sm:max-w-xl mx-auto md:mx-0">
+                                BOOST YOUR SOCIAL MEDIA PRESENCE<br className="block md:hidden"/>
+                                <span className="hidden md:inline"><br /></span>
+                                AND DRIVE RESULTS FAST WITH <br className="hidden lg:block"/>
+                                <span className="text-white md:text-[#38b04d]">EXPERT MANAGEMENT</span>
                             </h1>
                             <p className="text-[14px] md:text-[17px] lg:text-[18.5px] font-bold text-white leading-[1.5] font-[Arial] mt-6 drop-shadow-sm">
                                 Read below to learn how we do it!
