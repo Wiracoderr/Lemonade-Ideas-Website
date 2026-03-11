@@ -43,8 +43,8 @@ export default function SmmHeroSection() {
                             <h1 className="text-[26px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-[Oswald] font-bold uppercase leading-[1.1] tracking-normal drop-shadow-sm text-white max-w-xl">
                                 BOOST YOUR SOCIAL<br />
                                 MEDIA PRESENCE AND<br />
-                                DRIVE RESULTS <br className="lg:hidden" />
-                                <span className="text-[#38b04d]">FAST WITH EXPERT<br className="hidden lg:block"/> MANAGEMENT</span>
+                                DRIVE RESULTS FAST WITH <br className="hidden lg:block"/>
+                                <span className="text-[#38b04d]">EXPERT MANAGEMENT</span>
                             </h1>
                             <p className="text-[14px] md:text-[17px] lg:text-[18.5px] font-bold text-white leading-[1.5] font-[Arial] mt-6 drop-shadow-sm">
                                 Read below to learn how we do it!
