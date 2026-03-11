@@ -38,10 +38,11 @@ export default function SmmDarkExperienceSection() {
             {/* Mobile Specific Bottom Image */}
             <div className="w-full relative block lg:hidden h-[400px] md:h-[500px]">
                 <Image 
-                    src="/images/smm-expertise-bg.webp"
+                    src="/images/smm-mobile-dark-section.webp"
                     alt="Social Media Experience Mobile"
                     fill
                     className="object-cover"
+                    style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 85%)" }}
                     loading="lazy"
                 />
             </div>
