@@ -1,0 +1,7 @@
+# Git and Deployment Rules
+
+**CRITICAL RULE: NEVER AUTO-PUSH TO GITHUB**
+
+1. **NO AUTO DEPLOYMENTS:** The ASSISTANT must NEVER run `git push` or push changes to GitHub/remote repositories automatically.
+2. **USER APPROVAL REQUIRED:** Any commands that interact with the remote repository (especially `git push`) MUST only be proposed if the user explicitly requests a push, or the ASSISTANT MUST ask the user for explicit approval before running the `git push` command.
+3. This is because every `git push` triggers a live production deployment on Vercel. Do not trigger a Vercel deployment without the user explicitly telling you to "push to github" or "deploy to vercel".
