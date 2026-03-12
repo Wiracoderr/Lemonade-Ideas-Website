@@ -1,0 +1,67 @@
+﻿
+> temp-app@0.1.0 prebuild
+> node scripts/build-frames-manifest.mjs
+
+[Success] Root manifest: 80 frames
+[Success] Mobile manifest: 80 frames
+[Success] Desktop manifest: 80 frames
+
+> temp-app@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.7s
+  Running TypeScript ...
+node.exe : Failed to compile.
+En línea: 1 Carácter: 1
++ & "D:\Program Files\nodejs/node.exe" 
+"D:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+NotSpecified:     (Failed to 
+compile.:String) [], RemoteEx    ception
+    + FullyQualifiedErrorId : 
+NativeCommandE    rror
+ 
+
+./src/app/page.tsx:47:14
+Type error: No overload matches this 
+call.
+  Overload 1 of 2, '(props: { children: 
+ReactNode; }, context?: any): string | 
+number | bigint | boolean | 
+ReactElement<unknown, string | 
+JSXElementConstructor<any>> | ... 4 more 
+... | undefined', gave the following 
+error.
+    Property 'children' is missing in 
+type '{}' but required in type '{ 
+children: ReactNode; }'.
+  Overload 2 of 2, '(props: { children: 
+ReactNode; }): string | number | bigint 
+| boolean | ReactElement<unknown, string 
+| JSXElementConstructor<any>> | ... 4 
+more ... | undefined', gave the 
+following error.
+    Property 'children' is missing in 
+type '{}' but required in type '{ 
+children: ReactNode; }'.
+
+[0m [90m 45 |[39m
+ [90m 46 |[39m             {[90m/* 2. 
+BRANDING SECTIONS (Dynamically Loaded) 
+*/[39m}
+[31m[1m>[22m[39m[90m 47 |[39m      
+       [33m<[39m[33mStitchLayout[39m 
+[33m/[39m[33m>[39m
+ [90m    |[39m              
+[31m[1m^[22m[39m
+ [90m 48 |[39m         [33m<[39m[33m
+/[39m[33mmain[39m[33m>[39m
+ [90m 49 |[39m     )[33m;[39m
+ [90m 50 |[39m }[0m
+Next.js build worker exited with code: 1 
+and signal: null

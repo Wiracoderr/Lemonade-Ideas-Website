@@ -5,11 +5,12 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function StitchLayout() {
+export default function StitchLayout({ children }: { children?: React.ReactNode }) {
     const [isPlaying, setIsPlaying] = useState(false);
 
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
+            {children}
             <section className="relative bg-[#3a281e] py-24 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
                 {/* 1. Full-width Background Image (Office) - Hidden on mobile to optimize LCP */}
                 <div className="absolute inset-0 z-0 hidden md:block">

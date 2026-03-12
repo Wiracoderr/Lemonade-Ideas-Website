@@ -72,7 +72,7 @@ export default function MarketingFooter() {
                             <li><a className="hover:text-secondary transition" href="#">Guaranteed Ranking™</a></li>
                             <li><a className="hover:text-secondary transition" href="#">SEO</a></li>
                             <li><a className="hover:text-secondary transition" href="#">Google Ads Management</a></li>
-                            <li><a className="hover:text-secondary transition" href="#">Website Design</a></li>
+                            <li><a className="hover:text-secondary transition" href="/website">Website Design</a></li>
                             <li><a className="hover:text-secondary transition" href="#">Social Media Management</a></li>
                             <li><a className="hover:text-secondary transition" href="/branding">Branding & Strategy</a></li>
                         </ul>
