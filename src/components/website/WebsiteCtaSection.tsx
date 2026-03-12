@@ -1,28 +1,47 @@
+"use client";
+
+import React from 'react';
+import Image from 'next/image';
+
 export default function WebsiteCtaSection() {
-  return (
-    <section className="py-20 bg-[#8DBF43] text-[#1e3a1a] text-center">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-4xl font-extrabold mb-4 uppercase tracking-widest">
-          Ready to move forward?
-        </h2>
-        <p className="mb-10 font-medium text-lg max-w-2xl mx-auto leading-relaxed opacity-90">
-          Whether you already have a website or don&apos;t know where to start, we&apos;ve got you covered. We&apos;ll simplify the process and ensure your project is completed on time and within budget.
-        </p>
-        <a 
-          href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="bg-[#1e3a1a] text-white py-4 px-10 rounded-lg flex items-center justify-center gap-3 mx-auto font-bold uppercase hover:bg-white hover:text-[#1e3a1a] transition-all group w-fit shadow-xl"
-        >
-          <svg className="h-5 w-5 text-[#8DBF43]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-          </svg>
-          <div className="text-left">
-            <span className="block text-[10px] opacity-70 tracking-widest">Speak with our expert</span>
-            Schedule a Call
-          </div>
-        </a>
-      </div>
-    </section>
-  );
+    return (
+        <section className="bg-[#143d1f] py-24 px-4 relative overflow-hidden" data-purpose="cta-bottom">
+            {/* Texture Map Overlay */}
+            <div
+                className="absolute inset-0 opacity-[0.45] pointer-events-none"
+                style={{
+                    backgroundImage: "url('/images/Texture.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            ></div>
+
+            <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+            <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+
+            <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
+                <h2 className="text-[24px] md:text-[36px] lg:text-[42px] font-[Oswald] font-bold uppercase leading-tight mb-8 tracking-wide">
+                    READY TO MOVE FORWARD?
+                </h2>
+
+                <p className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-3xl mx-auto font-[Arial] leading-[1.8] opacity-90">
+                    Whether you already have a website or don&apos;t know where to start, we&apos;ve got<br className="hidden md:block" /> you covered. We&apos;ll simplify the process and ensure your project is completed<br className="hidden md:block" /> on time and within budget.
+                </p>
+
+                <a
+                    href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
+                    className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5"
+                >
+                    <div className="relative w-[50px] h-[50px] shrink-0">
+                        <Image src="/images/icon-call.svg" alt="Phone Outline Icon" fill className="object-contain" loading="lazy" />
+                    </div>
+                    <div className="flex flex-col items-start pr-4 pt-1">
+                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">SPEAK WITH OUR EXPERT</span>
+                        <span className="text-[26px] leading-none tracking-normal">SCHEDULE A CALL</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+    );
 }

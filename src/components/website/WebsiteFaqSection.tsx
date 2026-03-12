@@ -1,115 +1,93 @@
 "use client";
-import { useState } from 'react';
+
+import React, { useState } from "react";
+
+const faqs = [
+  {
+    question: "How much do your services cost?",
+    answer: "Our website design packages start at $3500. We offer a transparent pricing structure based on your specific requirements and the complexity of the project."
+  },
+  {
+    question: "What makes you different than other companies?",
+    answer: "We focus on building completely custom, high-performing websites without relying on slow, generic templates. Our designs are sales-driven, built specifically to convert visitors into warm leads."
+  },
+  {
+    question: "How fast can you get me on page 1 of Google?",
+    answer: "While we build all our websites with SEO best practices from the start, ranking on Page 1 depends on your industry&apos;s competitiveness. We offer dedicated SEO services to help accelerate that process."
+  },
+  {
+    question: "Do you provide a free consultation?",
+    answer: "Yes! We offer a free 30-minute discovery call where we&apos;ll evaluate your current online presence and discuss exactly how a new website can impact your business growth."
+  },
+  {
+    question: "Do you offer performance-based marketing services?",
+    answer: "Yes, once your website is launched, we can discuss our digital marketing and advertising strategies designed to drive traffic and maximize your return on investment."
+  },
+  {
+    question: "Do you require long-term contracts?",
+    answer: "No. Our website build is a one-time project fee. While we offer monthly maintenance and hosting packages starting at $30/mo, they are operated on a month-to-month basis without long-term lock-ins."
+  }
+];
 
 export default function WebsiteFaqSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: "How much do your services cost?",
-      answer: "Our website design packages start at $3500. We offer a transparent pricing structure based on your specific requirements and the complexity of the project."
-    },
-    {
-      question: "What makes you different than other companies?",
-      answer: "We focus on building completely custom, high-performing websites without relying on slow, generic templates. Our designs are sales-driven, built specifically to convert visitors into warm leads."
-    },
-    {
-      question: "How fast can you get me on page 1 of Google?",
-      answer: "While we build all our websites with SEO best practices from the start, ranking on Page 1 depends on your industry's competitiveness. We offer dedicated SEO services to help accelerate that process."
-    },
-    {
-      question: "Do you provide a free consultation?",
-      answer: "Yes! We offer a free 30-minute discovery call where we'll evaluate your current online presence and discuss exactly how a new website can impact your business growth."
-    },
-    {
-      question: "Do you offer performance-based marketing services?",
-      answer: "Yes, once your website is launched, we can discuss our digital marketing and advertising strategies designed to drive traffic and maximize your return on investment."
-    },
-    {
-      question: "Do you require long-term contracts?",
-      answer: "No. Our website build is a one-time project fee. While we offer monthly maintenance and hosting packages starting at $30/mo, they are operated on a month-to-month basis without long-term lock-ins."
-    }
-  ];
+    const toggleFaq = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
-  const handleToggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    return (
+        <section className="py-20 px-4 relative overflow-hidden border-t border-gray-100 dark:border-gray-700">
+            {/* Background color and texture to match SEO Timeline */}
+            <div className="absolute inset-0 bg-[#eff8fa] dark:bg-gray-900 z-0"></div>
+            <div className="absolute inset-0 opacity-40 z-0 mix-blend-multiply dark:mix-blend-screen bg-[url(/images/layer-1.png)] bg-[length:45%_100%] bg-left bg-no-repeat"></div>
 
-  return (
-    <section className="py-20 bg-white">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-3xl font-extrabold text-center mb-12 uppercase tracking-widest text-[#1e3a1a]">
-          Frequently Asked Questions
-        </h2>
-        
-        <div className="grid md:grid-cols-2 gap-6 items-start">
-          {/* Left Column (First 3 FAQs) */}
-          <div className="space-y-4">
-            {faqs.slice(0, 3).map((faq, index) => {
-              const globalIndex = index;
-              const isOpen = openIndex === globalIndex;
-              return (
-                <div 
-                  key={globalIndex} 
-                  className={`border border-gray-200 rounded overflow-hidden transition-colors ${isOpen ? 'border-[#8DBF43]' : 'hover:border-[#8DBF43]'}`}
-                >
-                  <button 
-                    onClick={() => handleToggle(globalIndex)}
-                    className="w-full text-left p-4 flex justify-between items-center group cursor-pointer bg-white"
-                  >
-                    <span className="text-xs font-bold uppercase tracking-wide text-gray-800 pr-4 leading-relaxed">
-                      {faq.question}
-                    </span>
-                    <span className={`text-[#8DBF43] transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-90' : ''}`}>
-                      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </span>
-                  </button>
-                  {isOpen && (
-                    <div className="p-4 pt-0 text-sm text-gray-600 border-t border-gray-100 leading-relaxed bg-gray-50/50">
-                      {faq.answer}
+            <div className="max-w-4xl mx-auto relative z-10">
+                <div className="text-center mb-16 relative">
+                    <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
+                        <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
+                            FAQ
+                        </span>
                     </div>
-                  )}
+                    <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white relative z-10 tracking-tight">
+                        Frequently Asked Questions
+                    </h2>
                 </div>
-              );
-            })}
-          </div>
 
-          {/* Right Column (Last 3 FAQs) */}
-          <div className="space-y-4">
-            {faqs.slice(3, 6).map((faq, index) => {
-              const globalIndex = index + 3;
-              const isOpen = openIndex === globalIndex;
-              return (
-                <div 
-                  key={globalIndex} 
-                  className={`border border-gray-200 rounded overflow-hidden transition-colors ${isOpen ? 'border-[#8DBF43]' : 'hover:border-[#8DBF43]'}`}
-                >
-                  <button 
-                    onClick={() => handleToggle(globalIndex)}
-                    className="w-full text-left p-4 flex justify-between items-center group cursor-pointer bg-white"
-                  >
-                    <span className="text-xs font-bold uppercase tracking-wide text-gray-800 pr-4 leading-relaxed">
-                      {faq.question}
-                    </span>
-                    <span className={`text-[#8DBF43] transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-90' : ''}`}>
-                      <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </span>
-                  </button>
-                  {isOpen && (
-                    <div className="p-4 pt-0 text-sm text-gray-600 border-t border-gray-100 leading-relaxed bg-gray-50/50">
-                      {faq.answer}
-                    </div>
-                  )}
+                <div className="grid md:grid-cols-2 gap-6">
+                    {faqs.map((faq, index) => {
+                        const isOpen = openIndex === index;
+
+                        return (
+                            <div key={index} className="flex flex-col rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 transition-all h-fit">
+                                {/* Question Button */}
+                                <div
+                                    className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#facc15]'}`}
+                                    onClick={() => toggleFaq(index)}
+                                >
+                                    <span className="font-[Oswald] font-bold text-base uppercase text-gray-800 dark:text-gray-200 tracking-wide pr-4">
+                                        {faq.question}
+                                    </span>
+                                    <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#143d1f] text-white' : 'bg-[#143d1f] text-white group-hover:text-[#facc15]'}`}>
+                                        <i className={`fas fa-chevron-down transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}></i>
+                                    </div>
+                                </div>
+
+                                {/* Answer Dropdown Panel */}
+                                <div
+                                    className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
+                                >
+                                    <div className="overflow-hidden bg-[#143d1f] text-white">
+                                        <div className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner">
+                                            {faq.answer}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+            </div>
+        </section>
+    );
 }

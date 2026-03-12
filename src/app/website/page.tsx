@@ -5,10 +5,8 @@ import WebsitePerformanceSection from "../../components/website/WebsitePerforman
 import WebsitePortfolioSection from "../../components/website/WebsitePortfolioSection";
 import WebsitePricingSection from "../../components/website/WebsitePricingSection";
 import WebsiteHostingSection from "../../components/website/WebsiteHostingSection";
-import WebsiteMaintenanceSection from "../../components/website/WebsiteMaintenanceSection";
 import WebsiteFaqSection from "../../components/website/WebsiteFaqSection";
 import WebsiteCtaSection from "../../components/website/WebsiteCtaSection";
-import StitchLayout from "../../components/StitchLayout";
 
 // SEO metadata
 export const metadata = {
@@ -18,19 +16,16 @@ export const metadata = {
 
 export default function WebsitePage() {
   return (
-    <StitchLayout>
-      <main className="flex-grow">
-        <WebsiteHeroSection />
-        <WebsiteFeaturesSection />
-        <WebsiteProcessSection />
-        <WebsitePerformanceSection />
-        <WebsitePortfolioSection />
-        <WebsitePricingSection />
-        <WebsiteHostingSection />
-        <WebsiteMaintenanceSection />
-        <WebsiteFaqSection />
-        <WebsiteCtaSection />
-      </main>
-    </StitchLayout>
+    <main className="flex-grow">
+      <WebsiteHeroSection />
+      <WebsiteFeaturesSection />
+      <WebsiteProcessSection />
+      <WebsitePerformanceSection />
+      <WebsitePortfolioSection />
+      <WebsitePricingSection />
+      <WebsiteHostingSection />
+      <WebsiteFaqSection />
+      <WebsiteCtaSection />
+    </main>
   );
 }

@@ -1,0 +1,30 @@
+﻿c8b1943 Fix(Branding): Remove invalid onLoad handler from external stylesheet in Server Component layout.tsx
+87504bd Perf(Branding): Apply PageSpeed optimizations for Mobile LCP, TBT, A11y
+cbf3a40 Checkpoint before branding mobile PageSpeed optimization
+8dd75a6 Add custom rule for Vercel deployment branch
+a1d3ea1 Optimize mobile images on branding page and add performance skills
+222259e Fix double header and footer on website landing page by removing redundant imports.
+cee7772 Create independent website landing page, transpose static stitch bundle, and implement active navigation header styling.
+f33f138 feat: complete branding landing page with mobile optimizations
+4c785d8 chore: checkpoint before adding new homepage service sections
+7db3a17 chore: checkpoint before starting Branding & Strategy page implementation
+26e3910 style: change SMM Features grid from 4 cols to 3 cols to match design
+8ff13c4 fix: remove deleted SmmAddOnsSection import that caused Vercel build to crash
+bde2765 chore: Exclude legacy directories from ESLint and TS builds to fix Vercel
+cc14b7b fix: Escape quotes in GoogleAdsFeaturesSection to resolve Vercel build error
+8fb270d perf: Optimize SMM mobile images with physical webp resizing and picture tags
+9ac0cd3 style: Use custom requested image for SMM Dark Experience mobile view
+3377127 style: Adjust mobile layout of SMM hero title to 2 lines centered white
+1747e28 feat: Remove SMM Add-Ons Section from page layout per user request
+f306617 style: Standardize SMM CTA section to match the global dark green layout
+47d350c style: Standardize SMM Pricing and FAQ layouts to match SEO page schemas
+f78f422 feat: Replace SMM Dark Experience with diagonal image split layout from SEO
+d72ddc7 style: Match SMM Features layout to SEO Performance 4-column block grid
+4adcfcf feat: redesign SMM experience section with diagonal image split layout
+0eca6c5 style: increase intro text size by 30% in SMM experience section
+c5138af feat: optimize timeline images to WebP and restructure SMM Timeline layout to match reference proportions
+1b1a101 style: replace lime green highlights with button dark green in SMM components
+7b4e330 style: put expert management on its own line in SMM hero
+91b6797 style: adjust line breaks in SMM Hero title to match Google Ads proportions
+1b2fced style: clone Google Ads Hero template exactly for SMM Hero
+6d4ccd3 style: Match SMM video container border styling to SEO page
