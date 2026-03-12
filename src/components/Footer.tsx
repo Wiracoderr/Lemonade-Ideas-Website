@@ -66,7 +66,7 @@ export default function Footer() {
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Google Ads Management</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Website Design</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/social-media-management">Social Media Management</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Branding & Strategy</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/branding">Branding & Strategy</Link></li>
                         </ul>
                         <Link href="#" className="inline-block bg-[#1e3a29] text-white font-bold py-2 px-6 text-xs uppercase rounded hover:bg-green-800 transition">CONTACT US</Link>
                     </div>

@@ -112,7 +112,7 @@ export default function Header() {
                     <Link href="/seochatgpt" className={`transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SEO ChatGpt</Link>
                     <Link href="/google-ads" className={`transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Google Ads</Link>
                     <Link href="/social-media-management" className={`transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SMM</Link>
-                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Branding</Link>
+                    <Link href="/branding" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Branding</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Websites</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Blogs</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Contact</Link>
@@ -176,7 +176,7 @@ export default function Header() {
                                 <Link href="/seochatgpt" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SEO ChatGpt</Link>
                                 <Link href="/google-ads" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Google Ads</Link>
                                 <Link href="/social-media-management" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SMM</Link>
-                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Branding</Link>
+                                <Link href="/branding" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Branding</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Websites</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Blogs</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Contact</Link>

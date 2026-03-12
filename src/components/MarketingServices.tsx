@@ -95,6 +95,30 @@ export default function MarketingServices() {
                 </div>
             </div>
 
+            {/* Section 2.5 SEO Organic */}
+            <div className="py-20 bg-white dark:bg-gray-900">
+                <div className="container mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div className="lg:w-1/2">
+                        <div className="border-l-4 border-yellow-500 pl-6 mb-8">
+                            <h2 className="text-3xl lg:text-4xl font-display font-bold text-primary dark:text-white uppercase mb-4">Search Engine Optimization (SEO)</h2>
+                            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+                                Dominate Google’s organic search results. We build authoritative websites that naturally attract high-intent customers without paying per click. Our comprehensive strategy includes technical audits, high-quality backlinking, and localized content generation that secures your spot at the top of the map pack and standard results.
+                            </p>
+                            <p className="font-bold text-gray-800 dark:text-gray-200 text-sm">
+                                Long-term ROI.<br />
+                                Unshakeable industry authority.
+                            </p>
+                        </div>
+                        <Link className="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block w-max" href="/seo">Learn More</Link>
+                    </div>
+                    <div className="lg:w-1/2">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl h-0 pb-[75%] sm:pb-[60%]">
+                            <Image src="https://images.unsplash.com/photo-1432888117426-115f08ac4832?q=80&w=800" alt="SEO Strategy Graph" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Section 3 PPC */}
             <div className="py-20 bg-surface-light dark:bg-surface-dark">
                 <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
@@ -129,7 +153,61 @@ export default function MarketingServices() {
                 </div>
             </div>
 
-            {/* Section 4 Portfolio */}
+            {/* Section 3.5 Social Media Management */}
+            <div className="py-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
+                <div className="container mx-auto px-4 flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div className="lg:w-1/2">
+                        <div className="border-l-4 border-yellow-500 pl-6 mb-8">
+                            <h2 className="text-3xl lg:text-4xl font-display font-bold text-primary dark:text-white uppercase mb-4">Social Media Management</h2>
+                            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+                                Build a community around your brand. We handle everything from content creation and daily posting to community engagement and paid social advertising. Turn followers into loyal customers with scroll-stopping visuals, viral video scripts, and consistent brand messaging across Facebook, Instagram, LinkedIn, and more.
+                            </p>
+                            <p className="font-bold text-gray-800 dark:text-gray-200 text-sm">
+                                Engaging creative.<br />
+                                Data-driven audience targeting.
+                            </p>
+                        </div>
+                        <div className="flex flex-col sm:flex-row gap-8 mb-8">
+                            <div>
+                                <div className="text-4xl lg:text-5xl font-bold text-yellow-500 mb-1">300%</div>
+                                <p className="text-gray-600 dark:text-gray-400 text-sm">Average engagement increase</p>
+                            </div>
+                        </div>
+                        <Link className="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block w-max" href="/social-media-management">Learn More</Link>
+                    </div>
+                    <div className="lg:w-1/2">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl h-0 pb-[75%] sm:pb-[60%]">
+                            <Image src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800" alt="Social Media Growth" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Section 4 Branding & Strategy */}
+            <div className="py-20 bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800">
+                <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
+                    <div className="lg:w-1/2">
+                        <div className="border-l-4 border-primary pl-6 mb-8">
+                            <h2 className="text-3xl lg:text-4xl font-display font-bold text-primary dark:text-white uppercase mb-4">Branding & Strategy</h2>
+                            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm">
+                                Your brand is more than just a logo; it&apos;s the heartbeat of your business. We craft cohesive visual identities, brand guidelines, and overarching marketing strategies that tell your unique story. From color psychology to voice and tone, we ensure every customer touchpoint builds trust and premium positioning in your market.
+                            </p>
+                            <p className="font-bold text-gray-800 dark:text-gray-200 text-sm">
+                                Memorable identities.<br />
+                                Conversion-focused positioning.
+                            </p>
+                        </div>
+                        <Link className="bg-primary hover:bg-primary-light text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block w-max" href="/branding">Learn More</Link>
+                    </div>
+                    <div className="lg:w-1/2">
+                        <div className="relative rounded-2xl overflow-hidden shadow-2xl h-0 pb-[75%] sm:pb-[60%]">
+                            <Image src="https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=800" alt="Brand Strategy and Design" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Section 5 Portfolio */}
             <div className="py-24 bg-white dark:bg-gray-900 relative">
                 <div className="absolute top-0 left-0 right-0 text-center select-none pointer-events-none opacity-50">
                     <span className="text-[8rem] lg:text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 uppercase leading-none">Portfolio</span>

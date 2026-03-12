@@ -74,7 +74,7 @@ export default function MarketingFooter() {
                             <li><a className="hover:text-secondary transition" href="#">Google Ads Management</a></li>
                             <li><a className="hover:text-secondary transition" href="#">Website Design</a></li>
                             <li><a className="hover:text-secondary transition" href="#">Social Media Management</a></li>
-                            <li><a className="hover:text-secondary transition" href="#">Branding & Strategy</a></li>
+                            <li><a className="hover:text-secondary transition" href="/branding">Branding & Strategy</a></li>
                         </ul>
                         <a className="bg-primary-light border border-white/20 hover:bg-white hover:text-primary transition font-bold py-2 px-6 rounded text-xs uppercase inline-block" href="#">CONTACT US</a>
                     </div>
