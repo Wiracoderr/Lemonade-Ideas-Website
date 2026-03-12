@@ -41,7 +41,6 @@ export default function BrandingExperienceSection() {
                     fill 
                     className="object-cover object-center"
                     sizes="100vw"
-                    unoptimized={true}
                 />
             </div>
         </section>

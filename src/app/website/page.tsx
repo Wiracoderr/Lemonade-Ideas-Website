@@ -1,6 +1,5 @@
 import WebsiteHeroSection from "../../components/website/WebsiteHeroSection";
-import WebsiteIntroSection from "../../components/website/WebsiteIntroSection";
-import WebsiteWhyUsSection from "../../components/website/WebsiteWhyUsSection";
+import WebsiteFeaturesSection from "../../components/website/WebsiteFeaturesSection";
 import WebsiteProcessSection from "../../components/website/WebsiteProcessSection";
 import WebsitePerformanceSection from "../../components/website/WebsitePerformanceSection";
 import WebsitePortfolioSection from "../../components/website/WebsitePortfolioSection";
@@ -22,8 +21,7 @@ export default function WebsitePage() {
     <StitchLayout>
       <main className="flex-grow">
         <WebsiteHeroSection />
-        <WebsiteIntroSection />
-        <WebsiteWhyUsSection />
+        <WebsiteFeaturesSection />
         <WebsiteProcessSection />
         <WebsitePerformanceSection />
         <WebsitePortfolioSection />

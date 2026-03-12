@@ -26,7 +26,7 @@ export default function BrandingBenefitsSection() {
                             fill
                             className="object-contain"
                             src="/images/branding-benefits-mobile.webp"
-                            unoptimized={true}
+                            sizes="100vw"
                         />
                     </div>
                 </div>

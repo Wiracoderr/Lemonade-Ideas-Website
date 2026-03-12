@@ -59,7 +59,7 @@ export default function BrandingStorySection() {
                     fill
                     className="object-cover"
                     loading="lazy"
-                    unoptimized={true}
+                    sizes="100vw"
                 />
             </div>
         </section>

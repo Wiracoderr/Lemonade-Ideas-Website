@@ -27,7 +27,7 @@ export default function BrandingTimelineSection() {
                                 alt="Branding Idea Trust Mobile"
                                 fill
                                 className="object-cover"
-                                unoptimized={true}
+                                sizes="100vw"
                             />
                         </div>
                         {/* Desktop Image 2 */}
@@ -48,7 +48,7 @@ export default function BrandingTimelineSection() {
                                 alt="Brand Marketing Technology Mobile"
                                 fill
                                 className="object-cover"
-                                unoptimized={true}
+                                sizes="100vw"
                             />
                         </div>
                         {/* Desktop Image 3 */}
@@ -69,7 +69,7 @@ export default function BrandingTimelineSection() {
                                 alt="Brand Concept Tree Mobile"
                                 fill
                                 className="object-cover"
-                                unoptimized={true}
+                                sizes="100vw"
                             />
                         </div>
                     </div>
