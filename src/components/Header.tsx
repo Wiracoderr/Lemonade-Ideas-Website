@@ -74,16 +74,16 @@ export default function Header() {
                                 style={{ clipPath: "polygon(20px 0, 100% 0, 100% 100%, 0% 100%)", marginLeft: "-20px" }}
                             >
                                 <span className="text-[10px] tracking-wider font-bold mr-2">FOLLOW US ON :</span>
-                                <Link href="https://www.facebook.com/lemonadeidea/" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                <Link href="https://www.facebook.com/lemonadeidea/" aria-label="Facebook" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
                                     <BrandFacebook size={12} />
                                 </Link>
-                                <Link href="https://www.instagram.com/lemonade.ideas" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                <Link href="https://www.instagram.com/lemonade.ideas" aria-label="Instagram" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
                                     <BrandInstagram size={12} />
                                 </Link>
-                                <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" aria-label="YouTube" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
                                     <BrandYoutube size={12} />
                                 </Link>
-                                <Link href="http://www.linkedin.com/in/lemonade-ideas-080122348" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
+                                <Link href="http://www.linkedin.com/in/lemonade-ideas-080122348" aria-label="LinkedIn" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
                                     <BrandLinkedin size={12} />
                                 </Link>
                             </div>
@@ -182,9 +182,9 @@ export default function Header() {
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Contact</Link>
 
                                 <div className="mt-8 flex gap-6">
-                                    <Link href="https://www.facebook.com/lemonadeidea/" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandFacebook size={24} /></Link>
-                                    <Link href="https://www.instagram.com/lemonade.ideas" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandInstagram size={24} /></Link>
-                                    <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandYoutube size={24} /></Link>
+                                    <Link href="https://www.facebook.com/lemonadeidea/" aria-label="Facebook" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandFacebook size={24} /></Link>
+                                    <Link href="https://www.instagram.com/lemonade.ideas" aria-label="Instagram" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandInstagram size={24} /></Link>
+                                    <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" aria-label="YouTube" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandYoutube size={24} /></Link>
                                 </div>
                             </div>
                         </motion.div>

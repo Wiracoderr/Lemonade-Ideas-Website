@@ -35,6 +35,43 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+import type { Metadata } from "next";
+import { Inter, Oswald } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["300", "400", "600", "700"],
+  display: "swap",
+  preload: true,
+  fallback: ['system-ui', 'arial'],
+});
+
+const oswald = Oswald({
+  variable: "--font-oswald",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  display: "swap",
+  preload: true,
+  fallback: ['sans-serif'],
+});
+
+export const metadata: Metadata = {
+  title: "Lemonade Ideas | Build your dreams",
+  description: "Internet marketing that is fast, affordable, and drives you leads.",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <head>
         {/*
          * LCP Resource Hints
          * Preconnect + preload the first animation frame (frame_000.webp)
@@ -55,10 +92,17 @@ export default function RootLayout({
           fetchPriority="high"
         />
         {/* Font Awesome globally loaded for standard icons via CSS to prevent render blocking on mobile */}
-        <link 
-          rel="stylesheet" 
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-          fetchPriority="low"
+        <link
+          rel="preload"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          as="style"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          media="print"
+          // @ts-expect-error Next.js doesn't recognize onload perfectly here but it's safe
+          onLoad={(e) => { e.currentTarget.media = 'all' }}
         />
       </head>
       <body

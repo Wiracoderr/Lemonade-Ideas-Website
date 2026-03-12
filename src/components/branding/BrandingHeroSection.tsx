@@ -29,8 +29,9 @@ export default function BrandingHeroSection() {
                         className="object-cover object-center hidden md:block"
                         sizes="100vw"
                         priority
+                        fetchPriority="low"
                     />
-                    {/* Mobile Version */}
+                    {/* Mobile Version - LCP Element */}
                     <Image
                         src="/images/google-ads-hero-bg-mobile.webp"
                         alt="Google Ads Strategy Mobile"
@@ -38,6 +39,7 @@ export default function BrandingHeroSection() {
                         className="object-cover object-center md:hidden"
                         sizes="100vw"
                         priority
+                        fetchPriority="high"
                     />
                     {/* Dark Green overlay at 80% opacity to give a strong green tint */}
                     <div className="absolute inset-0 bg-[#143d1f]/80"></div>
