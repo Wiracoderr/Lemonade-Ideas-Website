@@ -35,6 +35,23 @@ Never use these. They are automatic red flags:
 - Filler transitions: "That being said," "It's worth noting that," "At the end of the day," "Without further ado," "As you might know"
 - "In this blog post, we will explore..." — be direct, just start
 
+## Humanizing Blog Content
+
+To prevent essays from reading like standard AI outputs, you must actively deploy human texture:
+
+**1. Master the "Spoken" Rhythm**
+- **Use Contractions:** Always prefer *don't*, *it's*, *you're* over *do not*, *it is*, *you are*. 
+- **Sentence Variety:** Follow the "Long-Short-Medium" rule. Avoid the AI habit of making every sentence the exact same length. Break up dense paragraphs with punchy, one-line sentences.
+
+**2. Native Transitions & Vocabulary**
+- **Stop the "AI Connectors":** Ban words like "Furthermore," "Moreover," and "In conclusion."
+- **Use Natural Flow:** Use transitions like "Plus," "But here's the kicker," "The bottom line," or "Anyway."
+- **Phrasal Verbs:** Swap formal verbs for conversational ones (e.g., use "look into" instead of "investigate," and "find out" instead of "discover").
+
+**3. Add "Human" Texture**
+- **Opinions & Stance:** Don't be neutrally objective when opinion is warranted. Use phrasing like "I’ve always felt that..." or "Personally, I think..."
+- **Rhetorical Questions:** Directly engage the reader: "Does that sound familiar?" or "But why does that actually matter?"
+
 ## The Opening (First 2-3 Sentences)
 
 The opening must do one of two things: **state the problem** or **state the conclusion**. Never start with background, company history, or hype.
@@ -127,8 +144,8 @@ Posts worth sharing contain at least one of:
 8. Changelogs belong in the changelog. Blog posts should offer something more.
 9. When in doubt, go deeper. The risk of being too shallow is far greater than being too detailed.
 10. Write the post you wish existed when you were trying to solve this problem.
-
-## When Reviewing or Editing a Draft
+11. **CRITICAL LENGTH CONSTRAINT:** Every single blog post must be extremely comprehensive and contain a minimum of **2,500 words or more**. Under no circumstances should a blog be shorter than this length.
+12. **CRITICAL MEDIA CONSTRAINT:** Every single blog must contain a minimum of **4 highly realistic, photorealistic images**. These images must not appear AI-generated and must be optimized with `alt` and `title` tags for Local SEO.## When Reviewing or Editing a Draft
 
 Run through both checklists:
 

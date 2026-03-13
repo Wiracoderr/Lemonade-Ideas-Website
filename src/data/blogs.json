@@ -1,8 +1,38 @@
 [
   {
+    "title": "Builder Brand Identity: The Psychology of Luxury Construction Marketing",
+    "slug": "builder-brand-identity",
+    "thumbnail": "/images/blogs/builder-brand-identity/hero.png",
+    "date": "March 18, 2026"
+  },
+  {
+    "title": "Contractor Video Testimonials: The Mathematical ROI of Client Proof",
+    "slug": "contractor-video-testimonials",
+    "thumbnail": "/images/blogs/contractor-video-testimonials/hero.png",
+    "date": "March 16, 2026"
+  },
+  {
+    "title": "Beyond the Highlight Reel: Why B2B Construction Case Studies Actually Close Deals",
+    "slug": "construction-case-studies",
+    "thumbnail": "/images/blogs/construction-case-studies/hero.png",
+    "date": "March 14, 2026"
+  },
+  {
     "title": "Construction Leads: Stop Buying Shared Leads & Build Your Own Engine",
-    "slug": "construction-leads-stop-buying-shared-leads-build-your-own-engine",
-    "thumbnail": "/images/blogs/construction-leads-stop-buying-shared-leads-build-your-own-engine/hero.webp",
+    "slug": "construction-leads-guide",
+    "thumbnail": "/images/blogs/construction-leads-guide/hero.webp",
     "date": "March 12, 2026"
+  },
+  {
+    "title": "Construction Marketing: The Blueprint to Stop Competing on Price",
+    "slug": "construction-marketing-framework",
+    "thumbnail": "/images/blogs/construction-marketing-framework/hero.png",
+    "date": "March 14, 2026"
+  },
+  {
+    "title": "Drone Site Photography: How 8-Figure Contractors Use Aerial Data to Drive 275% ROI",
+    "slug": "drone-site-photography-roi",
+    "thumbnail": "/images/blogs/drone-site-photography-roi/hero.png",
+    "date": "March 15, 2026"
   }
 ]

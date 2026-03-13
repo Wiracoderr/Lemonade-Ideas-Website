@@ -1,59 +1,89 @@
-# Crucial Blog Formatting Rules for Lemonade Ideas
+---
+description: Official Lemonade Ideas Blog Formatting & UI Architecture Rules
+---
 
-These rules are strict guidelines that MUST be followed when creating, generating, or importing new blogs for the Lemonade Ideas Next.js project.
+# Premium Blog Formatting Standards
 
-## 1. Top Header (H1, Author, and Date)
-Every blog post must begin with a hero/header section that visually matches the dark-grey background screenshot. It must use the class `.blog-hero-section` instead of inline styles. 
-- **Background:** Dark grey (`#444444`).
-- **Title (H1):** Centered, uppercase, bold (Oswald font), white text (`#ffffff`).
-- **Metadata:** Below the title, centered, featuring:
-  - User Icon + "Lemonade Ideas"
-  - Calendar Icon + Publication Date
-  - These elements should be separated by a vertical line or pipe (`|`).
+All future blog posts for Lemonade Ideas MUST strictly adhere to this Next.js React-based component structure. We no longer use flat `dangerouslySetInnerHTML` injections. Instead, each blog is a carefully constructed layout using Tailwind CSS to create a premium, editorial reading experience.
 
-## 2. Main Content Wrapper & Text Styling
-All blog content (excluding the H1 hero section but including all images and text) MUST be wrapped inside a `<div class="lemonade-blog-wrapper">` div. **Inline CSS is strictly PROHIBITED**. Use a `<style>` block inside the `<head>` of the `index.html` file to styling cleanly.
-- **Max Width:** `1200px` centered (`margin: 0 auto;`).
-- **Font:** `font-family: 'Poppins', sans-serif;`
-- **Colors:** Text should be `#333`, H2 should be `#1E3A1A`, H3 should be `#3AAB43`.
-- **Images:** All 4 images must scale to `width: 100%` of this wrapper (acting as exactly the same width as the text blocks), with `border-radius: 8px` and a subtle drop shadow.
+## 1. File Structure (Next.js App Router)
 
-## 3. Interactive Bottom Signature Panel
-At the end of the content, but *inside* the wrapper, there MUST be an interactive signature panel wrapped in `.lemonade-signature`. Use only LOCAL assets.
-- **Background & Border:** Light green background (`#f9fff9`) with a top border (`2px solid #3AAB43`).
-- **Main Logo:** The Lemonade Ideas main logo MUST strictly be the optimized version. Because these drafts are reviewed as local HTML files, use the relative path: `../../public/logos/PNGs%20-%20SVGs/4x/Asset%203@4x-8.png`.
-- **Secondary Logo:** A secondary optimized webp logo (`Logo-2.webp`) must be placed directly above the "LEARN MORE" button. Its relative path for drafts is: `../../public/logos/optimized-logo-2.webp`.
-- **Button:** A yellow "LEARN MORE" button (`#FED52B` background, `#1E3A1A` text) linking to the homepage (`/`).
-- **Website Link:** Text `www.lemonadeideas.com` linking to the homepage.
-- **Social Icons:** Facebook, Instagram, YouTube, and LinkedIn icons using FontAwesome.
+Every blog requires two distinct files in its route directory (e.g., `/src/app/blogs/my-new-blog/`):
 
-## 3. Blog Index Grid Layout (Main /blogs page)
-The main `/blogs` page should list the blogs using a 3-column responsive grid template:
-- **Card Design:** White background, rounded corners, subtle shadow, scale-up hover effect.
-- **Image:** 5:3 Aspect Ratio, scales up on card hover.
-- **Content:** Title (`#1E3A1A`), 3-line truncated excerpt (`#666`), and a green rounded "Read More" button.
-- **Load More / Pagination:** The list should include dynamic fetching or a "Load More Articles" button.
+- `layout.tsx`: Contains the Server-Side SEO metadata exported via Next.js `export const metadata`.
+- `page.tsx`: Contains the actual UI.
 
-## 4. Writing Standards and Content Quality
-Every blog post must strictly adhere to the skills defined in `.agents/skills/Content Writer`:
-- **Word Count:** At least 2,500 words. Absolutely no exceptions.
-- **Sentry Voice:** Direct, technical, no fluff. Do not use filler words like "seamless", "robust", or "we are excited to announce". State the problem or conclusion in the first two sentences.
-- **Structure:** Follow the reader's questions. Include "What problem does this solve?", "How does it work?", "Trade-offs", and actionable next steps.
-- **Data & Facts:** Use numbers over adjectives. Describe failures and limitations honestly.
+_CRITICAL RULE FOR SLUG CHANGES:_ If you change the URL slug of a blog post (i.e., rename its folder in `/src/app/blogs/`), you MUST immediately go to `/src/app/blogs/page.tsx` and update the `href` in the `<Link>` component for that blog's miniature card. Failing to do this will result in a 404 error when clicking the article on the main blog feed.
 
-## 5. Image Generation
-- **Quantity:** Every single blog post MUST have exactly 4 images distributed throughout the content.
-- **Realism:** All generated images must look incredibly realistic, simulating real-life photography. They must NOT look AI-generated, cartoonish, or overly polished with hyper-futuristic AI lighting.
-- **Format & Quality:** All images must be high-quality `.webp` format and optimized for web performance.
+## 2. Hero Section (The Hook)
 
-## 6. Directory Structure
-When a blog is newly generated (before being officially imported into the Next.js project via script):
-- It must be placed in a dedicated subfolder within `Blogs/` (e.g., `Blogs/my-blog-slug/`).
-- The text content must be saved as `index.html`.
-- Any local images (including AI generated ones) must be saved alongside it.
-- A file named `seo_metadata.json` must be created in the same folder, containing the slug, description, and SEO title.
+The top section must immediately grab attention and establish authority.
 
-## 7. Responsive Versions (PC & Mobile)
-Every blog generated and added to the project MUST explicitly define both a **PC version** and a **Mobile version (Celular)**.
-- **Media Queries:** You must use `@media (max-width: 768px)` inside the internal `<style>` block to construct the mobile version.
-- **Sizing Adjustments:** In the mobile version, you must dynamically reduce the `padding` of the hero and wrapper, scale down the `font-size` of the H1, and adjust the `.lemonade-logo` `max-width` (and button sizes) to ensure flawless readability and aesthetics on smartphones.
+- **Background:** Dark charcoal (`bg-[#2A2A2A]`).
+- **Visual Effects:** Absolute positioned, hyper-blurred blobs of brand colors (Green `#3AAB43` and Yellow `#FED52B`) acting as a glowing backlight behind the text.
+- **Category Pill:** A small border-radius tag above the title (e.g., "Lead Generation").
+- **Title (H1):** Must use the `font-[Oswald]` class, `uppercase`, white text, with a `drop-shadow-lg`.
+- **Metadata Bar:** Author ('Lemonade Ideas' with a yellow bolt icon `#FED52B` on the left), Publish Date, and Read Time listed horizontally.
+
+## 3. The Main Article Container (The Floating Page)
+
+The actual reading zone is an overlapping card that pulls UP into the dark hero section.
+
+- **Container Classes:** `max-w-[800px] mx-auto bg-white rounded-[24px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] mt-[-40px] relative z-20 pt-[50px] px-[20px] md:px-[60px] pb-[60px]`.
+
+## 4. Typography & Prose
+
+The main text body spans within a `<div className="prose prose-lg max-w-none text-[#444] text-justify ...">`.
+
+_CRITICAL CONTENT RULE:_ Every single blog post must maintain comprehensive depth with a **strict minimum of 2,500 words**. If it is shorter, it is not approved for publishing.
+
+### Specialized Elements
+
+_CRITICAL NOTICE: Do not use `absolute` positioned FontAwesome icons inside `ul > li` lists unless the `li` tag is explicitly given a `relative` class. Otherwise, the icons will aggressively stack in the top-left rounded corner of the main article container._
+
+Instead of just basic text, use these exact bespoke components for different contexts:
+
+1. **The Intro Callout Box:**
+   The very first paragraph summarizing the value of the post.
+   - _Style:_ `bg-[#f9fff9] border-l-[6px] border-[#3AAB43] p-[30px] rounded-r-[16px]`
+   - _Effect:_ A large faint green semi-circle watermark in the top right corner.
+
+2. **Images (Hero and Inline):**
+   - Must use `next/image` with `fill` in a relative wrapper.
+   - _Wrapper Style:_ `rounded-[20px] overflow-hidden shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)] group`.
+   - _Image Style:_ `object-cover transition-transform duration-700 group-hover:scale-105`.
+   - Include a subtle inner ring overlay `ring-1 ring-inset ring-black/10` to prevent white images from bleeding.
+
+3. **H3 Subheadings:**
+   - _Style:_ `font-bold text-[#1E3A1A] relative inline-block`.
+   - _Decoration:_ An absolute positioned yellow dash (`#FED52B`) sitting slightly below the first word.
+
+4. **H4 Subheadings (Numbered Points):**
+   - _Style:_ `bg-[#f4fbf4] rounded-[10px] border border-[#e2efe2] p-[15px] flex items-center`.
+   - _Decoration:_ The number is enclosed in a solid green circle on the left.
+
+5. **Quick Tips / Insight Modules:**
+   - _Style:_ Yellow tinted box `bg-[#fff9e6] border-l-[5px] border-[#FED52B]`.
+   - _Icon:_ A yellow glowing lightbulb icon (`fas fa-lightbulb`).
+
+6. **"What Didn't Work" / Error States:**
+   - Use red tinted boxes `bg-[#fff5f5]` with a massive pale red transparent 'X' watermark (`fas fa-times-circle`) anchored to the top right to visually communicate failure/mistakes.
+
+7. **Comparison Grids:**
+   - When comparing "Old Way vs New Way", use a `grid md:grid-cols-2`. Include hover effects on the cards (e.g., border glowing green for the right way, red for the wrong way) with prominent centered icons.
+
+## 5. Signature & CTA Panel
+
+At the very bottom of the white reading block, summarize the author and push a conversion:
+
+- **Logo:** `Asset 7.png` (Lemonade emblem) centered at exactly `138x138px`.
+- **CTA Button:** Large yellow pill button (`bg-[#FED52B]`, text `#1E3A1A`, `rounded-[50px]`, `uppercase`, drop shadow).
+- **Social Proof:** Four circular social icons (Facebook, Instagram, YouTube, LinkedIn) with respective brand hover colors.
+
+## 6. "Keep Learning" (Related Posts)
+
+A full-width, grey-tinted section `bg-[#fcfcfc]` at the very bottom beneath the floating page.
+
+- Grid of 3 cards.
+- Each card has an image zoom on hover `group-hover:scale-110`.
+- Includes custom category overlays on the image, and a small Lemonade emblem icon next to the "Read Now" hook at the bottom of the card.

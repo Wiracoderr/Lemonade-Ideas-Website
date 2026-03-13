@@ -1,0 +1,1512 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/src/components/seo/CTASection.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>CTASection
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_type_of$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@swc/helpers/esm/_type_of.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+"use client";
+;
+;
+// A helper component to wrap text safely without linking "SEO" anymore as requested
+var SEOText = function(param) {
+    var children = param.children;
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: children
+    }, void 0, false);
+};
+_c = SEOText;
+function CTASection(param) {
+    var subtitleContent = param.subtitleContent;
+    var defaultSubtitle = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SEOText, {
+        children: [
+            "Along with SEO, Lemonade Ideas drives real results through pay-per-click",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                className: "hidden md:block"
+            }, void 0, false, {
+                fileName: "[project]/src/components/seo/CTASection.tsx",
+                lineNumber: 16,
+                columnNumber: 90
+            }, this),
+            " advertising and website development. Contact us to discover what could benefit",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {
+                className: "hidden md:block"
+            }, void 0, false, {
+                fileName: "[project]/src/components/seo/CTASection.tsx",
+                lineNumber: 16,
+                columnNumber: 203
+            }, this),
+            " your business the most."
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/seo/CTASection.tsx",
+        lineNumber: 16,
+        columnNumber: 9
+    }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "bg-[#143d1f] py-24 px-4 relative overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 opacity-[0.45] pointer-events-none",
+                style: {
+                    backgroundImage: "url('/images/Texture.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/components/seo/CTASection.tsx",
+                lineNumber: 22,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"
+            }, void 0, false, {
+                fileName: "[project]/src/components/seo/CTASection.tsx",
+                lineNumber: 32,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"
+            }, void 0, false, {
+                fileName: "[project]/src/components/seo/CTASection.tsx",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-5xl mx-auto text-center relative z-10 text-white",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal",
+                        children: [
+                            '"GROW YOUR BUSINESS" & "GAIN VISIBILITY"',
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/src/components/seo/CTASection.tsx",
+                                lineNumber: 37,
+                                columnNumber: 85
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-[#facc15] mt-1 inline-block",
+                                children: "WITH LEMONADE IDEAS!"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/seo/CTASection.tsx",
+                                lineNumber: 38,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/seo/CTASection.tsx",
+                        lineNumber: 36,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex justify-center mb-10 w-full",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                            src: "/images/layer-1.png",
+                            alt: "underline",
+                            width: 200,
+                            height: 16,
+                            className: "h-4 object-contain opacity-90"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/seo/CTASection.tsx",
+                            lineNumber: 43,
+                            columnNumber: 21
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/seo/CTASection.tsx",
+                        lineNumber: 42,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]",
+                        children: subtitleContent || defaultSubtitle
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/seo/CTASection.tsx",
+                        lineNumber: 46,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://calendly.com/lemonadeideas-consultation/30min?month=2026-03",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "/images/icon-call.svg",
+                                alt: "Phone Outline Icon",
+                                className: "w-[50px] h-[50px] object-contain shrink-0"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/seo/CTASection.tsx",
+                                lineNumber: 54,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col items-start pr-4 pt-1",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold",
+                                        children: "SPEAK WITH OUR EXPERT"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/seo/CTASection.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[26px] leading-none tracking-normal",
+                                        children: "SCHEDULE A CALL"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/seo/CTASection.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/seo/CTASection.tsx",
+                                lineNumber: 55,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/seo/CTASection.tsx",
+                        lineNumber: 50,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/seo/CTASection.tsx",
+                lineNumber: 35,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/seo/CTASection.tsx",
+        lineNumber: 20,
+        columnNumber: 9
+    }, this);
+}
+_c1 = CTASection;
+var _c, _c1;
+__turbopack_context__.k.register(_c, "SEOText");
+__turbopack_context__.k.register(_c1, "CTASection");
+if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_type_of$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])(globalThis.$RefreshHelpers$) === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/src/app/blogs/construction-leads-guide/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>BlogPost
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_type_of$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@swc/helpers/esm/_type_of.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$seo$2f$CTASection$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/components/seo/CTASection.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/components/noop-head.js [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+function BlogPost() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col min-h-screen bg-white font-['Poppins',sans-serif]",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$noop$2d$head$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
+                    rel: "stylesheet",
+                    href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                }, void 0, false, {
+                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                lineNumber: 11,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "bg-[#2A2A2A] relative pt-[120px] pb-[80px] md:pt-[160px] md:pb-[100px] text-center px-4 md:px-[20px] overflow-hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute top-[-10%] left-[-5%] w-[40%] h-[150%] bg-[#3AAB43] blur-[120px] rounded-full rotate-45"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                lineNumber: 22,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "absolute bottom-[-20%] right-[-10%] w-[50%] h-[120%] bg-[#FED52B] blur-[150px] rounded-full"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "relative z-10 mx-auto w-full max-w-[900px]",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "inline-block mb-[20px] px-[15px] py-[6px] bg-[#3AAB43]/20 border border-[#3AAB43]/30 rounded-full",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[#3AAB43] font-bold text-[0.85rem] tracking-[1px] uppercase",
+                                    children: "Lead Generation"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 28,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                lineNumber: 27,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-[2.2rem] md:text-[3.5rem] font-[Oswald] font-extrabold uppercase leading-[1.15] tracking-[0.5px] mb-[30px] text-[#ffffff] drop-shadow-lg",
+                                children: "Construction Leads: Stop Buying Shared Leads & Build Your Own Engine"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex items-center gap-[6px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "fas fa-bolt text-[#FED52B] text-[0.85rem]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 37,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white font-semibold",
+                                                children: "Lemonade Ideas"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 38,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[#666]",
+                                        children: "|"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 40,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "flex items-center gap-[8px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "far fa-calendar-alt text-[1.1em] text-[#FED52B]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 42,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white",
+                                                children: "March 12, 2026"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 43,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 41,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[#666] hidden md:inline",
+                                        children: "|"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "hidden md:flex items-center gap-[8px]",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "far fa-clock text-[1.1em] text-[#FED52B]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 47,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-white",
+                                                children: "8 min read"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 48,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                lineNumber: 35,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "flex-1 px-4 md:px-[20px] bg-[#fcfcfc]",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                    className: "max-w-[800px] mx-auto bg-white rounded-[24px] shadow-[0_20px_40px_-15px_rgba(0,0,0,0.05)] mt-[-40px] relative z-20 pt-[50px] px-[20px] md:px-[60px] pb-[60px] text-[#333] leading-[1.8] border border-gray-100",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "bg-[#f9fff9] border-l-[6px] border-[#3AAB43] p-[30px] md:p-[40px] rounded-r-[16px] mb-[50px] shadow-sm relative overflow-hidden group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute top-0 right-0 w-[100px] h-[100px] bg-[#3AAB43] opacity-[0.03] rounded-bl-full transform translate-x-1/2 -translate-y-1/2 transition-transform duration-500 group-hover:scale-150"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 60,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-[1.2rem] md:text-[1.35rem] text-[#1E3A1A] font-medium leading-[1.7] relative z-10 m-0 text-justify",
+                                    children: "If you are a contractor relying on Angi or HomeAdvisor, you are bleeding margin to your competitors. Here is why buying shared construction leads destroys your closing rate, and the exact math behind building a self-owned lead generation engine."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 61,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 59,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative w-full h-[300px] md:h-[450px] mb-[60px] rounded-[20px] overflow-hidden shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)] group",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                    src: "/images/blogs/construction-leads-guide/hero.webp",
+                                    alt: "Construction Leads strategy session",
+                                    fill: true,
+                                    className: "object-cover transition-transform duration-700 group-hover:scale-105",
+                                    priority: true
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 70,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 ring-1 ring-inset ring-black/10 rounded-[20px]"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 78,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 69,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "prose prose-lg max-w-none text-[#444] text-justify prose-headings:font-['Oswald',sans-serif] prose-p:text-[1.1rem] prose-p:leading-[1.8] prose-p:mb-[30px] prose-a:text-[#3AAB43] hover:prose-a:text-[#1E3A1A] prose-strong:text-[#1E3A1A] prose-strong:font-bold prose-ul:list-none prose-ul:pl-0 prose-li:relative prose-li:pl-[28px] prose-li:mb-[15px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'Most construction businesses hit a growth ceiling the moment they stop relying purely on word-of-mouth. The immediate reaction is usually to buy lead lists or sign up for third-party lead aggregators like HomeAdvisor, Angi, or Thumbtack. Within three months, you are paying $85 for a "roofing lead CA" only to find out four other contractors bought the exact same lead, and the homeowner went with the lowest bidder who undercuts market rates by 30%.'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 82,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "This is a fundamental misalignment of incentives. Lead aggregators sell volume, not intent. They want a homeowner's contact information distributed to as many buyers as possible to maximize their revenue per submit. Your goal, inversely, is exclusive, high-intent traffic ready to convert at your standard margins without a race to the bottom."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 93,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "This post breaks down exactly why the shared lead model mathematically fails for high-ticket construction projects, and how to engineer an exclusive inbound funnel using highly targeted Google Ads and localized SEO."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 102,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-[1.8rem] md:text-[2.2rem] font-bold text-[#1E3A1A] mt-[70px] mb-[30px] leading-[1.2] relative inline-block",
+                                    children: [
+                                        "The Fatal Math of Shared Construction Leads",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-[#FED52B] rounded-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 111,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 109,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "Let's break down the actual cost of a shared lead versus an exclusive inbound lead. If you buy a shared lead for $75, the upfront cost seems acceptable. However, because that lead is sold to four competitors simultaneously, your closing rate drops significantly. Assuming a standard 10% closing rate on heavily contested leads, you need to buy 10 leads to secure one contract."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 114,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "Your true Cost Per Acquisition (CPA) is $750. But it doesn't end there. The invisible cost of shared leads is margin compression. Because the homeowner is fielding four identical quotes, they invariably treat the project as a commodity. To win the bid, contractors routinely drop their quotes by 10% to 15%. On a $15,000 remodeling project, sacrificing 15% margin costs you $2,250 in sheer profit."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 123,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "my-[40px] pl-[30px] border-l-[4px] border-[#1E3A1A] py-[10px]",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-[1.3rem] italic text-[#1E3A1A] font-medium leading-[1.6] m-0",
+                                        children: "\"Therefore, the real cost of that 'cheap' $75 lead is actually $3,000. When you compare this to an exclusive lead generated through your own website, you retain your pricing power and close at a higher bracket.\""
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 135,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 134,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: [
+                                        "Numbers don't lie.",
+                                        " ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                            children: "Stop competing on borrowed turf."
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 145,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 143,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-[1.8rem] md:text-[2.2rem] font-bold text-[#1E3A1A] mt-[70px] mb-[30px] leading-[1.2] relative inline-block",
+                                    children: [
+                                        "How a Self-Owned Lead Generation Engine Actually Works",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-[#FED52B] rounded-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 150,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 148,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "A self-owned lead engine relies on capturing user intent exactly at the moment a homeowner or commercial property manager realizes they have a problem. This requires a dual-pronged approach: Google Ads for immediate, high-intent queries (bottom-of-funnel), and Local SEO to dominate long-term geography-based searches."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 153,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    className: "flex items-center text-[1.3rem] md:text-[1.5rem] font-bold text-[#3AAB43] mt-[50px] mb-[25px] p-[15px] bg-[#f4fbf4] rounded-[10px] border border-[#e2efe2]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "min-w-[40px] h-[40px] rounded-full bg-[#3AAB43] text-white flex items-center justify-center mr-[15px] text-[1.1rem]",
+                                            children: "1"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 162,
+                                            columnNumber: 15
+                                        }, this),
+                                        "The exact architecture of a high-converting landing page"
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 161,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "Before you spend a single dollar on ads or SEO, the destination must be optimized for conversion. Sending traffic to a generic homepage is the fastest way to burn your marketing budget. A high-converting landing page for construction leads requires strict adherence to intent-matching."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 168,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'If a user searches for "commercial remodeling leads CA", the landing page they land on must explicitly state "Commercial Remodeling in California" in the H1 tag. The hero section must feature a trust-building element immediately: "Licensed, Bonded, Insured — Serving Southern California since 2012."'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 176,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'Below the fold, skip the generic "About Us" fluff. Provide proof of execution. Include before-and-after imagery of specific projects, accompanied by the duration and scope of work. Finally, the form must be frictionless but qualifying. Ask for the project type (Roofing, HVAC, Generic Remodel), the expected timeline (Urgent, 1-3 months, Exploring), and their zip code. The friction of the timeline dropdown filters out low-intent tire-kickers, preserving your sales team\'s time.'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 184,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] my-[40px] shadow-sm flex gap-[15px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mt-[2px]",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "fas fa-lightbulb text-[#d4ad15] text-[1.5rem]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 198,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 197,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                    className: "block text-[#1E3A1A] text-[1.1rem] mb-[5px]",
+                                                    children: "Quick Tip:"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 201,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "m-0 text-[#555] text-[1.05rem] leading-[1.6]",
+                                                    children: [
+                                                        "Ensure your project inquiry forms ask qualifying questions (like ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                                            children: "timeline"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                            lineNumber: 206,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        " and ",
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                                            children: "budget"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                            lineNumber: 206,
+                                                            columnNumber: 47
+                                                        }, this),
+                                                        ') instead of just an email. This eliminates "tire-kickers" immediately.'
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 204,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 200,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 196,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative w-full h-[300px] md:h-[400px] my-[50px] rounded-[16px] overflow-hidden shadow-[0_15px_30px_-5px_rgba(0,0,0,0.15)] group",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/blogs/construction-leads-guide/image2.webp",
+                                        alt: "Contractor analyzing B2B marketing spreadsheets",
+                                        fill: true,
+                                        className: "object-cover transition-transform duration-700 group-hover:scale-105"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 213,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 212,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    className: "flex items-center text-[1.3rem] md:text-[1.5rem] font-bold text-[#3AAB43] mt-[50px] mb-[25px] p-[15px] bg-[#f4fbf4] rounded-[10px] border border-[#e2efe2]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "min-w-[40px] h-[40px] rounded-full bg-[#3AAB43] text-white flex items-center justify-center mr-[15px] text-[1.1rem]",
+                                            children: "2"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 222,
+                                            columnNumber: 15
+                                        }, this),
+                                        'Google Ads: The "Exact Match" sniper approach'
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 221,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'The biggest mistake contractors make with Google Ads is using "Broad Match" keywords. If you bid broad match on "contractor leads", Google will inevitably show your ad to people searching for "how to become an independent contractor" or "cheapest handyman near me". You pay $18 a click for garbage traffic.'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 228,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "Instead, use Exact Match and Phrase Match targeting layered with strict geographic fencing. Focus on queries that indicate immediate commercial intent and high transaction value. For example:"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 236,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                    className: "mb-[40px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: "[custom builder leads los angeles]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 245,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 244,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: '"roofing replacement quote CA"'
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 248,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 247,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                children: "[b2b construction contractors near me]"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 251,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 250,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 243,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'Furthermore, deploy negative keyword lists aggressively. Add words like "cheap", "diy", "jobs", "salary", "how to", and "calculator" to your negative keyword list before launching. This ensures your ad budget is exclusively spent on users actively seeking to hire a professional builder or contractor.'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 255,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "In a recent teardown of a generic GC campaign, we audited a $5,000 monthly ad spend. By replacing broad match keywords with a tightly scoped exact match strategy and adding 300 negative keywords, we reduced their p99 lead acquisition cost from $450 to $185—a 2.4× improvement in efficiency without changing their total budget."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 263,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                    className: "flex items-center text-[1.3rem] md:text-[1.5rem] font-bold text-[#3AAB43] mt-[50px] mb-[25px] p-[15px] bg-[#f4fbf4] rounded-[10px] border border-[#e2efe2]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "min-w-[40px] h-[40px] rounded-full bg-[#3AAB43] text-white flex items-center justify-center mr-[15px] text-[1.1rem]",
+                                            children: "3"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 273,
+                                            columnNumber: 15
+                                        }, this),
+                                        'Local SEO: Dominating the "Near Me" ecosystem'
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 272,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "While PPC generates immediate exclusive leads, Local SEO builds your organic moat. The cornerstone of local SEO for the trades is a hyper-optimized Google Business Profile (GBP) and localized service pages."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 279,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'Google evaluates three core pillars for local rankings: Relevance, Distance, and Prominence. To engineer relevance, your website architecture must reflect your exact service offerings mapped to specific cities. Do not just have one "Services" page. Create distinct pages for "Concrete Contractor in [City]", "Paving Leads CA", and "Heavy Equipment Contractors [County]".'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 286,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'Each local service page should include embedded Google Maps routing from central landmarks, geo-tagged project portfolios, and schema markup (LocalBusiness structured data). Schema markup explicitly feeds Google your exact coordinates, operating hours, and accepted payment methods, circumventing the need for the crawler to "guess" your business details.'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 295,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "For prominence, velocity of reviews matters more than total volume. A contractor with 40 reviews spread evenly over two years ranks higher than a contractor who got 100 reviews in one month and went silent. Implement an automated SMS follow-up sequence using a tool like Jobber or Housecall Pro that texts the homeowner a direct link to your Google Review page immediately upon receipt of the final payment."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 304,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative w-full h-[300px] md:h-[400px] my-[50px] rounded-[16px] overflow-hidden shadow-[0_15px_30px_-5px_rgba(0,0,0,0.15)] group",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/blogs/construction-leads-guide/image3.webp",
+                                        alt: "Local SEO maps search for near me construction",
+                                        fill: true,
+                                        className: "object-cover transition-transform duration-700 group-hover:scale-105"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 315,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 314,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-[1.8rem] md:text-[2.2rem] font-bold text-[#1E3A1A] mt-[70px] mb-[30px] leading-[1.2] relative inline-block",
+                                    children: [
+                                        "What We Tried That Didn't Work",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-[#FED52B] rounded-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 325,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 323,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mb-[40px]",
+                                    children: "It is important to discuss the failures in the contractor space to prevent you from making the same expensive mistakes. Over the past five years, we attempted to map several different lead acquisition strategies. Here is what failed spectacularly:"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 328,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-[30px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-[25px] bg-[#fff5f5] border border-[#ffe5e5] rounded-[12px] relative overflow-hidden",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute top-[-10px] right-[-10px] text-[#ffcccc] opacity-30 text-[100px] leading-none",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "fas fa-times-circle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                        lineNumber: 339,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 338,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                    className: "text-[1.2rem] font-bold text-[#cc0000] mb-[10px] relative z-10",
+                                                    children: "1. Facebook Lead Forms for High-Ticket B2B"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 341,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "m-0 text-[#444] text-[1.05rem] relative z-10",
+                                                    children: "We attempted to run Facebook Lead Generation forms targeting commercial property managers. The cost per lead looked incredible—averaging $22. However, the lead quality was unworkable. Out of 150 leads, only 2 converted into actual site walk-throughs. The friction on Facebook is too low; it generates curiosity, not intent."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 344,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 337,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-[25px] bg-[#fff5f5] border border-[#ffe5e5] rounded-[12px] relative overflow-hidden",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute top-[-10px] right-[-10px] text-[#ffcccc] opacity-30 text-[100px] leading-none",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "fas fa-times-circle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                        lineNumber: 356,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 355,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                    className: "text-[1.2rem] font-bold text-[#cc0000] mb-[10px] relative z-10",
+                                                    children: "2. Cold Emailing Homeowners"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 358,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "m-0 text-[#444] text-[1.05rem] relative z-10",
+                                                    children: "We scraped public property records to find homes over 20 years old and deployed a cold email sequence offering roofing inspections. The open rate was a dismal 12%, and the spam complaint rate immediately tanked the domain reputation. Cold email works for B2B SaaS; it is toxic for local B2C trades."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 361,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 354,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-[25px] bg-[#fff5f5] border border-[#ffe5e5] rounded-[12px] relative overflow-hidden",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "absolute top-[-10px] right-[-10px] text-[#ffcccc] opacity-30 text-[100px] leading-none",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "fas fa-times-circle"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                        lineNumber: 372,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 371,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                    className: "text-[1.2rem] font-bold text-[#cc0000] mb-[10px] relative z-10",
+                                                    children: "3. PPC without Dedicated Landing Pages"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 374,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "m-0 text-[#444] text-[1.05rem] relative z-10",
+                                                    children: "Early on, we routed Google Ads traffic straight to a contractor's homepage. The bounce rate hovered at 82%. If the user doesn't see their exact query mirrored in the headline within three seconds, they click \"Back\". Routing to the homepage burned $3,400 in two weeks with zero signed contracts."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 377,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 370,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 336,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-[1.8rem] md:text-[2.2rem] font-bold text-[#1E3A1A] mt-[80px] mb-[30px] leading-[1.2] relative inline-block",
+                                    children: [
+                                        "Trade-offs: Aggregators vs. Building Your Own Engine",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-[#FED52B] rounded-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 390,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 388,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "There is a scenario where buying shared leads makes sense: when you are a solo operator who launched business yesterday, lacks the capital for a sustained $2,000/month SEO and Ads budget, and desperately needs cash flow to survive the quarter. In that highly specific scenario, Angi or Thumbtack can provide the immediate lifeblood required to keep the lights on."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 393,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "However, the trade-off is your autonomy and scalability."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 402,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid grid-cols-1 md:grid-cols-2 gap-[25px] my-[40px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-[30px] bg-white border border-gray-200 shadow-lg rounded-[16px] text-center group hover:border-[#cc0000] transition-colors flex flex-col items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-[60px] h-[60px] bg-[#ffe5e5] text-[#cc0000] rounded-full flex items-center justify-center mb-[20px] text-[1.5rem] group-hover:scale-110 transition-transform",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "fas fa-hand-holding-usd"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                        lineNumber: 408,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 407,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "font-bold text-[#1E3A1A] text-[1.2rem] mb-[15px]",
+                                                    children: "Aggregators (The Rental Model)"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 410,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[1rem] text-[#666] leading-[1.6]",
+                                                    children: "You are renting access to an audience. You own zero equity. If the platform raises its lead prices by 40% tomorrow, your margins instantly vanish. The clients belong to the platform's brand, not yours."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 413,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 406,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-[30px] bg-white border border-[#3AAB43] shadow-lg shadow-[#3AAB43]/10 rounded-[16px] text-center group flex flex-col items-center",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "w-[60px] h-[60px] bg-[#eef8ee] text-[#3AAB43] rounded-full flex items-center justify-center mb-[20px] text-[1.5rem] group-hover:scale-110 transition-transform",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                        className: "fas fa-chart-line"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                        lineNumber: 422,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 421,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "font-bold text-[#1E3A1A] text-[1.2rem] mb-[15px]",
+                                                    children: "Self-Owned Engine (The Equity Model)"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 424,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[1rem] text-[#666] leading-[1.6]",
+                                                    children: 'You are building digital real estate. Once you rank for "best commercial builders near me", every click is free. Furthermore, all leads are 100% exclusive to your team. You control the narrative.'
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 427,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 420,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 405,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "The long-term play is unambiguous: treat marketing not as an expense, but as an infrastructure investment. A well-oiled SEO and PPC machine is an asset that directly increases the valuation of your construction company."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 436,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-[1.8rem] md:text-[2.2rem] font-bold text-[#1E3A1A] mt-[70px] mb-[30px] leading-[1.2] relative inline-block",
+                                    children: [
+                                        'Advanced Tactics: Retargeting the "Almost" Converts',
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-[#FED52B] rounded-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 445,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 443,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "A hidden leak in most construction marketing funnels is the failure to retarget. In B2B construction leads or high-ticket remodeling, the sales cycle can extend from 30 to 90 days. A property manager does not hire a concrete contractor the first day they formulate a Google search."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 448,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "They will visit your site, read your portfolio, check your pricing page, and then leave to compare three other vendors. If you do not have the Meta Pixel and the Google Ads Remarketing Tag installed on your site, that prospect is gone forever."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 456,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: 'By implementing a retargeting campaign, you follow that highly qualified user across the internet. For the next 30 days, while they read the news or scroll Facebook, they see a subtle, professional ad showcasing a completed commercial remodeling project by your firm. This "omnipresence" builds subconscious trust. Retargeting clicks are extraordinarily cheap (often under $1.50) because you are only bidding on an audience of people who have already shown historical intent on your specific domain. This tactic alone routinely lifts overall conversion rates by 12% to 18%.'
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 463,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative w-full h-[300px] md:h-[400px] my-[50px] rounded-[16px] overflow-hidden shadow-[0_15px_30px_-5px_rgba(0,0,0,0.15)] group",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/images/blogs/construction-leads-guide/image4.webp",
+                                        alt: "Wide view of a commercial construction site",
+                                        fill: true,
+                                        className: "object-cover transition-transform duration-700 group-hover:scale-105"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                        lineNumber: 477,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 476,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                    className: "text-[1.8rem] md:text-[2.2rem] font-bold text-[#1E3A1A] mt-[70px] mb-[30px] leading-[1.2] relative inline-block",
+                                    children: [
+                                        "How to Transition Away from Shared Leads Today",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute bottom-[-10px] left-0 w-[60px] h-[4px] bg-[#FED52B] rounded-full"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 487,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 485,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    children: "You cannot flip a switch and turn off your aggregators overnight without risking your cash flow. The transition requires a phased, 90-day approach."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 490,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "pl-[20px] border-l-[3px] border-gray-200 mt-[30px] space-y-[25px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "font-bold text-[#1E3A1A] text-[1.2rem] flex items-center mb-[10px]",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "w-[12px] h-[12px] rounded-full bg-[#3AAB43] inline-block mr-[12px] ml-[-27.5px] ring-4 ring-white"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                            lineNumber: 499,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        "Month 1: The Foundation"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 498,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[#555] mb-0 ml-[10px]",
+                                                    children: "Audit your current website. Fix the loading speed, rewrite the H1 tags to match specific services and locations, and install tracking pixels (Google Tag Manager, CallRail). Do not spend ad money yet."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 502,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 497,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "font-bold text-[#1E3A1A] text-[1.2rem] flex items-center mb-[10px]",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "w-[12px] h-[12px] rounded-full bg-[#3AAB43] inline-block mr-[12px] ml-[-27.5px] ring-4 ring-white"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                            lineNumber: 511,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        "Month 2: The PPC Bridge"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 510,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[#555] mb-0 ml-[10px]",
+                                                    children: "Launch a tightly scoped, exact-match Google Ads campaign focused solely on your highest-margin service. Allocate 20% of your current aggregator budget to this campaign. Measure the CPA of the exclusive leads against the shared leads."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 514,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 509,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "font-bold text-[#1E3A1A] text-[1.2rem] flex items-center mb-[10px]",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "w-[12px] h-[12px] rounded-full bg-[#FED52B] inline-block mr-[12px] ml-[-27.5px] ring-4 ring-white"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                            lineNumber: 523,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        "Month 3: The SEO Engine & Scaling"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 522,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[#555] mb-0 ml-[10px]",
+                                                    children: "Begin deploying localized service pages and optimizing your Google Business Profile velocity. As your exclusive inbound lead volume from PPC and SEO stabilizes, systematically throttle down your shared lead buys. Decrease your Angi spend by 25% every month until it hits zero."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                    lineNumber: 526,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 521,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 496,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "mt-[50px] text-[1.25rem] font-medium text-[#1E3A1A] text-center border-t border-b border-gray-100 py-[30px]",
+                                    children: "Stop leasing your customer base. Take control of your digital infrastructure and build a lead generation engine that actually drives equity back into your business."
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 536,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 81,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-[60px] md:mt-[70px] pt-[30px] md:pt-[40px] border-t-[3px] border-[#f0f0f0] text-center bg-white rounded-[8px]",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            src: "/logos/Emblem/1x/Asset 7.png",
+                                            alt: "Lemonade Ideas Icon",
+                                            width: 138,
+                                            height: 138,
+                                            className: "w-[138px] h-[138px] object-contain mx-auto mb-[25px] block transition-transform hover:scale-110"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 546,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                            href: "/contact",
+                                            className: "inline-block bg-[#FED52B] text-[#1E3A1A] font-extrabold tracking-[1px] uppercase py-[15px] md:py-[18px] px-[35px] md:px-[45px] rounded-[50px] no-underline my-[20px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:-translate-y-1 hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] transition-all text-[0.95rem] md:text-base border-2 border-transparent hover:border-[#1E3A1A]",
+                                            children: "SCHEDULE A STRATEGY CALL"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 553,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 545,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex justify-center flex-wrap gap-[15px] mt-[30px]",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.facebook.com/lemonadeidea/",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-[#0F3C9F] hover:text-white hover:scale-110 transition-all shadow-sm",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "fab fa-facebook-f"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 568,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 562,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.instagram.com/lemonade.ideas",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:scale-110 transition-all shadow-sm",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "fab fa-instagram"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 576,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 570,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-[#ff0000] hover:text-white hover:scale-110 transition-all shadow-sm",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "fab fa-youtube"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 584,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 578,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "http://www.linkedin.com/in/lemonade-ideas-080122348",
+                                            target: "_blank",
+                                            rel: "noopener noreferrer",
+                                            className: "w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-[#0077b5] hover:text-white hover:scale-110 transition-all shadow-sm",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                className: "fab fa-linkedin-in"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                                lineNumber: 592,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                            lineNumber: 586,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                    lineNumber: 561,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 544,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                    lineNumber: 57,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                lineNumber: 55,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full bg-[#fcfcfc] py-[60px] md:py-[100px] border-t border-gray-100",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-[1200px] mx-auto px-4 md:px-[20px]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                            className: "text-[2.2rem] md:text-[2.8rem] font-[Oswald] font-extrabold text-[#1E3A1A] mb-[20px] text-center uppercase tracking-[0.5px]",
+                            children: "Keep Learning"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 602,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-center text-[#666] text-[1.1rem] mb-[50px] max-w-[600px] mx-auto",
+                            children: "Explore our latest strategies to dominate your local market and scale your operations."
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 605,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 md:grid-cols-3 gap-[30px]",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-center text-[#888] font-medium mt-[40px]",
+                                children: "More insights coming soon..."
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                                lineNumber: 612,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                            lineNumber: 610,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                    lineNumber: 601,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                lineNumber: 600,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$seo$2f$CTASection$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+                lineNumber: 619,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/blogs/construction-leads-guide/page.tsx",
+        lineNumber: 10,
+        columnNumber: 5
+    }, this);
+}
+_c = BlogPost;
+var _c;
+__turbopack_context__.k.register(_c, "BlogPost");
+if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$swc$2f$helpers$2f$esm$2f$_type_of$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["_"])(globalThis.$RefreshHelpers$) === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=src_2482123d._.js.map
