@@ -114,7 +114,7 @@ export default function Header() {
                     <Link href="/social-media-management" className={`transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SMM</Link>
                     <Link href="/branding" className={`transition-colors ${pathname === '/branding' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Branding</Link>
                     <Link href="/website" className={`transition-colors ${pathname === '/website' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Websites</Link>
-                    <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Blogs</Link>
+                    <Link href="/blogs" className={`transition-colors ${pathname === '/blogs' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Blogs</Link>
                     <Link href="#" className="text-gray-700 hover:text-[#0f3b1b] transition-colors">Contact</Link>
                 </nav>
 
@@ -178,7 +178,7 @@ export default function Header() {
                                 <Link href="/social-media-management" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SMM</Link>
                                 <Link href="/branding" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/branding' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Branding</Link>
                                 <Link href="/website" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/website' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Websites</Link>
-                                <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Blogs</Link>
+                                <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/blogs' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Blogs</Link>
                                 <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-base font-bold tracking-wide hover:text-[#1e3a29] transition-colors">Contact</Link>
 
                                 <div className="mt-8 flex gap-6">
