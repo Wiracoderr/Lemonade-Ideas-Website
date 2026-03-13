@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 interface BlogPost {
     title: string;
@@ -14,6 +15,7 @@ interface BlogPost {
 
 export default function BlogGrid({ initialBlogs }: { initialBlogs: BlogPost[] }) {
     const perPage = 9;
+    const t = useTranslations('Blogs');
     
     const [displayedBlogs, setDisplayedBlogs] = useState<BlogPost[]>(
         initialBlogs.slice(0, perPage)
@@ -62,7 +64,7 @@ export default function BlogGrid({ initialBlogs }: { initialBlogs: BlogPost[] })
     if (initialBlogs.length === 0) {
         return (
             <div className="text-center text-red-600 bg-red-50 py-4 px-6 rounded-lg my-10 border border-red-100 shadow-sm max-w-md mx-auto">
-                No blog posts found. Run the import script.
+                {t('no_posts')}
             </div>
         );
     }
@@ -87,13 +89,13 @@ export default function BlogGrid({ initialBlogs }: { initialBlogs: BlogPost[] })
                                 {blog.title}
                             </h3>
                             <p className="text-[#555] text-[0.95rem] leading-[1.6] mb-[20px] flex-grow line-clamp-3">
-                                {blog.excerpt || `Discover more about ${blog.title.toLowerCase()} and how it impacts your strategy and growth.`}
+                                {blog.excerpt || t('excerpt_fallback', { title: blog.title.toLowerCase() })}
                             </p>
                             <Link 
                                 href={`/blogs/${blog.slug}`} 
                                 className="self-start inline-block bg-[#3AAB43] text-white px-[20px] py-[10px] rounded-[5px] font-semibold text-[0.9rem] transition-colors hover:bg-[#2b8432]"
                             >
-                                Read More
+                                {t('read_more')}
                             </Link>
                         </div>
                     </div>
@@ -106,7 +108,7 @@ export default function BlogGrid({ initialBlogs }: { initialBlogs: BlogPost[] })
                         onClick={loadMore} 
                         className="bg-[#FED52B] text-[#1E3A1A] border-none px-10 py-3.5 text-base font-bold rounded-full cursor-pointer transition-all duration-200 shadow-[0_4px_10px_rgba(0,0,0,0.1)] hover:scale-105 hover:shadow-[0_6px_15px_rgba(0,0,0,0.15)] focus:outline-none"
                     >
-                        Load More Articles
+                        {t('load_more')}
                     </button>
                 </div>
             )}

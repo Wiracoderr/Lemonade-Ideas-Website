@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 const HostingArrowIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1e3a29] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -15,47 +16,49 @@ const CheckCircleIcon = () => (
     </svg>
 );
 
-const hostingPlans = [
-    {
-        title: "OUR WEBSITE HOSTING PACKAGE",
-        description: "In today's digital age, your website needs to be fast, reliable, and always online. Gone are the days of flipping through yellow pages—customers use Google to find and trust businesses that appear in search results.",
-        features: [
-            { title: "Speed Optimization", desc: "" },
-            { title: "One Hour of Free Maintenance Each Month", desc: "" },
-            { title: "Monthly Security Checkups", desc: "" },
-            { title: "Flywheel hosting", desc: "" },
-            { title: "Daily Backups", desc: "" },
-            { title: "Monthly Performance Reports", desc: "" }
-        ],
-        price: "30",
-        ctaLabel: "CONTACT US",
-        ctaLink: "/contact"
-    },
-    {
-        title: "WEBSITE HOSTING + 1 HOUR MAINTENANCE/MONTH",
-        description: "Whether you need a brand-new website designed and hosted on Flywheel or want to transfer your existing site to a faster, more secure, and reliable server, we've got you covered. Our hosting package is offered at an unbeatable monthly rate, with no long-term contracts. We trust that our exceptional service will keep you coming back.",
-        features: [
-            { title: "Speed Optimization", desc: ": Keep your site running lightning fast." },
-            { title: "1 Hour of Free Maintenance/Month", desc: ": Minor updates, tweaks, or support included." },
-            { title: "Monthly Security Checkups", desc: ": Stay protected from online threats." },
-            { title: "Flywheel Hosting", desc: ": Reliable, high-performance hosting you can count on." },
-            { title: "Daily Backups", desc: ": Ensure your data is safe and recoverable." },
-            { title: "Monthly Reports", desc: ": Clear insights into your site's performance." }
-        ],
-        price: "125",
-        ctaLabel: "CONTACT US",
-        ctaLink: "/contact",
-        footerText: "Get the hosting solution your business deserves—affordable, efficient, and worry-free. Contact us today!"
-    }
-];
-
 export default function HostingPricingSection() {
+    const t = useTranslations('Hosting');
+
+    const hostingPlans = [
+        {
+            title: t('plan1_title'),
+            description: t('plan1_desc'),
+            features: [
+                { title: t('plan1_f1_title'), desc: t('plan1_f1_desc') },
+                { title: t('plan1_f2_title'), desc: t('plan1_f2_desc') },
+                { title: t('plan1_f3_title'), desc: t('plan1_f3_desc') },
+                { title: t('plan1_f4_title'), desc: t('plan1_f4_desc') },
+                { title: t('plan1_f5_title'), desc: t('plan1_f5_desc') },
+                { title: t('plan1_f6_title'), desc: t('plan1_f6_desc') }
+            ],
+            price: "30",
+            ctaLabel: t('btn_contact'),
+            ctaLink: "/contact"
+        },
+        {
+            title: t('plan2_title'),
+            description: t('plan2_desc'),
+            features: [
+                { title: t('plan2_f1_title'), desc: t('plan2_f1_desc') },
+                { title: t('plan2_f2_title'), desc: t('plan2_f2_desc') },
+                { title: t('plan2_f3_title'), desc: t('plan2_f3_desc') },
+                { title: t('plan2_f4_title'), desc: t('plan2_f4_desc') },
+                { title: t('plan2_f5_title'), desc: t('plan2_f5_desc') },
+                { title: t('plan2_f6_title'), desc: t('plan2_f6_desc') }
+            ],
+            price: "125",
+            ctaLabel: t('btn_contact'),
+            ctaLink: "/contact",
+            footerText: t('plan2_footer')
+        }
+    ];
+
     return (
         <section className="py-24 bg-white relative overflow-hidden">
             {/* Background "HOSTING" text watermark */}
             <div className="absolute top-0 left-0 w-full flex justify-center pointer-events-none select-none overflow-hidden z-0">
                 <span className="text-[130px] md:text-[200px] lg:text-[280px] font-black text-[#f8f9fa] opacity-80 whitespace-nowrap leading-none font-display tracking-tight -mt-4 md:-mt-10">
-                    HOSTING
+                    {t('watermark')}
                 </span>
             </div>
 
@@ -76,7 +79,7 @@ export default function HostingPricingSection() {
                                     {plan.description}
                                 </p>
                                 
-                                <h4 className="font-bold text-[#1e3a29] mb-5 text-[15px]">What&apos;s Included?</h4>
+                                <h4 className="font-bold text-[#1e3a29] mb-5 text-[15px]">{t('included')}</h4>
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-5 gap-x-6 text-[12px] text-gray-700">
                                     {plan.features.map((feature, fIndex) => (
                                         <li key={fIndex} className="flex items-start gap-3">
@@ -107,10 +110,10 @@ export default function HostingPricingSection() {
                                 
                                 <div className="relative z-10 w-full flex flex-col items-center justify-center gap-6">
                                     <div className="space-y-1">
-                                        <p className="text-white text-[11px] font-bold uppercase tracking-[0.15em] mb-2">LOW PRICE OF</p>
+                                        <p className="text-white text-[11px] font-bold uppercase tracking-[0.15em] mb-2">{t('low_price')}</p>
                                         <div className="flex items-baseline justify-center gap-[2px]">
                                             <span className="text-white text-[70px] leading-none font-black font-display tracking-tighter">${plan.price}</span>
-                                            <span className="text-white text-[22px] font-bold font-display tracking-tight">/MO</span>
+                                            <span className="text-white text-[22px] font-bold font-display tracking-tight">{t('mo')}</span>
                                         </div>
                                     </div>
                                     

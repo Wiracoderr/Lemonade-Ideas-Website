@@ -1,6 +1,9 @@
 import { Terminal } from "lucide-react";
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 export default function WebsiteHostingSection() {
+  const t = useTranslations("Website");
   return (
     <section className="pt-24 pb-24 bg-white relative overflow-hidden font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -8,7 +11,7 @@ export default function WebsiteHostingSection() {
         {/* Watermark */}
         <div className="absolute top-0 left-0 right-0 flex justify-center pointer-events-none z-0">
           <span className="text-[100px] md:text-[180px] font-[Oswald] font-black text-gray-50 opacity-80 leading-none uppercase tracking-widest select-none -mt-8">
-            HOSTING
+            {t('host_wm')}
           </span>
         </div>
 
@@ -24,17 +27,17 @@ export default function WebsiteHostingSection() {
                 </div>
                 <div>
                   <h2 className="text-[28px] md:text-[36px] font-[Oswald] font-black text-[#102a14] uppercase leading-[1.1] tracking-wide">
-                    OUR WEBSITE HOSTING PACKAGE
+                    {t('host_title_1')}
                   </h2>
                 </div>
               </div>
               
               <p className="text-[14px] text-gray-700 font-medium leading-[1.7] mb-8 max-w-3xl">
-                In today&apos;s digital age, your website needs to be fast, reliable, and always online. Gone are the days of flipping through yellow pages—customers use Google to find and trust businesses that appear in search results.
+                {t('host_desc_1')}
               </p>
 
               <h4 className="text-[17px] font-bold text-[#102a14] mb-6">
-                What&apos;s Included?
+                {t('price_inc')}
               </h4>
 
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-6">
@@ -42,37 +45,37 @@ export default function WebsiteHostingSection() {
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">Speed Optimization</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">{t('host_i1')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">One Hour of Free Maintenance Each Month</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">{t('host_i2')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">Monthly Security Checkups</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">{t('host_i3')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">Flywheel hosting</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">{t('host_i4')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">Daily Backups</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">{t('host_i5')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">Monthly Performance Reports</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed font-bold">{t('host_i6')}</p>
                 </div>
               </div>
             </div>
@@ -92,20 +95,19 @@ export default function WebsiteHostingSection() {
                 
                 <div className="relative z-10 text-center flex flex-col items-center w-full">
                   <span className="text-white font-[Oswald] font-bold text-[16px] uppercase tracking-widest mb-3 drop-shadow-md">
-                    LOW PRICE OF
+                    {t('host_p1_start')}
                   </span>
                   <div className="text-white font-[Oswald] font-black text-[72px] leading-none mb-12 drop-shadow-xl tracking-tight">
-                    $30<span className="text-[40px]">/MO</span>
+                    {t('host_p1_val')}<span className="text-[40px]">{t('host_p1_mo')}</span>
                   </div>
                   
-                  <a 
+                  <Link 
                     href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" 
                     target="_blank" 
-                    rel="noopener noreferrer"
                     className="bg-[#fed034] hover:bg-white text-[#102a14] font-[Oswald] font-bold py-4 px-8 rounded shadow-[0_10px_20px_rgba(0,0,0,0.15)] text-[15px] uppercase tracking-wider transition-colors w-[85%] text-center"
                   >
-                    CONTACT US
-                  </a>
+                    {t('host_p1_btn')}
+                  </Link>
                 </div>
               </div>
             </div>
@@ -121,18 +123,18 @@ export default function WebsiteHostingSection() {
                   <Terminal size={32} strokeWidth={2.5} />
                 </div>
                 <div>
-                  <h2 className="text-[28px] md:text-[36px] font-[Oswald] font-black text-[#102a14] uppercase leading-[1.1] tracking-wide">
-                    WEBSITE HOSTING + 1 HOUR MAINTENANCE/MONTH
+                  <h2 className="text-[28px] md:text-[36px] font-[O Oswald] font-black text-[#102a14] uppercase leading-[1.1] tracking-wide">
+                    {t('host_title_2')}
                   </h2>
                 </div>
               </div>
               
               <p className="text-[14px] text-gray-700 font-medium leading-[1.7] mb-8 max-w-3xl">
-                Whether you need a brand-new website designed and hosted on Flywheel or want to transfer your existing site to a faster, more secure, and reliable server, we&apos;ve got you covered. Our hosting package is offered at an unbeatable monthly rate, with no long-term contracts. We trust that our exceptional service will keep you coming back.
+                {t('host_desc_2')}
               </p>
 
               <h4 className="text-[17px] font-bold text-[#102a14] mb-6">
-                What's Included?
+                {t('price_inc')}
               </h4>
 
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 mb-10">
@@ -140,42 +142,42 @@ export default function WebsiteHostingSection() {
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Speed Optimization:</span> Keep your site running lightning-fast.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('host2_i1_str')}</span>{t('host2_i1_txt')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">1 Hour of Free Maintenance/Month:</span> Minor updates, tweaks, or support included.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('host2_i2_str')}</span>{t('host2_i2_txt')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Monthly Security Checkups:</span> Stay protected from online threats.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('host2_i3_str')}</span>{t('host2_i3_txt')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Flywheel Hosting:</span> Reliable, high-performance hosting you can count on.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('host2_i4_str')}</span>{t('host2_i4_txt')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Daily Backups:</span> Ensure your data is safe and recoverable.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('host2_i5_str')}</span>{t('host2_i5_txt')}</p>
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Monthly Reports:</span> Clear insights into your site&apos;s performance.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('host2_i6_str')}</span>{t('host2_i6_txt')}</p>
                 </div>
               </div>
 
               <p className="text-[13px] font-bold text-[#102a14] leading-relaxed max-w-2xl">
-                Get the hosting solution your business deserves—affordable, efficient, and worry-free. Contact us today!
+                {t('host2_btm')}
               </p>
             </div>
 
@@ -194,20 +196,19 @@ export default function WebsiteHostingSection() {
                 
                 <div className="relative z-10 text-center flex flex-col items-center w-full">
                   <span className="text-white font-[Oswald] font-bold text-[16px] uppercase tracking-widest mb-3 drop-shadow-md">
-                    LOW PRICE OF
+                    {t('host_p1_start')}
                   </span>
                   <div className="text-white font-[Oswald] font-black text-[72px] leading-none mb-12 drop-shadow-xl tracking-tight">
-                    $125<span className="text-[40px]">/MO</span>
+                    {t('host_p2_val')}<span className="text-[40px]">{t('host_p1_mo')}</span>
                   </div>
                   
-                  <a 
+                  <Link 
                     href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" 
                     target="_blank" 
-                    rel="noopener noreferrer"
                     className="bg-[#fed034] hover:bg-white text-[#102a14] font-[Oswald] font-bold py-4 px-8 rounded shadow-[0_10px_20px_rgba(0,0,0,0.15)] text-[15px] uppercase tracking-wider transition-colors w-[85%] text-center"
                   >
-                    CONTACT US
-                  </a>
+                    {t('host_p1_btn')}
+                  </Link>
                 </div>
               </div>
             </div>

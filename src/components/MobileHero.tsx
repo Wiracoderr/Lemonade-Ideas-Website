@@ -1,6 +1,10 @@
 "use client";
 
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
+
 export default function MobileHero() {
+    const t = useTranslations("Home");
     return (
         <div
             className="md:hidden relative w-full flex flex-col items-center pt-24 pb-16 px-6 overflow-hidden"
@@ -15,14 +19,14 @@ export default function MobileHero() {
             {/* Top Text Content */}
             <div className="relative z-10 w-full text-center flex flex-col items-center mt-6">
                 <span className="text-yellow-400 font-bold tracking-[0.2em] text-[10px] mb-2 uppercase drop-shadow-md">
-                    Welcome to Lemonade Ideas
+                    {t('welcome')}
                 </span>
                 <h1 className="text-white font-display font-black text-[2.6rem] sm:text-5xl leading-[1.05] tracking-tight uppercase max-w-[320px] drop-shadow-xl px-2 text-center">
-                    ALL YOU NEED IS<br />
-                    <span className="text-yellow-400">FRESH</span> IDEAS.
+                    {t('headline_1')}<br />
+                    <span className="text-yellow-400">{t('headline_2')}</span>{t('headline_3')}
                 </h1>
                 <p className="mt-4 text-white/90 font-medium text-xs sm:text-sm leading-relaxed max-w-[280px] drop-shadow-md mb-8">
-                    Premium internet marketing that&apos;s fast, affordable, and drives you real leads.
+                    {t('subheadline')}
                 </p>
 
                 {/* Buttons Component */}
@@ -31,14 +35,14 @@ export default function MobileHero() {
                         href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
                         className="w-full bg-[#facc15] text-[#1e3a1a] font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider shadow-[0_4px_20px_0_rgba(250,204,21,0.3)] text-center transition-transform active:scale-95"
                     >
-                        Speak With Our Expert
+                        {t('speakWithExpert')}
                     </a>
-                    <a
-                        href="#"
+                    <Link
+                        href="/pricing"
                         className="w-full bg-transparent border-2 border-white/80 text-white hover:bg-white hover:text-[#1e3a1a] font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider text-center transition-transform active:scale-95"
                     >
-                        View Our Pricing
-                    </a>
+                        {t('viewPricing')}
+                    </Link>
                 </div>
             </div>
             {/* Aesthetic Lemon Decoration Layer */}

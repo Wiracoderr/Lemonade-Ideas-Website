@@ -1,15 +1,16 @@
 "use client";
 
 import React from "react";
+import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
-const SEOText = ({ children }: { children: React.ReactNode }) => {
-    return <>{children}</>;
-};
+// The SEOText component is no longer needed as its content will be managed by translations.
+// const SEOText = ({ children }: { children: React.ReactNode }) => {
+//     return <>{children}</>;
+// };
 
 export default function GoogleAdsBottomCtaSection() {
-    const subtitleContent = (
-        <SEOText>Along with SEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising (Google Ads) and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</SEOText>
-    );
+    const t = useTranslations('GoogleAds');
 
     return (
         <section className="bg-[#143d1f] py-24 px-4 relative overflow-hidden">
@@ -28,9 +29,8 @@ export default function GoogleAdsBottomCtaSection() {
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
-                <h2 className="text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal">
-                    &quot;GROW YOUR BUSINESS&quot; &amp; &quot;GAIN VISIBILITY&quot;<br />
-                    <span className="text-[#facc15] mt-1 inline-block">WITH LEMONADE IDEAS!</span>
+                <h2 className="text-3xl md:text-5xl lg:text-5xl font-black text-white font-[Oswald] uppercase leading-tight tracking-tight drop-shadow-sm max-w-2xl mx-auto lg:mx-0">
+                    {t('cta_title')}
                 </h2>
 
                 {/* Hand-drawn yellow underline SVG graphic */}
@@ -38,8 +38,8 @@ export default function GoogleAdsBottomCtaSection() {
                     <img src="/images/layer-1.png" alt="underline" width={200} height={16} className="h-4 object-contain opacity-90" />
                 </div>
 
-                <p className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]">
-                    {subtitleContent}
+                <p className="mt-8 text-white/90 text-lg md:text-xl font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow-sm border-l-4 border-[#38b04d] pl-5">
+                    {t('cta_desc')}
                 </p>
 
                 <a

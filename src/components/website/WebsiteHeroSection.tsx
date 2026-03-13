@@ -2,19 +2,21 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function WebsiteHeroSection() {
     const [isPlaying, setIsPlaying] = useState(false);
+    const t = useTranslations("Website");
 
     return (
         <div className="font-sans">
             {/* Top Banner */}
             <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
                 <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
-                    FAST AND OPTIMIZED HQ WEBSITE
+                    {t('hero_title')}
                 </div>
                 <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
-                    Watch Video
+                    {t('hero_btn')}
                 </button>
             </div>
 
@@ -41,10 +43,10 @@ export default function WebsiteHeroSection() {
                         {/* Text Section relative z-20 */}
                         <div className="w-full lg:w-[45%] space-y-5 relative z-20">
                             <h1 className="text-[26px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-[Oswald] font-bold uppercase leading-[1.1] tracking-normal drop-shadow-sm text-white">
-                                LOOKING FOR A<br />
-                                NEW WEBSITE?<br />
-                                YOU&apos;RE IN THE<br />
-                                PERFECT PLACE!
+                                {t('hero_headline_1')}<br />
+                                {t('hero_headline_2')}<br />
+                                {t('hero_headline_3')}<br />
+                                {t('hero_headline_4')}
                             </h1>
                             <div className="w-24 h-1 bg-[#8DBF43] mt-6"></div>
                         </div>

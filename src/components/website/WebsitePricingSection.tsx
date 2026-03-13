@@ -1,6 +1,8 @@
 import { MonitorSmartphone } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function WebsitePricingSection() {
+  const t = useTranslations("Website");
   return (
     <section className="pt-32 pb-16 bg-white relative overflow-hidden font-sans">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -8,7 +10,7 @@ export default function WebsitePricingSection() {
         {/* Watermark */}
         <div className="absolute top-0 left-0 right-0 flex justify-center pointer-events-none z-0">
           <span className="text-[100px] md:text-[180px] font-[Oswald] font-black text-gray-50 opacity-80 leading-none uppercase tracking-widest select-none -mt-8">
-            PRICING
+            {t('price_wm')}
           </span>
         </div>
 
@@ -23,17 +25,17 @@ export default function WebsitePricingSection() {
                 </div>
                 <div>
                   <h2 className="text-[28px] md:text-[36px] font-[Oswald] font-black text-[#102a14] uppercase leading-[1.1] tracking-wide">
-                    OUR PREMIER WEBSITE<br className="hidden md:block"/> DESIGN & DEVELOPMENT PACKAGE
+                    {t('price_title1')}<br className="hidden md:block"/> {t('price_title2')}
                   </h2>
                 </div>
               </div>
               
               <p className="text-[14px] text-gray-700 font-medium leading-[1.7] mb-8 max-w-3xl">
-                Whether you&apos;re starting from scratch or need a refresh for an outdated site, we&apos;ve perfected the process with over 500 successful website launches. Let us create a modern, high-performing website tailored to your needs.
+                {t('price_desc')}
               </p>
 
               <h4 className="text-[17px] font-bold text-[#102a14] mb-6">
-                What&apos;s Included?
+                {t('price_inc')}
               </h4>
 
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-6 mb-10">
@@ -42,47 +44,47 @@ export default function WebsitePricingSection() {
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Custom Design Mockups:</span> Unique designs created just for you.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('price_i1_str')}</span>{t('price_i1_txt')}</p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Dedicated Project Manager:</span> A single point of contact to guide you through the process.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('price_i2_str')}</span>{t('price_i2_txt')}</p>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Custom WordPress Development:</span> Fully tailored functionality on a trusted platform.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('price_i3_str')}</span>{t('price_i3_txt')}</p>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Empowered</span> for successful post-launch management</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('price_i4_str')}</span>{t('price_i4_txt')}</p>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">Up to 30 Development Hours:</span> Ample time to build your ideal site.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('price_i5_str')}</span>{t('price_i5_txt')}</p>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-5 h-5 bg-[#102a14] rounded-full flex items-center justify-center shrink-0 mt-0.5">
                     <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" /></svg>
                   </div>
-                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">$500 Credit for Digital Marketing Services:</span> Kickstart your online presence with Lemonade Ideas.</p>
+                  <p className="text-[13px] text-gray-700 leading-relaxed"><span className="font-bold text-[#102a14]">{t('price_i6_str')}</span>{t('price_i6_txt')}</p>
                 </div>
               </div>
 
               <p className="text-[14px] font-bold text-[#102a14] leading-relaxed max-w-2xl">
-                Transform your website into a powerful tool for your business. Reach out to get started today!
+                {t('price_btm')}
               </p>
             </div>
 
@@ -108,10 +110,10 @@ export default function WebsitePricingSection() {
                 
                 <div className="relative z-10 text-center flex flex-col items-center w-full">
                   <span className="text-white font-[Oswald] font-bold text-[16px] uppercase tracking-widest mb-3 drop-shadow-md">
-                    STARTING AT
+                    {t('price_start')}
                   </span>
                   <div className="text-white font-[Oswald] font-black text-[72px] leading-none mb-12 drop-shadow-xl tracking-tight">
-                    $3500
+                    {t('price_val')}
                   </div>
                   
                   <a 
@@ -120,7 +122,7 @@ export default function WebsitePricingSection() {
                     rel="noopener noreferrer"
                     className="bg-[#fed034] hover:bg-white text-[#102a14] font-[Oswald] font-bold py-4 px-8 rounded shadow-[0_10px_20px_rgba(0,0,0,0.15)] text-[15px] uppercase tracking-wider transition-colors w-[90%] text-center"
                   >
-                    GET INSTANT QUOTE
+                    {t('price_btn')}
                   </a>
                 </div>
               </div>

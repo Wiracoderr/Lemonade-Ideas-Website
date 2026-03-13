@@ -2,8 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function TimelineSection() {
+    const t = useTranslations("SEO");
     return (
         <section className="py-20 px-4 relative border-y border-gray-100 dark:border-gray-700 overflow-hidden">
             {/* Background color and texture */}
@@ -16,13 +18,11 @@ export default function TimelineSection() {
                         {/* Updated title with top-left green bracket accent */}
                         <div className="relative pl-6 pt-2 mb-6">
                             <div className="absolute left-0 top-0 w-8 h-8 border-l-[4px] border-t-[4px] border-green-700 rounded-tl-sm"></div>
-                            <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white leading-[1.1] tracking-tight">
-                                HOW LEMONADE IDEAS STANDS OUT IN SEO YOUR<br />
-                                SEO TIMELINE
+                            <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white leading-[1.1] tracking-tight" dangerouslySetInnerHTML={{ __html: t.raw('seo_time_title') }}>
                             </h2>
                         </div>
                         <p className="text-gray-700 dark:text-gray-300 text-[15px] leading-relaxed font-[Roboto] max-w-lg">
-                            With over a decade of experience, we&apos;ve fine-tuned our process to deliver maximum results with minimal hassle. Here&apos;s what you can expect:
+                            {t('seo_time_desc')}
                         </p>
                     </div>
 
@@ -37,10 +37,10 @@ export default function TimelineSection() {
                             </div>
                             <div>
                                 <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#143d1f] dark:text-white tracking-wide">
-                                    MONTH 1: CAMPAIGN SETUP & STRATEGY
+                                    {t('seo_time_i1_t')}
                                 </h3>
                                 <p className="text-[14px] text-gray-700 dark:text-gray-400 mt-2 leading-relaxed">
-                                    We&apos;ll collaborate with you to gain access to your online assets, conduct in-depth keyword research to identify the best search terms, and develop a comprehensive 6-month strategy to kickstart your campaign.
+                                    {t('seo_time_i1_d')}
                                 </p>
                             </div>
                         </div>
@@ -53,10 +53,10 @@ export default function TimelineSection() {
                             </div>
                             <div>
                                 <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#143d1f] dark:text-white tracking-wide">
-                                    MONTHS 2-6: PLAN EXECUTION
+                                    {t('seo_time_i2_t')}
                                 </h3>
                                 <p className="text-[14px] text-gray-700 dark:text-gray-400 mt-2 leading-relaxed">
-                                    During this phase, we&apos;ll put the strategy into action, focusing on consistent execution to boost activity and drive measurable improvements in your search rankings by month six.
+                                    {t('seo_time_i2_d')}
                                 </p>
                             </div>
                         </div>
@@ -69,10 +69,10 @@ export default function TimelineSection() {
                             </div>
                             <div>
                                 <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#143d1f] dark:text-white tracking-wide">
-                                    MONTH 7 AND BEYOND: ANALYZE, REFINE, OPTIMIZE
+                                    {t('seo_time_i3_t')}
                                 </h3>
                                 <p className="text-[14px] text-gray-700 dark:text-gray-400 mt-2 leading-relaxed">
-                                    From month seven onward, we&apos;ll evaluate the campaign&apos;s progress, provide actionable insights, and outline a refreshed 6-month strategy aimed at continuous growth in organic rankings and traffic.
+                                    {t('seo_time_i3_d')}
                                 </p>
                             </div>
                         </div>

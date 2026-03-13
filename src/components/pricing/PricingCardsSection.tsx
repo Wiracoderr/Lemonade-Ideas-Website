@@ -1,5 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#1e3a29] shrink-0" viewBox="0 0 20 20" fill="currentColor">
@@ -82,119 +83,121 @@ const BrandingIcon = () => (
 );
 
 
-const pricingPlans = [
-    {
-        title: "SEO CHAT - GPT",
-        icon: <SeoLaptopIcon />,
-        description: "Dominate AI-powered search results with our GEO SEO Service — built to boost visibility across every local market. We optimize for hundreds of geo-specific keywords so your business appears on top when customers search through Google or AI-driven engines. With our performance-based model, you only pay for proven results. Get top rankings fast and grow your presence city by city.",
-        features: [
-            "AI-optimized local GEO landing experiences",
-            "AI and Google local rank tracking",
-            "Dedicated AI GEO search strategist",
-            "Works for any industry and business size"
-        ],
-        fees: [
-            { label: "STARTUP FEE", amount: "$1750" },
-            { label: "MONTHLY FEE", amount: "$450" }
-        ],
-        ctaPrimary: "GET STARTED",
-        ctaSecondary: "CONTACT US"
-    },
-    {
-        title: "SEO PACKAGES",
-        icon: <SeoLaptopIcon />,
-        description: "Looking for a long-term solution to growing your organic search presence? Look no further. Our SEO packages combine the most important factors in into a single offering to best optimize your business. SEO takes time, so these campaigns run in 6 month cycles to maximize performance.",
-        features: [
-            "Localized landing pages (from our RankGuarantee™ offering)",
-            "Monthly Blogs",
-            "On-page SEO",
-            "Google Business Profile Managemnet",
-            "Local Citations Creation",
-            "Dedicated Account Management"
-        ],
-        fees: [
-            { label: "STARTING AT", amount: "$1000" },
-            { label: "MONTH 2+", amount: "$750" }
-        ],
-        ctaPrimary: "GET STARTED",
-        ctaSecondary: "CONTACT US"
-    },
-    {
-        title: "GOOGLE ADS MANAGEMENT (PPC)",
-        icon: <GoogleAdsIcon />,
-        description: "Get calls fast like a water faucet. Let us set up and manage your campaign to make it a success. Search ads, display ads, video ads, retargeting, & more (even Bing Ads!)",
-        features: [
-            "Campaign creation",
-            "Landing page creation",
-            "Monthly campaign management",
-            "Call and form tracking",
-            "Monthly reporting",
-            "Dedicated account management"
-        ],
-        fees: [
-            { label: "MONTH 1", amount: "$1000" },
-            { label: "MONTH 2+", amount: "$750" }
-        ],
-        ctaPrimary: "GET STARTED",
-        ctaSecondary: "CONTACT US"
-    },
-    {
-        title: "WEBSITE DESIGN/DEVELOPMENT",
-        icon: <WebsiteDesignIcon />,
-        description: "Whether you have no website or an outdated one, after building and launching 500+ websites, we have the recipe for success when it comes to a modern website.",
-        features: [
-            "Custom designed mockups",
-            "Custom developed on WordPress",
-            "Up to 40 hours included (standard hourly rate is $125/hr)",
-            "Dedicated project manager",
-            "Empowered for successful post-launch management",
-            "Includes $500 towards Lemonade Ideas digital marketing services"
-        ],
-        fees: [
-            { label: "STARTING AT", amount: "$3500" }
-        ],
-        ctaPrimary: "GET INSTANT QUOTE",
-        ctaSecondary: "CONTACT US"
-    },
-    {
-        title: "SOCIAL MEDIA MANAGEMENT",
-        icon: <SocialMediaIcon />,
-        description: "Build a strong online presence and connect with your audience like never before. Our Social Media Management services are designed to enhance engagement, grow your following, and ensure your brand shines across all platforms.",
-        features: [
-            "Platform-specific content creation (Instagram, Facebook, LinkedIn, etc.)",
-            "Social media calendar development",
-            "Monthly performance reporting",
-            "Audience engagement and community management",
-            "Dedicated account manager",
-            "Tailored strategies to align with your business goals and drive measurable results"
-        ],
-        fees: [
-            { label: "STARTING AT", amount: "$1000" }
-        ],
-        ctaPrimary: "GET STARTED",
-        ctaSecondary: "CONTACT US"
-    },
-    {
-        title: "BRANDING & STRATEGY",
-        icon: <BrandingIcon />,
-        description: "Create a powerful and cohesive brand that leaves a lasting impression. Our Branding & Strategy services focus on building a strong identity and delivering a roadmap for your marketing success.",
-        features: [
-            "Logo design and visual identity creation",
-            "Development of brand identity and messaging",
-            "Competitor analysis and market research",
-            "Comprehensive brand guidelines document",
-            "Strategic marketing roadmap",
-            "Dedicated brand strategist"
-        ],
-        fees: [
-            { label: "STARTING AT", amount: "$5000" }
-        ],
-        ctaPrimary: "GET STARTED",
-        ctaSecondary: "CONTACT US"
-    }
-];
-
 export default function PricingCardsSection() {
+    const t = useTranslations('PricingCards');
+
+    const pricingPlans = [
+        {
+            title: t('plan1_title'),
+            icon: <SeoLaptopIcon />,
+            description: t('plan1_desc'),
+            features: [
+                t('plan1_f1'),
+                t('plan1_f2'),
+                t('plan1_f3'),
+                t('plan1_f4')
+            ],
+            fees: [
+                { label: t('plan1_fee1_label'), amount: "$1750" },
+                { label: t('plan1_fee2_label'), amount: "$450" }
+            ],
+            ctaPrimary: t('btn_started'),
+            ctaSecondary: t('btn_contact')
+        },
+        {
+            title: t('plan2_title'),
+            icon: <SeoLaptopIcon />,
+            description: t('plan2_desc'),
+            features: [
+                t('plan2_f1'),
+                t('plan2_f2'),
+                t('plan2_f3'),
+                t('plan2_f4'),
+                t('plan2_f5'),
+                t('plan2_f6')
+            ],
+            fees: [
+                { label: t('plan2_fee1_label'), amount: "$1000" },
+                { label: t('plan2_fee2_label'), amount: "$750" }
+            ],
+            ctaPrimary: t('btn_started'),
+            ctaSecondary: t('btn_contact')
+        },
+        {
+            title: t('plan3_title'),
+            icon: <GoogleAdsIcon />,
+            description: t('plan3_desc'),
+            features: [
+                t('plan3_f1'),
+                t('plan3_f2'),
+                t('plan3_f3'),
+                t('plan3_f4'),
+                t('plan3_f5'),
+                t('plan3_f6')
+            ],
+            fees: [
+                { label: t('plan3_fee1_label'), amount: "$1000" },
+                { label: t('plan3_fee2_label'), amount: "$750" }
+            ],
+            ctaPrimary: t('btn_started'),
+            ctaSecondary: t('btn_contact')
+        },
+        {
+            title: t('plan4_title'),
+            icon: <WebsiteDesignIcon />,
+            description: t('plan4_desc'),
+            features: [
+                t('plan4_f1'),
+                t('plan4_f2'),
+                t('plan4_f3'),
+                t('plan4_f4'),
+                t('plan4_f5'),
+                t('plan4_f6')
+            ],
+            fees: [
+                { label: t('plan4_fee1_label'), amount: "$3500" }
+            ],
+            ctaPrimary: t('btn_quote'),
+            ctaSecondary: t('btn_contact')
+        },
+        {
+            title: t('plan5_title'),
+            icon: <SocialMediaIcon />,
+            description: t('plan5_desc'),
+            features: [
+                t('plan5_f1'),
+                t('plan5_f2'),
+                t('plan5_f3'),
+                t('plan5_f4'),
+                t('plan5_f5'),
+                t('plan5_f6')
+            ],
+            fees: [
+                { label: t('plan5_fee1_label'), amount: "$1000" }
+            ],
+            ctaPrimary: t('btn_started'),
+            ctaSecondary: t('btn_contact')
+        },
+        {
+            title: t('plan6_title'),
+            icon: <BrandingIcon />,
+            description: t('plan6_desc'),
+            features: [
+                t('plan6_f1'),
+                t('plan6_f2'),
+                t('plan6_f3'),
+                t('plan6_f4'),
+                t('plan6_f5'),
+                t('plan6_f6')
+            ],
+            fees: [
+                { label: t('plan6_fee1_label'), amount: "$5000" }
+            ],
+            ctaPrimary: t('btn_started'),
+            ctaSecondary: t('btn_contact')
+        }
+    ];
+
     return (
         <section className="py-24 bg-[#eaf4f4]">
             <div className="container mx-auto px-4 max-w-6xl">
@@ -216,7 +219,7 @@ export default function PricingCardsSection() {
                                 </div>
                                 
                                 <div className="ml-0 sm:ml-[72px]">
-                                    <h4 className="font-bold text-[#1e3a29] mb-4 text-[15px]">What&apos;s Included?</h4>
+                                    <h4 className="font-bold text-[#1e3a29] mb-4 text-[15px]">{t('included')}</h4>
                                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-[13px] text-gray-700">
                                         {plan.features.map((feature, fIndex) => (
                                             <li key={fIndex} className="flex items-start gap-3">

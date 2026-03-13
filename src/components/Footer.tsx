@@ -1,7 +1,10 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
 
 export default function Footer() {
+    const t = useTranslations("Footer");
+
     return (
         <div className="bg-[#eef7f8] text-[#1e3a29] pt-16 pb-12 font-sans">
             <div className="max-w-[1400px] mx-auto px-4 lg:px-6">
@@ -12,16 +15,16 @@ export default function Footer() {
                             <img src="/logos/PNGs - SVGs/SVG/Asset 2.svg" width={200} height={32} alt="Lemonade Ideas Marketing Agency" className="h-8 w-auto object-contain" />
                         </Link>
                         <p className="text-xs font-bold mb-6 max-w-[200px] leading-relaxed opacity-90">
-                            SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$
+                            {t('tagline')}
                         </p>
                         <Link href="/get-started" className="font-bold text-sm flex items-center gap-1 hover:text-green-700 transition">
-                            SCHEDULE A CALL <span className="text-green-700 text-lg leading-none">&raquo;</span>
+                            {t('scheduleCall')} <span className="text-green-700 text-lg leading-none">&raquo;</span>
                         </Link>
                     </div>
 
                     {/* Column 2: Contact Details */}
                     <div>
-                        <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">CONTACT DETAILS</h4>
+                        <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">{t('contactDetails')}</h4>
                         <ul className="space-y-4 text-[13px] font-semibold opacity-90">
                             <li><a href="tel:+14248773789" className="flex items-center gap-3 hover:text-green-700 transition"><i className="fas fa-phone-alt text-green-700"></i> +1 (424) 877-3789</a></li>
                             <li><a href="mailto:sales@lemonadeideas.com" className="flex items-center gap-3 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-green-700"></i> sales@lemonadeideas.com</a></li>
@@ -47,16 +50,16 @@ export default function Footer() {
 
                     {/* Column 3: Our Services */}
                     <div>
-                        <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">OUR SERVICES</h4>
+                        <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">{t('ourServices')}</h4>
                         <ul className="space-y-3 text-[13px] font-medium text-gray-700 mb-6">
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seochatgpt">SEO ChatGPT™</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seo">SEO</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/google-ads">Google Ads Management</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/website">Website Design</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/social-media-management">Social Media Management</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/branding">Branding & Strategy</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seochatgpt">{t('service_seoChatgpt')}</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seo">{t('service_seo')}</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/google-ads">{t('service_googleAds')}</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/website">{t('service_website')}</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/social-media-management">{t('service_smm')}</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/branding">{t('service_branding')}</Link></li>
                         </ul>
-                        <Link href="/contact" className="inline-block bg-[#1e3a29] text-white font-bold py-2 px-6 text-xs uppercase rounded hover:bg-green-800 transition">CONTACT US</Link>
+                        <Link href="/contact" className="inline-block bg-[#1e3a29] text-white font-bold py-2 px-6 text-xs uppercase rounded hover:bg-green-800 transition">{t('contactUs')}</Link>
                     </div>
                 </div>
             </div>

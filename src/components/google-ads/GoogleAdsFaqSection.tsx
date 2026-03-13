@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const faqs = [
     {
@@ -30,6 +31,7 @@ const faqs = [
 ];
 
 export default function GoogleAdsFaqSection() {
+    const t = useTranslations('GoogleAds');
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const toggleFaq = (index: number) => {
@@ -43,14 +45,14 @@ export default function GoogleAdsFaqSection() {
             <div className="absolute inset-0 opacity-40 z-0 mix-blend-multiply dark:mix-blend-screen bg-[url(/images/layer-1.png)] bg-[length:45%_100%] bg-left bg-no-repeat"></div>
 
             <div className="max-w-4xl mx-auto relative z-10">
-                <div className="text-center mb-16 relative">
-                    <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
-                        <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
-                            FAQ
-                        </span>
-                    </div>
-                    <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white relative z-10 tracking-tight">
-                        Frequently Asked Questions
+                <div className="relative text-center mb-16">
+                    <span className="text-[100px] md:text-[140px] font-black uppercase text-gray-100 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 select-none pointer-events-none drop-shadow-sm z-0 w-full tracking-widest font-sans opacity-60">
+                        {t('faq_watermark')}
+                    </span>
+                    <h2 className="relative z-10 text-3xl md:text-4xl font-black uppercase text-[#143d1f] flex items-center justify-center gap-4 font-sans tracking-tight">
+                        <span className="w-12 h-1 bg-[#38b04d] hidden md:block"></span>
+                        {t('faq_title')}
+                        <span className="w-12 h-1 bg-[#38b04d] hidden md:block"></span>
                     </h2>
                 </div>
 
@@ -65,8 +67,9 @@ export default function GoogleAdsFaqSection() {
                                     className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#facc15]'}`}
                                     onClick={() => toggleFaq(index)}
                                 >
-                                    <span className="font-[Oswald] font-bold text-base uppercase text-gray-800 dark:text-gray-200 tracking-wide pr-4">
-                                        {faq.question}
+                                    <span className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-[#38b04d] transition-colors pr-8 font-[Oswald] uppercase tracking-wide">
+                                        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                                        {t(`faq_${index + 1}_q` as any) || faq.question}
                                     </span>
                                     <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#143d1f] text-white' : 'bg-[#143d1f] text-white group-hover:text-[#facc15]'}`}>
                                         <i className={`fas fa-chevron-down transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}></i>
@@ -78,9 +81,8 @@ export default function GoogleAdsFaqSection() {
                                     className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
                                 >
                                     <div className="overflow-hidden bg-[#143d1f] text-white">
-                                        <div className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner">
-                                            {faq.answer}
-                                        </div>
+                                        {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                                        <p className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner" dangerouslySetInnerHTML={{ __html: t.raw(`faq_${index + 1}_a` as any) || faq.answer }}></p>
                                     </div>
                                 </div>
                             </div>

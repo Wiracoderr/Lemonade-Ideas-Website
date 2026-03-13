@@ -1,36 +1,38 @@
 "use client";
 
 import React, { useState } from "react";
-
-const faqs = [
-  {
-    question: "How much do your services cost?",
-    answer: "Our website design packages start at $3500. We offer a transparent pricing structure based on your specific requirements and the complexity of the project."
-  },
-  {
-    question: "What makes you different than other companies?",
-    answer: "We focus on building completely custom, high-performing websites without relying on slow, generic templates. Our designs are sales-driven, built specifically to convert visitors into warm leads."
-  },
-  {
-    question: "How fast can you get me on page 1 of Google?",
-    answer: "While we build all our websites with SEO best practices from the start, ranking on Page 1 depends on your industry&apos;s competitiveness. We offer dedicated SEO services to help accelerate that process."
-  },
-  {
-    question: "Do you provide a free consultation?",
-    answer: "Yes! We offer a free 30-minute discovery call where we&apos;ll evaluate your current online presence and discuss exactly how a new website can impact your business growth."
-  },
-  {
-    question: "Do you offer performance-based marketing services?",
-    answer: "Yes, once your website is launched, we can discuss our digital marketing and advertising strategies designed to drive traffic and maximize your return on investment."
-  },
-  {
-    question: "Do you require long-term contracts?",
-    answer: "No. Our website build is a one-time project fee. While we offer monthly maintenance and hosting packages starting at $30/mo, they are operated on a month-to-month basis without long-term lock-ins."
-  }
-];
+import { useTranslations } from 'next-intl';
 
 export default function WebsiteFaqSection() {
+    const t = useTranslations("Website");
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+    const faqs = [
+      {
+        question: t('faq_q1'),
+        answer: t('faq_a1')
+      },
+      {
+        question: t('faq_q2'),
+        answer: t('faq_a2')
+      },
+      {
+        question: t('faq_q3'),
+        answer: t('faq_a3')
+      },
+      {
+        question: t('faq_q4'),
+        answer: t('faq_a4')
+      },
+      {
+        question: t('faq_q5'),
+        answer: t('faq_a5')
+      },
+      {
+        question: t('faq_q6'),
+        answer: t('faq_a6')
+      }
+    ];
 
     const toggleFaq = (index: number) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -46,11 +48,11 @@ export default function WebsiteFaqSection() {
                 <div className="text-center mb-16 relative">
                     <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
                         <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
-                            FAQ
+                            {t('faq_wm')}
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white relative z-10 tracking-tight">
-                        Frequently Asked Questions
+                        {t('faq_title')}
                     </h2>
                 </div>
 

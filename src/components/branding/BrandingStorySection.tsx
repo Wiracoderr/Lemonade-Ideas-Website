@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function BrandingStorySection() {
+    const t = useTranslations("Branding");
     return (
         <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#0d2814] lg:bg-black overflow-hidden group">
             
@@ -25,28 +27,28 @@ export default function BrandingStorySection() {
                 
                 <div className="lg:pl-16">
                     <h2 className="text-white font-[Oswald] font-extrabold text-[28px] md:text-[34px] lg:text-[40px] uppercase leading-tight mb-4 tracking-normal">
-                        BUILD YOUR BRAND STORY
+                        {t('story_title')}
                     </h2>
                     <p className="text-white/90 text-[14px] md:text-[15px] font-[Arial] leading-[1.8] mb-8 lg:pr-8 text-justify lg:text-justify lg:text-left">
-                        Creating impactful, results-driven narratives is the essence of effective marketing. By leveraging data-driven insights and strategic storytelling, we align your brand with your business goals, ensuring success across all digital platforms.
+                        {t('story_desc')}
                     </p>
                     
                     <ul className="space-y-6 text-white text-[13px] md:text-[14px] font-[Arial] leading-[1.8] lg:pr-8 text-justify lg:text-justify lg:text-left">
                         <li className="flex items-start">
                              <span className="mr-3 mt-2 w-[5px] h-[5px] rounded-full bg-white flex-shrink-0 relative"></span>
-                            <span><strong>DISCOVER -</strong> We conduct an in-depth analysis of your brand to uncover strengths, identify areas for growth, and outline best practices to guide your strategy.</span>
+                            <span><strong>{t('story_i1_t')}</strong>{t('story_i1_d')}</span>
                         </li>
                         <li className="flex items-start">
                              <span className="mr-3 mt-2 w-[5px] h-[5px] rounded-full bg-white flex-shrink-0 relative"></span>
-                            <span><strong>STRATEGIZE -</strong> Our team crafts a tailored strategy for your brand, setting clear benchmarks and designing workflows to achieve measurable results.</span>
+                            <span><strong>{t('story_i2_t')}</strong>{t('story_i2_d')}</span>
                         </li>
                         <li className="flex items-start">
                              <span className="mr-3 mt-2 w-[5px] h-[5px] rounded-full bg-white flex-shrink-0 relative"></span>
-                            <span><strong>EXECUTE -</strong> We bring your strategy to life, carefully implementing each step while continuously optimizing for maximum return on investment (ROI).</span>
+                            <span><strong>{t('story_i3_t')}</strong>{t('story_i3_d')}</span>
                         </li>
                         <li className="flex items-start">
                              <span className="mr-3 mt-2 w-[5px] h-[5px] rounded-full bg-white flex-shrink-0 relative"></span>
-                            <span><strong>EVALUATE -</strong> We analyze performance data, identify actionable insights, and recommend next steps to ensure ongoing growth and success in your marketing efforts.</span>
+                            <span><strong>{t('story_i4_t')}</strong>{t('story_i4_d')}</span>
                         </li>
                     </ul>
                 </div>

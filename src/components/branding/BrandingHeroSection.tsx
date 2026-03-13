@@ -2,8 +2,10 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function BrandingHeroSection() {
+    const t = useTranslations("Branding");
     const [isPlaying, setIsPlaying] = useState(false);
 
     return (
@@ -11,10 +13,10 @@ export default function BrandingHeroSection() {
             {/* Top Banner (Optional: matches the flow of the SEO page) */}
             <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
                 <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
-                    FIND OUT HOW WE CAN SCALE YOUR CAMPAIGNS
+                    {t('hero_top')}
                 </div>
                 <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
-                    Watch Video
+                    {t('hero_btn')}
                 </button>
             </div>
 
@@ -53,12 +55,12 @@ export default function BrandingHeroSection() {
                         {/* Text Section relative z-20 to be above the video on small overlap */}
                         <div className="w-full lg:w-[45%] space-y-5 relative z-20">
                             <h1 className="text-[26px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-[Oswald] font-bold uppercase leading-[1.1] tracking-normal drop-shadow-sm text-white">
-                                ELEVATE YOUR BRAND<br />
-                                AND STRATEGY WITH<br />
-                                <span className="text-[#38b04d]">TAILORED EXPERTISE</span>
+                                {t('hero_t1')}<br />
+                                {t('hero_t2')}<br />
+                                <span className="text-[#38b04d]">{t('hero_t3')}</span>
                             </h1>
                             <p className="text-[14px] md:text-[17px] lg:text-[18.5px] font-bold text-white leading-[1.5] font-[Arial] mt-6 drop-shadow-sm">
-                                Read below to learn how we do it!
+                                {t('hero_sub')}
                             </p>
                         </div>
                         

@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function SmmDarkExperienceSection() {
+    const t = useTranslations('SMM');
     return (
         <section className="relative w-full min-h-[500px] flex flex-col lg:flex-row lg:items-center bg-[#113a1c] lg:bg-black overflow-hidden group">
             
@@ -25,10 +27,10 @@ export default function SmmDarkExperienceSection() {
                 <div className="lg:pl-16">
                     <div className="border-l-4 border-green-500/80 pl-6 mb-8">
                         <h2 className="text-white font-[Oswald] font-extrabold text-3xl md:text-4xl uppercase leading-tight mb-4 tracking-tight">
-                            PUT OUR YEARS OF SOCIAL MEDIA EXPERIENCE TO WORK FOR YOUR BUSINESS
+                            {t('dark_experience_title')}
                         </h2>
                         <p className="text-white/80 text-lg md:text-xl font-medium leading-relaxed italic">
-                            We&apos;ve managed successful social media campaigns across a wide range of industries—from local businesses and professional services to e-commerce brands and national organizations. When we manage your social media, we bring years of expertise to create strategies tailored to your business&apos;s goals and audience.
+                            {t('dark_experience_desc')}
                         </p>
                     </div>
                 </div>

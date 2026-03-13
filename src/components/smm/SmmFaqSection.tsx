@@ -1,35 +1,37 @@
 "use client";
 import React, { useState } from 'react';
-
-const faqs = [
-    {
-        question: "Why should my business invest in social media management?",
-        answer: "Social media management is crucial because it builds brand awareness, engages your local community, and drives targeted traffic to your funnel. It acts as digital word-of-mouth that establishes trust before a customer even contacts you."
-    },
-    {
-        question: "How will I know if my social media strategy is working?",
-        answer: "We provide comprehensive reporting that tracks key performance indicators (KPIs) such as reach, engagement rate, follower growth, and most importantly, website clicks and lead conversions."
-    },
-    {
-        question: "How long does it take to see results from social media management?",
-        answer: "While engagement and reach can improve within the first month, organic social media is a long-term play. Meaningful lead generation and consistent ROI typically take 3 to 6 months of sustained strategy and community building."
-    },
-    {
-        question: "What does my monthly fee cover?",
-        answer: "Your monthly fee covers strategy development, content creation (graphics and copywriting), strategic hashtags, post scheduling, community engagement (replying to comments/messages), and a monthly performance review."
-    },
-    {
-        question: "How do you determine the social media ad budget?",
-        answer: "Your ad budget is determined collaboratively based on your specific goals, the platforms we're targeting, your geographic radius, and the competitiveness of your industry. We typically recommend starting with a scalable baseline and increasing as we prove ROI."
-    },
-    {
-        question: "Do you provide reporting?",
-        answer: "Yes, depending on your selected tier, you will receive bi-weekly or monthly reports detailing exactly how your accounts are growing, what content resonates best, and transparent analytics on your return on investment."
-    }
-];
+import { useTranslations } from 'next-intl';
 
 export default function SmmFaqSection() {
+    const t = useTranslations('SMM');
     const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+    const faqs = [
+        {
+            question: t('faq_1_q'),
+            answer: t('faq_1_a')
+        },
+        {
+            question: t('faq_2_q'),
+            answer: t('faq_2_a')
+        },
+        {
+            question: t('faq_3_q'),
+            answer: t('faq_3_a')
+        },
+        {
+            question: t('faq_4_q'),
+            answer: t('faq_4_a')
+        },
+        {
+            question: t('faq_5_q'),
+            answer: t('faq_5_a')
+        },
+        {
+            question: t('faq_6_q'),
+            answer: t('faq_6_a')
+        }
+    ];
 
     const toggleFaq = (index: number) => {
         setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -45,11 +47,11 @@ export default function SmmFaqSection() {
                 <div className="text-center mb-16 relative">
                     <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
                         <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
-                            FAQ
+                            {t('faq_watermark')}
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white relative z-10 tracking-tight">
-                        Frequently Asked Questions
+                        {t('faq_title')}
                     </h2>
                 </div>
 

@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function GoogleAdsPricingSection() {
+    const t = useTranslations('GoogleAds');
     return (
         <>
             <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#0d2814] lg:bg-black overflow-hidden group">
@@ -28,10 +30,10 @@ export default function GoogleAdsPricingSection() {
                     <div className="lg:pl-16">
                         <div className="border-l-4 border-white pl-6 mb-8">
                             <h2 className="text-white font-[Oswald] font-extrabold text-3xl md:text-5xl uppercase leading-tight mb-4 tracking-tight">
-                                LEVERAGE OUR YEARS OF EXPERTISE FOR YOUR BUSINESS
+                                {t('price_title1')}
                             </h2>
                             <p className="text-white/80 text-lg md:text-xl font-medium leading-relaxed italic border-t border-white/20 pt-4 mt-4">
-                                With experience creating hundreds of campaigns across diverse industries—ranging from local contractors and law firms to multimillion-dollar online stores—we bring a wealth of knowledge to your campaign, putting our expertise to work for your success.
+                                {t('price_desc1')}
                             </p>
                         </div>
                     </div>
@@ -55,15 +57,15 @@ export default function GoogleAdsPricingSection() {
                     <div className="mb-6 flex flex-col items-center text-center">
                         <div className="relative w-full flex justify-center items-center mb-10 pt-8">
                             <span className="text-7xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-100 tracking-widest absolute select-none pointer-events-none opacity-80 whitespace-nowrap">
-                                Pricing
+                                {t('price_watermark')}
                             </span>
                             <h3 className="relative z-10 text-sm md:text-base text-gray-500 uppercase tracking-widest font-bold mt-2">
-                                Know exactly what you&apos;re getting and how much it costs—no surprises.
+                                {t('price_title2')}
                             </h3>
                         </div>
 
                         <p className="text-[#333] w-full text-[15px] md:text-[16.8px] font-[Roboto] text-justify tracking-wide leading-[1.8]">
-                            Our pricing is designed with your success in mind. As we build and refine your brand strategy, you&apos;ll see a reduction in our management fee once we&apos;ve established a strong foundation and your strategy is delivering results.
+                            {t('price_desc2')}
                         </p>
                     </div>
 
@@ -71,7 +73,7 @@ export default function GoogleAdsPricingSection() {
                         {/* Top Green Banner */}
                         <div className="bg-[#38a149] py-5 text-center shadow-inner">
                             <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
-                                GOOGLE ADS MANAGEMENT PLAN
+                                {t('price_banner')}
                             </h3>
                         </div>
 
@@ -80,28 +82,28 @@ export default function GoogleAdsPricingSection() {
                             {/* Column 1 */}
                             <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
                                 <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
-                                    <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">START UP - CAMPAIGN CREATION</h4>
+                                    <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('price_card1_title')}</h4>
                                     <div className="flex justify-center items-center gap-2">
                                         <span className="text-5xl font-bold text-gray-900 font-[Oswald]">$1000</span>
-                                        <span className="text-sm font-bold text-gray-500 uppercase">(Month 1)</span>
+                                        <span className="text-sm font-bold text-gray-500 uppercase">{t('price_card1_sub')}</span>
                                     </div>
                                 </div>
                                 <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Creation of account, campaign, ad groups, ads, etc.</span>
+                                        <span className="leading-snug">{t('price_card1_feat1')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Custom landing page creation (converts 2x the quantity of leads for the same ad spend compared to driving traffic directly to website)</span>
+                                        <span className="leading-snug">{t('price_card1_feat2')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Reporting and tracking setup (for all calls and form submissions)</span>
+                                        <span className="leading-snug">{t('price_card1_feat3')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Retargeting to drive traffic back to your website that didn&apos;t convert</span>
+                                        <span className="leading-snug">{t('price_card1_feat4')}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -109,28 +111,28 @@ export default function GoogleAdsPricingSection() {
                             {/* Column 2 */}
                             <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
                                 <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
-                                    <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">COMPREHENSIVE PACKAGE</h4>
+                                    <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('price_card2_title')}</h4>
                                     <div className="flex justify-center items-center gap-2">
                                         <span className="text-5xl font-bold text-gray-900 font-[Oswald]">$750</span>
-                                        <span className="text-sm font-bold text-gray-500 uppercase">(Months 2+)</span>
+                                        <span className="text-sm font-bold text-gray-500 uppercase">{t('price_card2_sub')}</span>
                                     </div>
                                 </div>
                                 <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Weekly campaign management to optimize for an increased conversion rate and decreased cost per lead (campaign management turns to bi-weekly starting in month 4)</span>
+                                        <span className="leading-snug">{t('price_card2_feat1')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Recommended monthly ad spend of $1-5K</span>
+                                        <span className="leading-snug">{t('price_card2_feat2')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Dedicated account management</span>
+                                        <span className="leading-snug">{t('price_card2_feat3')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
                                         <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
-                                        <span className="leading-snug">Millions of dollars of ad spend spent... you&apos;re in good hands</span>
+                                        <span className="leading-snug">{t('price_card2_feat4')}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -139,7 +141,7 @@ export default function GoogleAdsPricingSection() {
                         {/* Bottom Get Started Button */}
                         <div className="px-6 md:px-8 pb-8 pt-2">
                             <Link href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
-                                GET STARTED <i className="fas fa-arrow-right"></i>
+                                {t('price_btn')} <i className="fas fa-arrow-right"></i>
                             </Link>
                         </div>
                     </div>

@@ -1,6 +1,8 @@
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function WebsiteProcessSection() {
+  const t = useTranslations("Website");
   return (
     <section className="py-24 bg-[#eef9fd] relative overflow-hidden font-sans">
       {/* Decorative background lines to match the screenshot's faint watermark */}
@@ -23,13 +25,13 @@ export default function WebsiteProcessSection() {
               <div className="absolute -left-6 -top-4 w-8 h-8 border-l-[4px] border-t-[4px] border-[#3db155]"></div>
               
               <span className="text-[#3db155] font-bold text-[12px] uppercase tracking-widest block mb-2">
-                Our Process
+                {t('proc_label')}
               </span>
               <h2 className="text-[32px] md:text-[38px] font-[Oswald] font-bold text-[#0f2e15] uppercase tracking-normal leading-[1.15]">
-                Collaborating to bring your vision to life
+                {t('proc_title')}
               </h2>
               <p className="mt-4 text-[13px] md:text-[14px] text-gray-800 font-medium leading-relaxed max-w-xl">
-                Our expert web designers work with you every step of the way to create a website that meets your goals.
+                {t('proc_desc')}
               </p>
             </div>
 
@@ -48,11 +50,11 @@ export default function WebsiteProcessSection() {
                 </div>
                 <div>
                   <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">Step 1:</span>
-                    Discovery
+                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s1_lbl')}</span>
+                    {t('proc_s1_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-sm">
-                    We'll connect with you to gather key details about your vision, goals, desired features, and style preferences.
+                    {t('proc_s1_desc')}
                   </p>
                 </div>
               </div>
@@ -70,11 +72,11 @@ export default function WebsiteProcessSection() {
                 </div>
                 <div>
                   <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">Step 2:</span>
-                    Planning
+                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s2_lbl')}</span>
+                    {t('proc_s2_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-sm">
-                    Our project manager collaborates with the development team to create a clear plan based on your input.
+                    {t('proc_s2_desc')}
                   </p>
                 </div>
               </div>
@@ -92,11 +94,11 @@ export default function WebsiteProcessSection() {
                 </div>
                 <div>
                   <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">Step 3:</span>
-                    Development
+                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s3_lbl')}</span>
+                    {t('proc_s3_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-[400px]">
-                    We'll build your website and share the first draft for your feedback. After refining it based on your revisions, we'll prepare for launch.
+                    {t('proc_s3_desc')}
                   </p>
                 </div>
               </div>
@@ -112,11 +114,11 @@ export default function WebsiteProcessSection() {
                 </div>
                 <div>
                   <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">Step 4:</span>
-                    Launch
+                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s4_lbl')}</span>
+                    {t('proc_s4_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-sm">
-                    Our developers perform a final quality check for compatibility and optimization before launching your site for the world to see!
+                    {t('proc_s4_desc')}
                   </p>
                 </div>
               </div>

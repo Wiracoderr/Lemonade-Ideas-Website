@@ -1,15 +1,17 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function GoogleAdsFeaturesSection() {
+    const t = useTranslations('GoogleAds');
     return (
         <section className="py-20 px-4 bg-white dark:bg-gray-900 relative overflow-hidden font-sans">
             <div className="max-w-6xl mx-auto relative z-10">
                 <div className="text-center mb-16 relative">
                     <span className="text-[#38b04d] font-[Oswald] font-bold uppercase tracking-widest text-sm mb-4 block">
-                        OUR APPROACH
+                        {t('feat_watermark')}
                     </span>
                     <h2 className="text-4xl md:text-5xl font-[Oswald] font-black text-[#143d1f] dark:text-white uppercase mb-8 relative z-10 tracking-tight">
-                        EVERYTHING YOU NEED TO SUCCEED—AND THEN SOME
+                        {t('feat_title')}
                     </h2>
                 </div>
 
@@ -20,10 +22,10 @@ export default function GoogleAdsFeaturesSection() {
                             <i className="fas fa-clipboard-check"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            EASY ONBOARDING
+                            {t('feat_card1_title')}
                         </h3>
                         <p className="text-[14px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium font-[Arial]">
-                            Lengthy and complicated onboarding processes can be frustrating. That&apos;s why we&apos;ve designed a streamlined process to get things up and running quickly, allowing you to start seeing results sooner.
+                            {t('feat_card1_desc')}
                         </p>
                     </div>
 
@@ -33,10 +35,10 @@ export default function GoogleAdsFeaturesSection() {
                             <i className="fas fa-file-contract"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            NO CONTRACT REQUIRED
+                            {t('feat_card2_title')}
                         </h3>
                         <p className="text-[14px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium font-[Arial]">
-                            We never lock you into a contract. You&apos;re free to leave anytime—but we&apos;re confident you&apos;ll stay once you see the impact we can have on your business.
+                            {t('feat_card2_desc')}
                         </p>
                     </div>
 
@@ -46,10 +48,10 @@ export default function GoogleAdsFeaturesSection() {
                             <i className="fas fa-calendar-check"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            AFFORDABLE MONTHLY FEE
+                            {t('feat_card3_title')}
                         </h3>
                         <p className="text-[14px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium font-[Arial]">
-                            Our pricing is competitive and designed with small businesses in mind. We believe Google Ads management should be both effective and affordable. With us, there are no hidden fees—just a straightforward monthly rate.
+                            {t('feat_card3_desc')}
                         </p>
                     </div>
 
@@ -59,10 +61,10 @@ export default function GoogleAdsFeaturesSection() {
                             <i className="fas fa-sitemap"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            CAMPAIGN CREATION
+                            {t('feat_card4_title')}
                         </h3>
                         <p className="text-[14px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium font-[Arial]">
-                            When we say campaign creation includes everything, we mean it: a custom landing page, keyword research, ad copywriting, extensions, conversion tracking, call tracking, and more. With us, you can trust that every detail is covered to set your campaign up for success.
+                            {t('feat_card4_desc')}
                         </p>
                     </div>
 
@@ -72,10 +74,10 @@ export default function GoogleAdsFeaturesSection() {
                             <i className="fas fa-cogs"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            ONGOING OPTIMIZATION
+                            {t('feat_card5_title')}
                         </h3>
                         <p className="text-[14px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium font-[Arial]">
-                            We don&apos;t believe in a &quot;set it and forget it&quot; approach. Our skilled strategists continuously optimize your campaign using data-driven insights. As we refine and adjust over time, your campaign will keep improving to deliver even better results.
+                            {t('feat_card5_desc')}
                         </p>
                     </div>
 
@@ -85,10 +87,10 @@ export default function GoogleAdsFeaturesSection() {
                             <i className="fas fa-laptop-code"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            PROOF IT&apos;S ALL WORKING
+                            {t('feat_card6_title')}
                         </h3>
                         <p className="text-[14px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium font-[Arial]">
-                            How can you tell if your campaign is delivering results? We meticulously track every call, contact form submission, and sale generated by your campaign. You&apos;ll have clear visibility into the metrics that matter most to you, so you can see the impact firsthand.
+                            {t('feat_card6_desc')}
                         </p>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function SmmFastTrackSection() {
+    const t = useTranslations('SMM');
     return (
         <section className="py-20 bg-white font-sans" data-purpose="fast-track">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12 max-w-6xl">

@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function GoogleAdsExperienceSection() {
+    const t = useTranslations('GoogleAds');
     return (
         <section className="relative w-full font-sans flex flex-col lg:flex-row bg-[#153e20]">
             {/* Desktop Background Image (Right side) */}
@@ -21,10 +23,10 @@ export default function GoogleAdsExperienceSection() {
             <div className="relative z-10 w-full lg:w-[60%] xl:w-[55%] bg-[#153e20] text-white py-16 lg:py-24 px-5 lg:pl-16 xl:pl-32 lg:pr-24 xl:pr-32 flex flex-col justify-center lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]">
                 <div className="max-w-[800px] lg:max-w-2xl mx-auto lg:mx-0">
                     <h2 className="text-[28px] md:text-[32px] lg:text-[40px] font-black uppercase mb-6 leading-[1.1] tracking-normal lg:text-left text-center">
-                        FACED CHALLENGES WITH GOOGLE ADS BEFORE? LET US TAKE CARE OF IT!
+                        {t('exp_title')}
                     </h2>
                     <p className="text-[#e2e8f0] text-sm lg:text-base font-medium leading-relaxed lg:text-left text-center">
-                        Whether you managed Google Ads on your own or hired an agency, the results might not have met your expectations. The reality is, setting up Google Ads effectively can be tricky. With experience in building hundreds of successful campaigns, our team knows what it takes to drive real results. We can also evaluate your current campaign and offer expert advice to help you improve. Let us show you how we can make a difference!
+                        {t('exp_desc')}
                     </p>
                 </div>
             </div>

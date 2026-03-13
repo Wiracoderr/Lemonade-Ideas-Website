@@ -3,13 +3,19 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import blogsData from "@/data/blogs.json";
+import blogsEn from "@/data/blogs.json";
+import blogsEs from "@/data/blogs-es.json";
+import { useTranslations, useLocale } from 'next-intl';
 
 interface BlogNavigationProps {
   currentSlug: string;
 }
 
 export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
+  const locale = useLocale();
+  const t = useTranslations('Blogs');
+  const blogsData = locale === 'es' ? blogsEs : blogsEn;
+
   const currentIndex = blogsData.findIndex((blog) => blog.slug === currentSlug);
 
   if (currentIndex === -1) {
@@ -44,7 +50,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                 <i className="fas fa-arrow-left"></i>
               </div>
               <div className="flex-1 min-w-0">
-                <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">Previous Article</span>
+                <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">{t('prev_article')}</span>
                 <h4 className="font-['Oswald'] font-bold text-[#1E3A1A] text-[1.1rem] leading-[1.3] truncate group-hover:text-[#3AAB43] transition-colors m-0">
                   {prevBlog.title}
                 </h4>
@@ -60,7 +66,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                 <i className="fas fa-arrow-right"></i>
               </div>
               <div className="flex-1 min-w-0">
-                <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">Next Article</span>
+                <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">{t('next_article')}</span>
                 <h4 className="font-['Oswald'] font-bold text-[#1E3A1A] text-[1.1rem] leading-[1.3] truncate group-hover:text-[#3AAB43] transition-colors m-0">
                   {nextBlog.title}
                 </h4>
@@ -74,10 +80,10 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
           <div>
             <div className="flex items-center justify-between mb-[30px]">
               <h2 className="text-[2rem] font-['Oswald'] font-bold text-[#1E3A1A] uppercase m-0 flex items-center gap-[15px]">
-                <i className="fas fa-book-reader text-[#3AAB43]"></i> Keep Learning
+                <i className="fas fa-book-reader text-[#3AAB43]"></i> {t('keep_learning')}
               </h2>
               <Link href="/blogs" className="text-[#3AAB43] font-bold hover:text-[#1E3A1A] transition-colors hidden md:flex items-center gap-[8px]">
-                View All Articles <i className="fas fa-arrow-right text-[0.8em]"></i>
+                {t('view_all')} <i className="fas fa-arrow-right text-[0.8em]"></i>
               </Link>
             </div>
 
@@ -95,7 +101,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                       />
                       <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500"></div>
                       <div className="absolute top-[15px] left-[15px] bg-[#FED52B] text-[#1E3A1A] text-[0.75rem] font-bold px-[12px] py-[4px] rounded-full uppercase tracking-[1px] shadow-sm">
-                        Article
+                        {t('article')}
                       </div>
                     </Link>
                     <div className="p-[20px] flex flex-col flex-1">
@@ -109,7 +115,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                         </h4>
                       </Link>
                       <Link href={`/blogs/${blog.slug}`} className="inline-flex items-center gap-[8px] text-[#3AAB43] font-bold text-[0.95rem] mt-[15px] group-hover:text-[#1E3A1A] transition-colors">
-                        Read More <i className="fas fa-arrow-right text-[0.8em] group-hover:translate-x-1 transition-transform"></i>
+                        {t('read_more')} <i className="fas fa-arrow-right text-[0.8em] group-hover:translate-x-1 transition-transform"></i>
                       </Link>
                     </div>
                   </div>
@@ -119,7 +125,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
             
             <div className="mt-[20px] text-center md:hidden">
               <Link href="/blogs" className="text-[#3AAB43] font-bold hover:text-[#1E3A1A] transition-colors inline-flex items-center gap-[8px]">
-                View All Articles <i className="fas fa-arrow-right text-[0.8em]"></i>
+                {t('view_all')} <i className="fas fa-arrow-right text-[0.8em]"></i>
               </Link>
             </div>
           </div>

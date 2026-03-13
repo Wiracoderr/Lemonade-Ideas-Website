@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function GoogleAdsBenefitsSection() {
+    const t = useTranslations('GoogleAds');
     return (
         <section className="bg-white py-24 px-5 font-sans">
             <div className="mx-auto max-w-6xl grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -32,11 +34,11 @@ export default function GoogleAdsBenefitsSection() {
                 <div className="w-full max-w-[550px]">
                     <div className="border-l-[5px] border-[#38b04d] pl-5 mb-6">
                         <h2 className="text-[28px] md:text-[36px] font-[Oswald] font-bold uppercase text-[#0a2e15] leading-[1.1] tracking-normal">
-                            ACCELERATE YOUR LEADS AND SALES
+                            {t('benefits_title')}
                         </h2>
                     </div>
                     <p className="text-gray-600 text-[15px] md:text-[16px] leading-relaxed font-[Arial]">
-                        With Google Ads, your business can appear right where it counts—at the top of Google search results. We&apos;ll create your campaign with all the right elements for success and continually optimize it to deliver even better results over time. Best of all, we offer this at a price that won&apos;t break the bank.
+                        {t('benefits_desc')}
                     </p>
                 </div>
 

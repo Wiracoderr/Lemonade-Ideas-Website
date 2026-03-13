@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useTranslations } from 'next-intl';
 
 // A helper component to wrap text safely without linking "SEO" anymore as requested
 const SEOText = ({ children }: { children: React.ReactNode }) => {
@@ -12,8 +13,9 @@ interface CTASectionProps {
 }
 
 export default function CTASection({ subtitleContent }: CTASectionProps) {
+    const t = useTranslations("SEO");
     const defaultSubtitle = (
-        <SEOText>Along with SEO, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.</SEOText>
+        <span dangerouslySetInnerHTML={{ __html: t.raw('seo_cta_desc') }} />
     );
 
     return (
@@ -33,9 +35,7 @@ export default function CTASection({ subtitleContent }: CTASectionProps) {
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
-                <h2 className="text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal">
-                    &quot;GROW YOUR BUSINESS&quot; &amp; &quot;GAIN VISIBILITY&quot;<br />
-                    <span className="text-[#facc15] mt-1 inline-block">WITH LEMONADE IDEAS!</span>
+                <h2 className="text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal" dangerouslySetInnerHTML={{ __html: t.raw('seo_cta_title') }}>
                 </h2>
 
                 {/* Hand-drawn yellow underline SVG graphic */}
@@ -53,8 +53,8 @@ export default function CTASection({ subtitleContent }: CTASectionProps) {
                 >
                     <img src="/images/icon-call.svg" alt="Phone Outline Icon" className="w-[50px] h-[50px] object-contain shrink-0" />
                     <div className="flex flex-col items-start pr-4 pt-1">
-                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">SPEAK WITH OUR EXPERT</span>
-                        <span className="text-[26px] leading-none tracking-normal">SCHEDULE A CALL</span>
+                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">{t('seo_cta_btn_up')}</span>
+                        <span className="text-[26px] leading-none tracking-normal">{t('seo_cta_btn_down')}</span>
                     </div>
                 </a>
             </div>

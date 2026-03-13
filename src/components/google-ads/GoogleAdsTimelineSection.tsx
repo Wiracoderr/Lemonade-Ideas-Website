@@ -1,35 +1,37 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function GoogleAdsTimelineSection() {
+    const t = useTranslations('GoogleAds');
     return (
         <section className="bg-[#eaf6fc] py-20 px-5 font-sans">
             <div className="mx-auto max-w-7xl">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="order-2 lg:order-1">
                         <div className="border-l-4 border-[#38b04d] pl-6 mb-8">
-                            <h2 className="text-3xl font-black uppercase text-gray-900 font-sans">The Paid Ads Timeline</h2>
+                            <h2 className="text-3xl font-black uppercase text-gray-900 font-sans">{t('time_title')}</h2>
                         </div>
                         <div className="space-y-8 pl-2">
-                            <p className="text-sm text-gray-600 mb-6">We have methodically mapped out a timeline that sets you up for success. The initial few months (~90 days) are critical in getting a successful paid ads campaign moving in the right direction so we make sure you are fully engaged during this period of time. Here is what you can expect:</p>
+                            <p className="text-sm text-gray-600 mb-6">{t('time_desc')}</p>
                             <div className="relative">
-                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">Build - Month 1</h3>
-                                <p className="text-xs text-gray-600">We set up your Google Ads campaign with a solid foundation—landing pages, keywords, ads, extensions, and conversion tracking—to maximize leads at the lowest cost.</p>
-                                <p className="text-xs text-gray-500 mt-2 italic">30-Day Check-In: Review initial performance with your Account Manager.</p>
+                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">{t('time_step1_title')}</h3>
+                                <p className="text-xs text-gray-600">{t('time_step1_desc')}</p>
+                                <p className="text-xs text-gray-500 mt-2 italic">{t('time_step1_sub')}</p>
                             </div>
                             <div className="relative">
-                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">Learn - Month 2</h3>
-                                <p className="text-xs text-gray-600">Your campaign is live, and we optimize regularly—adding negative keywords, refining bids, and enhancing lead quality.</p>
-                                <p className="text-xs text-gray-500 mt-2 italic">60-Day Check-In: Discuss performance updates with your Account Manager.</p>
+                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">{t('time_step2_title')}</h3>
+                                <p className="text-xs text-gray-600">{t('time_step2_desc')}</p>
+                                <p className="text-xs text-gray-500 mt-2 italic">{t('time_step2_sub')}</p>
                             </div>
                             <div className="relative">
-                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">Optimize - Month 3</h3>
-                                <p className="text-xs text-gray-600">We refine further by focusing on high-performing ad groups and testing broader keywords. Our goal by the end of month 3 is to double your calls compared to any existing campaigns in your account.</p>
-                                <p className="text-xs text-gray-500 mt-2 italic">90-Day Check-In: Evaluate campaign efficiency and results.</p>
+                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">{t('time_step3_title')}</h3>
+                                <p className="text-xs text-gray-600">{t('time_step3_desc')}</p>
+                                <p className="text-xs text-gray-500 mt-2 italic">{t('time_step3_sub')}</p>
                             </div>
                             <div className="relative">
-                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">Manage &amp; Scale - Month 4+ (Price Drop!)</h3>
-                                <p className="text-xs text-gray-600">We continue optimizing AND lower your monthly management fee to increase your ROI.</p>
+                                <h3 className="font-bold text-gray-900 uppercase text-sm mb-2">{t('time_step4_title')}</h3>
+                                <p className="text-xs text-gray-600">{t('time_step4_desc')}</p>
                             </div>
                         </div>
                     </div>

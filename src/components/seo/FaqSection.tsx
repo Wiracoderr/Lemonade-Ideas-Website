@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from 'next-intl';
 
 export default function FaqSection({ faqs }: { faqs: { question: string, answer: string }[] }) {
+    const t = useTranslations("SEO");
     const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
     const toggleFaq = (index: number) => {
@@ -19,11 +21,11 @@ export default function FaqSection({ faqs }: { faqs: { question: string, answer:
                 <div className="text-center mb-16 relative">
                     <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
                         <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
-                            FAQ
+                            {t('seo_faq_wm')}
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white relative z-10 tracking-tight">
-                        Frequently Asked Questions
+                        {t('seo_faq_title')}
                     </h2>
                 </div>
 

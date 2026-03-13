@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { ShieldCheck, FileCode2, SearchCheck, Award } from "lucide-react";
+import { useTranslations } from 'next-intl';
 
 export default function WebsitePerformanceSection() {
+  const t = useTranslations("Website");
   return (
     <section className="relative bg-[#0a2e15] py-28 overflow-hidden font-sans">
       {/* Dynamic Background Image */}
@@ -24,15 +26,15 @@ export default function WebsitePerformanceSection() {
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mb-16 gap-8">
           <div className="max-w-xl">
             <span className="text-white font-bold text-[11px] md:text-[12px] uppercase tracking-widest block mb-3">
-              Successful Website Features
+              {t('perf_lbl')}
             </span>
             <h2 className="text-[32px] md:text-[42px] font-[Oswald] font-black text-white uppercase tracking-tight leading-[1.1] drop-shadow-sm">
-              What makes a high-performing website?
+              {t('perf_title')}
             </h2>
           </div>
           <div className="max-w-lg lg:pt-6">
             <p className="text-gray-200 text-[13.5px] font-medium leading-relaxed drop-shadow-sm">
-              It&apos;s one thing to have a website; it&apos;s another to have one that drives results. We focus not only on creating stunning websites but also on building longevity and ensuring your site grows your business and boosts your revenue.
+              {t('perf_desc')}
             </p>
           </div>
         </div>
@@ -46,10 +48,10 @@ export default function WebsitePerformanceSection() {
               <ShieldCheck size={40} strokeWidth={1.5} />
             </div>
             <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
-              Website Security
+              {t('perf_c1_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
-              Stay protected from hackers! Our websites receive regular updates to safeguard against the latest threats.
+              {t('perf_c1_desc')}
             </p>
           </div>
           
@@ -59,10 +61,10 @@ export default function WebsitePerformanceSection() {
               <FileCode2 size={40} strokeWidth={1.5} />
             </div>
             <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
-              Custom Functionality
+              {t('perf_c2_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
-              We avoid slow, restrictive templates and instead design custom features tailored to your needs—without unnecessary extras.
+              {t('perf_c2_desc')}
             </p>
           </div>
           
@@ -72,10 +74,10 @@ export default function WebsitePerformanceSection() {
               <SearchCheck size={40} strokeWidth={1.5} />
             </div>
             <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
-              SEO-Friendly Design
+              {t('perf_c3_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
-              A website is only valuable if it can be found. We build fast, functional sites optimized for search engines to help you rank higher.
+              {t('perf_c3_desc')}
             </p>
           </div>
           
@@ -85,10 +87,10 @@ export default function WebsitePerformanceSection() {
               <Award size={40} strokeWidth={1.5} />
             </div>
             <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
-              Distinctive Personality
+              {t('perf_c4_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
-              Forget boring, cookie-cutter designs. We create websites that reflect your unique business, ensuring you stand out and leave a lasting impression.
+              {t('perf_c4_desc')}
             </p>
           </div>
 

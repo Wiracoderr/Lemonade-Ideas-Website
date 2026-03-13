@@ -14,6 +14,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { motion, useTransform, useMotionValue } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 // ── Tunables ────────────────────────────────────────────────────────────────
 const EAGER_FRAMES = 10;   // frames loaded before showing "ready"
@@ -41,6 +42,7 @@ function preloadImage(url: string): Promise<HTMLImageElement | null> {
 
 // ── Component ────────────────────────────────────────────────────────────────
 export default function CameraScroll() {
+    const t = useTranslations("Home");
     const containerRef = useRef<HTMLDivElement>(null);
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const rafIdRef = useRef<number>(0);
@@ -240,9 +242,9 @@ export default function CameraScroll() {
                     className="relative z-20 flex flex-col items-center justify-center text-center p-6 w-full md:w-1/2 h-full"
                 >
                     <h1 className="text-[3.5rem] md:text-[5.4rem] font-black text-white tracking-wide leading-[1.1] mt-16 md:mt-0 drop-shadow-lg">
-                        All you need is <br />
+                        {t('camera_headline_1')} <br />
                         <span className="text-[2.9rem] md:text-[4.2rem] text-yellow-400 font-light italic mt-2 block drop-shadow-md">
-                            fresh ideas.
+                            {t('camera_headline_2')}
                         </span>
                     </h1>
                 </motion.div>
@@ -255,7 +257,7 @@ export default function CameraScroll() {
                         {!eagerReady && (
                             <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-[#020202] backdrop-blur-md">
                                 <span className="text-white text-2xl font-light mb-4 text-center">
-                                    Loading Experience
+                                    {t('camera_loading')}
                                 </span>
                                 <div className="w-48 h-1 bg-white/20 rounded-full overflow-hidden">
                                     <div

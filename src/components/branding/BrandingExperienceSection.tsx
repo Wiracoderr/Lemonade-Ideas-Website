@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function BrandingExperienceSection() {
+    const t = useTranslations("Branding");
     return (
         <section className="relative w-full font-sans flex flex-col lg:flex-row bg-[#153e20]">
             {/* Desktop Background Image (Right side) */}
@@ -22,13 +24,13 @@ export default function BrandingExperienceSection() {
             <div className="relative z-10 w-full lg:w-[60%] xl:w-[55%] bg-[#153e20] text-white py-16 lg:py-24 px-5 lg:pl-16 xl:pl-32 lg:pr-24 xl:pr-32 flex flex-col justify-center lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]">
                 <div className="max-w-[800px] lg:max-w-2xl mx-auto lg:mx-0">
                     <h2 className="text-[28px] md:text-[30px] lg:text-[34px] xl:text-[40px] font-[Oswald] font-black uppercase mb-6 leading-[1.15] tracking-wide lg:text-left text-center">
-                        &quot;I&apos;VE TRIED BRANDING AND STRATEGY BEFORE. WHY SHOULD I TRY AGAIN?&quot;
+                        {t('exp_title')}
                     </h2>
                     <p className="text-[#e2e8f0] text-[15px] lg:text-[16px] font-[Arial] leading-relaxed mb-6 lg:text-left text-justify lg:text-justify">
-                        Maybe you&apos;ve worked on your branding or developed a strategy yourself, or perhaps you hired an agency, but the results didn&apos;t meet your expectations. The truth is, crafting an effective brand and strategy requires a deep understanding of your audience, clear messaging, and a cohesive plan—and it&apos;s easy to miss the mark without the right expertise.
+                        {t('exp_p1')}
                     </p>
                     <p className="text-[#e2e8f0] text-[15px] lg:text-[16px] font-[Arial] leading-relaxed lg:text-left text-justify lg:text-justify">
-                        At Lemonade Ideas, we&apos;ve helped countless businesses build successful brands and implement strategies that drive results. With years of experience, we know what works, and we&apos;ll make sure your approach has all the key elements for success. Already have an existing brand or strategy? We&apos;d be happy to review it and provide expert recommendations to elevate your business to the next level.
+                        {t('exp_p2')}
                     </p>
                 </div>
             </div>

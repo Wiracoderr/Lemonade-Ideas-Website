@@ -2,8 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export default function SmmCtaSection() {
+    const t = useTranslations('SMM');
     return (
         <section className="bg-[#143d1f] py-24 px-4 relative overflow-hidden" data-purpose="cta-bottom">
             {/* Texture Map Overlay */}
@@ -21,19 +23,20 @@ export default function SmmCtaSection() {
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
-                <h2 className="text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal">
-                    GROW YOUR BUSINESS WITH EXPERT<br />
-                    <span className="text-[#facc15] mt-1 inline-block">SOCIAL MEDIA MANAGEMENT</span>
-                </h2>
+                <h2 
+                    className="text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal"
+                    dangerouslySetInnerHTML={{ __html: t.raw('cta_title') }}
+                />
 
                 {/* Hand-drawn yellow underline SVG graphic */}
                 <div className="flex justify-center mb-10 w-full relative h-[16px]">
                     <Image src="/images/layer-1.png" alt="underline" fill className="object-contain opacity-90" sizes="(max-width: 768px) 200px, 200px" loading="lazy" />
                 </div>
 
-                <p className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]">
-                    Along with Social Media Management, Lemonade Ideas drives real results through pay-per-click<br className="hidden md:block" /> advertising and website development. Contact us to discover what could benefit<br className="hidden md:block" /> your business the most.
-                </p>
+                <p 
+                    className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]"
+                    dangerouslySetInnerHTML={{ __html: t.raw('cta_desc') }}
+                />
 
                 <a
                     href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
@@ -43,8 +46,8 @@ export default function SmmCtaSection() {
                         <Image src="/images/icon-call.svg" alt="Phone Outline Icon" fill className="object-contain" loading="lazy" />
                     </div>
                     <div className="flex flex-col items-start pr-4 pt-1">
-                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">SPEAK WITH OUR EXPERT</span>
-                        <span className="text-[26px] leading-none tracking-normal">SCHEDULE A CALL</span>
+                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">{t('cta_button_sub')}</span>
+                        <span className="text-[26px] leading-none tracking-normal">{t('cta_button_main')}</span>
                     </div>
                 </a>
             </div>

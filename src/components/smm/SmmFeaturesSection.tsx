@@ -1,21 +1,23 @@
 import React from 'react';
+import { useTranslations } from 'next-intl';
 
 export default function SmmFeaturesSection() {
+    const t = useTranslations('SMM');
     return (
         <section className="py-20 px-4 bg-white dark:bg-gray-900 relative overflow-hidden" data-purpose="features">
             <div className="max-w-6xl mx-auto relative z-10">
                 <div className="text-center mb-16 relative">
                     <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-8">
                         <span className="text-6xl md:text-[180px] font-[Oswald] font-bold uppercase text-gray-400 tracking-tighter leading-none whitespace-nowrap">
-                            APPROACH
+                            {t('features_approach')}
                         </span>
                     </div>
                     <h4 className="text-[#34a853] font-bold text-xs uppercase tracking-[0.3em] mb-4 relative z-10">
-                        Our Approach to Social Media Management
+                        {t('features_approach_subtitle')}
                     </h4>
                     <h2 className="text-4xl md:text-5xl font-[Oswald] font-bold text-[#143d1f] dark:text-white uppercase relative z-10 tracking-tight flex flex-col items-center">
-                        <span className="block mb-2">EVERYTHING YOU NEED TO GROW YOUR</span>
-                        <span className="block">PRESENCE—AND THEN SOME</span>
+                        <span className="block mb-2">{t('features_title_line_1')}</span>
+                        <span className="block">{t('features_title_line_2')}</span>
                     </h2>
                 </div>
 
@@ -26,10 +28,10 @@ export default function SmmFeaturesSection() {
                             <i className="fas fa-clipboard-list"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            EASY ONBOARDING
+                            {t('features_card_1_title')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
-                            We know your time is valuable, so we&apos;ve designed a streamlined onboarding process that&apos;s simple and efficient. This way, we can get your social media strategy up and running quickly, so you see results faster.
+                            {t('features_card_1_desc')}
                         </p>
                     </div>
 
@@ -39,10 +41,10 @@ export default function SmmFeaturesSection() {
                             <i className="fas fa-file-signature"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            NO CONTRACT REQUIRED
+                            {t('features_card_2_title')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
-                            We don&apos;t believe in locking you into long-term contracts. You&apos;re free to leave at any time, but we&apos;re confident you&apos;ll stay when you see how we elevate your social media presence.
+                            {t('features_card_2_desc')}
                         </p>
                     </div>
 
@@ -52,10 +54,10 @@ export default function SmmFeaturesSection() {
                             <i className="fas fa-credit-card"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            AFFORDABLE MONTHLY FEE
+                            {t('features_card_3_title')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
-                            Our pricing is competitive and designed with small businesses in mind. We believe effective social media management should be accessible and budget-friendly, with no surprise fees—just a clear, affordable monthly rate.
+                            {t('features_card_3_desc')}
                         </p>
                     </div>
 
@@ -65,10 +67,10 @@ export default function SmmFeaturesSection() {
                             <i className="fas fa-calendar-alt"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            CAMPAIGN CREATION
+                            {t('features_card_4_title')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
-                            Our social media campaigns include everything you need: content creation, audience targeting, platform setup, post scheduling.
+                            {t('features_card_4_desc')}
                         </p>
                     </div>
 
@@ -78,10 +80,10 @@ export default function SmmFeaturesSection() {
                             <i className="fas fa-cogs"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            ONGOING OPTIMIZATION
+                            {t('features_card_5_title')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
-                            We don&apos;t believe in a &quot;set it and forget it&quot; approach. Our team of experts continuously monitors and optimizes your social media strategy based on real-time data. As we analyze what works best, we fine-tune your content and engagement tactics, ensuring your social media presence keeps improving and delivering better results over time.
+                            {t('features_card_5_desc')}
                         </p>
                     </div>
 
@@ -91,10 +93,10 @@ export default function SmmFeaturesSection() {
                             <i className="fas fa-chart-line"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
-                            PROVEN RESULTS
+                            {t('features_card_6_title')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
-                            How do you know it&apos;s working? We provide detailed reports tracking key metrics like engagement, reach, followers, and conversions. You&apos;ll see the impact of your social media campaigns and how they contribute to your business goals. Let us handle your social media management so you can focus on running your business!
+                            {t('features_card_6_desc')}
                         </p>
                     </div>
                 </div>

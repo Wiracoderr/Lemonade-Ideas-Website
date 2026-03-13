@@ -1,8 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useState, useEffect, useTransition } from "react";
+import { Link, usePathname, useRouter } from "@/i18n/routing";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, Phone, FileText, Menu, X } from "lucide-react";
@@ -10,8 +10,18 @@ import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./So
 
 export default function Header() {
     const pathname = usePathname();
+    const router = useRouter();
+    const locale = useLocale();
+    const t = useTranslations("Header");
+    const [isPending, startTransition] = useTransition();
     const [isVisible, setIsVisible] = useState(true);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const switchLocale = (nextLocale: string) => {
+        startTransition(() => {
+            router.replace(pathname, {locale: nextLocale});
+        });
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -60,11 +70,11 @@ export default function Header() {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Phone size={14} className="fill-[#0f3b1b]" />
-                                    <Link href="#" className="hover:text-yellow-600">Schedule A Call</Link>
+                                    <Link href="#" className="hover:text-yellow-600">{t('scheduleCall')}</Link>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <FileText size={14} className="fill-[#0f3b1b]" />
-                                    <span>No Contracts. Affordable Prices. Built for Small Business.</span>
+                                    <span>{t('topBarTagline')}</span>
                                 </div>
                             </div>
 
@@ -73,7 +83,7 @@ export default function Header() {
                                 className="w-[380px] bg-[#0f3b1b] text-white flex items-center pl-10 gap-3 relative z-20"
                                 style={{ clipPath: "polygon(20px 0, 100% 0, 100% 100%, 0% 100%)", marginLeft: "-20px" }}
                             >
-                                <span className="text-[10px] tracking-wider font-bold mr-2">FOLLOW US ON :</span>
+                                <span className="text-[10px] tracking-wider font-bold mr-2">{t('followUs')}</span>
                                 <Link href="https://www.facebook.com/lemonadeidea/" aria-label="Facebook" className="bg-white text-[#0f3b1b] p-1.5 rounded-full hover:bg-yellow-400 transition-colors flex items-center justify-center">
                                     <BrandFacebook size={12} />
                                 </Link>
@@ -108,20 +118,32 @@ export default function Header() {
 
                 {/* Links (Hidden on Mobile) */}
                 <nav className="hidden lg:flex items-center gap-5 text-[13px] font-bold tracking-tight">
-                    <Link href="/seo" className={`transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SEO</Link>
-                    <Link href="/seochatgpt" className={`transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SEO ChatGpt</Link>
-                    <Link href="/google-ads" className={`transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Google Ads</Link>
-                    <Link href="/social-media-management" className={`transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>SMM</Link>
-                    <Link href="/branding" className={`transition-colors ${pathname === '/branding' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Branding</Link>
-                    <Link href="/website" className={`transition-colors ${pathname === '/website' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Websites</Link>
-                    <Link href="/blogs" className={`transition-colors ${pathname === '/blogs' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Blogs</Link>
-                    <Link href="/contact" className={`transition-colors ${pathname === '/contact' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>Contact</Link>
+                    <Link href="/seo" className={`transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_seo')}</Link>
+                    <Link href="/seochatgpt" className={`transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_seochatgpt')}</Link>
+                    <Link href="/google-ads" className={`transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_googleAds')}</Link>
+                    <Link href="/social-media-management" className={`transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_smm')}</Link>
+                    <Link href="/branding" className={`transition-colors ${pathname === '/branding' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_branding')}</Link>
+                    <Link href="/website" className={`transition-colors ${pathname === '/website' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_websites')}</Link>
+                    <Link href="/blogs" className={`transition-colors ${pathname === '/blogs' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_blogs')}</Link>
+                    <Link href="/contact" className={`transition-colors ${pathname === '/contact' ? 'text-[#ffb703]' : 'text-gray-700 hover:text-[#0f3b1b]'}`}>{t('nav_contact')}</Link>
                 </nav>
 
-                {/* CTA (Hidden on Mobile) */}
-                <Link href="/pricing" className="hidden lg:inline-block bg-[#1e3a29] text-white font-bold py-2.5 px-6 rounded text-sm uppercase tracking-wider hover:bg-[#2a5139] transition-colors duration-300">
-                    VIEW OUR PRICING
-                </Link>
+                {/* CTA and Lang Switcher (Hidden on Mobile) */}
+                <div className="hidden lg:flex items-center gap-4">
+                    <div className="flex items-center gap-2 border border-gray-200 rounded-full px-3 py-1.5 bg-gray-50 shadow-sm">
+                        <button onClick={() => switchLocale('en')} className={`transition-all hover:scale-110 w-6 h-6 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center shrink-0 ${locale === 'en' ? 'opacity-100 ring-2 ring-offset-1 ring-green-600' : 'opacity-40 hover:opacity-100 grayscale hover:grayscale-0'}`} title="English" aria-label="English">
+                            <img src="https://flagcdn.com/w40/us.png" alt="US" className="w-full h-full object-cover object-center" />
+                        </button>
+                        <div className="w-[1px] h-4 bg-gray-300"></div>
+                        <button onClick={() => switchLocale('es')} className={`transition-all hover:scale-110 w-6 h-6 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center shrink-0 ${locale === 'es' ? 'opacity-100 ring-2 ring-offset-1 ring-green-600' : 'opacity-40 hover:opacity-100 grayscale hover:grayscale-0'}`} title="Español" aria-label="Español">
+                            <img src="https://flagcdn.com/w40/mx.png" alt="MX" className="w-full h-full object-cover object-center" />
+                        </button>
+                    </div>
+
+                    <Link href="/pricing" className="bg-[#1e3a29] text-white font-bold py-2.5 px-6 rounded text-sm uppercase tracking-wider hover:bg-[#2a5139] transition-colors duration-300">
+                        {t('viewPricing')}
+                    </Link>
+                </div>
 
                 {/* Mobile Hamburger Button */}
                 <button
@@ -172,14 +194,25 @@ export default function Header() {
 
                             {/* Mobile Menu Links */}
                             <div className="flex-1 flex flex-col items-start gap-8 px-8 overflow-y-auto pb-12">
-                                <Link href="/seo" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SEO</Link>
-                                <Link href="/seochatgpt" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SEO ChatGpt</Link>
-                                <Link href="/google-ads" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Google Ads</Link>
-                                <Link href="/social-media-management" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>SMM</Link>
-                                <Link href="/branding" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/branding' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Branding</Link>
-                                <Link href="/website" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/website' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Websites</Link>
-                                <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/blogs' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Blogs</Link>
-                                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/contact' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>Contact</Link>
+                                {/* Mobile Language Switcher */}
+                                <div className="flex items-center gap-4 border border-gray-200 rounded-full px-4 py-3 bg-white w-full justify-center shadow-sm">
+                                    <button onClick={() => switchLocale('en')} className={`transition-all hover:scale-110 w-8 h-8 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center shrink-0 ${locale === 'en' ? 'opacity-100 ring-2 ring-offset-2 ring-green-600' : 'opacity-40 hover:opacity-100 grayscale hover:grayscale-0'}`} title="English" aria-label="English">
+                                        <img src="https://flagcdn.com/w40/us.png" alt="US" className="w-full h-full object-cover object-center" />
+                                    </button>
+                                    <div className="w-[1px] h-6 bg-gray-300"></div>
+                                    <button onClick={() => switchLocale('es')} className={`transition-all hover:scale-110 w-8 h-8 rounded-full overflow-hidden border border-gray-200 flex items-center justify-center shrink-0 ${locale === 'es' ? 'opacity-100 ring-2 ring-offset-2 ring-green-600' : 'opacity-40 hover:opacity-100 grayscale hover:grayscale-0'}`} title="Español" aria-label="Español">
+                                        <img src="https://flagcdn.com/w40/mx.png" alt="MX" className="w-full h-full object-cover object-center" />
+                                    </button>
+                                </div>
+
+                                <Link href="/seo" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seo' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_seo')}</Link>
+                                <Link href="/seochatgpt" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/seochatgpt' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_seochatgpt')}</Link>
+                                <Link href="/google-ads" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/google-ads' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_googleAds')}</Link>
+                                <Link href="/social-media-management" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/social-media-management' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_smm')}</Link>
+                                <Link href="/branding" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/branding' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_branding')}</Link>
+                                <Link href="/website" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/website' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_websites')}</Link>
+                                <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/blogs' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_blogs')}</Link>
+                                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/contact' ? 'text-[#ffb703]' : 'hover:text-[#1e3a29]'}`}>{t('nav_contact')}</Link>
 
                                 <div className="mt-8 flex gap-6">
                                     <Link href="https://www.facebook.com/lemonadeidea/" aria-label="Facebook" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1e3a29] hover:text-yellow-500"><BrandFacebook size={24} /></Link>
