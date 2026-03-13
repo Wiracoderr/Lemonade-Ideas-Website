@@ -164,6 +164,7 @@ async function main() {
 import React from 'react';
 import CTASection from '@/components/seo/CTASection';
 import Link from 'next/link';
+import Image from 'next/image';
 import Head from 'next/head';
 
 export default function BlogPost() {
