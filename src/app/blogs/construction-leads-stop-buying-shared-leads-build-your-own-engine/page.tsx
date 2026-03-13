@@ -1,39 +1,55 @@
 "use client";
-import React from 'react';
-import CTASection from '@/components/seo/CTASection';
-import Link from 'next/link';
-import Image from 'next/image';
-import Head from 'next/head';
+import React from "react";
+import CTASection from "@/components/seo/CTASection";
+import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
 
 export default function BlogPost() {
-    return (
-        <div className="flex flex-col min-h-screen bg-white">
-            <Head>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-            </Head>
+  return (
+    <div className="flex flex-col min-h-screen bg-white">
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+      </Head>
 
-            {/* 1. Header Area - Dark Grey, Roboto/Oswald Fonts, Responsive Padding */}
-            <div className="bg-[#444444] pt-[120px] pb-[60px] md:pt-[140px] md:pb-[80px] text-center text-white px-4 md:px-[20px] font-['Poppins',sans-serif]">
-                <div className="mx-auto w-full max-w-[1000px]">
-                     <h1 className="text-[2rem] md:text-[2.75rem] font-[Oswald] font-bold uppercase leading-[1.3] tracking-[0.5px] mb-[20px] text-[#ffffff]">
-                         Construction Leads: Stop Buying Shared Leads & Build Your Own Engine
-                     </h1>
-                     <div className="flex items-center justify-center gap-[15px] text-[0.9rem] font-semibold text-[#e0e0e0]">
-                         <span className="flex items-center gap-[6px]">
-                             <i className="fas fa-user-circle text-[1.1em]"></i> Lemonade Ideas
-                         </span>
-                         <span>|</span>
-                         <span className="flex items-center gap-[6px]">
-                             <i className="far fa-calendar-alt text-[1.1em]"></i> March 12, 2026
-                         </span>
-                     </div>
-                </div>
-            </div>
+      {/* 1. Header Area - Dark Grey, Roboto/Oswald Fonts, Responsive Padding */}
+      <div className="bg-[#444444] pt-[120px] pb-[60px] md:pt-[140px] md:pb-[80px] text-center text-white px-4 md:px-[20px] font-['Poppins',sans-serif]">
+        <div className="mx-auto w-full max-w-[1000px]">
+          <h1 className="text-[2rem] md:text-[2.75rem] font-[Oswald] font-bold uppercase leading-[1.3] tracking-[0.5px] mb-[20px] text-[#ffffff]">
+            Construction Leads: Stop Buying Shared Leads & Build Your Own Engine
+          </h1>
+          <div className="flex items-center justify-center gap-[15px] text-[0.9rem] font-semibold text-[#e0e0e0]">
+            <span className="flex items-center gap-[6px]">
+              <i className="fas fa-user-circle text-[1.1em]"></i> Lemonade Ideas
+            </span>
+            <span>|</span>
+            <span className="flex items-center gap-[6px]">
+              <i className="far fa-calendar-alt text-[1.1em]"></i> March 12,
+              2026
+            </span>
+          </div>
+        </div>
+      </div>
 
-            {/* Content Area - 1200px Wrapper strict rule matching HTML style block */}
-            <main className="flex-1 px-4 md:px-[20px]">
-                <article className="max-w-[1200px] mx-auto py-[30px] md:py-[40px] font-['Poppins',sans-serif] text-[#333] leading-[1.6]">
-                    <div dangerouslySetInnerHTML={{ __html: `<div className="lemonade-blog-wrapper">
+      {/* Content Area - 1200px Wrapper strict rule matching HTML style block */}
+      <main className="flex-1 px-4 md:px-[20px]">
+        <article className="max-w-[800px] mx-auto py-[30px] md:py-[40px] font-['Poppins',sans-serif] text-[#333] leading-[1.6]">
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `<div                         className="
+                            [&>h2]:text-[#1E3A1A] [&>h2]:mt-[60px] [&>h2]:mb-[25px] [&>h2]:font-extrabold [&>h2]:text-[2rem] [&>h2]:md:text-[2.5rem] [&>h2]:leading-[1.2] [&>h2]:border-b-4 [&>h2]:border-[#3AAB43] [&>h2]:pb-[15px]
+                            [&>h3]:text-[#3AAB43] [&>h3]:mt-[50px] [&>h3]:mb-[20px] [&>h3]:font-bold [&>h3]:text-[1.5rem] [&>h3]:md:text-[1.8rem] [&>h3]:leading-[1.3] [&>h3]:uppercase [&>h3]:tracking-[1px]
+                            [&>h4]:text-[#1E3A1A] [&>h4]:mt-[40px] [&>h4]:mb-[15px] [&>h4]:font-semibold [&>h4]:text-[1.25rem] [&>h4]:md:text-[1.5rem] [&>h4]:leading-[1.4] [&>h4]:bg-[#f0f7f0] [&>h4]:px-[20px] [&>h4]:py-[12px] [&>h4]:border-l-[5px] [&>h4]:border-[#FED52B] [&>h4]:rounded-r-[8px]
+                            [&>p]:mb-[25px] [&>p]:text-justify [&>p]:text-[1.05rem] [&>p]:text-[#444] [&>p]:leading-[1.8]
+                            [&>ul]:mb-[25px] [&>ul]:pl-[25px] [&>ul]:list-disc [&>ul]:text-[1.05rem] [&>ul]:text-[#444] [&>ul]:leading-[1.8] [&>ul>li]:mb-[10px]
+                            [&>ol]:mb-[25px] [&>ol]:pl-[25px] [&>ol]:list-decimal [&>ol]:text-[1.05rem] [&>ol]:text-[#444] [&>ol]:leading-[1.8] [&>ol>li]:mb-[10px]
+                            [&_strong]:text-[#1E3A1A] [&_strong]:font-bold
+                            [&>img]:w-full [&>img]:block [&>img]:h-auto [&>img]:rounded-[12px] [&>img]:my-[45px] [&>img]:shadow-[0_10px_25px_rgba(0,0,0,0.12)] 
+                            [&>div.geo-capsule]:bg-[#f9fff9] [&>div.geo-capsule]:border-l-[5px] [&>div.geo-capsule]:border-[#3AAB43] [&>div.geo-capsule]:p-[25px] [&>div.geo-capsule]:mb-[35px] [&>div.geo-capsule]:rounded-r-[12px] [&>div.geo-capsule]:shadow-sm
+                        ">
 
     <h2>If you are a contractor relying on Angi or HomeAdvisor, you are bleeding margin to your competitors. Here is why buying shared construction leads destroys your closing rate, and the exact math behind building a self-owned lead generation engine.</h2>
 
@@ -167,55 +183,105 @@ export default function BlogPost() {
 
     <p>Stop leasing your customer base. Take control of your digital infrastructure and build a lead generation engine that actually drives equity back into your business.</p>
 
-    ` }} 
-                        className="
-                            [&>h2]:text-[#1E3A1A] [&>h2]:mt-[30px] [&>h2]:md:mt-[40px] [&>h2]:font-bold [&>h2]:text-xl [&>h2]:md:text-2xl 
-                            [&>h3]:text-[#3AAB43] [&>h3]:mt-[20px] [&>h3]:md:mt-[30px] [&>h3]:font-semibold [&>h3]:text-lg [&>h3]:md:text-xl 
-                            [&>h4]:text-[#1E3A1A] [&>h4]:mt-[15px] [&>h4]:md:mt-[20px] [&>h4]:font-semibold [&>h4]:text-base [&>h4]:md:text-lg 
-                            [&>p]:mb-[20px] 
-                            [&>ul]:mb-[20px] [&>ul]:pl-[20px] [&>ul]:list-disc 
-                            [&>ol]:mb-[20px] [&>ol]:pl-[20px] [&>ol]:list-decimal [&>li]:mb-[10px] 
-                            [&_strong]:text-[#1E3A1A] 
-                            [&>img]:w-full [&>img]:block [&>img]:h-auto [&>img]:rounded-[8px] [&>img]:my-[30px] [&>img]:shadow-[0_4px_10px_rgba(0,0,0,0.1)] 
-                            [&>div.geo-capsule]:bg-[#f0f7f0] [&>div.geo-capsule]:border-l-[5px] [&>div.geo-capsule]:border-[#3AAB43] [&>div.geo-capsule]:p-[20px] [&>div.geo-capsule]:mb-[30px] [&>div.geo-capsule]:rounded-r-[8px]
-                        " 
-                    />
+    `,
+            }}
+            className="
+                            [&>h2]:text-[#1E3A1A] [&>h2]:mt-[60px] [&>h2]:mb-[25px] [&>h2]:font-extrabold [&>h2]:text-[2rem] [&>h2]:md:text-[2.5rem] [&>h2]:leading-[1.2] [&>h2]:border-b-4 [&>h2]:border-[#3AAB43] [&>h2]:pb-[15px]
+                            [&>h3]:text-[#3AAB43] [&>h3]:mt-[50px] [&>h3]:mb-[20px] [&>h3]:font-bold [&>h3]:text-[1.5rem] [&>h3]:md:text-[1.8rem] [&>h3]:leading-[1.3] [&>h3]:uppercase [&>h3]:tracking-[1px]
+                            [&>h4]:text-[#1E3A1A] [&>h4]:mt-[40px] [&>h4]:mb-[15px] [&>h4]:font-semibold [&>h4]:text-[1.25rem] [&>h4]:md:text-[1.5rem] [&>h4]:leading-[1.4] [&>h4]:bg-[#f0f7f0] [&>h4]:px-[20px] [&>h4]:py-[12px] [&>h4]:border-l-[5px] [&>h4]:border-[#FED52B] [&>h4]:rounded-r-[8px]
+                            [&>p]:mb-[25px] [&>p]:text-justify [&>p]:text-[1.05rem] [&>p]:text-[#444] [&>p]:leading-[1.8]
+                            [&>ul]:mb-[25px] [&>ul]:pl-[25px] [&>ul]:list-disc [&>ul]:text-[1.05rem] [&>ul]:text-[#444] [&>ul]:leading-[1.8] [&>ul>li]:mb-[10px]
+                            [&>ol]:mb-[25px] [&>ol]:pl-[25px] [&>ol]:list-decimal [&>ol]:text-[1.05rem] [&>ol]:text-[#444] [&>ol]:leading-[1.8] [&>ol>li]:mb-[10px]
+                            [&_strong]:text-[#1E3A1A] [&_strong]:font-bold
+                            [&>img]:w-full [&>img]:block [&>img]:h-auto [&>img]:rounded-[12px] [&>img]:my-[45px] [&>img]:shadow-[0_10px_25px_rgba(0,0,0,0.12)] 
+                            [&>div.geo-capsule]:bg-[#f9fff9] [&>div.geo-capsule]:border-l-[5px] [&>div.geo-capsule]:border-[#3AAB43] [&>div.geo-capsule]:p-[25px] [&>div.geo-capsule]:mb-[35px] [&>div.geo-capsule]:rounded-r-[12px] [&>div.geo-capsule]:shadow-sm
+                        "
+          />
 
-                    {/* 2. Interactive Signature Panel - Within Wrapper */}
-                    <div className="mt-[40px] md:mt-[50px] pt-[20px] md:pt-[30px] pb-[20px] md:pb-[30px] border-t-2 border-[#3AAB43] text-center bg-[#f9fff9] rounded-[8px]">
-                        <Link href="/" className="transition-transform hover:scale-105 mb-[20px] block w-full mx-auto max-w-[150px] md:max-w-[200px]">
-                            <Image src="/logos/PNGs - SVGs/4x/Asset 3@4x-8.png" alt="Lemonade Ideas" width={200} height={60} className="w-full h-auto rounded-none shadow-none" />
-                        </Link>
-                        
-                        <div>
-                            <Image src="/logos/optimized-logo-2.webp" alt="Lemonade Ideas Icon" width={480} height={120} className="w-full max-w-[480px] h-auto mx-auto mb-[20px] block" />
-                            <Link href="/" className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold uppercase py-[12px] md:py-[15px] px-[25px] md:px-[30px] rounded-[50px] no-underline my-[20px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-transform text-[0.95rem] md:text-base">
-                                LEARN MORE
-                            </Link>
-                        </div>
-                        
-                        <Link href="/" className="block mt-[15px] text-[#1E3A1A] font-semibold no-underline hover:text-[#3AAB43] transition-colors">
-                            www.lemonadeideas.com
-                        </Link>
-                        
-                        <div className="flex justify-center flex-wrap gap-[20px] mt-[20px]">
-                            <a href="https://www.facebook.com/lemonadeidea/" target="_blank" rel="noopener noreferrer" className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"><i className="fab fa-facebook-f"></i></a>
-                            <a href="https://www.instagram.com/lemonade.ideas" target="_blank" rel="noopener noreferrer" className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"><i className="fab fa-instagram"></i></a>
-                            <a href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" target="_blank" rel="noopener noreferrer" className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"><i className="fab fa-youtube"></i></a>
-                            <a href="http://www.linkedin.com/in/lemonade-ideas-080122348" target="_blank" rel="noopener noreferrer" className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"><i className="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </article>
+          {/* 2. Interactive Signature Panel - Within Wrapper */}
+          <div className="mt-[40px] md:mt-[50px] pt-[20px] md:pt-[30px] pb-[20px] md:pb-[30px] border-t-2 border-[#3AAB43] text-center bg-[#f9fff9] rounded-[8px]">
+            <Link
+              href="/"
+              className="transition-transform hover:scale-105 mb-[20px] block w-full mx-auto max-w-[150px] md:max-w-[200px]"
+            >
+              <Image
+                src="/logos/PNGs - SVGs/4x/Asset 3@4x-8.png"
+                alt="Lemonade Ideas"
+                width={200}
+                height={60}
+                className="w-full h-auto rounded-none shadow-none"
+              />
+            </Link>
 
-                {/* Older / Newer Posts Navigation */}
-                <div className="max-w-3xl mx-auto mb-20 px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <div className="w-full sm:w-auto"></div>
-                    
-                    <div className="w-full sm:w-auto"></div>
-                </div>
-            </main>
-            
-            <CTASection />
+            <div>
+              <Image
+                src="/logos/optimized-logo-2.webp"
+                alt="Lemonade Ideas Icon"
+                width={480}
+                height={120}
+                className="w-full max-w-[480px] h-auto mx-auto mb-[20px] block"
+              />
+              <Link
+                href="/"
+                className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold uppercase py-[12px] md:py-[15px] px-[25px] md:px-[30px] rounded-[50px] no-underline my-[20px] shadow-[0_4px_6px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-transform text-[0.95rem] md:text-base"
+              >
+                LEARN MORE
+              </Link>
+            </div>
+
+            <Link
+              href="/"
+              className="block mt-[15px] text-[#1E3A1A] font-semibold no-underline hover:text-[#3AAB43] transition-colors"
+            >
+              www.lemonadeideas.com
+            </Link>
+
+            <div className="flex justify-center flex-wrap gap-[20px] mt-[20px]">
+              <a
+                href="https://www.facebook.com/lemonadeidea/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/lemonade.ideas"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"
+              >
+                <i className="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"
+              >
+                <i className="fab fa-youtube"></i>
+              </a>
+              <a
+                href="http://www.linkedin.com/in/lemonade-ideas-080122348"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0F3C9F] text-[24px] hover:scale-110 transition-transform"
+              >
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        {/* Older / Newer Posts Navigation */}
+        <div className="max-w-3xl mx-auto mb-20 px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div className="w-full sm:w-auto"></div>
+
+          <div className="w-full sm:w-auto"></div>
         </div>
-    );
+      </main>
+
+      <CTASection />
+    </div>
+  );
 }
