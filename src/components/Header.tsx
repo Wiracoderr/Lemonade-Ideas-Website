@@ -119,9 +119,9 @@ export default function Header() {
                 </nav>
 
                 {/* CTA (Hidden on Mobile) */}
-                <button className="hidden lg:block bg-[#0f3b1b] hover:bg-[#164e26] text-white px-6 py-3 text-xs font-bold tracking-widest transition-colors rounded-sm ml-4">
+                <Link href="/pricing" className="hidden lg:inline-block bg-[#1e3a29] text-white font-bold py-2.5 px-6 rounded text-sm uppercase tracking-wider hover:bg-[#2a5139] transition-colors duration-300">
                     VIEW OUR PRICING
-                </button>
+                </Link>
 
                 {/* Mobile Hamburger Button */}
                 <button

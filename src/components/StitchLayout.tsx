@@ -68,9 +68,9 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
                                 SPEAK WITH OUR EXPERT
                             </a>
-                            <a className="text-white hover:text-[#ffcc33] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="#">
+                            <Link className="text-white hover:text-[#ffcc33] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="/pricing">
                                 SEE OUR PRICING
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
@@ -123,7 +123,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Service Cards */}
-                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <Link href="/seo" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image
                                 src="/services/SEO.avif"
                                 alt="SEO"
@@ -139,7 +139,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">SEO</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
-                        </div>
+                        </Link>
                         <Link href="/seochatgpt" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image src="/services/SEO Chat GPT.avif" alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
@@ -149,7 +149,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
                         </Link>
-                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        <Link href="/google-ads" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image src="/services/photo-1654277041042-8927699fcfd2.avif" alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
@@ -157,8 +157,8 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">GOOGLE ADS MANAGEMENT</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
-                        </div>
-                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        </Link>
+                        <Link href="/website" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image
                                 src="/services/photo-1678690832311-bb6e361989ca.avif"
                                 alt="Website Design"
@@ -172,8 +172,8 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">WEBSITE DESIGN</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
-                        </div>
-                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        </Link>
+                        <Link href="/social-media-management" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image
                                 src="/services/social media management.avif"
                                 alt="Social Media Management"
@@ -187,8 +187,8 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">SOCIAL MEDIA MANAGEMENT</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
-                        </div>
-                        <div className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                        </Link>
+                        <Link href="/branding" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
                             <Image
                                 src="/services/Branding.avif"
                                 alt="Branding & Strategy"
@@ -202,7 +202,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">BRANDING & STRATEGY</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">Learn More</span>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -256,9 +256,9 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">100% AI-focused team for personalized service</li>
                                 </ul>
                                 <div>
-                                    <a className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">
+                                    <Link className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">
                                         LEARN MORE
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +294,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>No long-term contract or cancellation fees</span></li>
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>100% AI-focused team for personalized service</span></li>
                                 </ul>
-                                <a className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="#">LEARN MORE</a>
+                                <Link className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">LEARN MORE</Link>
                             </div>
                         </div>
                     </div>
@@ -325,7 +325,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </div>
 
-                        <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="#">Learn More</a>
+                        <Link className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="/google-ads">Learn More</Link>
 
                         {/* MOBILE-ONLY IMAGE INSERTION (Laptop with charts) */}
                         <div className="block lg:hidden relative w-full rounded-2xl overflow-hidden shadow-xl aspect-[4/3] mt-2 border-2 border-transparent">
@@ -394,7 +394,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             />
                         </div>
                     </div>
-                    <a className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="#">View More Example</a>
+                    <Link className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="/website">View More Example</Link>
                 </div>
             </section>
 

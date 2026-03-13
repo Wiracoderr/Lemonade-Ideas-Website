@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <div className="bg-[#eef7f8] text-[#1e3a29] pt-16 pb-12 font-sans">
             <div className="max-w-[1400px] mx-auto px-4 lg:px-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Column 1: Logo & CTA */}
                     <div className="flex flex-col">
                         <Link href="/" className="inline-block self-start mb-6 w-auto cursor-pointer hover:opacity-90 transition-opacity">
@@ -14,7 +14,7 @@ export default function Footer() {
                         <p className="text-xs font-bold mb-6 max-w-[200px] leading-relaxed opacity-90">
                             SQUEEZE SUCCESS FOR EVERY CHALLENGE TO MAKE $$$
                         </p>
-                        <Link href="#" className="font-bold text-sm flex items-center gap-1 hover:text-green-700 transition">
+                        <Link href="/get-started" className="font-bold text-sm flex items-center gap-1 hover:text-green-700 transition">
                             SCHEDULE A CALL <span className="text-green-700 text-lg leading-none">&raquo;</span>
                         </Link>
                     </div>
@@ -23,8 +23,8 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">CONTACT DETAILS</h4>
                         <ul className="space-y-4 text-[13px] font-semibold opacity-90">
-                            <li className="flex items-center gap-3"><i className="fas fa-phone-alt text-green-700"></i> +1 (424) 877-3789</li>
-                            <li className="flex items-center gap-3"><i className="fa-regular fa-envelope text-green-700"></i> sales@lemonadeideas.com</li>
+                            <li><a href="tel:+14248773789" className="flex items-center gap-3 hover:text-green-700 transition"><i className="fas fa-phone-alt text-green-700"></i> +1 (424) 877-3789</a></li>
+                            <li><a href="mailto:sales@lemonadeideas.com" className="flex items-center gap-3 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-green-700"></i> sales@lemonadeideas.com</a></li>
                             <li className="leading-relaxed pt-2">
                                 209 21st Place Santa Monica 90402<br />California USA
                             </li>
@@ -45,30 +45,18 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Column 3: Quick Links */}
-                    <div>
-                        <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">QUICK LINKS</h4>
-                        <ul className="space-y-3 text-[13px] font-medium text-gray-700">
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Reviews</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">White Label Resellers</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Referral Program</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Blogs</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Terms of Service</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Column 4: Our Services */}
+                    {/* Column 3: Our Services */}
                     <div>
                         <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">OUR SERVICES</h4>
                         <ul className="space-y-3 text-[13px] font-medium text-gray-700 mb-6">
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seochatgpt">SEO ChatGPT™</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/seo">SEO</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Google Ads Management</Link></li>
-                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="#">Website Design</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/google-ads">Google Ads Management</Link></li>
+                            <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/website">Website Design</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/social-media-management">Social Media Management</Link></li>
                             <li><Link className="hover:text-[#1e3a29] hover:font-bold transition" href="/branding">Branding & Strategy</Link></li>
                         </ul>
-                        <Link href="#" className="inline-block bg-[#1e3a29] text-white font-bold py-2 px-6 text-xs uppercase rounded hover:bg-green-800 transition">CONTACT US</Link>
+                        <Link href="/contact" className="inline-block bg-[#1e3a29] text-white font-bold py-2 px-6 text-xs uppercase rounded hover:bg-green-800 transition">CONTACT US</Link>
                     </div>
                 </div>
             </div>
