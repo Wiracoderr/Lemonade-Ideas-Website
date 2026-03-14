@@ -29,18 +29,20 @@ export default function GoogleAdsBottomCtaSection() {
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
-                <h2 className="text-3xl md:text-5xl lg:text-5xl font-black text-white font-[Oswald] uppercase leading-tight tracking-tight drop-shadow-sm max-w-2xl mx-auto lg:mx-0">
-                    {t('cta_title')}
-                </h2>
+                <h2 
+                    className="text-3xl md:text-5xl lg:text-5xl font-black text-white font-[Oswald] uppercase leading-tight tracking-tight drop-shadow-sm max-w-2xl mx-auto lg:mx-0"
+                    dangerouslySetInnerHTML={{ __html: t.raw('cta_title') }}
+                />
 
                 {/* Hand-drawn yellow underline SVG graphic */}
                 <div className="flex justify-center mb-10 w-full">
                     <img src="/images/layer-1.png" alt="underline" width={200} height={16} className="h-4 object-contain opacity-90" />
                 </div>
 
-                <p className="mt-8 text-white/90 text-lg md:text-xl font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow-sm border-l-4 border-[#38b04d] pl-5">
-                    {t('cta_desc')}
-                </p>
+                <p 
+                    className="mt-8 text-white/90 text-lg md:text-xl font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow-sm border-l-4 border-[#38b04d] pl-5"
+                    dangerouslySetInnerHTML={{ __html: t.raw('cta_desc') }}
+                />
 
                 <a
                     href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"

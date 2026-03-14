@@ -24,13 +24,15 @@ export default function WebsiteCtaSection() {
             <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
             <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
-                <h2 className="text-[24px] md:text-[36px] lg:text-[42px] font-[Oswald] font-bold uppercase leading-tight mb-8 tracking-wide">
-                    {t('cta_title')}
-                </h2>
+                <h2 
+                    className="text-[24px] md:text-[36px] lg:text-[42px] font-[Oswald] font-bold uppercase leading-tight mb-8 tracking-wide"
+                    dangerouslySetInnerHTML={{ __html: t.raw('cta_title') }}
+                />
 
-                <p className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-3xl mx-auto font-[Arial] leading-[1.8] opacity-90">
-                    {t('cta_desc')}
-                </p>
+                <p 
+                    className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-3xl mx-auto font-[Arial] leading-[1.8] opacity-90"
+                    dangerouslySetInnerHTML={{ __html: t.raw('cta_desc') }}
+                />
 
                 <Link
                     href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank"
