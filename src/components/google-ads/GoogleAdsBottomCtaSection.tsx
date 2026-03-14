@@ -30,7 +30,7 @@ export default function GoogleAdsBottomCtaSection() {
 
             <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
                 <h2 
-                    className="text-3xl md:text-5xl lg:text-5xl font-black text-white font-[Oswald] uppercase leading-tight tracking-tight drop-shadow-sm max-w-2xl mx-auto lg:mx-0"
+                    className="text-[24px] md:text-[39px] lg:text-[45px] font-[Oswald] font-bold uppercase leading-tight mb-6 tracking-normal mx-auto max-w-4xl"
                     dangerouslySetInnerHTML={{ __html: t.raw('cta_title') }}
                 />
 
@@ -40,7 +40,7 @@ export default function GoogleAdsBottomCtaSection() {
                 </div>
 
                 <p 
-                    className="mt-8 text-white/90 text-lg md:text-xl font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow-sm border-l-4 border-[#38b04d] pl-5"
+                    className="mb-14 text-white text-[15px] md:text-[17px] lg:text-[18px] max-w-4xl mx-auto font-[Arial] leading-[1.8]"
                     dangerouslySetInnerHTML={{ __html: t.raw('cta_desc') }}
                 />
 
@@ -49,9 +49,9 @@ export default function GoogleAdsBottomCtaSection() {
                     className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5"
                 >
                     <img src="/images/icon-call.svg" alt="Phone Outline Icon" className="w-[50px] h-[50px] object-contain shrink-0" />
-                    <div className="flex flex-col items-start pr-4 pt-1">
-                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">SPEAK WITH OUR EXPERT</span>
-                        <span className="text-[26px] leading-none tracking-normal">SCHEDULE A CALL</span>
+                    <div className="flex flex-col items-start pt-1">
+                        <span className="text-[11px] mb-[2px] tracking-[0.15em] opacity-80 group-hover:opacity-100 font-sans font-semibold">{t('cta_sub')}</span>
+                        <span className="text-[26px] leading-none tracking-normal">{t('cta_btn')}</span>
                     </div>
                 </a>
             </div>

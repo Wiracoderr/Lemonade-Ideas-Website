@@ -69,7 +69,7 @@ export default function GoogleAdsFaqSection() {
                                 >
                                     <span className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-[#38b04d] transition-colors pr-8 font-[Oswald] uppercase tracking-wide">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                                        {t(`faq_${index + 1}_q` as any) || faq.question}
+                                        {t(`faq${index + 1}_q` as any) || faq.question}
                                     </span>
                                     <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#143d1f] text-white' : 'bg-[#143d1f] text-white group-hover:text-[#facc15]'}`}>
                                         <i className={`fas fa-chevron-down transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}></i>
@@ -82,7 +82,7 @@ export default function GoogleAdsFaqSection() {
                                 >
                                     <div className="overflow-hidden bg-[#143d1f] text-white">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                                        <p className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner" dangerouslySetInnerHTML={{ __html: t.raw(`faq_${index + 1}_a` as any) || faq.answer }}></p>
+                                        <p className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner" dangerouslySetInnerHTML={{ __html: t.raw(`faq${index + 1}_a` as any) || faq.answer }}></p>
                                     </div>
                                 </div>
                             </div>
