@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { Link } from '@/i18n/routing';
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 
@@ -22,6 +23,7 @@ export default function GetStartedPage() {
         },
         agreeTerms: false,
     });
+    const [submitting, setSubmitting] = useState(false);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value, type, checked } = e.target;
@@ -43,11 +45,59 @@ export default function GetStartedPage() {
         }
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you would normally send the data to an API/backend
-        console.log("Form submitted:", formData);
-        alert(t('alert_success'));
+        setSubmitting(true);
+        
+        const selectedServices = Object.entries(formData.services)
+            .filter(([_, isSelected]) => isSelected)
+            .map(([serviceName]) => serviceName)
+            .join(", ");
+
+        const payload = {
+            name: formData.businessName, // Column A
+            splitName: formData.yourName, // Column B
+            email: formData.businessEmail,
+            phone: formData.businessPhone,
+            website: formData.websiteUrl,
+            message: `Agreed to terms: ${formData.agreeTerms ? 'Yes' : 'No'}`,
+            services: selectedServices, // New column specifically for comma separated services
+        };
+
+        try {
+            const response = await fetch('/api/get-started', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (response.ok) {
+                alert(t('alert_success'));
+                setFormData({
+                    businessName: "",
+                    yourName: "",
+                    businessEmail: "",
+                    businessPhone: "",
+                    websiteUrl: "",
+                    services: {
+                        guaranteedRanking: false,
+                        seo: false,
+                        googleAds: false,
+                        smm: false,
+                        branding: false,
+                        websiteDesign: false,
+                    },
+                    agreeTerms: false,
+                });
+            } else {
+                alert("There was an error submitting the form. Please try again.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Connection error.");
+        }
+        
+        setSubmitting(false);
     };
 
     return (
@@ -134,12 +184,13 @@ export default function GetStartedPage() {
                             <div className="flex flex-col md:col-span-2 md:w-[calc(50%-1.5rem)]">
                                 <label htmlFor="websiteUrl" className="text-sm font-bold text-gray-800 mb-2">{t('form_website')}</label>
                                 <input
-                                    type="url"
+                                    type="text"
                                     id="websiteUrl"
                                     name="websiteUrl"
                                     value={formData.websiteUrl}
                                     onChange={handleInputChange}
-                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#143d1f] focus:ring-1 focus:ring-[#143d1f] transition-all"
+                                    className="w-full bg-white border border-gray-300 p-3 lg:p-4 text-[15px] text-gray-800 focus:outline-none focus:border-[#4caf50] focus:ring-1 focus:ring-[#4caf50] rounded-[2px] transition-colors"
+                                    placeholder="www.yourwebsite.com"
                                 />
                             </div>
                         </div>
@@ -222,7 +273,7 @@ export default function GetStartedPage() {
                                     </div>
                                 </div>
                                 <span className="ml-3 text-sm text-gray-800 font-bold group-hover:text-black">
-                                    {t('terms_agree')} <a href="#" className="text-[#4caf50] hover:underline">{t('terms_link')}</a>
+                                    {t('terms_agree')} <Link href="/terms-of-service" className="text-[#4caf50] hover:underline" target="_blank">{t('terms_link')}</Link>
                                 </span>
                             </label>
                         </div>
@@ -231,9 +282,10 @@ export default function GetStartedPage() {
                         <div className="pt-8 pb-4 flex justify-center">
                             <button
                                 type="submit"
-                                className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold text-sm uppercase px-10 py-3 rounded-sm shadow-sm hover:shadow-md hover:bg-yellow-300 transition-all flex items-center justify-center min-w-[150px]"
+                                disabled={submitting}
+                                className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold text-sm uppercase px-10 py-3 rounded-sm shadow-sm hover:shadow-md hover:bg-yellow-300 transition-all flex items-center justify-center min-w-[150px] disabled:opacity-50"
                             >
-                                {t('form_submit')}
+                                {submitting ? "..." : t('form_submit')}
                             </button>
                         </div>
 

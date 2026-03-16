@@ -617,6 +617,8 @@
     "hero_watermark": "BLOGS",
     "hero_title": "BLOGS",
     "no_posts": "No blog posts found. Run the import script.",
+    "search_placeholder": "Search articles...",
+    "page_of": "Page {current} of {total}",
     "excerpt_fallback": "Discover more about {title} and how it impacts your strategy and growth.",
     "read_more": "Read More",
     "load_more": "Load More Articles",
@@ -712,6 +714,8 @@
     "meta_desc": "Boost your social media presence and drive results fast with expert management from Lemonade Ideas. Affordable monthly fee, no contracts required."
   },
   "SEOChatGpt": {
+    "meta_title": "SEO ChatGPT - Lemonade Ideas",
+    "meta_desc": "Optimizing websites to be found and cited by AI search engines like ChatGPT, Gemini, and Claude.",
     "hero_banner": "FIND OUT WHY YOUR COMPANY NEEDS GEO OPTIMIZATION",
     "hero_watch_video": "Watch Video",
     "hero_title": "OPTIMIZING WEBSITES TO BE FOUND AND CITED BY AI SEARCH ENGINES<br/>(PERPLEXITY, CHATGPT, GEMINI, CLAUDE)",

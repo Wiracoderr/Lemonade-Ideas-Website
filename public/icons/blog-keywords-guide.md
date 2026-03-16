@@ -1,10 +1,8 @@
 # Blog Keywords Guide (Updated)
 
 ## Pillar 1: Sales & Pipeline (Focus: Closing Deals, High-Ticket Clients)
-- Construction CRM setup
 - Bidding software integration
 - Contractor sales scripts
-- High ticket closing
 - Automated bid followups
 - Lead qualification process
 - Commercial bid writing
@@ -30,20 +28,11 @@
 ## Pillar 2: Digital Assets & Brand Trust
 *(Focus: Content about the website, visual proof, and conversions. These topics explain how to look like a premium, 8-figure California firm.)*
 
-- Drone site photography
-- Construction case studies
-- Contractor video testimonials
-- Builder brand identity
-- Fleet wrap ROI
-- Jobsite signage marketing
-- Capability statements CA
 - Interactive project maps
-- 3D virtual tours
 - Hard hat branding
 - Website trust badges
 - Mobile first contractors
 - ADA compliant websites
-- Fast loading sites
 - Core Web Vitals
 - Construction landing pages
 - CRO for contractors (Conversion Rate Optimization)
@@ -87,8 +76,6 @@
 
 ## Pillar 4: Advanced Ad Platforms & Targeting
 *(Focus: Content about paid channels that go way beyond basic Google search keywords. Shows you are an elite agency.)*
-
-- Contractor geofencing ads
 - Programmatic display construction
 - Retargeting past clients
 - Lookalike audiences builders
@@ -98,7 +85,6 @@
 - Yelp contractor ads
 - Nextdoor builder advertising
 - OTT advertising CA (Streaming TV ads)
-- B2B LinkedIn ads
 - Competitor conquesting ads
 - Click fraud protection
 - PPC budget allocation

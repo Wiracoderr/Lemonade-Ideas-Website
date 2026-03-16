@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { useTranslations } from 'next-intl';
+import ContactForm from '@/components/forms/ContactForm';
 
 export const metadata: Metadata = {
     title: "Contact Us | Lemonade Ideas",
@@ -30,46 +31,7 @@ export default function ContactPage() {
                     <h2 className="text-[20px] md:text-[24px] lg:text-[28px] font-[Oswald] font-bold uppercase text-[#1E3A1A] mb-8 lg:mb-10">
                         {t('email_us')}
                     </h2>
-                    <form className="flex flex-col gap-4">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input 
-                                type="text" 
-                                placeholder={t('form_name')} 
-                                className="w-full bg-white border-0 shadow-[0_2px_8px_rgba(0,0,0,0.04)] p-4 lg:p-5 text-[14px] text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#3AAB43] rounded-sm" 
-                            />
-                            <input 
-                                type="email" 
-                                placeholder={t('form_email')} 
-                                className="w-full bg-white border-0 shadow-[0_2px_8px_rgba(0,0,0,0.04)] p-4 lg:p-5 text-[14px] text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#3AAB43] rounded-sm" 
-                            />
-                        </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input 
-                                type="tel" 
-                                placeholder={t('form_phone')} 
-                                className="w-full bg-white border-0 shadow-[0_2px_8px_rgba(0,0,0,0.04)] p-4 lg:p-5 text-[14px] text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#3AAB43] rounded-sm" 
-                            />
-                            <input 
-                                type="url" 
-                                placeholder={t('form_website')} 
-                                className="w-full bg-white border-0 shadow-[0_2px_8px_rgba(0,0,0,0.04)] p-4 lg:p-5 text-[14px] text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#3AAB43] rounded-sm" 
-                            />
-                        </div>
-                        <textarea 
-                            placeholder={t('form_message')} 
-                            rows={6}
-                            className="w-full bg-white border-0 shadow-[0_2px_8px_rgba(0,0,0,0.04)] p-4 lg:p-5 text-[14px] text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#3AAB43] resize-none rounded-sm"
-                        ></textarea>
-                        
-                        <div className="mt-6 flex justify-center w-full">
-                            <button 
-                                type="button" 
-                                className="bg-[#FED52B] text-[#1E3A1A] font-[Oswald] font-bold text-[14px] tracking-widest px-12 py-3.5 uppercase hover:bg-[#e6c126] transition-colors rounded-sm shadow-sm inline-block"
-                            >
-                                {t('form_submit')}
-                            </button>
-                        </div>
-                    </form>
+                    <ContactForm />
                 </div>
 
                 {/* Right Side: Why Work With Us */}

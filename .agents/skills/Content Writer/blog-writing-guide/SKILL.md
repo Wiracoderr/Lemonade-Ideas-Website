@@ -145,7 +145,9 @@ Posts worth sharing contain at least one of:
 9. When in doubt, go deeper. The risk of being too shallow is far greater than being too detailed.
 10. Write the post you wish existed when you were trying to solve this problem.
 11. **CRITICAL LENGTH CONSTRAINT:** Every single blog post must be extremely comprehensive and contain a minimum of **2,500 words or more**. Under no circumstances should a blog be shorter than this length.
-12. **CRITICAL MEDIA CONSTRAINT:** Every single blog must contain a minimum of **4 highly realistic, photorealistic images**. These images must not appear AI-generated and must be optimized with `alt` and `title` tags for Local SEO.## When Reviewing or Editing a Draft
+12. **CRITICAL MEDIA CONSTRAINT:** Every single blog must contain a minimum of **4 highly realistic, photorealistic images**. These images must not appear AI-generated and must be optimized with `alt` and `title` tags for Local SEO.
+13. **CRITICAL REGISTRATION CONSTRAINT:** Every single blog post MUST be registered in `src/data/blogs.json` and `src/data/blogs-es.json`. After creating the blog content files, extract the `title`, `slug`, and `date`, and append them to both data files to ensure they appear on the frontend.
+14. **CRITICAL STEP-BY-STEP CONSTRAINT:** If requested to write multiple blogs (e.g., 3, 6, 9...), you MUST process them strictly ONE BY ONE. Do not attempt to write multiple blogs in parallel or in a single pass. For each single blog, you must execute the full pipeline: write English content (2500+ words), translate to Spanish, generate all 4 required images, code the UI, and register the blog. Only after one blog is 100% complete and verified should you move to the next. This prevents memory saturation and ensures high quality.## When Reviewing or Editing a Draft
 
 Run through both checklists:
 
