@@ -8,7 +8,45 @@ import { useTranslations } from 'next-intl';
 
 export default function StitchLayout({ children }: { children?: React.ReactNode }) {
     const t = useTranslations("StitchLayout");
+    const tGetStarted = useTranslations("GetStarted");
     const [isPlaying, setIsPlaying] = useState(false);
+    const [submitting, setSubmitting] = useState(false);
+    const [agreeTerms, setAgreeTerms] = useState(false);
+
+    const handleContactSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setSubmitting(true);
+        const formData = new FormData(e.currentTarget);
+        const isRobotChecked = formData.get('notRobot');
+        
+        const payload = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            phone: formData.get('phone'),
+            website: formData.get('website'),
+            message: formData.get('message'),
+        };
+
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+            
+            if (res.ok) {
+                alert("Thank you! Your message has been sent successfully.");
+                (e.target as HTMLFormElement).reset();
+            } else {
+                alert("There was an error submitting the form. Please try again.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Connection error. Please try again later.");
+        }
+        
+        setSubmitting(false);
+    };
 
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
@@ -623,20 +661,20 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         <h2 className="text-white text-3xl md:text-5xl font-display font-bold uppercase tracking-wide mt-4">{t('contact_title')}</h2>
                     </div>
 
-                    <form className="max-w-4xl mx-auto flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+                    <form className="max-w-4xl mx-auto flex flex-col gap-6" onSubmit={handleContactSubmit}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <input type="text" placeholder={t('form_name')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="email" placeholder={t('form_email')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="tel" placeholder={t('form_phone')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="text" placeholder={t('form_website')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" name="name" required placeholder={t('form_name')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="email" name="email" required placeholder={t('form_email')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="tel" name="phone" required placeholder={t('form_phone')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" name="website" placeholder={t('form_website')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
                         </div>
-                        <textarea placeholder={t('form_message')} rows={5} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"></textarea>
+                        <textarea name="message" required placeholder={t('form_message')} rows={5} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"></textarea>
 
                         <div className="mt-2 flex flex-col md:flex-row items-center justify-between gap-6 relative">
                             {/* Mock reCAPTCHA */}
                             <div className="bg-[#f9f9f9] border border-gray-300 p-3 py-2 rounded flex items-center justify-between shadow-sm w-[300px]">
                                 <div className="flex items-center gap-3">
-                                    <input type="checkbox" title={t('form_notRobot')} className="w-6 h-6 ml-2 cursor-pointer bg-white border border-gray-300 rounded" />
+                                    <input type="checkbox" name="notRobot" required title={t('form_notRobot')} className="w-6 h-6 ml-2 cursor-pointer bg-white border border-gray-300 rounded" />
                                     <span className="text-sm font-medium text-gray-700">{t('form_notRobot')}</span>
                                 </div>
                                 <div className="flex flex-col items-center pr-2">
@@ -645,13 +683,28 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <span className="text-[6px] text-gray-400">Privacy - Terms</span>
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Centered Submit Button */}
-                            <div className="md:absolute md:left-1/2 md:-translate-x-1/2">
-                                <button type="button" className="bg-[#facc15] hover:bg-[#eab308] text-[#1e3a29] font-bold py-3 px-12 rounded transition-colors text-[13px] uppercase tracking-wider shadow-[0_4px_14px_0_rgba(250,204,21,0.39)]">
-                                    {t('form_submit')}
-                                </button>
-                            </div>
+                        {/* Terms & Conditions */}
+                        <div className="pt-2 pb-4">
+                            <label className="flex items-center cursor-pointer group w-fit md:mx-auto">
+                                <div className="relative flex items-center">
+                                    <input type="checkbox" name="agreeTerms" checked={agreeTerms} onChange={(e) => setAgreeTerms(e.target.checked)} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-[2px] outline-none checked:bg-white checked:border-[#4caf50] cursor-pointer transition-all" required />
+                                    <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#4caf50]">
+                                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                </div>
+                                <span className="ml-3 text-sm text-gray-300 font-bold group-hover:text-white">
+                                    {tGetStarted('terms_agree')} <Link href="/terms-of-service" className="text-[#4caf50] hover:underline" target="_blank">{tGetStarted('terms_link')}</Link>
+                                </span>
+                            </label>
+                        </div>
+
+                        {/* Centered Submit Button */}
+                        <div className="flex justify-center">
+                            <button type="submit" disabled={submitting} className="bg-[#facc15] hover:bg-[#eab308] text-[#1e3a29] font-bold py-3 px-12 rounded transition-colors text-[13px] uppercase tracking-wider shadow-[0_4px_14px_0_rgba(250,204,21,0.39)] disabled:opacity-50 inline-block">
+                                {submitting ? "..." : t('form_submit')}
+                            </button>
                         </div>
                     </form>
                 </div>
