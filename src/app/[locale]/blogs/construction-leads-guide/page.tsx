@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import BlogEn from "./en";
 import BlogEs from "./es";
