@@ -2,22 +2,9 @@
 
 ## Pillar 1: Sales & Pipeline (Focus: Closing Deals, High-Ticket Clients)
 
-- Architect referral programs
-- Property manager outreach
-- Government contract bids
-- B2B cold emailing
-- Avoiding tire kickers
-- Subcontractor networking CA
 - Prevailing wage marketing
 - Design build outreach
 - Trade show marketing
-- B2B matchmaking events
-- Construction ROI tracking
-- Angi leads alternative
-- Inbound construction leads
-- Sales funnel contractors
-- Contractor appointment setting
-- Client retention programs
 - Pipeline velocity builders
 - Fractional CMO construction
 
