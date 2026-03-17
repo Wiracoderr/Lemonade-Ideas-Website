@@ -2,20 +2,12 @@ import React from "react";
 import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import BlogNavigation from "@/components/blog/BlogNavigation";
 
 export default function BlogPost() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-['Poppins',sans-serif]">
-      <Head>
-        <title>El Plano del Contratista de 8 Cifras para Configurar su CRM de Construcción y Acelerar su Embudo</title>
-        <meta name="description" content="Deje de perder prospectos comerciales de alto valor. Descubra exactamente cómo diseñar un CRM de Construcción moderno que automatice seguimientos, se integre con software de estimación y aumente drásticamente su tasa de cierre." />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        />
-      </Head>
+      
 
       {/* 1. High-Impact Hero Section */}
       <section className="bg-[#2A2A2A] relative pt-[120px] pb-[80px] md:pt-[160px] md:pb-[100px] text-center px-4 md:px-[20px] overflow-hidden">

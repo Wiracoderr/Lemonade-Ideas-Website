@@ -2,20 +2,12 @@ import React from "react";
 import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import BlogNavigation from "@/components/blog/BlogNavigation";
 
 export default function BlogPost() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-['Poppins',sans-serif]">
-      <Head>
-        <title>Sitios Web Rápidos: La Velocidad Digital Obligatoria Requerida para Cerrar Licitaciones de Alta Construcción</title>
-        <meta name="description" content="Descubra por qué los desarrolladores comerciales multimillonarios B2B rebotan instantáneamente de sitios web de contratistas lentos y cómo la optimización de Core Web Vitals protege la autoridad profesional de su firma." />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        />
-      </Head>
+      
 
       {/* 1. High-Impact Hero Section */}
       <section className="bg-[#2A2A2A] relative pt-[120px] pb-[80px] md:pt-[160px] md:pb-[100px] text-center px-4 md:px-[20px] overflow-hidden">

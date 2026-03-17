@@ -3,20 +3,12 @@ import React from "react";
 import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import BlogNavigation from "@/components/blog/BlogNavigation";
 
 export default function BlogPost() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-['Poppins',sans-serif]">
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        />
-        <title>Leads de Construcción: Deja de Comprar Leads Compartidos y Construye el Tuyo | Lemonade Ideas</title>
-        <meta name="description" content="Descubre por qué comprar leads de construcción compartidos destruye tu tasa de cierre y la matemática exacta detrás de construir tu propio motor de generación de leads B2B." />
-      </Head>
+      
 
       {/* 1. High-Impact Hero Section */}
       <section className="bg-[#2A2A2A] relative pt-[120px] pb-[80px] md:pt-[160px] md:pb-[100px] text-center px-4 md:px-[20px] overflow-hidden">

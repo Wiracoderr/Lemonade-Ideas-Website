@@ -106,5 +106,41 @@
     "slug": "schema-markup-builders",
     "thumbnail": "/images/blogs/schema-markup-builders/hero.webp",
     "date": "March 16, 2026"
+  },
+  {
+    "title": "SMS Marketing for Contractors: Stop Losing Leads and Start Closing",
+    "slug": "sms-marketing-for-contractors",
+    "thumbnail": "/images/blogs/sms-marketing-for-contractors/hero.png",
+    "date": "March 17, 2026"
+  },
+  {
+    "title": "Stop Buying Shared Commercial Construction Leads: Build Your Own $10M+ Inbound Engine",
+    "slug": "commercial-construction-leads",
+    "thumbnail": "/images/blogs/commercial-construction-leads/hero.png",
+    "date": "March 17, 2026"
+  },
+  {
+    "title": "Bidding Software Integration: Stop Losing 8-Figure Contracts to Data Entry Friction",
+    "slug": "bidding-software-integration",
+    "thumbnail": "/images/blogs/bidding-software-integration/hero.png",
+    "date": "March 17, 2026"
+  },
+  {
+    "title": "Contractor Sales Scripts: Stop Giving Free Consulting and Start Closing 8-Figure Deals",
+    "slug": "contractor-sales-scripts",
+    "thumbnail": "/images/blogs/contractor-sales-scripts/hero.png",
+    "date": "March 17, 2026"
+  },
+  {
+    "title": "Automated Bid Followups: Why 70% of Your Commercial Contracts Die in the 'Let Me Think About It' Phase",
+    "slug": "automated-bid-followups",
+    "thumbnail": "/images/blogs/automated-bid-followups/hero.png",
+    "date": "March 17, 2026"
+  },
+  {
+    "title": "The Lead Qualification Process: How to Fire Bad Clients Before You Even Pick Up the Phone",
+    "slug": "lead-qualification-process",
+    "thumbnail": "/images/blogs/lead-qualification-process/hero.png",
+    "date": "March 17, 2026"
   }
 ]

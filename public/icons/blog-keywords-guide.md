@@ -1,10 +1,7 @@
 # Blog Keywords Guide (Updated)
 
 ## Pillar 1: Sales & Pipeline (Focus: Closing Deals, High-Ticket Clients)
-- Bidding software integration
-- Contractor sales scripts
-- Automated bid followups
-- Lead qualification process
+
 - Architect referral programs
 - Property manager outreach
 - Government contract bids
