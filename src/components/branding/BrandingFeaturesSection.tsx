@@ -59,7 +59,7 @@ export default function BrandingFeaturesSection() {
                     {/* Card 4 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <Sitemap />
+                            <Network />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_c4_t')}
