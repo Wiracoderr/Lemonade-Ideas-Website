@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
-import { ClipboardCheck, FileText, CalendarCheck, Sitemap, Settings, Laptop } from 'lucide-react';
+import { ClipboardCheck, FileText, CalendarCheck, Network, Settings, Laptop } from 'lucide-react';
 
 export default function BrandingFeaturesSection() {
     const t = useTranslations("Branding");
