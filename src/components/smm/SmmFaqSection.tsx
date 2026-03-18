@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 export default function SmmFaqSection() {
@@ -70,7 +71,7 @@ export default function SmmFaqSection() {
                                         {faq.question}
                                     </span>
                                     <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#1E3A1A] text-white' : 'bg-[#1E3A1A] text-white group-hover:text-[#FED52B]'}`}>
-                                        <i className={`fas fa-chevron-down transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}></i>
+                                        <ChevronDown size={18} strokeWidth={2.5} className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />
                                     </div>
                                 </div>
 

@@ -40,6 +40,7 @@ export default function GoogleAdsHeroSection() {
                         className="object-cover object-center md:hidden"
                         sizes="100vw"
                         priority
+                        fetchPriority="high"
                     />
                     {/* Dark Green overlay at 80% opacity to give a strong green tint */}
                     <div className="absolute inset-0 bg-[#1E3A1A]/80"></div>

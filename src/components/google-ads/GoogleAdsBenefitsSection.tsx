@@ -25,7 +25,7 @@ export default function GoogleAdsBenefitsSection() {
                             fill
                             className="object-contain block lg:hidden"
                             src="/images/fono-accel-mobile.avif"
-                            sizes="100vw"
+                            sizes="(max-width: 1024px) 400px, 50vw"
                         />
                     </div>
                 </div>

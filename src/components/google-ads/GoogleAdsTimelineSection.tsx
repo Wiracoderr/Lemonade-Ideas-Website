@@ -51,7 +51,7 @@ export default function GoogleAdsTimelineSection() {
                                 alt="Paid Ads Timeline Breakdown Mobile"
                                 fill
                                 className="object-contain drop-shadow-2xl block lg:hidden"
-                                sizes="100vw"
+                                sizes="(max-width: 1024px) 400px, 50vw"
                             />
                         </div>
                     </div>

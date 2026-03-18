@@ -57,6 +57,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        <link rel="preconnect" href="https://www.transparenttextures.com" crossOrigin="anonymous" />
         {/*
          * LCP Resource Hints
          * Preconnect + preload the first animation frame (frame_000.webp)
