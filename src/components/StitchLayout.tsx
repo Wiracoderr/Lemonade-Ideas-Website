@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { m, LazyMotion, domAnimation } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -130,13 +130,11 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    {/* Subtle play indicator instead of giant red block */}
+                                    {/* Subtle play indicator flattened DOM structure */}
                                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
-                                        <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                            <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
-                                                <path d="M8 5v14l11-7z" />
-                                            </svg>
-                                        </div>
+                                        <svg className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full shadow-lg text-[#1E3A1A] fill-current transition-transform group-hover:scale-110 p-4 pl-5" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z" />
+                                        </svg>
                                     </div>
                                 </div>
                             ) : (
@@ -453,7 +451,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                         <div className="relative z-10 px-4 md:px-0 md:pl-[10%] mb-16 text-center md:text-left">
                             <h4 className="text-[1rem] font-black tracking-widest mb-4 uppercase text-[#d1e8da] font-display">{t('about_subtitle')}</h4>
-                            <h2 className="text-5xl md:text-6xl lg:text-[6.6rem] font-display font-black text-white leading-[0.9] uppercase max-w-5xl tracking-normal mx-auto md:mx-0">
+                            <h2 className="text-4xl lg:text-5xl font-display font-black text-white leading-[0.9] uppercase max-w-5xl tracking-normal mx-auto md:mx-0">
                                 {t.rich('about_title', {
                                     br: () => <br className="hidden md:block" />
                                 })}
@@ -461,7 +459,8 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         </div>
                     </div>
 
-                    <motion.div
+                    <LazyMotion features={domAnimation}>
+                    <m.div
                         initial="hidden"
                         whileInView="visible"
                         viewport={{ once: true, amount: 0.1 }}
@@ -472,7 +471,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 relative z-10"
                     >
                         {/* Card 1 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <m.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">01.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -483,10 +482,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                             <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">{t('value1_title')}</h3>
                             <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">{t('value1_desc')}</p>
-                        </motion.div>
+                        </m.div>
 
                         {/* Card 2 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <m.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">02.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -501,10 +500,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                             <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">{t('value2_title')}</h3>
                             <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">{t('value2_desc')}</p>
-                        </motion.div>
+                        </m.div>
 
                         {/* Card 3 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <m.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">03.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -515,10 +514,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                             <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">{t('value3_title')}</h3>
                             <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">{t('value3_desc')}</p>
-                        </motion.div>
+                        </m.div>
 
                         {/* Card 4 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <m.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">04.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -532,8 +531,9 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                             <h3 className="text-2xl font-black uppercase mb-6 font-display tracking-widest leading-none">{t('value4_title')}</h3>
                             <p className="text-[15px] leading-[1.6] font-semibold opacity-90 mx-auto max-w-[95%]">{t('value4_desc')}</p>
-                        </motion.div>
-                    </motion.div>
+                        </m.div>
+                    </m.div>
+                    </LazyMotion>
                 </div>
             </section>
 

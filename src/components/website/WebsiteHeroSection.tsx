@@ -69,11 +69,9 @@ export default function WebsiteHeroSection() {
                                             loading="lazy"
                                         />
                                         <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
-                                            <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                                <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
-                                                    <path d="M8 5v14l11-7z" />
-                                                </svg>
-                                            </div>
+                                            <svg className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full shadow-lg text-[#1E3A1A] fill-current transition-transform group-hover:scale-110 p-4 pl-5" viewBox="0 0 24 24">
+                                                <path d="M8 5v14l11-7z" />
+                                            </svg>
                                         </div>
                                     </div>
                                 ) : (

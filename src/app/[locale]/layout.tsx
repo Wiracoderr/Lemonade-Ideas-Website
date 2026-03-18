@@ -46,6 +46,7 @@ export default async function RootLayout({
 }>) {
   const {locale} = await params;
   
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
@@ -84,7 +85,17 @@ export default async function RootLayout({
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          media="print"
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
+          onLoad="this.media='all'"
         />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          />
+        </noscript>
       </head>
       <body
         className={`${inter.variable} ${oswald.variable} antialiased selection:bg-yellow-500/30 bg-[#020202] text-white/90 flex flex-col min-h-screen`}

@@ -44,7 +44,7 @@ export default function SeoChatGptPage() {
 
   const commonProps = { alt: t('meta_title') || 'SEO ChatGPT Strategy', priority: true };
   const {
-    props: { srcSet: desktopSrcSet, ...desktopRest },
+    props: { srcSet: desktopSrcSet },
   } = getImageProps({
     ...commonProps,
     src: '/images/picture-for-google-ads1.webp',

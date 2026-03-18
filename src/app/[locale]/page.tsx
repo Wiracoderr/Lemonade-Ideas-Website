@@ -5,8 +5,8 @@ import {setRequestLocale} from 'next-intl/server';
 
 // CameraScroll is desktop-only (hidden on mobile via CSS).
 // ssr: false ensures its heavy JS bundle (framer-motion + canvas logic)
-// is never downloaded or executed on mobile devices.
-import CameraScroll from "@/components/CameraScroll";
+// is never downloaded or executed on server side, saving massive JS evaluation time.
+import CameraScrollWrapper from "@/components/CameraScrollWrapper";
 
 // Dynamically import the heavy below-the-fold layout
 const StitchLayout = dynamic(() => import("@/components/StitchLayout"), {
@@ -43,7 +43,7 @@ export default async function Home({
             {/* 1. SCROLLYTELLING HERO */}
             {/* Desktop Hero (Hidden on Mobile) */}
             <div className="hidden md:block">
-                <CameraScroll />
+                <CameraScrollWrapper />
             </div>
 
             {/* Mobile App Hero (Hidden on Desktop) */}

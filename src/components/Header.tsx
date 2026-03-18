@@ -4,7 +4,7 @@ import { useState, useEffect, useTransition } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { Mail, Phone, FileText, Menu, X } from "lucide-react";
 import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
 
@@ -13,7 +13,7 @@ export default function Header() {
     const router = useRouter();
     const locale = useLocale();
     const t = useTranslations("Header");
-    const [isPending, startTransition] = useTransition();
+    const [, startTransition] = useTransition();
     const [isVisible, setIsVisible] = useState(true);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -51,9 +51,10 @@ export default function Header() {
     return (
         <header className="w-full sticky top-0 bg-white shadow-sm font-sans z-[100]">
             {/* TOP INFO BAR */}
+            <LazyMotion features={domAnimation}>
             <AnimatePresence>
                 {isVisible && (
-                    <motion.div
+                    <m.div
                         initial={{ scaleY: 0, opacity: 0 }}
                         animate={{ scaleY: 1, opacity: 1 }}
                         exit={{ scaleY: 0, opacity: 0 }}
@@ -98,7 +99,7 @@ export default function Header() {
                                 </Link>
                             </div>
                         </div>
-                    </motion.div>
+                    </m.div>
                 )}
             </AnimatePresence>
 
@@ -160,7 +161,7 @@ export default function Header() {
                 {isMobileMenuOpen && (
                     <>
                         {/* Dark Overlay Background */}
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
@@ -171,7 +172,7 @@ export default function Header() {
                         />
 
                         {/* Left-Side Drawer Menu */}
-                        <motion.div
+                        <m.div
                             initial={{ opacity: 0, x: "-100%" }}
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: "-100%" }}
@@ -220,10 +221,11 @@ export default function Header() {
                                     <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" aria-label="YouTube" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1E3A1A] hover:text-yellow-500"><BrandYoutube size={24} /></Link>
                                 </div>
                             </div>
-                        </motion.div>
+                        </m.div>
                     </>
                 )}
             </AnimatePresence>
+            </LazyMotion>
         </header>
     );
 }

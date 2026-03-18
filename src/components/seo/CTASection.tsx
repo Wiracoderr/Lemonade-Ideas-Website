@@ -4,10 +4,7 @@ import React from "react";
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-// A helper component to wrap text safely without linking "SEO" anymore as requested
-const SEOText = ({ children }: { children: React.ReactNode }) => {
-    return <>{children}</>;
-};
+// Removed SEOText as it was unused
 
 interface CTASectionProps {
     subtitleContent?: React.ReactNode;
