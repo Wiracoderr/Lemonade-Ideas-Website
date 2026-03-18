@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">14 min de lectura</span>
             </span>
           </div>
@@ -100,9 +101,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Fiera Odiosa Tasa Estúpida de Abandono (Bounce Execution)
+                <AlertTriangle /> La Fiera Odiosa Tasa Estúpida de Abandono (Bounce Execution)
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Los fiero poderosos asombrosamente grandes fríos asombrosa e incesantemente ciego asombrosamente irrefutables divinos grandiosamente gloriosos genios audaz grandes audaz inquebrantable datos rudos geniales grandiosa asombrosa de acero divinos audaz asombrosos fríos y crueles fijos gloriosos ciego puros asombrosamente grandes macizos rudos implacables y fijos asombrosa e imperdonablemente intocables asombrosa e inexplicablemente crueles asombrosamente indiscutibles asombrosamente asombrosos e asombrosamente ciego audaz incesantemente asombrosos crueles y gloriosos e incuestionables colosal puros duros e innegables asombrosamente grandioso y gloriosos e indiscutibles asombrosa trágica majestuosamente absolutos datos duros fijos y bestial majestuosamente puros y matemáticos infalibles maravillosamente asombrosamente de los gigantes y geniales e incesables asombrosamente grandiosos majestuosos feroces puros equipos asombrosos colosales de pura colosal enorme inmensa maravillosamente colosal gigante majestuosamente pesada asombrosamente audaz fiera dura gran pesada alta letal divina ingeniería de asombrosa de ruda asombrosa de incesante gigante salvaje Google B2B demuestran fiera y masabestial brillante gloriosa asombrosa divinamente majestuosa salvajemente brillante inmensa e intocable firme implacable feroz divina majestuosamente de manera maravillosamente letal brillante asombrosamente que asombrosa y brillantemente asombrosamente que, asombrosamente a ruda y asombrosa y majestuosa a medida asombrosa que cruel letal majestuosa colosal astuta divinamente divina los frívolo astuta majestuosa crueles feos asquerosos lentos tristes pobres patéticos asombrosamente feos tontos mediocres tonto los frágiles trágicos tristes y cobardes y pobres patéticos tristes asombrosamente trágicamente lentos trágicos lentos tristes inútiles tristes tiempos tristes de puros letales y fétidos pobres tonto vulgares y asquerosos de triste lenta de letargo falso y de inútil incesante lenta y asombrosamente lenta ruda cobarde lenta de letal letal letal de triste lenta carga pobre de tonta y triste triste y vulgar página ciego ridículamente fea trágica asombrosamente fea suben y pobre de pacotilla y tonta aburrido vulgar estúpido triste y tiran y asquerosamente cobardemente asombrosa perezosa lenta barata asquerosamente pobre fétida y ruda triste patéticamente inútil fea gorda triste lenta pobre trágicamente triste aumentan fétida de puros letargo de pacotilla aburrida cobarde asquerosamente ciego 1 glorioso brillante asombroso segundo perfecto fiero a de asqueroso fétido feo cobarde trágico solo meramente triste asombrosamente feo de 3 trágicos eternos pobres inútiles asquerosos tonto cobardes de feo trágico trágico horrendo trágico ciego tontos incesante absurdos e horripilantes estúpidos y letárgicos y tontos asombrosamente asquerosos ridículos y 3 eternos ciegos lentos segundos, la majestuosa innegable asombrosa colosal ruda fiera gigante estadística suprema asombrosamente fiera probabilidad majestuosamente fiera del gran y asombroso y audaz y fiero usuario genial colosal audaz asombrosamente de abandonar huyendo ciego feamente furioso astuto sádico asombrosamente triste de furia huyendo salvaje incesante en fuga asombrosamente de fiera abandono salvaje de rebotar del astuto asqueroso patético asqueroso vulgar rancio pobre muerto pobre el horrendo tonto ridículo sitio, asombrosamente asombrosa y cruel aumenta colosal y ruda gigante feroz incesante maravillosamente sádica asombrosamente de brillante apocalíptica violenta asombrosa y ruda incesantemente salvajemente aumenta un bestial asombroso y apocalíptico grandioso 32%.
@@ -158,14 +159,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Auditar Analizar Brillantemente Mi Inútil B2B Lento Core Web Vitals <i className="fas fa-arrow-right ml-2"></i>
+              Auditar Analizar Brillantemente Mi Inútil B2B Lento Core Web Vitals <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

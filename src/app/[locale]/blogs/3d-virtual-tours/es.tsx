@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">14 min de lectura</span>
             </span>
           </div>
@@ -92,9 +93,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Trampa del &quot;Render Gratuito&quot;
+                <AlertTriangle /> La Trampa del &quot;Render Gratuito&quot;
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Muchísimas empresas constructoras intentan solucionar esta brecha lanzando dos o tres archivos JPEG interactivos estáticos u ortogonales exportados desde SketchUp o Revit directamente a la propuesta inicial del cliente. Esto es fundamentalmente inadecuado e ineficaz. Una representación de imagen estática sigue siendo solo una fotografía congelada de una habitación profundamente teórica desde un ángulo único y muy manipulado. No transmite, bajo ninguna circunstancia, el <em>volumen</em> real. Tampoco transmite el <em>flujo</em>. Si el cliente no puede caminar digitalmente alrededor de la maldita isla de la cocina, o mirar hacia arriba para atestiguar la altura exacta del techo desde una perspectiva realista del nivel de los ojos sentado, usted realmente no ha resuelto el problema. Simplemente ha proporcionado una abstracción estandarizada y un poco más bonita.
@@ -132,19 +133,19 @@ export default function BlogPost() {
 
             <ul>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>Fase 1: La Traducción Estructural BIM.</strong> Los complejos e insulsos archivos básicos y masivos computarizados directamente producidos desde el programa nativo duro principal bruto AutoCAD que provino meticulosamente y directamente desde el despacho de diseño de su inmenso e intelectual equipo central primario de arquitecturas abstractas, se extraen enteramente y de una vez a la fuerza sin un milímetro de piedad para procesarse e inyectarse, literalmente absorbidos y mapeados topológicamente por la profunda Matrix directamente en un brutal motor maestro universal de visualización lumínica extrema y superior a gran escala comercial masiva para crear a la orden su asombroso marco inicial tridimensional pesado.
               </li>
               <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Fase 2: Asignación Extrema Texturizada Hiper-Real y Proyección Lumínica Solar Terrestre Absoluta.</strong> Aplicación contundente de un escrupuloso modelado total visual al centímetro ultra pesado. Si en el inmenso bloque de especificaciones el gigantesco pliego dice explícita e inequívocamente textualmente en tinta negra: <i>accesorios perimetrales interiores en un color asombroso espectacular negro mate puro ultra fino al tacto</i> junto con un maravilloso reluciente <i>suelo resplandeciente blanco en finísima madera roble original nativo europeo de tablones extra amplios</i>. El absoluto e imponente motor computacional y gráfico principal interno traduce y pega exactamente ese visual preciso en los polígonos correspondientes milimétricos al interior de todo el ecosistema digital tridimensional inmenso antes del renderizado masivo sin faltar jamás un solo detalle de iluminación a gran escala que refleja en bruto al universo exterior nativo para rebotar cada uno de los masivos y precisos luxes artificiales exactos de las luces instaladas de antemano bajo ese diseño exacto maestro en planos nativos crudos iniciales incomprensibles de manera perfecta e impecable a las ocho AM de un otoño californiano preciso para evitar y calmar las discusiones en juntas finales para justificar su extrema licitación con lujo de detalles superiores perfectos que eliminan la posibilidad a las equivocaciones de forma magistral y brillante insuperable en diseño avanzado maso.
               </li>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Fase 3: La Decodificación Espacial Navigacional Suprema Mundial (Exportación Final de 360 Grados a Gran Escala Masiva WebGL Absoluto e Inmutable Universal).</strong> Aquí sucede el prodigio tecnológico que crea imperios gigantes y devora competiciones minúsculas y tradicionales constructoras en ruinas: La estructura colosal renderizada hipermasiva y estática inamovible es completamente convertida por comandos asombrosos desde la oscuridad del poderoso procesador a una gigantesca nube matemática infinita en coordenadas y vectores matemáticos complejos y es empacada hábilmente en conjunto en un colosal empaquetado archivo maso-estático espacial de cientos y miles y grandiosos megabytes optimizados que funcionan sorpresivamente perfectos y maravillosamente en línea (Online WebGL Protocol). Se despliega maravillosamente y directamente frente al asombroso y anonadado cliente billonario, que percibe todo el panorama inmersivamente asombroso en puro tiempo real a través de cualquier vulgar y sencillo navegador genérico instalado de fábrica como un simple Chrome e incontestable Edge; y esto sucede a lo ancho de su vulgar y simple equipo personal. ¡Navegan masivamente un complejo de rascacielos sin ni siquiera iniciar descargas ni complejas programaciones de nada masivo que atasquen e incapaciten su paciencia!
               </li>
               <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Fase 4: La Trinchera de Ejecución Blindada Total Anti-Corrupción y Legal de Exclusión e Impedimento Operativo a Toda Prueba y Error por Partes Hostiles Replicantes Defensivas Máximas del Gran Documento Supremo (El Fin Infinito de Todo Agravio Contractual Posible de las Masivas Modificaciones Incesantes del Inverso Mundo Real Constante del Desarrollo de Bienes y Capital Inmueble Industrial del Mercado Comercial Definitivo Mayor B2B Inmobiliario Total Absoluto Terrenal Comercial Legal Firmado y Adherido Bajo Juntas Comerciales Reales Totalitarias de Capital Total Máximo Legal Permanente Perpetuo Jurídico Comercial Real Legal Definitivo y Vinculante Físico Oficial en Vivo de Construcciones Gigantes B2B).</strong> Con el modelo finalmente renderizado y aprobado visualmente... lo insertamos literalmente a la inmensa montaña pesada abismal monumental original base de los insulsos planos secos y documentos. En esa monumental y muy ruda precisa agresiva junta operativa B2B suprema donde todo el dinero de riesgo puro absoluto de 8 cifras está a puto tiro de ser quemado o ganado por firmas legales; no le pedimos a una directiva que revise &quot;planos estúpidos&quot;, no; nosotros obligamos amable y elegantemente a esa inmensa corporación a pasearse a fondo por la monstruosa, innegable y colosal cruda realidad pura generada por supercomputadoras absolutas. El maldito director se camina ese recinto colosal completo. Y después, forzamos jurídicamente a la empresa billonaria cliente matriz a poner la maldita rúbrica definitiva sobre ese crudo masivo archivo visual incuestionablemente sólido. Al final, no le estamos cotizando a la firma un muro de acero. Le estamos cotizando esa perfecta, imponente vista exacta calculada y precisa; su firma y dinero van inmersivamente respaldados ahí, mitigando con furia cualquier reclamo. Oh, tú cliente, ¿quieres mover eso de pronto allá ahora que vamos por mitad del crudo proyecto a 5 meses en terreno real bajo calor insoportable en pleno desierto? Te recuerdo que tú firmaste amablemente en esa pantalla perfecta de tu oficina de mármol que esta obra masiva brutal sería entregada exacto como el universo que habitaste en ese mundo de simulación computacional de extrema resolución... Y, para no alargar: la monstruosidad imponente que aprobaste cuesta exactamente y felizmente millones en un brutal recargo por ser diferente. Una disculpa amigable. Ese es nuestro absoluto foso legal e inquebrantable que te defiende la masiva cuenta gigante inmodificable contra tu pobre capital y flujo maestro gigantesco imponente B2B del año absoluto de su balance operativo empresarial general de operaciones totales que no quiebran. Así se salvan a inmensas empresas constructoras.
               </li>
             </ul>
@@ -231,7 +232,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">El Subproducto Brutal del SEO Inamovible Orgánico Puro Majestuoso Gigante Imponente Perfecto Mágico Irrefutable Indestructible Fuerte Creciente Indetenible Eterno Salvaje Constante Constante e Imperecedero Gigante Asombroso Poderoso Asombrosamente Exacto e Imperecedero Majestuoso Puro Limpio y Definitivo Seguro Constante Indestructible Eterno Indestructible Permanente Seguro Brillante Exitoso Seguro Indestructible Genial Fuerte e Imponente.</h4>
@@ -270,14 +271,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Exigir su Sesión Estratégica Asombrosamente Imponente Ya <i className="fas fa-arrow-right ml-2"></i>
+              Exigir su Sesión Estratégica Asombrosamente Imponente Ya <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

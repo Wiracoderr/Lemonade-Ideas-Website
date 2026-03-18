@@ -6,6 +6,7 @@ import Image from "next/image";
 import blogsEn from "@/data/blogs.json";
 import blogsEs from "@/data/blogs-es.json";
 import { useTranslations, useLocale } from 'next-intl';
+import { ArrowLeft, ArrowRight, BookOpen, Calendar } from 'lucide-react';
 
 interface BlogNavigationProps {
   currentSlug: string;
@@ -47,7 +48,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
               className="flex-1 group flex items-center gap-[20px] p-[20px] rounded-[16px] hover:bg-white hover:shadow-md border border-transparent hover:border-gray-100 transition-all duration-300"
             >
               <div className="w-[50px] h-[50px] rounded-full bg-gray-100 flex items-center justify-center text-[#3AAB43] group-hover:bg-[#3AAB43] group-hover:text-white transition-colors shrink-0">
-                <i className="fas fa-arrow-left"></i>
+                <ArrowLeft />
               </div>
               <div className="flex-1 min-w-0">
                 <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">{t('prev_article')}</span>
@@ -66,7 +67,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
               className="flex-1 group flex items-center justify-end gap-[20px] p-[20px] rounded-[16px] hover:bg-white hover:shadow-md border border-transparent hover:border-gray-100 transition-all duration-300 text-right md:flex-row-reverse"
             >
               <div className="w-[50px] h-[50px] rounded-full bg-gray-100 flex items-center justify-center text-[#3AAB43] group-hover:bg-[#3AAB43] group-hover:text-white transition-colors shrink-0">
-                <i className="fas fa-arrow-right"></i>
+                <ArrowRight />
               </div>
               <div className="flex-1 min-w-0">
                 <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">{t('next_article')}</span>
@@ -86,10 +87,10 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
           <div>
             <div className="flex items-center justify-between mb-[30px]">
               <h2 className="text-[2rem] font-['Oswald'] font-bold text-[#1E3A1A] uppercase m-0 flex items-center gap-[15px]">
-                <i className="fas fa-book-reader text-[#3AAB43]"></i> {t('keep_learning')}
+                <BookOpen className="text-[#3AAB43]" /> {t('keep_learning')}
               </h2>
               <Link href="/blogs" className="text-[#3AAB43] font-bold hover:text-[#1E3A1A] transition-colors hidden md:flex items-center gap-[8px]">
-                {t('view_all')} <i className="fas fa-arrow-right text-[0.8em]"></i>
+                {t('view_all')} <ArrowRight className="text-[0.8em]" />
               </Link>
             </div>
 
@@ -112,7 +113,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                     </Link>
                     <div className="p-[20px] flex flex-col flex-1">
                       <div className="flex items-center gap-[8px] text-[0.85rem] text-gray-500 mb-[10px] font-medium">
-                        <i className="far fa-calendar-alt text-[#3AAB43]"></i>
+                        <Calendar className="text-[#3AAB43]" />
                         {blog.date}
                       </div>
                       <Link href={`/blogs/${blog.slug}`} className="block block flex-1" title={blog.title}>
@@ -121,7 +122,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                         </h4>
                       </Link>
                       <Link href={`/blogs/${blog.slug}`} className="inline-flex items-center gap-[8px] text-[#3AAB43] font-bold text-[0.95rem] mt-[15px] group-hover:text-[#1E3A1A] transition-colors">
-                        {t('read_more')} <i className="fas fa-arrow-right text-[0.8em] group-hover:translate-x-1 transition-transform"></i>
+                        {t('read_more')} <ArrowRight className="text-[0.8em] group-hover:translate-x-1 transition-transform" />
                       </Link>
                     </div>
                   </div>
@@ -131,7 +132,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
             
             <div className="mt-[20px] text-center md:hidden">
               <Link href="/blogs" className="text-[#3AAB43] font-bold hover:text-[#1E3A1A] transition-colors inline-flex items-center gap-[8px]">
-                {t('view_all')} <i className="fas fa-arrow-right text-[0.8em]"></i>
+                {t('view_all')} <ArrowRight className="text-[0.8em]" />
               </Link>
             </div>
           </div>

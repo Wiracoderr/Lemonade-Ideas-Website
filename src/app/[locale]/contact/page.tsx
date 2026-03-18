@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { useTranslations } from 'next-intl';
 import ContactForm from '@/components/forms/ContactForm';
+import { CheckCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: "Contact Us | Lemonade Ideas",
@@ -47,7 +48,7 @@ export default function ContactPage() {
                         {/* Item 1 */}
                         <div className="flex items-start gap-4">
                             <div className="mt-1 flex-shrink-0 text-[#FED52B] text-[18px]">
-                                <i className="fas fa-check-circle"></i>
+                                <CheckCircle />
                             </div>
                             <div>
                                 <h3 className="font-bold text-[#FED52B] text-[15px] mb-1.5">{t('reason1_title')}</h3>
@@ -60,7 +61,7 @@ export default function ContactPage() {
                         {/* Item 2 */}
                         <div className="flex items-start gap-4">
                             <div className="mt-1 flex-shrink-0 text-[#FED52B] text-[18px]">
-                                <i className="fas fa-check-circle"></i>
+                                <CheckCircle />
                             </div>
                             <div>
                                 <h3 className="font-bold text-[#FED52B] text-[15px] mb-1.5">{t('reason2_title')}</h3>
@@ -73,7 +74,7 @@ export default function ContactPage() {
                         {/* Item 3 */}
                         <div className="flex items-start gap-4">
                             <div className="mt-1 flex-shrink-0 text-[#FED52B] text-[18px]">
-                                <i className="fas fa-check-circle"></i>
+                                <CheckCircle />
                             </div>
                             <div>
                                 <h3 className="font-bold text-[#FED52B] text-[15px] mb-1.5">{t('reason3_title')}</h3>
@@ -86,7 +87,7 @@ export default function ContactPage() {
                         {/* Item 4 */}
                         <div className="flex items-start gap-4">
                             <div className="mt-1 flex-shrink-0 text-[#FED52B] text-[18px]">
-                                <i className="fas fa-check-circle"></i>
+                                <CheckCircle />
                             </div>
                             <div>
                                 <h3 className="font-bold text-[#FED52B] text-[15px] mb-1.5">{t('reason4_title')}</h3>

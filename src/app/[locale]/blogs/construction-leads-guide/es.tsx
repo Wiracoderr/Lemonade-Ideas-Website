@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, Lightbulb, XCircle, CircleDollarSign, LineChart, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -29,17 +30,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
             <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">12 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">Lectura de 8 min</span>
             </span>
           </div>
@@ -140,7 +141,7 @@ export default function BlogPost() {
             {/* Geo Capsule / Tip Box */}
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] my-[40px] shadow-sm flex gap-[15px]">
               <div className="mt-[2px]">
-                <i className="fas fa-lightbulb text-[#d4ad15] text-[1.5rem]"></i>
+                <Lightbulb className="text-[#d4ad15] text-[1.5rem]" />
               </div>
               <div>
                 <strong className="block text-[#1E3A1A] text-[1.1rem] mb-[5px]">
@@ -241,7 +242,7 @@ export default function BlogPost() {
             <div className="space-y-[30px]">
                <div className="p-[25px] bg-[#fff5f5] border border-[#ffe5e5] rounded-[12px] relative overflow-hidden">
                 <div className="absolute top-[-10px] right-[-10px] text-[#ffcccc] opacity-30 text-[100px] leading-none">
-                  <i className="fas fa-times-circle"></i>
+                  <XCircle />
                 </div>
                 <h5 className="text-[1.2rem] font-bold text-[#cc0000] mb-[10px] relative z-10">
                    1. Campañas Redes o (Forma - FB "Leads forms") B2B Elite. 
@@ -253,7 +254,7 @@ export default function BlogPost() {
 
                <div className="p-[25px] bg-[#fff5f5] border border-[#ffe5e5] rounded-[12px] relative overflow-hidden">
                 <div className="absolute top-[-10px] right-[-10px] text-[#ffcccc] opacity-30 text-[100px] leading-none">
-                  <i className="fas fa-times-circle"></i>
+                  <XCircle />
                 </div>
                  <h5 className="text-[1.2rem] font-bold text-[#cc0000] mb-[10px] relative z-10">
                    2. Bandeja Limpia / ("Correos Fríos" u Cold Emails a dueño u residencias).
@@ -265,7 +266,7 @@ export default function BlogPost() {
 
               <div className="p-[25px] bg-[#fff5f5] border border-[#ffe5e5] rounded-[12px] relative overflow-hidden">
                 <div className="absolute top-[-10px] right-[-10px] text-[#ffcccc] opacity-30 text-[100px] leading-none">
-                  <i className="fas fa-times-circle"></i>
+                  <XCircle />
                 </div>
                  <h5 className="text-[1.2rem] font-bold text-[#cc0000] mb-[10px] relative z-10">
                    3. Pautaje "PPC" y Anuncios Carentes de Diseños Web Destino .  
@@ -292,7 +293,7 @@ export default function BlogPost() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[25px] my-[40px]">
                <div className="p-[30px] bg-white border border-gray-200 shadow-lg rounded-[16px] text-center group hover:border-[#cc0000] transition-colors flex flex-col items-center">
                  <div className="w-[60px] h-[60px] bg-[#ffe5e5] text-[#cc0000] rounded-full flex items-center justify-center mb-[20px] text-[1.5rem] group-hover:scale-110 transition-transform">
-                  <i className="fas fa-hand-holding-usd"></i>
+                  <CircleDollarSign />
                 </div>
                  <h4 className="font-bold text-[#1E3A1A] text-[1.2rem] mb-[15px]">
                   Redes De Adquisición O Rentistas   
@@ -303,7 +304,7 @@ export default function BlogPost() {
               </div>
                <div className="p-[30px] bg-white border border-[#3AAB43] shadow-lg shadow-[#3AAB43]/10 rounded-[16px] text-center group flex flex-col items-center">
                 <div className="w-[60px] h-[60px] bg-[#eef8ee] text-[#3AAB43] rounded-full flex items-center justify-center mb-[20px] text-[1.5rem] group-hover:scale-110 transition-transform">
-                  <i className="fas fa-chart-line"></i>
+                  <LineChart />
                 </div>
                 <h4 className="font-bold text-[#1E3A1A] text-[1.2rem] mb-[15px]">
                    Tú Vehículo Fijo de Fuerza y Motores (Tú "Equity" Valuado)
@@ -414,7 +415,7 @@ export default function BlogPost() {
                 rel="noopener noreferrer"
                 className="w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-[#0F3C9F] hover:text-white hover:scale-110 transition-all shadow-sm"
               >
-                <i className="fab fa-facebook-f"></i>
+                <Facebook />
               </a>
               <a
                 href="https://www.instagram.com/lemonade.ideas"
@@ -422,7 +423,7 @@ export default function BlogPost() {
                 rel="noopener noreferrer"
                 className="w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:scale-110 transition-all shadow-sm"
               >
-                <i className="fab fa-instagram"></i>
+                <Instagram />
               </a>
               <a
                 href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg"
@@ -430,7 +431,7 @@ export default function BlogPost() {
                 rel="noopener noreferrer"
                 className="w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-[#ff0000] hover:text-white hover:scale-110 transition-all shadow-sm"
               >
-                <i className="fab fa-youtube"></i>
+                <Youtube />
               </a>
               <a
                 href="http://www.linkedin.com/in/lemonade-ideas-080122348"
@@ -438,7 +439,7 @@ export default function BlogPost() {
                 rel="noopener noreferrer"
                 className="w-[45px] h-[45px] rounded-full bg-[#f4f7fa] flex items-center justify-center text-[#0F3C9F] text-[20px] hover:bg-[#0077b5] hover:text-white hover:scale-110 transition-all shadow-sm"
               >
-                <i className="fab fa-linkedin-in"></i>
+                <Linkedin />
               </a>
             </div>
           </div>

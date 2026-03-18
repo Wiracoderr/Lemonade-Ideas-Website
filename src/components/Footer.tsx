@@ -2,6 +2,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
+import { Phone } from 'lucide-react';
 
 export default function Footer() {
     const t = useTranslations("Footer");
@@ -27,7 +28,7 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold text-[13px] mb-6 uppercase tracking-wide">{t('contactDetails')}</h4>
                         <ul className="space-y-4 text-[13px] font-semibold opacity-90">
-                            <li><a href="tel:+14248773789" className="flex items-center gap-3 hover:text-green-700 transition"><i className="fas fa-phone-alt text-green-700"></i> +1 (424) 877-3789</a></li>
+                            <li><a href="tel:+14248773789" className="flex items-center gap-3 hover:text-green-700 transition"><Phone className="text-green-700" /> +1 (424) 877-3789</a></li>
                             <li><a href="mailto:sales@lemonadeideas.com" className="flex items-center gap-3 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-green-700"></i> sales@lemonadeideas.com</a></li>
                             <li className="leading-relaxed pt-2">
                                 209 21st Place Santa Monica 90402<br />California USA

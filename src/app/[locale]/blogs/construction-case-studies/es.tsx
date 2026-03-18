@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, X, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
             <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">14 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">Lectura de 14 min</span>
             </span>
           </div>
@@ -104,9 +105,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> El Defecto Fatal
+                <AlertTriangle /> El Defecto Fatal
               </h4>
               <p className="relative z-10 m-0 text-[#555]">
                 Cuando solo publicas una galería de fotos de obras terminadas, inmediatamente mercantilizas tu negocio. El comprador mira tus fotos, las compara con las fotos idénticas de tus competidores, y por defecto toma su decisión basándose completamente en quien haya presentado la oferta más baja. No les das nada más en qué basar su decisión sobre ti.
@@ -147,8 +148,8 @@ export default function BlogPost() {
               Evita a toda consta emplear "Trabajo del Sr Smith". Nombra casos precisos; enfocando a tu cliente objetivo por rubros industriales junto los indicadores finales.
             </p>
             <ul>
-              <li><i className="fas fa-times text-red-500 absolute left-0 top-[6px]"></i> <strong>Pobre:</strong> La Sude Institucional de "TechCorp".</li>
-              <li><i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i> <strong>Directo:</strong> Entregamos un Corporativo Industrial (de 4 mil MT2) Tres Meses Previo Contra Limitaciones de Aduana y Cadenas Logísticas Globales Para TechCorp.</li>
+              <li><X className="text-red-500 absolute left-0 top-[6px]" /> <strong>Pobre:</strong> La Sude Institucional de "TechCorp".</li>
+              <li><Check className="text-[#3AAB43] absolute left-0 top-[6px]" /> <strong>Directo:</strong> Entregamos un Corporativo Industrial (de 4 mil MT2) Tres Meses Previo Contra Limitaciones de Aduana y Cadenas Logísticas Globales Para TechCorp.</li>
             </ul>
 
             <h4 className="text-[#1E3A1A] font-bold mt-8 mb-[10px] text-[1.2rem]">2. Entendiendo El Dolor "Agónico".</h4>
@@ -170,7 +171,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm mt-8">
               <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Requisitos Y Longitudes Al Cierres Extremos.</h4>
@@ -225,9 +226,9 @@ export default function BlogPost() {
               Interroga sobre detalles directos tales como pueden ser:
             </p>
             <ul>
-              <li><i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i> Cuál fue tu pavor primario ante nuestro equipo desde su contrato</li>
-              <li><i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i> Observaste ese incidente puntual mediante el cual lograste confiar fehacientemente y certificar la calidad final con tus elecciones e contratistas comerciales u asesores involucrados de por mano en obra civil en campo abierto?</li>
-              <li><i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i> ¿Refleja este desempeño ventajas cuantificables monetarias desde la fecha en piso para usted ?</li>
+              <li><Check className="text-[#3AAB43] absolute left-0 top-[6px]" /> Cuál fue tu pavor primario ante nuestro equipo desde su contrato</li>
+              <li><Check className="text-[#3AAB43] absolute left-0 top-[6px]" /> Observaste ese incidente puntual mediante el cual lograste confiar fehacientemente y certificar la calidad final con tus elecciones e contratistas comerciales u asesores involucrados de por mano en obra civil en campo abierto?</li>
+              <li><Check className="text-[#3AAB43] absolute left-0 top-[6px]" /> ¿Refleja este desempeño ventajas cuantificables monetarias desde la fecha en piso para usted ?</li>
             </ul>
             <p>
               Escribe esos párrafos literales sobre de las respuestas, pule su formato como perlas brillantes ("pulls"); sin tapujos, esa realidad expresaba las ansias y verdaderas respuestas contagiando fe ante los observadores nuevos bajo vocablos exactos reales sin maquillajes superficiales o ficticios que generan poca honestidad frente lector inversionistas reales experimentados en desarrollo puro y comercial rudo en sitio presencial.
@@ -360,14 +361,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Agenda Sesiones De Consultas Directas  <i className="fas fa-arrow-right ml-2"></i>
+              Agenda Sesiones De Consultas Directas  <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

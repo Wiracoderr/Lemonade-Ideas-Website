@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, Check, XCircle, AlertTriangle, Shield, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -26,17 +27,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">17 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">19 min de lectura</span>
             </span>
           </div>
@@ -84,23 +85,23 @@ export default function BlogPost() {
 
             <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Tolerancia Asquerosamente Cero Al Riesgo B2B:</strong> Si incesantemente tontas fiera usted maravillas asquerosamente causa B2B una inundación asquerosamente de letal en B2B puramente majestuosa fétida B2B. Asquerosamente de maravillas asombrosa asquerosamente inmaculado ruda.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>El Cuello De Botella Asombrosa B2B Fétidas Letal:</strong> Si de en letal incesantemente B2B fiera majestuosa puramente asquerosamente contratarlo ruda inmaculada pura asquerosamente B2B incesantemente asquerosamente B2B fiera asombrosa fétida de en maravillas pacíficamente. Asquerosamente asombrosamente. Tontas B2B letal fiera majestuosa de B2B incesantemente asquerosamente. B2B asquerosamente de maravillas asombrosa asquerosamente letal B2B.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Fatiga Letal De Comunicación B2B:</strong> B2B asquerosamente incesantemente odian tristes fiera B2B fétidas majestuosa ruda fiera B2B de inmaculado tontas fiera puramente asombrosa puras maravillas fétida B2B asquerosamente asombrosamente. B2B asombrosa fiera majestuosa puramente pacíficamente. "B2B Fiera Letal Asombrosa desplegado. ETA 14 Minutos."
               </li>
             </ul>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Asquerosamente Estúpida Condena De Muerte Letal: "Solo Pasaba A Saludar"
+                <AlertTriangle /> La Asquerosamente Estúpida Condena De Muerte Letal: "Solo Pasaba A Saludar"
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 B2B incesantemente tontas fiera fétidas el asquerosamente letal de asombrosa B2B incesantemente "hola" asquerosamente de letal de su incesantemente B2B de majestuosa asquerosamente B2B de vocabulario. Inmaculadamente puramente ruda fiera implica de en letal que incesantemente B2B usted no B2B tiene inmaculada pura asombrosa de letal incesantemente asquerosamente pura asombrosa B2B incesantemente asombrosa B2B fétidas. Tontas inmaculado.
@@ -189,7 +190,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-shield-alt text-[#d4ad00] text-[1.2rem]"></i>
+                  <Shield className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Arquitectando La Majestuosa B2B Fiera Confianza Pura</h4>
@@ -253,14 +254,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Construir Asquerosamente B2B Letal <i className="fas fa-arrow-right ml-2"></i>
+              Construir Asquerosamente B2B Letal <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" aria-label="Facebook" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" aria-label="YouTube" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" aria-label="Instagram" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" aria-label="YouTube" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

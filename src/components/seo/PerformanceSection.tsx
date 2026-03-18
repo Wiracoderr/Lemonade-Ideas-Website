@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useTranslations } from 'next-intl';
+import { Search, Laptop, MapPin, PenTool, Store, List, Users, Star } from 'lucide-react';
 
 // A helper component to wrap text safely without linking "SEO" anymore as requested
 const SEOText = ({ children }: { children: React.ReactNode }) => {
@@ -31,7 +32,7 @@ export default function PerformanceSection() {
                     {/* Card 1 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-search"></i>
+                            <Search />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c1_t')}
@@ -44,7 +45,7 @@ export default function PerformanceSection() {
                     {/* Card 2 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-laptop-code"></i>
+                            <Laptop />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             <SEOText>{t('seo_p_c2_t')}</SEOText>
@@ -57,7 +58,7 @@ export default function PerformanceSection() {
                     {/* Card 3 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-map-marked-alt"></i>
+                            <MapPin />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             <SEOText>{t('seo_p_c3_t')}</SEOText>
@@ -70,7 +71,7 @@ export default function PerformanceSection() {
                     {/* Card 4 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-pen-fancy"></i>
+                            <PenTool />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c4_t')}
@@ -83,7 +84,7 @@ export default function PerformanceSection() {
                     {/* Card 5 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-store"></i>
+                            <Store />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c5_t')}
@@ -96,7 +97,7 @@ export default function PerformanceSection() {
                     {/* Card 6 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-list-ul"></i>
+                            <List />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c6_t')}
@@ -109,7 +110,7 @@ export default function PerformanceSection() {
                     {/* Card 7 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-users"></i>
+                            <Users />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c7_t')}
@@ -122,7 +123,7 @@ export default function PerformanceSection() {
                     {/* Card 8 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-star"></i>
+                            <Star />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c8_t')}

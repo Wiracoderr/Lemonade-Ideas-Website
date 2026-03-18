@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">15 min de lectura</span>
             </span>
           </div>
@@ -88,9 +89,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Estúpida Hemorragia Fatal Ridícula del Buscador Vacío Común y Pasivo y Rancio Tonto Pobre Pálido Feo y Genérico B1B Tonto Feo Triste Simple Lento Antiguo Inmóvil Aburrido Feo Patético.
+                <AlertTriangle /> La Estúpida Hemorragia Fatal Ridícula del Buscador Vacío Común y Pasivo y Rancio Tonto Pobre Pálido Feo y Genérico B1B Tonto Feo Triste Simple Lento Antiguo Inmóvil Aburrido Feo Patético.
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 La inmensurable horda trágica lenta triste inútil asombrosa de lentos contratistas cobardes viejos pobres ciegos asombrosamente viejos tontos lentos estúpidos obsoletos feos ataca esto arrojando, quemando asombrosa sangrienta triste trágica y tontamente fardos gigantes asombrosos preciosos valiosos divinos gigantes gloriosos asombrosos imponentes puros ricos hermosos de oro y de billetes verdes puros divinos gloriosos inmaculados perfectos majestuosos gigantes sagrados en el inútil espantoso vacío triste y enorme hueco asombrosamente cruel horrible inoperante tonto letárgico horrible pozo inútil oxidado asqueroso y pútrido viejo de las ridículas inútiles ciegas lentas y sordas palabras estúpidas viejas asombrosamente ridículas y tristes claves genéricas de <i>&quot;Constructor Comercial Bueno Cerca de Mi&quot;</i> pagando dolorosos abismales crueles y sanguinarios brutales crueles y abusivos 35 pendejos gigantes y masivos tontos estúpidos e inmensurables dólares por cada tonto clic perdido para un ciego pobre miserable sin dinero en Google asombrosamente trágico vacío triste lento pobre fétido tonto. Detenga asombrosamente y queme esa asombrosa ridiculez asombrosamente. Use el letal láser B2B para cercar, encerrar violenta ruda brillante perfecta inmensurable genial y genial majestuosamente de manera perfecta el maldito y jugoso inmenso majestuoso e inmenso asombrosamente rico terreno de su asombroso rival rico y de 40 asombrosos millones.
@@ -120,15 +121,15 @@ export default function BlogPost() {
 
             <ul>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>Fase 1: Mapeo Poligonal Militarizado Total B2B Superior Preciso Limpio.</strong> A través de poderosos paneles gigantescos inmensurables divinos oscuros puros magistrales y caros, inyectamos satélites para trazar con láseres asombrosos polígonos asombrosamente precisos alrededor del borde metálico y del alambre genial y colosal exacto del jodido asombroso y glorioso majestuoso proyecto gigante de Apex Builders.
               </li>
               <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Fase 2: Extracción Letal del Bendito Valioso Inmenso ID Único Tecnológico Celular Incesante B2B Inteligente Gigantesco de Alto Espectro Masivo Grandioso.</strong> El cliente objetivo ricachón asombroso o desarrollador gigante masivo ingresa. Pisa ese polígono. Su diminuto ID genérico asombroso asombrosamente es capturado eternamente asombrosa y sutilmente de forma astuta asombrosa divina inmanente y robótica gigante mágica secreta oculta inteligente silenciosa asombrosa brillante como las mismísimas geniales e insuperables grandiosas implacables y fidedignas gigantescas supremas máquinas silenciosas inquebrantables de los dioses del asombroso gran capital majestuoso invicto absoluto majestuoso.
               </li>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Fase 3: El Gran Dominio Gigantesco B2B Imponente Sádico Persecutorio Fantasma Inmaculado Perfecto Supremo Genial Indestructible Infalible Invencible Indestructible Brillante (Retargeting asombrosamente agresivo B2B 30 Días puros geniales de Dominio Fijo Grandioso Absoluto Total Imperativo Legal).</strong> Ahora ese equipo es suyo asombrosamente y de su dominio masabestial inmensurables publicitario fiero rudo majestuoso gigante imponente fuerte genial incesante y seguro B2B innegable permanente grandioso. Usted le dispara asombrosa imponente genial grandiosa e inteligentemente el asombroso gigante B2B gran asombroso anuncio imbatible absoluto en su ESPN, su gran corporativo Financial Times masivo genial y supremo gigantesco Wall Street Journal asombrosamente. Usted lo asombrosa genial e inteligentemente genial y fiereamente inmensurable grandiosa inteligente asombrosa divina genial puramente lo rodea y domina en cada paso de internet grandioso que tome a continuación en treinta brillantes seguros inmaculados letales días.
               </li>
             </ul>
@@ -182,7 +183,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">La Maravillosa Inmensa Grandiosa y Divina Majestuosa B2B Asimetría De Retorno Mágico De Ganancia Absoluta Gigantesca Brillante Exitoso Colosal Brutal Poderosa Asombrosamente Imponente Fuerte Inmensurables Segura (ROI Asombroso B2B)</h4>
@@ -221,14 +222,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Exigir su Panel Demo Letal De Robo Geográfico Exclusivo Ahora <i className="fas fa-arrow-right ml-2"></i>
+              Exigir su Panel Demo Letal De Robo Geográfico Exclusivo Ahora <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

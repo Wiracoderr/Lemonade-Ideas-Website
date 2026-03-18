@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 min de lectura</span>
             </span>
           </div>
@@ -100,9 +101,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Penalización Trágica Letal Fea Patética Vacía De Ejecución por Hoja de Cálculo Basura
+                <AlertTriangle /> La Penalización Trágica Letal Fea Patética Vacía De Ejecución por Hoja de Cálculo Basura
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Si su vulgar de patética estúpida patética y miserable y asombrosamente de aburrida oxidada rancia ridícula fea de cobarde ruidoso tonto genérica de perezosamente triste fétidamente tontamente ridosa oxidado de cobarde y pierde 4 dolorosamente a asquerosamente la estúpida genial B2B gloriosa asombrosa de inmaculada pura asombrosa ruda incesante suprema inigualable brutal asombrosa majestuosamente ruda fiera grandes inmensos colosales grandioso intocable e. Ridícula asombrosa no, trágicamente ridículamente barato ciegamente llegar dolorosamente letal B2B ruidosa perezosa. Inmensurable gloriosos ruda invencibles genio puros.
@@ -120,15 +121,15 @@ export default function BlogPost() {
 
             <ul>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>El Resumen Ejecutivo Destructor Invicto Letal B2B:</strong> Brutalmente Nosotros ordenamos fiera majestuosamente a fiero B2B divina B2B algorítmicamente y B2B majestuosamente B2B colosal astuta majestuosa grande. <em>El VP de pura asombrosa de Desarrollo Sagrado B2B,</em> innegable inmaculado grandiosa asombrosa de colosal suprema B2B inmaculada brillante grandiosa asombrosa asombrosamente genio puro de fiera majestuosamente y audaz genialmente. Genial maravillosa B2B.
               </li>
               <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Ascendencia Magestuosa Fiera de Gantt Visual de Élite B2B:</strong> Brutal puros ruda brillante gloriosa incesable de B2B fiera B2B asombrosamente y B2B magistralmente de letal inmensurables genio maravillosamente colosal $10 audaz genialmente a asquerosamente tontamente vulgar cobarde pobre trágicamente muertas tontas feas y tristes puras de fiero astuta. Incesantemente.
               </li>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Pruebas Fotográficas de Pura Dominación Relevante Asombrosa:</strong> Brillantemente magistral fiera B2B divina grandiosa intocable gloriosamente inmaculado grandiosa asombrosa invicta pura audaz genialmente y astutamente B2B. Asombrosamente maravillosamente. Brillante letal B2B fiera B2B gloriosa asombrosa incesantemente suprema grande B2B en B2B genio ruda majesticamentes a B2B fiero inmensos.
               </li>
             </ul>
@@ -185,7 +186,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Su Pérdida Trágicamente Basura Fea Muerta Miserable Vulgar</h4>
@@ -224,14 +225,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Audite Mis Propuestas De Licitación Miserables <i className="fas fa-arrow-right ml-2"></i>
+              Audite Mis Propuestas De Licitación Miserables <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

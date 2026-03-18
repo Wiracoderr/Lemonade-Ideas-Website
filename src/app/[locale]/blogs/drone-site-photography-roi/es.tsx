@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, Shield, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
             <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">15 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">Lectura de 14 min</span>
             </span>
           </div>
@@ -84,9 +85,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Sangría Financiera de las Operaciones Manuales
+                <AlertTriangle /> La Sangría Financiera de las Operaciones Manuales
               </h4>
               <p className="relative z-10 m-0 text-[#555]">
                 Cuando tus gerentes de proyecto pasan cinco horas a la semana caminando físicamente el perímetro de los cimientos de un rascacielos para capturar 40 fotos desconectadas con el iPhone para la actualización de las partes interesadas del viernes, estás asignando muy mal el capital intelectual. Las fotos "gratuitas" tomadas por tu superintendente en realidad conllevan un costo oculto astronómico en salarios por hora, pérdida de productividad y calidad inferior de datos.
@@ -128,15 +129,15 @@ export default function BlogPost() {
 
             <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Tiempos de Inspección 80% Más Rápidos:</strong> Comprimir un cuello de botella de topografía altamente técnico de dos semanas en una sola tarde permite que las fases de excavación comiencen exponencialmente más rápido. Aceleras todo el cronograma y la ruta crítica maestra del proyecto.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Reducción del 30% en Costos Laborales Directos:</strong> Al reemplazar semanas de trabajo exhaustivo de levantamiento manual con fotogrametría aérea automatizada, las firmas reducen drásticamente sus gastos generales directos por proyecto, mejorando instantáneamente el margen bruto.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Precisión Volumétrica:</strong> Medir acumulaciones de agregados, tierra o asfalto solía requerir escaladas físicas peligrosas y complejas estimaciones geométricas. Hoy, el software de drones puede aislar un acopio de material en un mapa ortomosaico y calcular su volumen exacto en yardas cúbicas en cinco segundos, garantizando que solo pagues a los proveedores por el material exacto entregado.
               </li>
             </ul>
@@ -144,7 +145,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
               <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">El Cálculo del ROI del 275%</h4>
@@ -186,7 +187,7 @@ export default function BlogPost() {
 
             <div className="bg-[#f4fbf4] rounded-[10px] border border-[#e2efe2] p-[20px] mb-[40px] flex items-start gap-[20px]">
               <div className="bg-[#3AAB43] text-white w-[40px] h-[40px] rounded-full flex items-center justify-center font-bold text-[1.2rem] shrink-0">
-                <i className="fas fa-shield-alt"></i>
+                <Shield />
               </div>
               <div>
                 <h4 className="text-[#1E3A1A] font-bold mt-0 mb-[10px] text-[1.2rem]">El Margen de Reducción de Incidentes del 40%</h4>
@@ -219,11 +220,11 @@ export default function BlogPost() {
 
              <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Anular las Recargas Erróneas ('Back-Charges') :</strong>  Sí la compañía por la demolición de terrenos subcontratada excusase a tu contra ('Retrasando todo para culparte a ti ), sacando u demostrando las tomas 'Viernes pasado'; en  cuarenta y cinco seg.  les evidencias la verdad aplastándoles  .
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Validados En Sobreposición "BIM": </strong> Al permitir usar y colgar diseños  (Modelo de Diseños Arq) arriba y en conjunto la obra (Virtual Model Dron ). Se comprueba que, de forma inmediata o "Cinches/Falla' en las medidas ;  Un milímetro "16cm " desviado a la base , evitaría a largo pérdidas catastrofes por cientos e o millón u mas . 
               </li>
             </ul>
@@ -306,14 +307,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-             Accede / O Oprime Y de Solícitano Tu Cita Al Sistema En Estrategias. B2B <i className="fas fa-arrow-right ml-2"></i>
+             Accede / O Oprime Y de Solícitano Tu Cita Al Sistema En Estrategias. B2B <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

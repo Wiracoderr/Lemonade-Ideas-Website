@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, CheckCircle, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
             <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">14 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">Lectura de 12 min</span>
             </span>
           </div>
@@ -83,9 +84,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> Lo Que No Funciona Ya Jamás 
+                <AlertTriangle /> Lo Que No Funciona Ya Jamás 
               </h4>
               <p className="relative z-10 m-0 text-[#555]">
                 Comprado a datos ('Lead lists'), o plataformas "Thunbtack"; Te arroja un tiroteos por y de una rebaja incesantes ("La Famosa - Carreritas Hasta Suelos"). Comprándose ese quinto , ("Contactos a Cotizaciones Por Remodelaciones O Techado"), Ese inversionista recabara a de barato u ofertado económico y ruin ; y que por ende en donde el portal principal subasto ya tu nivel, y por él no cuentas o tiene nada . Entregando altas rentas, para librar subastas al lodo, careciendo valor ("Brand Equity")
@@ -123,19 +124,19 @@ export default function BlogPost() {
 
             <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>El Efecto Visual Inicial ('Above the Fold):</strong> Dispones solo (o a mucho) un  máximos tres segundo para escupir claramente qué laboras , quién es él indicado u las coordenadas a  dónde laburas . El enorme encabezado primero (Etiquetas o "Header Title 'H1'") , Inhabilita o des echa basura o "Low Tickets ' y captura prospecto diametralmente calificado. (Refiérese; <em>" Desarrollo De Naves e Obras Comercial De Altas Magnitudes En El Condado . Puestas Al Tiempo Acordado Cero Excusas u Sobrecostes "</em>)
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Arquitecturas e Fluidez Hacia Conversion :</strong> Avientas a y un rincón derecho teléfonos , no resulta ser lo asertivo hoy dia . Añádales botones súper vistosos, y grandes contrasté ('Call The Action CTAs ' o "Soliciten Citas Comerciales ") y que obligadamente cuelgan, deslizando o ("Sticky"), según bajé y deslice abajo la pantalla, primordiales sobre "Celulares. ".
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Tiempos U Portafolios Fidedignos :</strong> Los "High-ticket" e Inversores en millones u ejecutivos comerciales corporativas no te pagarán fe, ellos desembolsaran  ante hechos, . De galería a portafolio deberá integran en grande a fotografías finas "High Resolution". Destacándose a cada uno, el imperativo texto en mini reseña (¿A Qué contratiempo llegaron ? ¿Cuál fue u tú brillante de resolver e implantar ? ¿Plazos Finalizados al entregarse ?) .
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Rapidez y Exigencia Google ("Vital Webs"):</strong> El motor castiga páginas "cuelgues u lentitud " o ('Heavy load' ); prioritario enfrente a todo de " Celulares ". Tras su primera e foto impactante requiere ( cuatro o  plus ms), a "bajadas", tu inversor clicar 'Retroceder' buscando luego al competidos inferior frente a  tí  Oprimilizá y descarga "Imágenes o Formato -WEBP - ", y aplica "Retrasado (Lazy Load') a las secciones inferiores y re-checa esa contestación ("Response rate ") por tus programadores de su C-Panel a Hosting,  para milisegundo e ultrarrápida. 
               </li>
             </ul>
@@ -143,7 +144,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
               <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Su Severa Sentencia Digital o :"El Ochenta (%) Por Dispositivo Móvil" Celular .</h4>
@@ -229,7 +230,7 @@ export default function BlogPost() {
             <div className="grid md:grid-cols-2 gap-[20px] mb-[40px] mt-[30px]">
                <div className="bg-white border-2 border-red-100 rounded-[15px] p-[25px] shadow-sm hover:border-red-400 transition-colors group">
                 <div className="text-center mb-[15px]">
-                  <i className="fas fa-times-circle text-red-500 text-[3rem] group-hover:scale-110 transition-transform"></i>
+                  <XCircle className="text-red-500 text-[3rem] group-hover:scale-110 transition-transform" />
                 </div>
                 <h4 className="text-center font-bold text-[#1E3A1A] mb-[10px]">Táctico De La "Desangrada Mortal"</h4>
                 <p className="text-[#555] text-[0.95rem] text-center leading-[1.6]">
@@ -238,7 +239,7 @@ export default function BlogPost() {
               </div>
               <div className="bg-white border-2 border-[#3AAB43]/30 rounded-[15px] p-[25px] shadow-sm hover:border-[#3AAB43] transition-colors group">
                 <div className="text-center mb-[15px]">
-                  <i className="fas fa-check-circle text-[#3AAB43] text-[3rem] group-hover:scale-110 transition-transform"></i>
+                  <CheckCircle className="text-[#3AAB43] text-[3rem] group-hover:scale-110 transition-transform" />
                 </div>
                 <h4 className="text-center font-bold text-[#1E3A1A] mb-[10px]">Estrategia "Francotirador De Elite"</h4>
                 <p className="text-[#555] text-[0.95rem] text-center leading-[1.6]">
@@ -317,7 +318,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm mt-8">
                <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                  </div>
                 <div>
                    <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Su Obligación a Más E y De "Dos Cincuenta  o Mil Palabras"  ("2.5K ") </h4>
@@ -339,23 +340,23 @@ export default function BlogPost() {
 
             <ul className="mb-8">
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>Esta Mi página y Portal o y su "velocidades de celular/Celulares " cargados a abajo y por "2 / o Dos" u Tres milésimas de segundo; y e cuenta con de y puros Botones  ( Sin  Friction e Ni Fricciones ") ? .</strong>
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong> Posee de automatización ("SMS o Post/Termino de "Review s" a obras); "activamente o recolectando  cinco estrellas " en su Perfiles ('De La Google "?')  .</strong>
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Inyector de fondos ("Pujando" / Bidding) : En las palabras de de ('Exacto Match / Comercial. ) . e impulsando y todo esos gentes , directitos y de 'solas ("Aislada y Landing/Sites")  altamente estructurada al tema  ? ! .</strong>
               </li>
                <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>Tienes / O Y Se cuenta ( Con Metas De Fb , Pixeles & G. INSIGHTS') , reteniendo ('El seguimiento Perfil y Omnipresencias 30 s días'), en sus frontales d usuarios y (Web Visitor) , q y sin de rellenar (' No Conversions " ) , para atrapar o 'Persuadirlos'. .? </strong>
               </li>
                <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong> Cada simple marcación (' The phone'), "O y Mensajeria (Formulario )"; Se están o y han sido trazados ('Tracked / Meticulously ' ), y asignando en directo y por raíz a Su Origen Publicitaria En Base (Al Tu CRM de Datos)' '.?". </strong>
               </li>
             </ul>
@@ -390,14 +391,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Agenda y Reclama u Solicita Un Espacio a Valoración Digital B2B. <i className="fas fa-arrow-right ml-2"></i>
+              Agenda y Reclama u Solicita Un Espacio a Valoración Digital B2B. <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

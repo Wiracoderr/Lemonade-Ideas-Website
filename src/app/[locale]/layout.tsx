@@ -57,7 +57,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
-        <link rel="preconnect" href="https://www.transparenttextures.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://www.transparenttextures.com" />
         {/*
          * LCP Resource Hints
          * Preconnect + preload the first animation frame (frame_000.webp)
@@ -77,26 +77,7 @@ export default async function RootLayout({
           imageSizes="(max-width: 767px) 400px, 1080px"
           fetchPriority="high"
         />
-        {/* Font Awesome globally loaded for standard icons via CSS to prevent render blocking on mobile */}
-        <link
-          rel="preload"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          as="style"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          media="print"
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore
-          onLoad="this.media='all'"
-        />
-        <noscript>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          />
-        </noscript>
+        {/* Font Awesome legacy CSS has been purged natively */}
       </head>
       <body
         className={`${inter.variable} ${oswald.variable} antialiased selection:bg-yellow-500/30 bg-[#020202] text-white/90 flex flex-col min-h-screen`}

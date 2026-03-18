@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
+import { LineChart, Settings, PieChart } from 'lucide-react';
 
 export default function TimelineSection() {
     const t = useTranslations("SEO");
@@ -32,7 +33,7 @@ export default function TimelineSection() {
                             <div className="flex-shrink-0">
                                 {/* Updated icon styling */}
                                 <div className="w-[50px] h-[50px] bg-[#1E3A1A] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#FED52B] text-xl group-hover:scale-110 transition-transform">
-                                    <i className="fas fa-chart-line"></i>
+                                    <LineChart />
                                 </div>
                             </div>
                             <div>
@@ -48,7 +49,7 @@ export default function TimelineSection() {
                         <div className="flex gap-6 items-start group">
                             <div className="flex-shrink-0">
                                 <div className="w-[50px] h-[50px] bg-[#1E3A1A] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#FED52B] text-xl group-hover:scale-110 transition-transform">
-                                    <i className="fas fa-cogs"></i>
+                                    <Settings />
                                 </div>
                             </div>
                             <div>
@@ -64,7 +65,7 @@ export default function TimelineSection() {
                         <div className="flex gap-6 items-start group">
                             <div className="flex-shrink-0">
                                 <div className="w-[50px] h-[50px] bg-[#1E3A1A] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#FED52B] text-xl group-hover:scale-110 transition-transform">
-                                    <i className="fas fa-chart-pie"></i>
+                                    <PieChart />
                                 </div>
                             </div>
                             <div>

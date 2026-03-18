@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, Check, XCircle, AlertTriangle, Hammer, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -26,17 +27,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">17 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">19 min de lectura</span>
             </span>
           </div>
@@ -84,23 +85,23 @@ export default function BlogPost() {
 
             <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>El Impuesto Administrativo de 30 Horas:</strong> El departamento de estimación comercial promedio desperdicia más de 30 horas a la semana simplemente reuniendo, transfiriendo y formateando datos aislados antes de realizar realmente la matemática de alto coeficiente intelectual de la estimación en sí. Usted está pagando a estimadores superiores de seis cifras para hacer trabajo administrativo de nivel de entrada.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>El Fenómeno "Black Hole" de Leads:</strong> Cuando se envía un RFQ (Solicitud de cotización) entrante por correo electrónico, carece de un protocolo de seguimiento dedicado. Si el estimador se va de vacaciones o pierde el hilo, una oportunidad de $8M se vaporiza porque no había un sistema unificado para desencadenar una secuencia de seguimiento agresiva.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Erosión del Margen por la Velocidad de Estimación:</strong> El contratista que proporciona el desglose preliminar primero enmarca el ancla de fijación de precios psicológicos para todo el proyecto. Si sus sistemas desarticulados lo obligan a presentar su oferta con 7 días de retraso, está librando una batalla cuesta arriba contra la empresa que ya ha establecido la línea de base.
               </li>
             </ul>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> Deje de Operar como si fuera 2005
+                <AlertTriangle /> Deje de Operar como si fuera 2005
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Deje de celebrar que compró una suscripción a Procore si no se comunica de forma nativa con su sitio de WordPress y su CRM de HubSpot. La compra de costosos productos SaaS no lo convierte en una empresa moderna; el despliegue de tuberías o pipelines API inteligentes entre esos productos sí lo hace. Un martillo es inútil si está encerrado en la caja de herramientas mientras estás en el techo.
@@ -203,7 +204,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-hammer text-[#d4ad00] text-[1.2rem]"></i>
+                  <Hammer className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Nosotros Forjamos el  Auténtico Fierro Acero API Tecnológico</h4>
@@ -267,14 +268,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Auditoría De Infraestructura Ahora <i className="fas fa-arrow-right ml-2"></i>
+              Auditoría De Infraestructura Ahora <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" aria-label="Facebook" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" aria-label="YouTube" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" aria-label="Instagram" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" aria-label="YouTube" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

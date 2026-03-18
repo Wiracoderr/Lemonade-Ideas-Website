@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 export default function SmmPricingSection() {
     const t = useTranslations('SMM');
@@ -43,19 +44,19 @@ export default function SmmPricingSection() {
                             </div>
                             <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_starter_feature_1')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_starter_feature_2')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_starter_feature_3')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_starter_feature_4')}</span>
                                 </li>
                             </ul>
@@ -71,19 +72,19 @@ export default function SmmPricingSection() {
                             </div>
                             <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_growth_feature_1')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_growth_feature_2')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_growth_feature_3')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_growth_feature_4')}</span>
                                 </li>
                             </ul>
@@ -99,23 +100,23 @@ export default function SmmPricingSection() {
                             </div>
                             <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_1')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_2')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_3')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_4')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_5')}</span>
                                 </li>
                             </ul>
@@ -125,7 +126,7 @@ export default function SmmPricingSection() {
                     {/* Bottom Get Started Button */}
                     <div className="px-6 md:px-8 pb-8 pt-2">
                         <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
-                            {t('pricing_get_started')} <i className="fas fa-arrow-right"></i>
+                            {t('pricing_get_started')} <ArrowRight />
                         </Link>
                     </div>
                 </div>

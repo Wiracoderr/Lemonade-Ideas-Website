@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import { ClipboardList, FileSignature, CreditCard, Calendar, Settings, LineChart } from 'lucide-react';
 
 export default function SmmFeaturesSection() {
     const t = useTranslations('SMM');
@@ -25,7 +26,7 @@ export default function SmmFeaturesSection() {
                     {/* Card 1 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-clipboard-list"></i>
+                            <ClipboardList />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('features_card_1_title')}
@@ -38,7 +39,7 @@ export default function SmmFeaturesSection() {
                     {/* Card 2 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-file-signature"></i>
+                            <FileSignature />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('features_card_2_title')}
@@ -51,7 +52,7 @@ export default function SmmFeaturesSection() {
                     {/* Card 3 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-credit-card"></i>
+                            <CreditCard />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('features_card_3_title')}
@@ -64,7 +65,7 @@ export default function SmmFeaturesSection() {
                     {/* Card 4 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-calendar-alt"></i>
+                            <Calendar />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('features_card_4_title')}
@@ -77,7 +78,7 @@ export default function SmmFeaturesSection() {
                     {/* Card 5 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-cogs"></i>
+                            <Settings />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('features_card_5_title')}
@@ -90,7 +91,7 @@ export default function SmmFeaturesSection() {
                     {/* Card 6 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-chart-line"></i>
+                            <LineChart />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('features_card_6_title')}

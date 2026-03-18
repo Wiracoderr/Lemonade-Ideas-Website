@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
             <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">18 min de lectura</span>
             </span>
           </div>
@@ -87,9 +88,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> Lo Que Directamente Arruina El Intento: Diseños Recargados Y Excesivos
+                <AlertTriangle /> Lo Que Directamente Arruina El Intento: Diseños Recargados Y Excesivos
               </h4>
               <p className="relative z-10 m-0 text-[#555]">
                 La catástrofe que más rompe y que más frustra con entusiasmo inaudito a todo nivel a aquellos grupos o firmas recién interesadas quienes optarán luego por intentar poner diseño envolvente pleno en todo su vehículo es prescribir e impartir la orden imperativa desde su oficina convirtiéndolo forzosamente todo y transformándolo brutal y erráticamente hacia ser todo de golpe: esto no debe ser o llegar como folleto inmenso de lectura densa. Presionan y acaban por mandar indicaciones explícitas directas, metiendo en el costado de su nave decenas extensivas, y sin la claridad pertinente en sub-servicios de reparaciones (con punticos y viñetas imperceptibles y minúsculas y absurdamente apretadas) incluyendo allí todos juntos cinco y seis variopintos teléfonos o incluso grandes QR en llamas con un espeluznante destello falso simulado tridimensional que lo llena al completo dolienco a la retina el verlo bajo luz del clima solar caluroso. Todo transporte motorizado girando y maniobrando a más de 100 kilómetros horarios recorriendo toda la carretera I-405 entrega al transeúnte lejano ni más ni menos 2,5 fracciones de segundo exactas y reales; sus enormes filas informativas destrozarán todo su esquema de retornos o de recauldación por diseño de exposición y quedarán anulados de forma irremediable, si para esos instantes un cerebro humano ya no es posible registrar que son una firma o que hacen reparaciones exactas fallaron de pleno al existir o hacer eso por empezar en ese intento original inútilmente erróneo y perjudicial visual.
@@ -115,15 +116,15 @@ export default function BlogPost() {
 
             <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Google Ads (La Licitación y Pago Clic P.P.C):</strong> Por pugnar salvajemente sobre términos precisos (como techo de local ya mismo cercano) cualquier corporativo puede vacunar fácilmente cuentas que rozan los 25 a increíbles cifras altas por arriba del margen en  150 USD sin generar a pesar solo por una única y frágil posibilidad o visita incierta que no cierra a veces. Y esa locura brutal genera CPM inflados artificialmente sin cesar, destruyendo la posibilidad sana si su subasta geográfica se dispara por sobre $100 constantes siempre asfixiantemente debido a que muchos clickean sin que surja ni derive o cierre ningún compromiso económico total, al fracasar y no cerrar al fin al cabo un negocio ni mucho, ni nada seguro concretamente al gastar tanto allí de esa manera brutal sobre los pujadores ciegamente en esa subasta de clics.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Envíos o Impresiones Geográficas Postales Ciega:</strong> Sacar unos 5000 sobres gigantes plastificados de enorme nivel hacia unos códigos o villas ricas residenciales sacudirá sus bancos desde la cifra en los 3000 iniciales sumado a sus timbres que darán al equivalente brutal $600 exactos para apenas CPM base - y todo acaba muy en la vil basura recicladora por ley estadística el 95 por ciento entero al tocar los tres míseros segundos sin tan solo y apenas detener los residentes su lectura.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>El Gigante Cartel En Autopista Convencional Inamovible:</strong> Asignar o alquilar al viento inamovibles sobre inmensas pistas centrales con visualizaciones de primer acceso desnudará las billeteras o chequeras del orden desde sus unos $2.000 muy de nivel de barrio por inicio hasta llegar asombrar cruzando hacia el gran límite extremo arriba por 10.000 para CPM pasables que en gran escala bajan casi decentes a promediar 3 a cerca de 8, la falla monumental o de rigor imperdonable fundamental inalterable radica o vive puramente desde que este lugar u sitio siempre eternamente seguirá tieso sin vida estancado perenne. Cuando los gerentes requeridos como ideales meta jamás conduzcan usando aquellos corredores viales estáticos ni los miren su gigante cartel perderá absoluto propósito siempre sin falla irremediable.
               </li>
             </ul>
@@ -146,7 +147,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
               <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">La Maravilla Financiera De Amortizar Sus Costos Por Hasta Sus Respectivos Cinco Añitos</h4>
@@ -312,14 +313,14 @@ export default function BlogPost() {
               href="/es/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Solicite una Sesión Estratégica <i className="fas fa-arrow-right ml-2"></i>
+              Solicite una Sesión Estratégica <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

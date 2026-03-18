@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, Check, XCircle, AlertTriangle, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -26,17 +27,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">March 17, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">18 min read</span>
             </span>
           </div>
@@ -88,23 +89,23 @@ export default function BlogPost() {
 
             <ul>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>The 90% Read Rate:</strong> Approximately 90% of all SMS text messages are read within exactly three minutes of delivery. Conversely, the average open rate for a commercial email in the home services sector hovers dangerously around 18%, and that usually happens hours after it was sent.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>Response Velocity:</strong> A staggering 77% of SMS messages receive a direct response within 10 minutes. This is literally triple the engagement velocity of an email. When you need to book an estimate right now, SMS is the only viable weapon.
               </li>
               <li>
-                <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                 <strong>The Omni-Channel Lift:</strong> By integrating automated SMS follow-ups into an existing CRM infrastructure alongside email pipelines, home service businesses systematically witness a terrifying 47.7% lift in total customer engagement. 
               </li>
             </ul>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> The "Email First" Operational Failure
+                <AlertTriangle /> The "Email First" Operational Failure
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Cease immediately treating SMS as an afterthought. It is not a secondary channel; it is the primary artery of modern consumer transaction. If your entire sales pipeline hinges on a homeowner logging into Gmail, navigating past 40 promotional emails from Amazon, finding your message, reading it, and formally replying—you are deploying a strategy engineered for 2012. You are asking a frustrated homeowner with a leaking roof to perform administrative labor. Stop doing that. A text message bypasses the algorithmic noise, bypasses the spam folder, and lands directly on their lock screen. 
@@ -217,15 +218,15 @@ export default function BlogPost() {
 
             <ul>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>Explicit Written Consent is Mandatory:</strong> A homeowner simply calling you to ask a question does NOT give you consent to market to them via SMS. The consent must be explicit and opt-in driven. If you use a contact form on your website for lead generation, you must include unchecked check-boxes that explicitly state: <em>"By checking this box, you agree to receive automated promotional SMS messages from Apex Builders at the phone number provided. Consent is not a condition of purchase. Reply STOP to cancel."</em> Do not try to be sneaky. Be legally robust.
               </li>
               <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>The Sacred STOP Command:</strong> Every single promotional text message you ever originate must include an immediate optical out. The CTIA mandates that carriers structurally recognize keywords like STOP, END, CANCEL, and QUIT. If your system does not automatically purge those users from the sending queue the micro-second they reply, you are in direct violation.
               </li>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Honor the Quiet Hours:</strong> You are strictly forbidden by federal regulation from deploying promotional text campaigns outside of the 8:00 AM to 9:00 PM window in the recipient's exact time zone. Sending a burst marketing text at 4:30 AM is not just annoying; it is an active legal liability. Any competent CRM you deploy will automatically safeguard these time gates.
               </li>
             </ul>
@@ -246,7 +247,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">The 160-Character Limit is a Weapon, Not a Cage</h4>
@@ -318,14 +319,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Audit My Communication Tech Stack <i className="fas fa-arrow-right ml-2"></i>
+              Audit My Communication Tech Stack <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" aria-label="Facebook" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" aria-label="Instagram" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" aria-label="YouTube" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Facebook" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" aria-label="Instagram" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" aria-label="YouTube" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

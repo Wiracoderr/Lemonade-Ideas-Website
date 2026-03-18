@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 export default function BrandingPricingSection() {
     const t = useTranslations("Branding");
@@ -42,19 +43,19 @@ export default function BrandingPricingSection() {
                             </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('basic_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('basic_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('basic_i3')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('basic_i4')}</span>
                                 </li>
                             </ul>
@@ -70,19 +71,19 @@ export default function BrandingPricingSection() {
                             </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('std_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('std_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('std_i3')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('std_i4')}</span>
                                 </li>
                             </ul>
@@ -98,15 +99,15 @@ export default function BrandingPricingSection() {
                             </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('prem_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('prem_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('prem_i3')}</span>
                                 </li>
                             </ul>
@@ -116,7 +117,7 @@ export default function BrandingPricingSection() {
                     {/* Bottom Get Started Button */}
                     <div className="px-6 md:px-8 pb-8 pt-2">
                         <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
-                            {t('price_btn')} <i className="fas fa-arrow-right"></i>
+                            {t('price_btn')} <ArrowRight />
                         </Link>
                     </div>
                 </div>

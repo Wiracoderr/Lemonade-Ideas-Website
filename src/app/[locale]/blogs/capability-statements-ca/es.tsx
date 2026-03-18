@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
             <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">15 min de lectura</span>
             </span>
           </div>
@@ -87,9 +88,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> Lo que no funciona: Presentaciones de 12 páginas
+                <AlertTriangle /> Lo que no funciona: Presentaciones de 12 páginas
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Los oficiales de adquisiciones, administradores de contratos y estimadores revisan cientos de paquetes de proveedores por semana. Si usted envía una enorme presentación de PowerPoint de 12 páginas, guardada en PDF, que detalla la historia de su compañía de techado desde 1985 hasta la fecha, con fotos de la primera camioneta del fundador, irá directamente a la papelera. Un Capability Statement gubernamental debe tener <strong>exactamente una página (por ambos lados como máximo)</strong>. La jerarquía de información debe ser legible de un vistazo por un administrador fatigado en menos de 15 segundos. Si no pueden encontrar su número UEI (Identificador Único de Entidad), su código CAGE o su clasificación NAICS en tres segundos, pierde la oportunidad. La brevedad no es solo preferida; es un mecanismo obligatorio de respeto en el sector de obras públicas.
@@ -203,15 +204,15 @@ export default function BlogPost() {
 
             <ul>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>Tipografía:</strong> Utilice de manera constante fuentes sin serif modernas y sólidas, fáciles de leer. Por ejemplo, variaciones de Inter, Arial, Helvetica o Roboto. Maneje sus jerarquías visuales solo a través de cambios de tamaño, color o grosor (bold); aplique mucho espacio en blanco, nunca lo abrume amontonando información para rellenar la página vacía.
               </li>
               <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Las Imágenes y su Autenticidad:</strong> Evite firmemente colocar fotografías aleatorias de banco de fotos en su trabajo. Resulta grosero para un líder experimentado en tecnología o equipo de proyecto y se siente deshonesto y poco genuino. Asigne un par de fotografías, nítidas, auténticas, dinámicas de alta resolución *de su propia fuerza laboral de verdad* vistiendo de verdad en un gran recinto californiano, visiblemente etiquetado con su marca. Tienen que reconocer los enormes camiones en un escenario polvoriento de desarrollo inmobiliario, de excavación y la suciedad en el equipo.
               </li>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                   <strong>Regla Formato Del Archivo Definitivo:</strong> Usted envía su pdf. Y por el amor a las adjudicaciones de licitaciones de gran valor, asegúrese de comprobar el peso del documento. Tiene que comprimir la versión para red con un límite que nunca supere los 2 MB, como es norma. Nadie en defensa perdonarán esos 15 megas de memoria llenos en su servidor hiper saturado al intentar abrir un "folleto".
               </li>
             </ul>
@@ -236,7 +237,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Apuntando Por Las Ramas De Agencia (Control de la Variante)</h4>
@@ -325,14 +326,14 @@ export default function BlogPost() {
               href="/es/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Solicite una Sesión Estratégica <i className="fas fa-arrow-right ml-2"></i>
+              Solicite una Sesión Estratégica <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

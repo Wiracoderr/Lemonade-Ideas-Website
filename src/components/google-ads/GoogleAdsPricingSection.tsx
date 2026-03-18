@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 export default function GoogleAdsPricingSection() {
     const t = useTranslations('GoogleAds');
@@ -90,19 +91,19 @@ export default function GoogleAdsPricingSection() {
                                 </div>
                                 <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card1_feat1')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card1_feat2')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card1_feat3')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card1_feat4')}</span>
                                     </li>
                                 </ul>
@@ -119,19 +120,19 @@ export default function GoogleAdsPricingSection() {
                                 </div>
                                 <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card2_feat1')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card2_feat2')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card2_feat3')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
+                                        <CheckCircle className="text-[#3AAB43] mr-4 text-lg mt-0.5" />
                                         <span className="leading-snug">{t('price_card2_feat4')}</span>
                                     </li>
                                 </ul>
@@ -141,7 +142,7 @@ export default function GoogleAdsPricingSection() {
                         {/* Bottom Get Started Button */}
                         <div className="px-6 md:px-8 pb-8 pt-2">
                             <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
-                                {t('price_btn')} <i className="fas fa-arrow-right"></i>
+                                {t('price_btn')} <ArrowRight />
                             </Link>
                         </div>
                     </div>

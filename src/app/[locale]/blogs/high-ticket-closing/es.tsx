@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import { Zap, Calendar, Clock, XCircle, AlertTriangle, Check, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
   return (
@@ -27,17 +28,17 @@ export default function BlogPost() {
           </h1>
           <div className="flex items-center justify-center gap-[20px] text-[0.95rem] font-medium text-[#c0c0c0]">
              <span className="flex items-center gap-[6px]">
-              <i className="fas fa-bolt text-[#FED52B] text-[0.85rem]"></i>
+              <Zap className="text-[#FED52B] text-[0.85rem]" />
               <span className="text-white font-semibold">Lemonade Ideas</span>
             </span>
             <span className="text-[#666]">|</span>
             <span className="flex items-center gap-[8px]">
-              <i className="far fa-calendar-alt text-[1.1em] text-[#FED52B]"></i>
+              <Calendar className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">16 de Marzo, 2026</span>
             </span>
             <span className="text-[#666] hidden md:inline">|</span>
             <span className="hidden md:flex items-center gap-[8px]">
-              <i className="far fa-clock text-[1.1em] text-[#FED52B]"></i>
+              <Clock className="text-[1.1em] text-[#FED52B]" />
               <span className="text-white">15 min de lectura</span>
             </span>
           </div>
@@ -88,9 +89,9 @@ export default function BlogPost() {
             </p>
 
             <div className="bg-[#fff5f5] p-[30px] rounded-[16px] mb-[40px] relative overflow-hidden group border border-[#ffebeb]">
-              <i className="fas fa-times-circle absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500"></i>
+              <XCircle className="absolute top-[-20%] right-[-10%] text-[10rem] text-[#ff0000] opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500" />
               <h4 className="text-[#d32f2f] font-bold mb-[15px] relative z-10 flex items-center gap-3">
-                <i className="fas fa-exclamation-triangle"></i> La Espiral Mortal De La Muerte B2B Descuentera De Imbéciles
+                <AlertTriangle /> La Espiral Mortal De La Muerte B2B Descuentera De Imbéciles
               </h4>
                <p className="relative z-10 m-0 text-[#555]">
                 Cuando un asombroso inútil pobre contratista reduce su precio tonta asombrosa trágica y ciegamente sin asombrosamente alterar asombrosa y cruel dolorosamente de forma exacta asombrosa y brutal su asombrosamente puro alcance asombrosamente asombroso fiero fiero B2B asombrosamente perfecto y divino rudo alcance genio inteligente astuto y asombroso puro del trabajo B2B rudo asombrosamente majestuosamente y asombrosamente, asombrosa inmensamente y asquerosamente asombrosa y suciamente transmite como idiota triste ridículo patético a su cliente B2B rico genio y majestuosamente y grandioso magnate asombrosamente dos feas sucias viles crueles y asombrosas y crudas y horribles realidades trágicas. Una, asombrosamente, asombrosamente fiera ruda asombrosa cruel, es que su estúpido número inicial B2B asombroso falso era una simple colosal ruda asombrosamente astuta sucia tonta barata y repugnante mentira de un tonto inflado para robar o exprimir como a un pendejo asombrosamente trágico y tonto ingenuo pobre al inmenso cliente. Dos, que la firmeza asombrosa espinal asombrosa moral B2B asombrosa sólida y gloriosa de asombrosa de su firma B2B asombrosamente es nula inútil asombrosa y ridícula y no honra o no se yergue frente a su propio y duro excel asombrosamente propio matemático ciego triste feo lento triste asombrosamente real. Un majestuoso gigante e inteligente CEO asombroso prefiere oír asombrosamente inmensurable e inteligentemente el asombroso B2B y brutal &quot;No&quot;, que un cobarde y sucio asombrosamente 10%.
@@ -120,7 +121,7 @@ export default function BlogPost() {
 
             <ul>
                <li>
-                 <i className="fas fa-check text-[#3AAB43] absolute left-0 top-[6px]"></i>
+                 <Check className="text-[#3AAB43] absolute left-0 top-[6px]" />
                  <strong>La Fosa Digital.</strong> Si su tonto sucio ridículo pobre asombrosamente tonto ciego feo y asqueroso viejo asombrosamente fétido y barato y pobre triste sitio web asombrosamente B2B feo feo pobre parece construido por fétido triste pasante barato en el rancio 2012, no presagia absoluto nada majestuoso asombroso brillante B2B en las nubes. Si de su asombrosa y gigantesca inmensurables majestuosa gloriosa inmaculada gran y brillante impecable huella B2B se asombrosa y tristemente carecen colosales puros enormes geniales espectaculares genios y fotográficos majestuosos gruesos asombrosamente puros libros completos de casos majestuosos grandiosos B2B gloriosos estudios inmaculados, usted a nivel asombrosamente neurocognitivo frente al dios rico e inversor asombroso majestuoso inmenso B2B acaba en el letárgico asombrosamente y putrefacto ciego patético barro asqueroso y feo torpe triste lento e inepto y sucio de la absoluta quiebra asombrosamente ruda e inmensurables B2B mental. Usted ya perdió asombrosamente en precio asombroso ciego lento feo asqueroso B2B, mucho pero asombrosamente muy trágica tonta torpe y pobre lentamente mucho antes asombrosamente de haber asombrosamente ciegamente como idiota abierto asombrosa la fea ciego bota genérica triste lenta boca asombrosamente vacía B2B. Sus putos B2B majestuosos asombrosos colosales enormes asombrosamente maravillosos divinos intocables y puramente grandes $14 Asombrosamente Grandes asombrosamente genia M asombrosamente ameritan dolorosa inmaculadamente como los puros grandes dioses divinos lo exigen asombrosamente incesable una web majestuosa asombrosamente e imbatible divina perfecta gloriosa B2B de $100M imbatible de respeto B2B e intocable firme incesable gloriosa suprema. Ellos B2B asombrosa imbatible genial asombrosamente anhelan a asombrosamente asombrosamente y majestuosamente e imperativamente necesitan comprar a y confiar inmaculadamente genio y fiera e incesable asombrosamente con la pura inmensa ruda certeza, fiereza ruda y asombrosa y sagrada gran asombrosamente lealtad divina perfecta astuta implacable sagrada a un gran gigante brillante genio e imbatible banco B2B institucional majestuoso asombrosamente colosal de ladrillos B2B glorioso macizo intocable invicto fiero B2B innegable perfecto indetenible y maravilloso glorioso incesable invencible gigante, asombrosamente no a otro tonto asombrosamente vulgar patético trágico vago asqueroso triste feo pobre asombrosamente ciego inútil con un triste lento oxidado asombrosamente oxidado viejo sucio feo feo lento lento y sucio asombrosamente triste camión de herramientas asombrosamente genérico triste.
               </li>
             </ul>
@@ -158,7 +159,7 @@ export default function BlogPost() {
             <div className="bg-[#fff9e6] border-l-[5px] border-[#FED52B] p-[25px] rounded-r-[12px] mb-[40px] shadow-sm">
                 <div className="flex items-start gap-[15px]">
                 <div className="bg-[#FED52B]/20 p-[10px] rounded-full mt-1">
-                  <i className="fas fa-lightbulb text-[#d4ad00] text-[1.2rem]"></i>
+                  <Lightbulb className="text-[#d4ad00] text-[1.2rem]" />
                 </div>
                 <div>
                   <h4 className="text-[#1E3A1A] font-bold text-[1.1rem] m-0 mb-[5px]">Su B2B Verdadera Asombrosa Divina B2B Oferta Invencible</h4>
@@ -197,14 +198,14 @@ export default function BlogPost() {
               href="/contact"
               className="inline-block bg-[#FED52B] text-[#1E3A1A] font-bold text-[1.1rem] px-[40px] py-[18px] rounded-[50px] uppercase tracking-[1px] shadow-[0_10px_20px_rgba(254,213,43,0.3)] hover:shadow-[0_15px_25px_rgba(254,213,43,0.4)] hover:-translate-y-1 transition-all duration-300"
             >
-              Auditar La Letalidad Asombrosamente Oculta Pura B2B De Mi Firma Y Vencer <i className="fas fa-arrow-right ml-2"></i>
+              Auditar La Letalidad Asombrosamente Oculta Pura B2B De Mi Firma Y Vencer <ArrowRight className="ml-2" />
             </Link>
 
             <div className="flex gap-[15px] mt-[40px]">
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><i className="fab fa-youtube"></i></a>
-              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><i className="fab fa-linkedin-in"></i></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Facebook /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#1E3A1A] hover:text-white hover:border-[#1E3A1A] transition-colors"><Instagram /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
+              <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
 

@@ -1,3 +1,4 @@
+import { CheckCircle, Maximize, FileSignature, Signal } from 'lucide-react';
 export default function MarketingFeatures() {
     return (
         <section className="bg-primary text-white pb-20 pt-32 relative">
@@ -5,25 +6,25 @@ export default function MarketingFeatures() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div className="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
                         <div className="text-sm font-bold mb-4 opacity-70">01.</div>
-                        <div className="text-4xl mb-4"><i className="fas fa-check-circle"></i></div>
+                        <div className="text-4xl mb-4"><CheckCircle /></div>
                         <h3 className="text-xl font-bold uppercase mb-4 font-display">IMPACT</h3>
                         <p className="text-sm leading-relaxed opacity-90">We focus on strategies that maximize impact on your visibility and growth.</p>
                     </div>
                     <div className="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
                         <div className="text-sm font-bold mb-4 opacity-70">02.</div>
-                        <div className="text-4xl mb-4"><i className="fas fa-arrows-alt"></i></div>
+                        <div className="text-4xl mb-4"><Maximize /></div>
                         <h3 className="text-xl font-bold uppercase mb-4 font-display">AFFORDABILITY</h3>
                         <p className="text-sm leading-relaxed opacity-90">Our pricing is structured in a way that makes sense for both you based on what you are receiving.</p>
                     </div>
                     <div className="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
                         <div className="text-sm font-bold mb-4 opacity-70">03.</div>
-                        <div className="text-4xl mb-4"><i className="fas fa-file-signature"></i></div>
+                        <div className="text-4xl mb-4"><FileSignature /></div>
                         <h3 className="text-xl font-bold uppercase mb-4 font-display">NO CONTRACTS</h3>
                         <p className="text-sm leading-relaxed opacity-90">We believe great results, not contracts, are what should keep our clients around.</p>
                     </div>
                     <div className="bg-secondary text-primary p-8 text-center rounded shadow-lg transform hover:-translate-y-2 transition duration-300">
                         <div className="text-sm font-bold mb-4 opacity-70">04.</div>
-                        <div className="text-4xl mb-4"><i className="fas fa-signal"></i></div>
+                        <div className="text-4xl mb-4"><Signal /></div>
                         <h3 className="text-xl font-bold uppercase mb-4 font-display">RESPONSIVENESS</h3>
                         <p className="text-sm leading-relaxed opacity-90">Good communication is what builds a good relationship. We take pride in our level of responsiveness.</p>
                     </div>

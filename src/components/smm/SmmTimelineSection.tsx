@@ -16,7 +16,7 @@ export default function SmmTimelineSection() {
                                 alt="Building phase" 
                                 fill 
                                 className="object-cover" 
-                                sizes="(max-width: 768px) 100vw, 50vw" 
+                                sizes="(max-width: 768px) 400px, 30vw" 
                                 loading="lazy"
                             />
                         </div>
@@ -26,7 +26,7 @@ export default function SmmTimelineSection() {
                                 alt="Content phase" 
                                 fill 
                                 className="object-cover" 
-                                sizes="50vw" 
+                                sizes="30vw" 
                                 loading="lazy"
                             />
                         </div>
@@ -36,7 +36,7 @@ export default function SmmTimelineSection() {
                                 alt="Scaling phase" 
                                 fill 
                                 className="object-cover" 
-                                sizes="50vw" 
+                                sizes="30vw" 
                                 loading="lazy"
                             />
                         </div>

@@ -31,7 +31,7 @@ export default function SmmHeroSection() {
           <picture>
             <source
               media="(max-width: 768px)"
-              srcSet="/images/smm-bg-mobile.webp"
+              srcSet="/images/smm-bg-mobile-opt.webp"
             />
             <img
               src="/images/smm-bg.webp"

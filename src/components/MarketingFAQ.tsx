@@ -1,3 +1,4 @@
+import { ChevronDown } from 'lucide-react';
 export default function MarketingFAQ() {
     return (
         <section className="py-24 bg-surface-light dark:bg-surface-dark relative overflow-hidden">
@@ -12,29 +13,29 @@ export default function MarketingFAQ() {
                     <div className="space-y-4">
                         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
                             <span className="font-bold text-sm text-gray-800 dark:text-gray-200">How much do your services cost?</span>
-                            <i className="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+                            <ChevronDown className="text-primary dark:text-white group-hover:text-secondary transition" />
                         </div>
                         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
                             <span className="font-bold text-sm text-gray-800 dark:text-gray-200">What makes you different than other companies?</span>
-                            <i className="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+                            <ChevronDown className="text-primary dark:text-white group-hover:text-secondary transition" />
                         </div>
                         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
                             <span className="font-bold text-sm text-gray-800 dark:text-gray-200">How fast can you get me on page 1 of Google?</span>
-                            <i className="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+                            <ChevronDown className="text-primary dark:text-white group-hover:text-secondary transition" />
                         </div>
                     </div>
                     <div className="space-y-4">
                         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
                             <span className="font-bold text-sm text-gray-800 dark:text-gray-200">Do you provide a free consultation?</span>
-                            <i className="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+                            <ChevronDown className="text-primary dark:text-white group-hover:text-secondary transition" />
                         </div>
                         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
                             <span className="font-bold text-sm text-gray-800 dark:text-gray-200">Do you offer performance-based marketing services?</span>
-                            <i className="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+                            <ChevronDown className="text-primary dark:text-white group-hover:text-secondary transition" />
                         </div>
                         <div className="bg-white dark:bg-gray-800 p-4 rounded shadow-sm flex justify-between items-center cursor-pointer group">
                             <span className="font-bold text-sm text-gray-800 dark:text-gray-200">Do you require long-term contracts?</span>
-                            <i className="fas fa-chevron-down text-primary dark:text-white group-hover:text-secondary transition"></i>
+                            <ChevronDown className="text-primary dark:text-white group-hover:text-secondary transition" />
                         </div>
                     </div>
                 </div>

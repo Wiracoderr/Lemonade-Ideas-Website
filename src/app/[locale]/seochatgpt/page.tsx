@@ -6,6 +6,7 @@ import { Link } from '@/i18n/routing';
 import FaqSection from "@/components/seo/FaqSection";
 import CTASection from "@/components/seo/CTASection";
 import { useTranslations } from 'next-intl';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 // SEO metadata needs to be moved if we use "use client", but we can just use a separate layout/page pattern or accept the warning.
 // Actually, in Next.js app router, you can't export metadata from a client component.
@@ -475,19 +476,19 @@ export default function SeoChatGptPage() {
                           </div>
                           <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_startup_f1')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_startup_f2')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_startup_f3')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200 border-none">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_startup_f4')}</span>
                               </li>
                           </ul>
@@ -504,19 +505,19 @@ export default function SeoChatGptPage() {
                           </div>
                           <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_monthly_f1')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_monthly_f2')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_monthly_f3')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200 border-none">
-                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
+                                  <CheckCircle className="text-[#3AAB43] mr-4 text-lg" />
                                   <span>{t('pricing_monthly_f4')}</span>
                               </li>
                           </ul>
@@ -526,7 +527,7 @@ export default function SeoChatGptPage() {
                   {/* Bottom Get Started Button */}
                   <div className="px-6 md:px-8 pb-8 pt-2">
                       <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
-                          {t('pricing_get_started')} <i className="fas fa-arrow-right"></i>
+                          {t('pricing_get_started')} <ArrowRight />
                       </Link>
                   </div>
               </div>

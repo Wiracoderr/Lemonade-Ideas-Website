@@ -2,6 +2,7 @@
 
 import React from "react";
 import { useTranslations } from 'next-intl';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 
 // A helper component to wrap text safely without linking "SEO" anymore as requested
 const SEOText = ({ children }: { children: React.ReactNode }) => {
@@ -49,19 +50,19 @@ export default function PricingSection() {
                             </div>
                             <ul className="space-y-4 text-[15px] text-gray-600 dark:text-gray-400 font-[Roboto] flex-grow">
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span><SEOText>{t('seo_pkg1_i1')}</SEOText></span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span>{t('seo_pkg1_i2')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span>{t('seo_pkg1_i3')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800 border-none">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span><SEOText>{t('seo_pkg1_i4')}</SEOText></span>
                                 </li>
                             </ul>
@@ -78,19 +79,19 @@ export default function PricingSection() {
                             </div>
                             <ul className="space-y-4 text-[15px] text-gray-600 dark:text-gray-400 font-[Roboto] flex-grow">
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span>{t('seo_pkg2_i1')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span>{t('seo_pkg2_i2')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span>{t('seo_pkg2_i3')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800 border-none">
-                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
+                                    <CheckCircle className="text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg" />
                                     <span>{t('seo_pkg2_i4')}</span>
                                 </li>
                             </ul>
@@ -100,7 +101,7 @@ export default function PricingSection() {
                     {/* Bottom Get Started Button */}
                     <div className="px-6 md:px-8 pb-8 pt-2">
                         <a href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
-                            {t('seo_price_btn')} <i className="fas fa-arrow-right"></i>
+                            {t('seo_price_btn')} <ArrowRight />
                         </a>
                     </div>
                 </div>

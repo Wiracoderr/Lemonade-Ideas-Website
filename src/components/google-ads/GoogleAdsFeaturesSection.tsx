@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslations } from 'next-intl';
+import { ClipboardCheck, FileText, CalendarCheck, Network, Settings, Laptop } from 'lucide-react';
 
 export default function GoogleAdsFeaturesSection() {
     const t = useTranslations('GoogleAds');
@@ -19,7 +20,7 @@ export default function GoogleAdsFeaturesSection() {
                     {/* Card 1 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-clipboard-check"></i>
+                            <ClipboardCheck />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_card1_title')}
@@ -32,7 +33,7 @@ export default function GoogleAdsFeaturesSection() {
                     {/* Card 2 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-file-contract"></i>
+                            <FileText />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_card2_title')}
@@ -45,7 +46,7 @@ export default function GoogleAdsFeaturesSection() {
                     {/* Card 3 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-calendar-check"></i>
+                            <CalendarCheck />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_card3_title')}
@@ -58,7 +59,7 @@ export default function GoogleAdsFeaturesSection() {
                     {/* Card 4 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-sitemap"></i>
+                            <Network />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_card4_title')}
@@ -71,7 +72,7 @@ export default function GoogleAdsFeaturesSection() {
                     {/* Card 5 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-cogs"></i>
+                            <Settings />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_card5_title')}
@@ -84,7 +85,7 @@ export default function GoogleAdsFeaturesSection() {
                     {/* Card 6 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
                         <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
-                            <i className="fas fa-laptop-code"></i>
+                            <Laptop />
                         </div>
                         <h3 className="font-[Oswald] font-bold text-[22px] uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('feat_card6_title')}
