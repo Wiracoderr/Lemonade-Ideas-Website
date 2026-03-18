@@ -40,7 +40,7 @@ export default function SmmCtaSection() {
 
                 <a
                     href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
-                    className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5"
+                    className="bg-[#facc15] text-[#1E3A1A] font-[Oswald] font-bold uppercase px-6 py-4 rounded-xl shadow-[0_0_30px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#1E3A1A] hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center mx-auto tracking-wide group gap-5"
                 >
                     <div className="relative w-[50px] h-[50px] shrink-0">
                         <Image src="/images/icon-call.svg" alt="Phone Outline Icon" fill className="object-contain" loading="lazy" />

@@ -22,10 +22,10 @@ export default function SmmFastTrackSection() {
                 </div>
                 <div className="md:w-1/2">
                     <div className="pl-6 border-l-8 border-[#0a2e15]">
-                        <h2 className="text-3xl font-extrabold text-[#0d2a1a] uppercase leading-none mb-4">
+                        <h2 className="text-3xl font-extrabold text-[#1E3A1A] uppercase leading-none mb-4">
                             Get on the fast track to more leads and sales
                         </h2>
-                        <p className="text-gray-600 leading-relaxed mb-6 font-medium text-[15px]">
+                        <p className="text-[#1E3A1A] leading-relaxed mb-6 font-medium text-[15px]">
                             With Social Media Management, you can showcase your business where it matters most—on the platforms your audience uses daily. We&apos;ll create and manage your campaigns the right way, crafting engaging content and strategies to boost your reach, engagement, and conversions. Plus, we&apos;ll continuously optimize your social media presence to deliver even better results over time, all at an affordable price.
                         </p>
                     </div>

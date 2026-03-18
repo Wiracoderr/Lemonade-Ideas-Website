@@ -31,8 +31,8 @@ export default function WebsiteHeroSection() {
                         sizes="100vw"
                         priority
                     />
-                    {/* Dark Green overlay at 80% opacity to give a strong green tint */}
-                    <div className="absolute inset-0 bg-[#143d1f]/80"></div>
+                    {/* Dark Green overlay at 95% opacity to counteract the brighter image and match SEO tint visually */}
+                    <div className="absolute inset-0 bg-[#143d1f]/95"></div>
                 </div>
 
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0"></div>

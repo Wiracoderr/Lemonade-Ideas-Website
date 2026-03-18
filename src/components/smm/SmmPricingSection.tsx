@@ -13,12 +13,12 @@ export default function SmmPricingSection() {
                         <span className="text-7xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-100 tracking-widest absolute select-none pointer-events-none opacity-80 whitespace-nowrap">
                             {t('pricing_watermark')}
                         </span>
-                        <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#143d1f] tracking-tight text-center">
+                        <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#1E3A1A] tracking-tight text-center">
                             {t('pricing_title')}
                         </h2>
                     </div>
 
-                    <p className="text-[#333] w-full text-[15px] md:text-[16.8px] font-[Roboto] text-center tracking-wide leading-[1.8]">
+                    <p className="text-[#1E3A1A] w-full text-[15px] md:text-[16.8px] font-[Roboto] text-center tracking-wide leading-[1.8]">
                         {t('pricing_subtitle')}
                     </p>
                 </div>
@@ -36,26 +36,26 @@ export default function SmmPricingSection() {
                         {/* Column 1: Starter */}
                         <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
                             <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
-                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('pricing_starter_title')}</h4>
+                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-[#1E3A1A] mb-4 tracking-wide">{t('pricing_starter_title')}</h4>
                                 <div className="flex justify-center items-center gap-2">
-                                    <span className="text-4xl md:text-5xl font-bold text-gray-900 font-[Oswald]">{t('pricing_starter_price')}</span>
+                                    <span className="text-4xl md:text-5xl font-bold text-[#1E3A1A] font-[Oswald]">{t('pricing_starter_price')}</span>
                                 </div>
                             </div>
-                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-gray-600 font-[Roboto] flex-grow">
+                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_starter_feature_1')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_starter_feature_2')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_starter_feature_3')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_starter_feature_4')}</span>
                                 </li>
                             </ul>
@@ -64,26 +64,26 @@ export default function SmmPricingSection() {
                         {/* Column 2: Growth */}
                         <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
                             <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
-                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('pricing_growth_title')}</h4>
+                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-[#1E3A1A] mb-4 tracking-wide">{t('pricing_growth_title')}</h4>
                                 <div className="flex justify-center items-center gap-2">
-                                    <span className="text-4xl md:text-5xl font-bold text-gray-900 font-[Oswald]">{t('pricing_growth_price')}</span>
+                                    <span className="text-4xl md:text-5xl font-bold text-[#1E3A1A] font-[Oswald]">{t('pricing_growth_price')}</span>
                                 </div>
                             </div>
-                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-gray-600 font-[Roboto] flex-grow">
+                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_growth_feature_1')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_growth_feature_2')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_growth_feature_3')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_growth_feature_4')}</span>
                                 </li>
                             </ul>
@@ -92,30 +92,30 @@ export default function SmmPricingSection() {
                         {/* Column 3: Comprehensive */}
                         <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
                             <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
-                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('pricing_comp_title')}</h4>
+                                <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-[#1E3A1A] mb-4 tracking-wide">{t('pricing_comp_title')}</h4>
                                 <div className="flex justify-center items-center gap-2">
-                                    <span className="text-4xl md:text-5xl font-bold text-gray-900 font-[Oswald]">{t('pricing_comp_price')}</span>
+                                    <span className="text-4xl md:text-5xl font-bold text-[#1E3A1A] font-[Oswald]">{t('pricing_comp_price')}</span>
                                 </div>
                             </div>
-                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-gray-600 font-[Roboto] flex-grow">
+                            <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_comp_feature_1')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_comp_feature_2')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_comp_feature_3')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_comp_feature_4')}</span>
                                 </li>
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                    <i className="fas fa-check-circle text-[#2d7a36] mr-3 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-3 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('pricing_comp_feature_5')}</span>
                                 </li>
                             </ul>

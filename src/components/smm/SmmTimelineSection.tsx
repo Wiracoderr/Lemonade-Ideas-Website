@@ -46,33 +46,33 @@ export default function SmmTimelineSection() {
                     <div className="space-y-8 flex flex-col justify-start">
                         {/* Heading & Intro */}
                         <div className="pl-6 border-l-8 border-[#0a2e15] mb-6">
-                            <h2 className="text-[28px] lg:text-[32px] font-black text-[#0d2a1a] uppercase leading-[1.1]">
+                            <h2 className="text-[28px] lg:text-[32px] font-black text-[#1E3A1A] uppercase leading-[1.1]">
                                 {t('timeline_title')}
                             </h2>
-                            <p className="text-[15px] text-gray-700 mt-4 font-medium leading-[1.5]">
+                            <p className="text-[15px] text-[#1E3A1A] mt-4 font-medium leading-[1.5]">
                                 {t('timeline_desc')}
                             </p>
                         </div>
                         
                         <div className="space-y-10 pl-2">
                             <div>
-                                <h3 className="font-black text-[#0d2a1a] uppercase text-lg mb-2">{t('timeline_month_1_title')}</h3>
-                                <p className="text-[15px] font-medium text-gray-600 leading-[1.6]">{t('timeline_month_1_desc')}</p>
-                                <p className="text-[12px] font-bold text-gray-500 mt-3 tracking-wide uppercase">{t('timeline_month_1_checkin')}</p>
+                                <h3 className="font-black text-[#1E3A1A] uppercase text-lg mb-2">{t('timeline_month_1_title')}</h3>
+                                <p className="text-[15px] font-medium text-[#1E3A1A] leading-[1.6]">{t('timeline_month_1_desc')}</p>
+                                <p className="text-[12px] font-bold text-[#1E3A1A] mt-3 tracking-wide uppercase">{t('timeline_month_1_checkin')}</p>
                             </div>
                             <div>
-                                <h3 className="font-black text-[#0d2a1a] uppercase text-lg mb-2">{t('timeline_month_2_title')}</h3>
-                                <p className="text-[15px] font-medium text-gray-600 leading-[1.6]">{t('timeline_month_2_desc')}</p>
-                                <p className="text-[12px] font-bold text-gray-500 mt-3 tracking-wide uppercase">{t('timeline_month_2_checkin')}</p>
+                                <h3 className="font-black text-[#1E3A1A] uppercase text-lg mb-2">{t('timeline_month_2_title')}</h3>
+                                <p className="text-[15px] font-medium text-[#1E3A1A] leading-[1.6]">{t('timeline_month_2_desc')}</p>
+                                <p className="text-[12px] font-bold text-[#1E3A1A] mt-3 tracking-wide uppercase">{t('timeline_month_2_checkin')}</p>
                             </div>
                             <div>
-                                <h3 className="font-black text-[#0d2a1a] uppercase text-lg mb-2">{t('timeline_month_3_title')}</h3>
-                                <p className="text-[15px] font-medium text-gray-600 leading-[1.6]">{t('timeline_month_3_desc')}</p>
-                                <p className="text-[12px] font-bold text-gray-500 mt-3 tracking-wide uppercase">{t('timeline_month_3_checkin')}</p>
+                                <h3 className="font-black text-[#1E3A1A] uppercase text-lg mb-2">{t('timeline_month_3_title')}</h3>
+                                <p className="text-[15px] font-medium text-[#1E3A1A] leading-[1.6]">{t('timeline_month_3_desc')}</p>
+                                <p className="text-[12px] font-bold text-[#1E3A1A] mt-3 tracking-wide uppercase">{t('timeline_month_3_checkin')}</p>
                             </div>
                             <div>
-                                <h3 className="font-black text-[#0d2a1a] uppercase text-lg mb-2">{t('timeline_month_4_title')}</h3>
-                                <p className="text-[15px] font-medium text-gray-600 leading-[1.6]">{t('timeline_month_4_desc')}</p>
+                                <h3 className="font-black text-[#1E3A1A] uppercase text-lg mb-2">{t('timeline_month_4_title')}</h3>
+                                <p className="text-[15px] font-medium text-[#1E3A1A] leading-[1.6]">{t('timeline_month_4_desc')}</p>
                             </div>
                         </div>
                     </div>

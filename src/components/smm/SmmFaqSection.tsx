@@ -46,11 +46,11 @@ export default function SmmFaqSection() {
             <div className="max-w-4xl mx-auto relative z-10">
                 <div className="text-center mb-16 relative">
                     <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none -mt-4">
-                        <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-500 tracking-tighter whitespace-nowrap">
+                        <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-[#1E3A1A] tracking-tighter whitespace-nowrap">
                             {t('faq_watermark')}
                         </span>
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white relative z-10 tracking-tight">
+                    <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#1E3A1A] dark:text-white relative z-10 tracking-tight">
                         {t('faq_title')}
                     </h2>
                 </div>
@@ -66,7 +66,7 @@ export default function SmmFaqSection() {
                                     className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#facc15]'}`}
                                     onClick={() => toggleFaq(index)}
                                 >
-                                    <span className="font-[Oswald] font-bold text-base uppercase text-gray-800 dark:text-gray-200 tracking-wide pr-4">
+                                    <span className="font-[Oswald] font-bold text-base uppercase text-[#1E3A1A] dark:text-gray-200 tracking-wide pr-4">
                                         {faq.question}
                                     </span>
                                     <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#143d1f] text-white' : 'bg-[#143d1f] text-white group-hover:text-[#facc15]'}`}>

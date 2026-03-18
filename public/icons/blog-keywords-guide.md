@@ -2,9 +2,6 @@
 
 ## Pillar 1: Sales & Pipeline (Focus: Closing Deals, High-Ticket Clients)
 
-- Prevailing wage marketing
-- Design build outreach
-- Trade show marketing
 - Pipeline velocity builders
 - Fractional CMO construction
 
