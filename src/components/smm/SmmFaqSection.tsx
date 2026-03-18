@@ -63,13 +63,13 @@ export default function SmmFaqSection() {
                             <div key={index} className="flex flex-col rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 transition-all h-fit">
                                 {/* Question Button */}
                                 <div
-                                    className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#facc15]'}`}
+                                    className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#FED52B]'}`}
                                     onClick={() => toggleFaq(index)}
                                 >
                                     <span className="font-[Oswald] font-bold text-base uppercase text-[#1E3A1A] dark:text-gray-200 tracking-wide pr-4">
                                         {faq.question}
                                     </span>
-                                    <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#143d1f] text-white' : 'bg-[#143d1f] text-white group-hover:text-[#facc15]'}`}>
+                                    <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#1E3A1A] text-white' : 'bg-[#1E3A1A] text-white group-hover:text-[#FED52B]'}`}>
                                         <i className={`fas fa-chevron-down transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}></i>
                                     </div>
                                 </div>
@@ -78,7 +78,7 @@ export default function SmmFaqSection() {
                                 <div
                                     className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
                                 >
-                                    <div className="overflow-hidden bg-[#143d1f] text-white">
+                                    <div className="overflow-hidden bg-[#1E3A1A] text-white">
                                         <div className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner">
                                             {faq.answer}
                                         </div>

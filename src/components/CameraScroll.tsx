@@ -243,7 +243,7 @@ export default function CameraScroll() {
                 >
                     <h1 className="text-[3.5rem] md:text-[5.4rem] font-black text-white tracking-wide leading-[1.1] mt-16 md:mt-0 drop-shadow-lg">
                         {t('camera_headline_1')} <br />
-                        <span className="text-[2.9rem] md:text-[4.2rem] text-yellow-400 font-light italic mt-2 block drop-shadow-md">
+                        <span className="text-[2.9rem] md:text-[4.2rem] text-[#FED52B] font-light italic mt-2 block drop-shadow-md">
                             {t('camera_headline_2')}
                         </span>
                     </h1>

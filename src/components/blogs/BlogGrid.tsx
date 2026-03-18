@@ -126,9 +126,11 @@ export default function BlogGrid({ initialBlogs }: { initialBlogs: BlogPost[] })
                                 />
                             </div>
                             <div className="p-[25px] flex-grow flex flex-col">
-                                <h3 className="text-[#1E3A1A] text-[1.25rem] font-bold mb-[15px] leading-[1.4] line-clamp-2">
-                                    {blog.title}
-                                </h3>
+                                <Link href={`/blogs/${blog.slug}`} className="block" title={blog.title}>
+                                    <h3 className="text-[#1E3A1A] text-[1.25rem] font-bold mb-[15px] leading-[1.4] line-clamp-2 hover:text-[#3AAB43] transition-colors">
+                                        {blog.title}
+                                    </h3>
+                                </Link>
                                 <p className="text-[#555] text-[0.95rem] leading-[1.6] mb-[20px] flex-grow line-clamp-3">
                                     {blog.excerpt || t('excerpt_fallback', { title: blog.title.toLowerCase() })}
                                 </p>

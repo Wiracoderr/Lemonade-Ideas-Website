@@ -32,8 +32,8 @@ export default function GoogleAdsBenefitsSection() {
 
                 {/* Text Side */}
                 <div className="w-full max-w-[550px]">
-                    <div className="border-l-[5px] border-[#38b04d] pl-5 mb-6">
-                        <h2 className="text-[28px] md:text-[36px] font-[Oswald] font-bold uppercase text-[#0a2e15] leading-[1.1] tracking-normal">
+                    <div className="border-l-[5px] border-[#3AAB43] pl-5 mb-6">
+                        <h2 className="text-[28px] md:text-[36px] font-[Oswald] font-bold uppercase text-[#1E3A1A] leading-[1.1] tracking-normal">
                             {t('benefits_title')}
                         </h2>
                     </div>

@@ -15,7 +15,7 @@ export default function SmmHeroSection() {
           {t("hero_banner")}
         </div>
         <button
-          className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md"
+          className="bg-[#1E3A1A] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-[#3AAB43] transition shadow-md"
           onClick={() => setIsPlaying(true)}
         >
           {t("hero_watch_video")}
@@ -23,7 +23,7 @@ export default function SmmHeroSection() {
       </div>
 
       <header
-        className="bg-[#143d1f] text-white relative overflow-hidden font-sans"
+        className="bg-[#1E3A1A] text-white relative overflow-hidden font-sans"
         data-purpose="hero"
       >
         {/* Background Image & Overlay */}
@@ -41,7 +41,7 @@ export default function SmmHeroSection() {
             />
           </picture>
           {/* Dark Green overlay at 80% opacity to give a strong green tint */}
-          <div className="absolute inset-0 bg-[#143d1f]/80"></div>
+          <div className="absolute inset-0 bg-[#1E3A1A]/80"></div>
         </div>
 
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0"></div>

@@ -45,7 +45,7 @@ export default function SmmTimelineSection() {
                     {/* Right Side: Content */}
                     <div className="space-y-8 flex flex-col justify-start">
                         {/* Heading & Intro */}
-                        <div className="pl-6 border-l-8 border-[#0a2e15] mb-6">
+                        <div className="pl-6 border-l-8 border-[#1E3A1A] mb-6">
                             <h2 className="text-[28px] lg:text-[32px] font-black text-[#1E3A1A] uppercase leading-[1.1]">
                                 {t('timeline_title')}
                             </h2>

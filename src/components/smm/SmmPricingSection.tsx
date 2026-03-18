@@ -25,7 +25,7 @@ export default function SmmPricingSection() {
 
                 <div className="bg-[#f0f9fa] rounded-2xl shadow-xl overflow-hidden border border-gray-100 mt-12 w-full max-w-[1400px]">
                     {/* Top Green Banner */}
-                    <div className="bg-[#38a149] py-5 text-center shadow-inner">
+                    <div className="bg-[#3AAB43] py-5 text-center shadow-inner">
                         <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
                             {t('pricing_plan_banner')}
                         </h3>
@@ -124,7 +124,7 @@ export default function SmmPricingSection() {
 
                     {/* Bottom Get Started Button */}
                     <div className="px-6 md:px-8 pb-8 pt-2">
-                        <Link href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
+                        <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
                             {t('pricing_get_started')} <i className="fas fa-arrow-right"></i>
                         </Link>
                     </div>

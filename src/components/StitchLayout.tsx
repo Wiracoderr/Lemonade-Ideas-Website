@@ -68,7 +68,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     >
                         <path
                             d="M1245.42,165.26c-54.04-66.95-121.2-122.75-197.52-163.48H449C246.54,109.83,108.65,324.01,108.65,570.59s134.59,455.59,333.05,564.86l-1.25,1.51h1610.79L1245.84,164.74l-.43.52Z"
-                            fill="#1e3a29"
+                            fill="#1E3A1A"
                         />
                     </svg>
                 </div>
@@ -97,7 +97,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         <h2 className="text-[2.5rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1] mb-8 uppercase tracking-tight relative z-10">
                             {t.rich('hero_headline', {
                                 br: () => <br />,
-                                highlight: (chunks) => <span className="text-[#ffcc33]">{chunks}</span>
+                                highlight: (chunks) => <span className="text-[#FED52B]">{chunks}</span>
                             })}
                         </h2>
                         <p className="text-white text-[15px] font-bold tracking-wide mb-12 opacity-100 drop-shadow-md">
@@ -106,10 +106,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                         {/* 5. Clean Buttons */}
                         <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
-                            <a className="bg-white text-[#1e3a29] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
+                            <a className="bg-white text-[#1E3A1A] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
                                 {t('btn_speakExpert')}
                             </a>
-                            <Link className="text-white hover:text-[#ffcc33] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="/pricing">
+                            <Link className="text-white hover:text-[#FED52B] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="/pricing">
                                 {t('btn_seePricing')}
                             </Link>
                         </div>
@@ -133,7 +133,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     {/* Subtle play indicator instead of giant red block */}
                                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                         <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                            <svg className="w-8 h-8 text-[#1e3a29] fill-current ml-1" viewBox="0 0 24 24">
+                                            <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
                                                 <path d="M8 5v14l11-7z" />
                                             </svg>
                                         </div>
@@ -159,7 +159,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     <span className="text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 opacity-100 uppercase leading-none">{t('watermark_services')}</span>
                 </div>
                 <div className="container mx-auto px-4 relative z-10">
-                    <h2 className="text-4xl lg:text-5xl font-display font-bold text-center text-[#1e3a29] dark:text-white mb-16 uppercase">
+                    <h2 className="text-4xl lg:text-5xl font-display font-bold text-center text-[#1E3A1A] dark:text-white mb-16 uppercase">
                         {t('services_title')}
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -177,7 +177,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             {/* Bottom 20% blur/gradient for text legibility like Stitch */}
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">{t('service_seo')}</h3>
+                                <h3 className="text-xl font-display font-bold text-[#FED52B] mb-2">{t('service_seo')}</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">{t('btn_learnMore')}</span>
                             </div>
                         </Link>
@@ -186,7 +186,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">{t('service_seoChatgpt')}</h3>
+                                <h3 className="text-xl font-display font-bold text-[#FED52B] mb-2">{t('service_seoChatgpt')}</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">{t('btn_learnMore')}</span>
                             </div>
                         </Link>
@@ -195,7 +195,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">{t('service_googleAds')}</h3>
+                                <h3 className="text-xl font-display font-bold text-[#FED52B] mb-2">{t('service_googleAds')}</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">{t('btn_learnMore')}</span>
                             </div>
                         </Link>
@@ -210,7 +210,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">{t('service_website')}</h3>
+                                <h3 className="text-xl font-display font-bold text-[#FED52B] mb-2">{t('service_website')}</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">{t('btn_learnMore')}</span>
                             </div>
                         </Link>
@@ -225,7 +225,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">{t('service_smm')}</h3>
+                                <h3 className="text-xl font-display font-bold text-[#FED52B] mb-2">{t('service_smm')}</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">{t('btn_learnMore')}</span>
                             </div>
                         </Link>
@@ -240,7 +240,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
-                                <h3 className="text-xl font-display font-bold text-yellow-400 mb-2">{t('service_branding')}</h3>
+                                <h3 className="text-xl font-display font-bold text-[#FED52B] mb-2">{t('service_branding')}</h3>
                                 <span className="text-white text-sm font-bold uppercase tracking-wider border-b border-transparent group-hover:border-white pb-1 transition">{t('btn_learnMore')}</span>
                             </div>
                         </Link>
@@ -249,7 +249,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
             </section>
 
             {/* Section 2 (Guaranteed Ranking Full Bleed) */}
-            <div className="relative w-full mt-10 bg-[#1e3a29]">
+            <div className="relative w-full mt-10 bg-[#1E3A1A]">
 
                 {/* DESKTOP VERSION (HTML + CSS Layout) - True Elementor Replica */}
                 <div className="hidden lg:flex relative w-full overflow-hidden bg-[#ebf0f2] py-12 xl:py-20">
@@ -297,7 +297,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">{t('seoChatgpt_bullet5')}</li>
                                 </ul>
                                 <div>
-                                    <Link className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">
+                                    <Link className="inline-block bg-[#f4f7f6] text-[#1E3A1A] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">
                                         {t('btn_learnMoreUpper')}
                                     </Link>
                                 </div>
@@ -307,7 +307,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                 </div>
 
                 {/* MOBILE VERSION (HTML Text) - Keeping exactly as was */}
-                <div className="lg:hidden relative w-full min-h-[550px] flex items-center overflow-hidden bg-[#1e3a29]">
+                <div className="lg:hidden relative w-full min-h-[550px] flex items-center overflow-hidden bg-[#1E3A1A]">
                     <div className="absolute top-0 left-0 w-[120%] h-full z-0">
                         <Image
                             src="/images/Home-Image-SEO.avif"
@@ -335,7 +335,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>{t('seoChatgpt_bullet4')}</span></li>
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>{t('seoChatgpt_bullet5')}</span></li>
                                 </ul>
-                                <Link className="inline-block bg-[#f4f7f6] text-[#1e3a29] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">{t('btn_learnMoreUpper')}</Link>
+                                <Link className="inline-block bg-[#f4f7f6] text-[#1E3A1A] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">{t('btn_learnMoreUpper')}</Link>
                             </div>
                         </div>
                     </div>
@@ -346,7 +346,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                 <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
                     <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
                         <div className="border-l-0 lg:border-l-4 border-green-600 pl-0 lg:pl-6 mb-8 w-full">
-                            <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#1e3a29] dark:text-white uppercase mb-4">{t('ppc_title')}</h2>
+                            <h2 className="text-3xl lg:text-4xl font-display font-bold text-[#1E3A1A] dark:text-white uppercase mb-4">{t('ppc_title')}</h2>
                             <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed text-sm mx-auto lg:mx-0">
                                 {t('ppc_desc1')}
                             </p>
@@ -365,7 +365,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </div>
 
-                        <Link className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="/google-ads">{t('btn_learnMore')}</Link>
+                        <Link className="bg-[#1E3A1A] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="/google-ads">{t('btn_learnMore')}</Link>
 
                         {/* MOBILE-ONLY IMAGE INSERTION (Laptop with charts) */}
                         <div className="block lg:hidden relative w-full rounded-2xl overflow-hidden shadow-xl aspect-[4/3] mt-2 border-2 border-transparent">
@@ -399,7 +399,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     <span className="text-[8rem] lg:text-[12rem] font-display font-bold text-gray-100 dark:text-gray-800 uppercase leading-none">{t('watermark_portfolio')}</span>
                 </div>
                 <div className="container mx-auto px-4 relative z-10 text-center">
-                    <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#1e3a29] dark:text-white mb-4 uppercase inline-block bg-white dark:bg-gray-900 px-4">
+                    <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#1E3A1A] dark:text-white mb-4 uppercase inline-block bg-white dark:bg-gray-900 px-4">
                         {t('portfolio_title')}
                     </h2>
                     <p className="text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">
@@ -434,11 +434,11 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             />
                         </div>
                     </div>
-                    <Link className="bg-[#1e3a29] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="/website">{t('btn_viewMoreExample')}</Link>
+                    <Link className="bg-[#1E3A1A] hover:bg-[#2e523e] text-white font-bold py-3 px-10 rounded text-sm uppercase transition duration-300 inline-block" href="/website">{t('btn_viewMoreExample')}</Link>
                 </div>
             </section>
 
-            <section className="bg-[#1e3a29] text-white pb-32 pt-24 lg:pt-36 relative overflow-hidden">
+            <section className="bg-[#1E3A1A] text-white pb-32 pt-24 lg:pt-36 relative overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="flex flex-col mb-20 relative">
                         {/* Giant background text exactly as requested */}
@@ -472,7 +472,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10 relative z-10"
                     >
                         {/* Card 1 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">01.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -486,7 +486,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         </motion.div>
 
                         {/* Card 2 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">02.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -504,7 +504,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         </motion.div>
 
                         {/* Card 3 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">03.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -518,7 +518,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         </motion.div>
 
                         {/* Card 4 */}
-                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#ffcc33] text-[#1e3a29] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
+                        <motion.div variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="group bg-[#FED52B] text-[#1E3A1A] py-16 px-6 lg:py-24 lg:px-8 h-full text-center flex flex-col items-center hover:-translate-y-3 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer">
                             <div className="text-xl font-black mb-8 tracking-wider uppercase font-display">04.</div>
                             <div className="text-5xl mb-12 relative flex justify-center w-full">
                                 <span className="absolute inset-0 bg-white/20 rounded-full scale-0 group-hover:scale-150 transition-transform duration-500 origin-center opacity-0 group-hover:opacity-100"></span>
@@ -537,10 +537,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                 </div>
             </section>
 
-            <section className="py-24 bg-white dark:bg-gray-900 border-t-8 border-yellow-400 overflow-hidden">
+            <section className="py-24 bg-white dark:bg-gray-900 border-t-8 border-[#FED52B] overflow-hidden">
                 <div className="container mx-auto px-4 text-center">
                     <div className="relative mb-16 inline-block">
-                        <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#1e3a29] dark:text-white uppercase relative z-10">
+                        <h2 className="text-4xl lg:text-5xl font-display font-bold text-[#1E3A1A] dark:text-white uppercase relative z-10">
                             {t('reviews_title')}
                         </h2>
                         <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[5rem] lg:text-[8rem] font-bold text-gray-100 dark:text-gray-800 -z-0 whitespace-nowrap hidden md:block">{t('reviews_watermark')}</span>
@@ -548,23 +548,23 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 mb-16">
                         {/* Card 1: Plumbing */}
                         <div className="bg-[#e2edd3] dark:bg-gray-800 p-8 pt-14 pb-12 text-center relative rounded shadow-sm flex flex-col items-center h-full">
-                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1e3a29] opacity-90">
+                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1E3A1A] opacity-90">
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                                 </svg>
                             </div>
-                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1e3a29] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
+                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1E3A1A] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
                                 {t('review1_title')}
                             </h3>
                             <p className="text-[15px] font-semibold text-gray-800 dark:text-gray-300 mb-10 leading-[1.8] px-2 flex-grow">
                                 {t('review1_desc')}
                             </p>
-                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1e3a29] dark:text-green-400">
+                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1E3A1A] dark:text-green-400">
                                 {t('review1_author')}
                             </div>
                             <div className="flex flex-col items-center justify-center gap-2 mt-auto">
-                                <img alt="Google" className="h-[26px]" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" />
-                                <div className="flex gap-1 text-[#fbbc05]">
+                                <Image alt="Google" className="h-[26px] w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width={76} height={26} unoptimized />
+                                <div className="flex gap-1 text-[#FED52B]">
                                     {[...Array(5)].map((_, i) => (
                                         <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -581,23 +581,23 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                         {/* Card 2: HVAC */}
                         <div className="bg-[#e2edd3] dark:bg-gray-800 p-8 pt-14 pb-12 text-center relative rounded shadow-sm flex flex-col items-center h-full">
-                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1e3a29] opacity-90">
+                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1E3A1A] opacity-90">
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                                 </svg>
                             </div>
-                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1e3a29] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
+                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1E3A1A] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
                                 {t('review2_title')}
                             </h3>
                             <p className="text-[15px] font-semibold text-gray-800 dark:text-gray-300 mb-10 leading-[1.8] px-2 flex-grow">
                                 {t('review2_desc')}
                             </p>
-                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1e3a29] dark:text-green-400">
+                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1E3A1A] dark:text-green-400">
                                 {t('review2_author')}
                             </div>
                             <div className="flex flex-col items-center justify-center gap-2 mt-auto">
-                                <img alt="Google" className="h-[26px]" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" />
-                                <div className="flex gap-1 text-[#fbbc05]">
+                                <Image alt="Google" className="h-[26px] w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width={76} height={26} unoptimized />
+                                <div className="flex gap-1 text-[#FED52B]">
                                     {[...Array(5)].map((_, i) => (
                                         <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -614,23 +614,23 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                         {/* Card 3: General Contractor */}
                         <div className="bg-[#e2edd3] dark:bg-gray-800 p-8 pt-14 pb-12 text-center relative rounded shadow-sm flex flex-col items-center h-full">
-                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1e3a29] opacity-90">
+                            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-[#1E3A1A] opacity-90">
                                 <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                                 </svg>
                             </div>
-                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1e3a29] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
+                            <h3 className="font-display font-black text-xl md:text-[22px] mb-6 text-[#1E3A1A] dark:text-white uppercase leading-[1.15] tracking-wide mt-2">
                                 {t('review3_title')}
                             </h3>
                             <p className="text-[15px] font-semibold text-gray-800 dark:text-gray-300 mb-10 leading-[1.8] px-2 flex-grow">
                                 {t('review3_desc')}
                             </p>
-                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1e3a29] dark:text-green-400">
+                            <div className="font-display font-bold text-[13px] tracking-wider uppercase mb-6 text-[#1E3A1A] dark:text-green-400">
                                 {t('review3_author')}
                             </div>
                             <div className="flex flex-col items-center justify-center gap-2 mt-auto">
-                                <img alt="Google" className="h-[26px]" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" />
-                                <div className="flex gap-1 text-[#fbbc05]">
+                                <Image alt="Google" className="h-[26px] w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" width={76} height={26} unoptimized />
+                                <div className="flex gap-1 text-[#FED52B]">
                                     {[...Array(5)].map((_, i) => (
                                         <svg key={i} width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -652,8 +652,8 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
             <section className="relative py-20 lg:py-28 bg-cover bg-center overflow-hidden" style={{ backgroundImage: "url('/images/ppc-analytics-bg.webp')" }}>
                 {/* Dark green overlay matrix effect */}
                 <div className="absolute inset-0 bg-[#0c2a16]/50 mix-blend-multiply"></div>
-                <div className="absolute inset-0 bg-green-900/20 mix-blend-overlay"></div>
-                <div className="absolute inset-0 bg-gradient-to-b from-[#0c2a16]/40 to-[#1e3a29]/55"></div>
+                <div className="absolute inset-0 bg-[#1E3A1A]/20 mix-blend-overlay"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-[#0c2a16]/40 to-[#1E3A1A]/55"></div>
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center mb-12">
@@ -663,12 +663,12 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                     <form className="max-w-4xl mx-auto flex flex-col gap-6" onSubmit={handleContactSubmit}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <input type="text" name="name" required placeholder={t('form_name')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="email" name="email" required placeholder={t('form_email')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="tel" name="phone" required placeholder={t('form_phone')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
-                            <input type="text" name="website" placeholder={t('form_website')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+                            <input type="text" name="name" required placeholder={t('form_name')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-[#FED52B]" />
+                            <input type="email" name="email" required placeholder={t('form_email')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-[#FED52B]" />
+                            <input type="tel" name="phone" required placeholder={t('form_phone')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-[#FED52B]" />
+                            <input type="text" name="website" placeholder={t('form_website')} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-[#FED52B]" />
                         </div>
-                        <textarea name="message" required placeholder={t('form_message')} rows={5} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"></textarea>
+                        <textarea name="message" required placeholder={t('form_message')} rows={5} className="w-full bg-white rounded px-5 py-4 placeholder-gray-500 font-medium text-black focus:outline-none focus:ring-2 focus:ring-[#FED52B] resize-none"></textarea>
 
                         <div className="mt-2 flex flex-col md:flex-row items-center justify-between gap-6 relative">
                             {/* Mock reCAPTCHA */}
@@ -678,7 +678,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <span className="text-sm font-medium text-gray-700">{t('form_notRobot')}</span>
                                 </div>
                                 <div className="flex flex-col items-center pr-2">
-                                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={32} height={32} className="w-8 h-auto" alt="reCAPTCHA" />
+                                    <Image src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={32} height={32} className="w-8 h-auto" alt="reCAPTCHA" unoptimized />
                                     <span className="text-[8px] text-gray-500 mt-1">reCAPTCHA</span>
                                     <span className="text-[6px] text-gray-400">Privacy - Terms</span>
                                 </div>
@@ -702,7 +702,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                         {/* Centered Submit Button */}
                         <div className="flex justify-center">
-                            <button type="submit" disabled={submitting} className="bg-[#facc15] hover:bg-[#eab308] text-[#1e3a29] font-bold py-3 px-12 rounded transition-colors text-[13px] uppercase tracking-wider shadow-[0_4px_14px_0_rgba(250,204,21,0.39)] disabled:opacity-50 inline-block">
+                            <button type="submit" disabled={submitting} className="bg-[#FED52B] hover:bg-[#eab308] text-[#1E3A1A] font-bold py-3 px-12 rounded transition-colors text-[13px] uppercase tracking-wider shadow-[0_4px_14px_0_rgba(250,204,21,0.39)] disabled:opacity-50 inline-block">
                                 {submitting ? "..." : t('form_submit')}
                             </button>
                         </div>

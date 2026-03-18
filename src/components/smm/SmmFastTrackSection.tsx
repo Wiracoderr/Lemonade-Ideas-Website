@@ -21,7 +21,7 @@ export default function SmmFastTrackSection() {
                     </div>
                 </div>
                 <div className="md:w-1/2">
-                    <div className="pl-6 border-l-8 border-[#0a2e15]">
+                    <div className="pl-6 border-l-8 border-[#1E3A1A]">
                         <h2 className="text-3xl font-extrabold text-[#1E3A1A] uppercase leading-none mb-4">
                             Get on the fast track to more leads and sales
                         </h2>

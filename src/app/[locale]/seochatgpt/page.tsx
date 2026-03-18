@@ -85,15 +85,15 @@ export default function SeoChatGptPage() {
 
       {/* BEGIN: Hero Section (Matching SEO Page Layout) */}
       <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
-        <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
+        <div className="text-[#1E3A1A] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
             {t('hero_banner')}
         </div>
-        <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
+        <button className="bg-[#1E3A1A] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-[#3AAB43] transition shadow-md" onClick={() => setIsPlaying(true)}>
             {t('hero_watch_video')}
         </button>
       </div>
 
-      <header className="bg-[#143d1f] text-white relative overflow-hidden">
+      <header className="bg-[#1E3A1A] text-white relative overflow-hidden">
         {/* Background Image & Green Overlay via Architecture-level Art Direction */}
         <div className="absolute inset-0 z-0">
           <picture>
@@ -104,7 +104,7 @@ export default function SeoChatGptPage() {
         </div>
 
         {/* Desktop Custom Overlay & Texture */}
-        <div className="absolute inset-0 bg-[#143d1f]/80 z-0 hidden md:block"></div>
+        <div className="absolute inset-0 bg-[#1E3A1A]/80 z-0 hidden md:block"></div>
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0 hidden md:block"></div>
         <div className="max-w-7xl mx-auto px-4 pt-16 pb-28 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-12 xl:gap-16">
@@ -136,7 +136,7 @@ export default function SeoChatGptPage() {
                                 />
                                 <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                     <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                        <svg className="w-8 h-8 text-[#143d1f] fill-current ml-1" viewBox="0 0 24 24">
+                                        <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
                                             <path d="M8 5v14l11-7z" />
                                         </svg>
                                     </div>
@@ -183,7 +183,7 @@ export default function SeoChatGptPage() {
             
             {/* Left Image Area */}
             <div className="w-full lg:w-[45%] flex justify-center lg:justify-end mt-4 lg:mt-8 pr-4 lg:pr-8">
-              <div className="relative w-[85%] sm:w-[320px] lg:max-w-[340px] aspect-[4/5] border-[6px] border-[#143d1f] overflow-hidden bg-white">
+              <div className="relative w-[85%] sm:w-[320px] lg:max-w-[340px] aspect-[4/5] border-[6px] border-[#1E3A1A] overflow-hidden bg-white">
                 <Image 
                   alt="Team Planning SEO ChatGPT" 
                   className="object-cover" 
@@ -198,7 +198,7 @@ export default function SeoChatGptPage() {
             <div className="w-full lg:w-[55%] relative z-10 mt-8 lg:mt-0">
               <div className="border-l-[6px] border-[#4caf50] pl-4 lg:pl-6 mb-8">
                 <h2 
-                    className="text-[26px] md:text-[32px] font-black text-[#143d1f] uppercase leading-[1.05] tracking-tight"
+                    className="text-[26px] md:text-[32px] font-black text-[#1E3A1A] uppercase leading-[1.05] tracking-tight"
                     dangerouslySetInnerHTML={{ __html: t.raw('geo_title') }}
                 />
               </div>
@@ -209,25 +209,25 @@ export default function SeoChatGptPage() {
 
               <div className="space-y-8">
                 <div>
-                  <h3 className="font-black text-[#143d1f] uppercase text-[17px] mb-2 leading-tight">{t('geo_w1_title')}</h3>
+                  <h3 className="font-black text-[#1E3A1A] uppercase text-[17px] mb-2 leading-tight">{t('geo_w1_title')}</h3>
                   <p className="text-[#333] text-[14px] leading-relaxed">
                     {t('geo_w1_desc')}
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-black text-[#143d1f] uppercase text-[17px] mb-2 leading-tight">{t('geo_w2_title')}</h3>
+                  <h3 className="font-black text-[#1E3A1A] uppercase text-[17px] mb-2 leading-tight">{t('geo_w2_title')}</h3>
                   <p className="text-[#333] text-[14px] leading-relaxed">
                     {t('geo_w2_desc')}
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-black text-[#143d1f] uppercase text-[17px] mb-2 leading-tight">{t('geo_w4_title')}</h3>
+                  <h3 className="font-black text-[#1E3A1A] uppercase text-[17px] mb-2 leading-tight">{t('geo_w4_title')}</h3>
                   <p className="text-[#333] text-[14px] leading-relaxed">
                     {t('geo_w4_desc')}
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-black text-[#143d1f] uppercase text-[17px] mb-2 leading-tight">{t('geo_m3_title')}</h3>
+                  <h3 className="font-black text-[#1E3A1A] uppercase text-[17px] mb-2 leading-tight">{t('geo_m3_title')}</h3>
                   <p className="text-[#333] text-[14px] leading-relaxed">
                     {t('geo_m3_desc')}
                   </p>
@@ -244,20 +244,22 @@ export default function SeoChatGptPage() {
       <section className="relative w-full overflow-hidden bg-[#0c1811] mobile-content-visibility">
         {/* Mobile Background Area - restricted height to prevent center-point from dropping below cards */}
         <div className="absolute top-0 left-0 right-0 h-[65vh] md:hidden z-0">
-          <img
-            src="/images/seochatgpt-banner-mobile.png"
+          <Image
+            src="/images/seochatgpt-banner-mobile.webp"
             alt="City Skyline"
-            className="w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
           />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0c1811] to-transparent"></div>
         </div>
 
         {/* Desktop Background Area covering the entire section */}
         <div className="absolute inset-0 z-0 hidden md:block">
-          <img
-            src="/images/seochatgpt-banner.png"
+          <Image
+            src="/images/seochatgpt-banner.webp"
             alt="City Skyline"
-            className="w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
             style={{ objectPosition: 'center 40%' }}
           />
         </div>
@@ -362,7 +364,7 @@ export default function SeoChatGptPage() {
       {/* BEGIN: Local AI Section */}
       <section className="w-full bg-white py-48 text-center mobile-content-visibility">
         <div className="container mx-auto px-4 max-w-7xl">
-          <h2 className="text-[56px] md:text-[72px] font-[Oswald] font-bold text-[#143d1f] mb-12 uppercase tracking-tight leading-tight">
+          <h2 className="text-[56px] md:text-[72px] font-[Oswald] font-bold text-[#1E3A1A] mb-12 uppercase tracking-tight leading-tight">
             {t('local_title')}
           </h2>
           <p className="text-[#444] max-w-6xl mx-auto text-[26px] md:text-[30px] leading-relaxed">
@@ -442,7 +444,7 @@ export default function SeoChatGptPage() {
                       <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-100 tracking-widest absolute select-none pointer-events-none opacity-80 whitespace-nowrap">
                           {t('pricing_watermark')}
                       </span>
-                      <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#143d1f] tracking-tight text-center">
+                      <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#1E3A1A] tracking-tight text-center">
                           {t('pricing_title')}
                       </h2>
                   </div>
@@ -454,7 +456,7 @@ export default function SeoChatGptPage() {
 
               <div className="bg-[#f0f9fa] rounded-2xl shadow-xl overflow-hidden border border-gray-100 mt-12">
                   {/* Top Green Banner */}
-                  <div className="bg-[#38a149] py-5 text-center shadow-inner">
+                  <div className="bg-[#3AAB43] py-5 text-center shadow-inner">
                       <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
                           {t('pricing_package')}
                       </h3>
@@ -473,19 +475,19 @@ export default function SeoChatGptPage() {
                           </div>
                           <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_startup_f1')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_startup_f2')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_startup_f3')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200 border-none">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_startup_f4')}</span>
                               </li>
                           </ul>
@@ -502,19 +504,19 @@ export default function SeoChatGptPage() {
                           </div>
                           <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_monthly_f1')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_monthly_f2')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_monthly_f3')}</span>
                               </li>
                               <li className="flex items-center pb-4 border-b border-dotted border-gray-200 border-none">
-                                  <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg"></i>
+                                  <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg"></i>
                                   <span>{t('pricing_monthly_f4')}</span>
                               </li>
                           </ul>
@@ -523,7 +525,7 @@ export default function SeoChatGptPage() {
 
                   {/* Bottom Get Started Button */}
                   <div className="px-6 md:px-8 pb-8 pt-2">
-                      <Link href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
+                      <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
                           {t('pricing_get_started')} <i className="fas fa-arrow-right"></i>
                       </Link>
                   </div>

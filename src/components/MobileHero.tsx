@@ -18,12 +18,12 @@ export default function MobileHero() {
 
             {/* Top Text Content */}
             <div className="relative z-10 w-full text-center flex flex-col items-center mt-6">
-                <span className="text-yellow-400 font-bold tracking-[0.2em] text-[10px] mb-2 uppercase drop-shadow-md">
+                <span className="text-[#FED52B] font-bold tracking-[0.2em] text-[10px] mb-2 uppercase drop-shadow-md">
                     {t('welcome')}
                 </span>
                 <h1 className="text-white font-display font-black text-[2.6rem] sm:text-5xl leading-[1.05] tracking-tight uppercase max-w-[320px] drop-shadow-xl px-2 text-center">
                     {t('headline_1')}<br />
-                    <span className="text-yellow-400">{t('headline_2')}</span>{t('headline_3')}
+                    <span className="text-[#FED52B]">{t('headline_2')}</span>{t('headline_3')}
                 </h1>
                 <p className="mt-4 text-white/90 font-medium text-xs sm:text-sm leading-relaxed max-w-[280px] drop-shadow-md mb-8">
                     {t('subheadline')}
@@ -33,7 +33,7 @@ export default function MobileHero() {
                 <div className="w-full max-w-[320px] flex flex-col gap-3">
                     <a
                         href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
-                        className="w-full bg-[#facc15] text-[#1e3a1a] font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider shadow-[0_4px_20px_0_rgba(250,204,21,0.3)] text-center transition-transform active:scale-95"
+                        className="w-full bg-[#FED52B] text-[#1e3a1a] font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider shadow-[0_4px_20px_0_rgba(250,204,21,0.3)] text-center transition-transform active:scale-95"
                     >
                         {t('speakWithExpert')}
                     </a>
@@ -46,7 +46,7 @@ export default function MobileHero() {
                 </div>
             </div>
             {/* Aesthetic Lemon Decoration Layer */}
-            <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-yellow-400/10 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-[#FED52B]/10 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute top-1/4 -left-10 w-40 h-40 bg-green-500/10 rounded-full blur-2xl pointer-events-none" />
         </div>
     );

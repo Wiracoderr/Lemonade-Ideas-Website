@@ -3,33 +3,33 @@ import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 
 const CheckIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#1e3a29] shrink-0" viewBox="0 0 20 20" fill="currentColor">
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-[#1E3A1A] shrink-0" viewBox="0 0 20 20" fill="currentColor">
     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
   </svg>
 );
 
 const SeoLaptopIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1e3a29] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+  <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1E3A1A] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
       <rect x="3" y="4" width="18" height="12" rx="1" ry="1"></rect>
       <path d="M2 20h20"></path>
        <rect x="4" y="5" width="16" height="10" fill="none" stroke="none"></rect>
-      <text x="12" y="11" dominantBaseline="middle" textAnchor="middle" fontSize="5px" fontWeight="900" stroke="none" fill="#1e3a29" style={{fontFamily: 'sans-serif'}}>SEO</text>
+      <text x="12" y="11" dominantBaseline="middle" textAnchor="middle" fontSize="5px" fontWeight="900" stroke="none" fill="#1E3A1A" style={{fontFamily: 'sans-serif'}}>SEO</text>
       <line x1="8" y1="14" x2="16" y2="14" strokeWidth="1.5"></line>
   </svg>
 );
 
 const GoogleAdsIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1e3a29] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1E3A1A] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
         <path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"></path>
         <path d="M5.8 15.2 2 13h4.6M14 10l-2 2M21 7l-2-2-9 9 2 2z"></path>
         <rect x="4" y="6" width="6" height="5" transform="rotate(-45 7 8.5)" stroke="currentColor" fill="none"></rect>
-        <text x="6" y="8.5" transform="rotate(-45 6 8.5)" dominantBaseline="middle" textAnchor="middle" fontSize="3.5px" fontWeight="900" stroke="none" fill="#1e3a29" style={{fontFamily: 'sans-serif'}}>AD</text>
+        <text x="6" y="8.5" transform="rotate(-45 6 8.5)" dominantBaseline="middle" textAnchor="middle" fontSize="3.5px" fontWeight="900" stroke="none" fill="#1E3A1A" style={{fontFamily: 'sans-serif'}}>AD</text>
         <path d="M22 2 11 13"></path>
     </svg>
 );
 
 const WebsiteDesignIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-14 h-14 text-[#1e3a29] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-14 h-14 text-[#1E3A1A] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
         {/* Desktop Monitor */}
         <rect x="2" y="3" width="16" height="11" rx="1" ry="1"></rect>
         <line x1="6" y1="14" x2="14" y2="14"></line>
@@ -49,7 +49,7 @@ const WebsiteDesignIcon = () => (
 );
 
 const SocialMediaIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1e3a29] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-[#1E3A1A] shrink-0 fill-none stroke-current stroke-2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
         {/* Weibo-like / network icon structure */}
          <path d="M12 21c-4.4 0-8-3.6-8-8 0-4.4 3.6-8 8-8s8 3.6 8 8c0 1.2-.3 2.3-.8 3.3"></path>
          <path d="M9 14.5c.8.3 1.8.5 2.8.5 2.8 0 5-2.2 5-5s-2.2-5-5-5c-2.8 0-5 2.2-5 5 0 1 .3 2 .8 2.8"></path>
@@ -61,7 +61,7 @@ const SocialMediaIcon = () => (
 );
 
 const BrandingIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" className="w-14 h-14 text-[#1e3a29] shrink-0 fill-none stroke-current stroke-1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-14 h-14 text-[#1E3A1A] shrink-0 fill-none stroke-current stroke-1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
         <circle cx="12" cy="12" r="9" strokeWidth="2"></circle>
         <circle cx="12" cy="12" r="7.5" fill="none" strokeWidth="0.5"></circle>
         {/* Gear / Emblem notches */}
@@ -77,7 +77,7 @@ const BrandingIcon = () => (
         {/* Inner geometric star/spokes */}
         <path d="M12 5v14" strokeWidth="1.5"></path>
         <path d="M5 12h14" strokeWidth="1.5"></path>
-        <circle cx="12" cy="12" r="3.5" fill="#1e3a29" stroke="none"></circle>
+        <circle cx="12" cy="12" r="3.5" fill="#1E3A1A" stroke="none"></circle>
         <circle cx="12" cy="12" r="1.5" fill="#fff" stroke="none"></circle>
     </svg>
 );
@@ -211,7 +211,7 @@ export default function PricingCardsSection() {
                                        {plan.icon}
                                     </div>
                                     <div>
-                                        <h3 className="text-3xl sm:text-4xl font-black text-[#1e3a29] font-display uppercase tracking-tight mb-4">{plan.title}</h3>
+                                        <h3 className="text-3xl sm:text-4xl font-black text-[#1E3A1A] font-display uppercase tracking-tight mb-4">{plan.title}</h3>
                                         <p className="text-gray-700 text-sm leading-relaxed">
                                             {plan.description}
                                         </p>
@@ -219,7 +219,7 @@ export default function PricingCardsSection() {
                                 </div>
                                 
                                 <div className="ml-0 sm:ml-[72px]">
-                                    <h4 className="font-bold text-[#1e3a29] mb-4 text-[15px]">{t('included')}</h4>
+                                    <h4 className="font-bold text-[#1E3A1A] mb-4 text-[15px]">{t('included')}</h4>
                                     <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 text-[13px] text-gray-700">
                                         {plan.features.map((feature, fIndex) => (
                                             <li key={fIndex} className="flex items-start gap-3">
@@ -252,7 +252,7 @@ export default function PricingCardsSection() {
                                     </div>
                                     
                                     <div className="w-full space-y-4 mt-2">
-                                        <Link href="/get-started" className="block w-full bg-[#ffcc33] hover:bg-[#e6b82e] text-[#1e3a29] font-black py-3.5 px-6 text-[11px] uppercase tracking-wider rounded transition">
+                                        <Link href="/get-started" className="block w-full bg-[#FED52B] hover:bg-[#e6b82e] text-[#1E3A1A] font-black py-3.5 px-6 text-[11px] uppercase tracking-wider rounded transition">
                                             {plan.ctaPrimary}
                                         </Link>
                                         <Link href="/contact" className="block w-full bg-transparent border border-white hover:bg-white/10 text-white font-bold py-3.5 px-6 text-[11px] uppercase tracking-wider rounded transition">

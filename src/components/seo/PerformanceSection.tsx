@@ -19,7 +19,7 @@ export default function PerformanceSection() {
                             {t('seo_perf_bg')}
                         </span>
                     </div>
-                    <h2 className="text-4xl md:text-5xl font-[Oswald] font-bold text-[#143d1f] dark:text-white uppercase mb-8 relative z-10 tracking-tight">
+                    <h2 className="text-4xl md:text-5xl font-[Oswald] font-bold text-[#1E3A1A] dark:text-white uppercase mb-8 relative z-10 tracking-tight">
                         {t('seo_perf_title')}
                     </h2>
                     <p className="max-w-5xl mx-auto text-gray-700 dark:text-gray-300 relative z-10 text-base md:text-[15px] font-medium font-[Inter] leading-relaxed">
@@ -30,10 +30,10 @@ export default function PerformanceSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {/* Card 1 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-search"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c1_t')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -43,10 +43,10 @@ export default function PerformanceSection() {
 
                     {/* Card 2 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-laptop-code"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             <SEOText>{t('seo_p_c2_t')}</SEOText>
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -56,10 +56,10 @@ export default function PerformanceSection() {
 
                     {/* Card 3 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-map-marked-alt"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             <SEOText>{t('seo_p_c3_t')}</SEOText>
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -69,10 +69,10 @@ export default function PerformanceSection() {
 
                     {/* Card 4 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-pen-fancy"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c4_t')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -82,10 +82,10 @@ export default function PerformanceSection() {
 
                     {/* Card 5 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-store"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c5_t')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -95,10 +95,10 @@ export default function PerformanceSection() {
 
                     {/* Card 6 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-list-ul"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c6_t')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -108,10 +108,10 @@ export default function PerformanceSection() {
 
                     {/* Card 7 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-users"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c7_t')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">
@@ -121,10 +121,10 @@ export default function PerformanceSection() {
 
                     {/* Card 8 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#143d1f] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-star"></i>
                         </div>
-                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#143d1f] dark:text-white tracking-wide">
+                        <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
                             {t('seo_p_c8_t')}
                         </h3>
                         <p className="text-[13px] text-gray-600 dark:text-gray-400 leading-[1.8] font-medium">

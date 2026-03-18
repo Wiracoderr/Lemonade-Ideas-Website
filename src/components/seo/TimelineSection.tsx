@@ -18,7 +18,7 @@ export default function TimelineSection() {
                         {/* Updated title with top-left green bracket accent */}
                         <div className="relative pl-6 pt-2 mb-6">
                             <div className="absolute left-0 top-0 w-8 h-8 border-l-[4px] border-t-[4px] border-green-700 rounded-tl-sm"></div>
-                            <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white leading-[1.1] tracking-tight" dangerouslySetInnerHTML={{ __html: t.raw('seo_time_title') }}>
+                            <h2 className="text-3xl md:text-5xl font-[Oswald] font-bold uppercase text-[#1E3A1A] dark:text-white leading-[1.1] tracking-tight" dangerouslySetInnerHTML={{ __html: t.raw('seo_time_title') }}>
                             </h2>
                         </div>
                         <p className="text-gray-700 dark:text-gray-300 text-[15px] leading-relaxed font-[Roboto] max-w-lg">
@@ -31,12 +31,12 @@ export default function TimelineSection() {
                         <div className="flex gap-6 items-start group">
                             <div className="flex-shrink-0">
                                 {/* Updated icon styling */}
-                                <div className="w-[50px] h-[50px] bg-[#143d1f] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#facc15] text-xl group-hover:scale-110 transition-transform">
+                                <div className="w-[50px] h-[50px] bg-[#1E3A1A] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#FED52B] text-xl group-hover:scale-110 transition-transform">
                                     <i className="fas fa-chart-line"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#143d1f] dark:text-white tracking-wide">
+                                <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#1E3A1A] dark:text-white tracking-wide">
                                     {t('seo_time_i1_t')}
                                 </h3>
                                 <p className="text-[14px] text-gray-700 dark:text-gray-400 mt-2 leading-relaxed">
@@ -47,12 +47,12 @@ export default function TimelineSection() {
 
                         <div className="flex gap-6 items-start group">
                             <div className="flex-shrink-0">
-                                <div className="w-[50px] h-[50px] bg-[#143d1f] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#facc15] text-xl group-hover:scale-110 transition-transform">
+                                <div className="w-[50px] h-[50px] bg-[#1E3A1A] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#FED52B] text-xl group-hover:scale-110 transition-transform">
                                     <i className="fas fa-cogs"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#143d1f] dark:text-white tracking-wide">
+                                <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#1E3A1A] dark:text-white tracking-wide">
                                     {t('seo_time_i2_t')}
                                 </h3>
                                 <p className="text-[14px] text-gray-700 dark:text-gray-400 mt-2 leading-relaxed">
@@ -63,12 +63,12 @@ export default function TimelineSection() {
 
                         <div className="flex gap-6 items-start group">
                             <div className="flex-shrink-0">
-                                <div className="w-[50px] h-[50px] bg-[#143d1f] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#facc15] text-xl group-hover:scale-110 transition-transform">
+                                <div className="w-[50px] h-[50px] bg-[#1E3A1A] dark:bg-gray-800 rounded-lg flex items-center justify-center text-[#FED52B] text-xl group-hover:scale-110 transition-transform">
                                     <i className="fas fa-chart-pie"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#143d1f] dark:text-white tracking-wide">
+                                <h3 className="font-[Oswald] font-bold text-xl uppercase text-[#1E3A1A] dark:text-white tracking-wide">
                                     {t('seo_time_i3_t')}
                                 </h3>
                                 <p className="text-[14px] text-gray-700 dark:text-gray-400 mt-2 leading-relaxed">

@@ -22,9 +22,9 @@ export default function WebsiteProcessSection() {
             {/* Header Area */}
             <div className="relative">
               {/* Green Corner Bracket using Borders */}
-              <div className="absolute -left-6 -top-4 w-8 h-8 border-l-[4px] border-t-[4px] border-[#3db155]"></div>
+              <div className="absolute -left-6 -top-4 w-8 h-8 border-l-[4px] border-t-[4px] border-[#3AAB43]"></div>
               
-              <span className="text-[#3db155] font-bold text-[12px] uppercase tracking-widest block mb-2">
+              <span className="text-[#3AAB43] font-bold text-[12px] uppercase tracking-widest block mb-2">
                 {t('proc_label')}
               </span>
               <h2 className="text-[32px] md:text-[38px] font-[Oswald] font-bold text-[#0f2e15] uppercase tracking-normal leading-[1.15]">
@@ -40,7 +40,7 @@ export default function WebsiteProcessSection() {
               
               {/* Step 1 */}
               <div className="flex gap-5">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#0a2e15] rounded-xl flex items-center justify-center shadow-md">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#1E3A1A] rounded-xl flex items-center justify-center shadow-md">
                   <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                     <line x1="8" y1="21" x2="16" y2="21"/>
@@ -49,8 +49,8 @@ export default function WebsiteProcessSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s1_lbl')}</span>
+                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#1E3A1A]">
+                    <span className="text-[#3AAB43] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s1_lbl')}</span>
                     {t('proc_s1_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-sm">
@@ -61,7 +61,7 @@ export default function WebsiteProcessSection() {
 
               {/* Step 2 */}
               <div className="flex gap-5">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#0a2e15] rounded-xl flex items-center justify-center shadow-md">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#1E3A1A] rounded-xl flex items-center justify-center shadow-md">
                   <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                     <polyline points="14 2 14 8 20 8"></polyline>
@@ -71,8 +71,8 @@ export default function WebsiteProcessSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s2_lbl')}</span>
+                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#1E3A1A]">
+                    <span className="text-[#3AAB43] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s2_lbl')}</span>
                     {t('proc_s2_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-sm">
@@ -83,7 +83,7 @@ export default function WebsiteProcessSection() {
 
               {/* Step 3 */}
               <div className="flex gap-5">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#0a2e15] rounded-xl flex items-center justify-center shadow-md">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#1E3A1A] rounded-xl flex items-center justify-center shadow-md">
                   <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                     <line x1="8" y1="21" x2="16" y2="21"/>
@@ -93,8 +93,8 @@ export default function WebsiteProcessSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s3_lbl')}</span>
+                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#1E3A1A]">
+                    <span className="text-[#3AAB43] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s3_lbl')}</span>
                     {t('proc_s3_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-[400px]">
@@ -105,7 +105,7 @@ export default function WebsiteProcessSection() {
 
               {/* Step 4 */}
               <div className="flex gap-5">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#0a2e15] rounded-xl flex items-center justify-center shadow-md">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#1E3A1A] rounded-xl flex items-center justify-center shadow-md">
                   <svg className="w-6 h-6 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
                     <path d="m12 15-3-3a22 22 0 0 1 3.82-13.06l.55-.54a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.54.55A22 22 0 0 1 15 12z"/>
@@ -113,8 +113,8 @@ export default function WebsiteProcessSection() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#0a2e15]">
-                    <span className="text-[#3db155] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s4_lbl')}</span>
+                  <h3 className="text-[17px] font-[Oswald] font-bold uppercase tracking-wide leading-tight text-[#1E3A1A]">
+                    <span className="text-[#3AAB43] block text-[11px] tracking-widest font-sans mb-0.5">{t('proc_s4_lbl')}</span>
                     {t('proc_s4_title')}
                   </h3>
                   <p className="mt-1.5 text-[12.5px] text-gray-600 font-medium leading-[1.6] max-w-sm">

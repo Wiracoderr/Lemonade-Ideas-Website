@@ -12,15 +12,15 @@ export default function WebsiteHeroSection() {
         <div className="font-sans">
             {/* Top Banner */}
             <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
-                <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
+                <div className="text-[#1E3A1A] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
                     {t('hero_title')}
                 </div>
-                <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
+                <button className="bg-[#1E3A1A] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-[#3AAB43] transition shadow-md" onClick={() => setIsPlaying(true)}>
                     {t('hero_btn')}
                 </button>
             </div>
 
-            <header className="bg-[#143d1f] text-white relative overflow-hidden font-sans">
+            <header className="bg-[#1E3A1A] text-white relative overflow-hidden font-sans">
                 {/* Background Image & Green Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -32,7 +32,7 @@ export default function WebsiteHeroSection() {
                         priority
                     />
                     {/* Dark Green overlay at 95% opacity to counteract the brighter image and match SEO tint visually */}
-                    <div className="absolute inset-0 bg-[#143d1f]/95"></div>
+                    <div className="absolute inset-0 bg-[#1E3A1A]/95"></div>
                 </div>
 
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0"></div>
@@ -48,7 +48,7 @@ export default function WebsiteHeroSection() {
                                 {t('hero_headline_3')}<br />
                                 {t('hero_headline_4')}
                             </h1>
-                            <div className="w-24 h-1 bg-[#8DBF43] mt-6"></div>
+                            <div className="w-24 h-1 bg-[#3AAB43] mt-6"></div>
                         </div>
                         
                         {/* Video Section relative z-10 */}
@@ -70,7 +70,7 @@ export default function WebsiteHeroSection() {
                                         />
                                         <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                             <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                                <svg className="w-8 h-8 text-[#143d1f] fill-current ml-1" viewBox="0 0 24 24">
+                                                <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
                                                     <path d="M8 5v14l11-7z" />
                                                 </svg>
                                             </div>

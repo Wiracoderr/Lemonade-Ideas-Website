@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 export default function WebsitePerformanceSection() {
   const t = useTranslations("Website");
   return (
-    <section className="relative bg-[#0a2e15] py-28 overflow-hidden font-sans">
+    <section className="relative bg-[#1E3A1A] py-28 overflow-hidden font-sans">
       {/* Dynamic Background Image */}
       <div className="absolute inset-0 z-0">
         <Image 
@@ -17,7 +17,7 @@ export default function WebsitePerformanceSection() {
           sizes="100vw"
         />
         {/* Dark Green Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a2e15]/90 via-[#0a2e15]/80 to-[#0a2e15]/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1E3A1A]/90 via-[#1E3A1A]/80 to-[#1E3A1A]/90"></div>
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,10 +44,10 @@ export default function WebsitePerformanceSection() {
           
           {/* Card 1 */}
           <div className="bg-[#f6fbfe] p-8 lg:p-9 rounded-sm shadow-2xl flex flex-col group transition-transform hover:-translate-y-1">
-            <div className="text-[#0a2e15] mb-5">
+            <div className="text-[#1E3A1A] mb-5">
               <ShieldCheck size={40} strokeWidth={1.5} />
             </div>
-            <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
+            <h3 className="text-[#1E3A1A] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
               {t('perf_c1_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
@@ -57,10 +57,10 @@ export default function WebsitePerformanceSection() {
           
           {/* Card 2 */}
           <div className="bg-[#f6fbfe] p-8 lg:p-9 rounded-sm shadow-2xl flex flex-col group transition-transform hover:-translate-y-1">
-            <div className="text-[#0a2e15] mb-5">
+            <div className="text-[#1E3A1A] mb-5">
               <FileCode2 size={40} strokeWidth={1.5} />
             </div>
-            <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
+            <h3 className="text-[#1E3A1A] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
               {t('perf_c2_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
@@ -70,10 +70,10 @@ export default function WebsitePerformanceSection() {
           
           {/* Card 3 */}
           <div className="bg-[#f6fbfe] p-8 lg:p-9 rounded-sm shadow-2xl flex flex-col group transition-transform hover:-translate-y-1">
-            <div className="text-[#0a2e15] mb-5">
+            <div className="text-[#1E3A1A] mb-5">
               <SearchCheck size={40} strokeWidth={1.5} />
             </div>
-            <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
+            <h3 className="text-[#1E3A1A] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
               {t('perf_c3_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">
@@ -83,10 +83,10 @@ export default function WebsitePerformanceSection() {
           
           {/* Card 4 */}
           <div className="bg-[#f6fbfe] p-8 lg:p-9 rounded-sm shadow-2xl flex flex-col group transition-transform hover:-translate-y-1">
-            <div className="text-[#0a2e15] mb-5">
+            <div className="text-[#1E3A1A] mb-5">
               <Award size={40} strokeWidth={1.5} />
             </div>
-            <h3 className="text-[#0a2e15] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
+            <h3 className="text-[#1E3A1A] font-[Oswald] font-bold text-[18px] uppercase tracking-wide leading-tight mb-3">
               {t('perf_c4_title')}
             </h3>
             <p className="text-gray-700 text-[13px] font-medium leading-[1.6]">

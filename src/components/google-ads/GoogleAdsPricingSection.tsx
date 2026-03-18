@@ -7,7 +7,7 @@ export default function GoogleAdsPricingSection() {
     const t = useTranslations('GoogleAds');
     return (
         <>
-            <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#0d2814] lg:bg-black overflow-hidden group">
+            <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#1E3A1A] lg:bg-black overflow-hidden group">
                 
                 {/* Desktop Full Width Background Image */}
                 <div className="absolute inset-0 z-0 hidden lg:block">
@@ -22,7 +22,7 @@ export default function GoogleAdsPricingSection() {
 
                 {/* Angled Dark Green Content Container Overlay (Floating on right side) */}
                 {/* Uses clip-path to create the angled left edge on large screens */}
-                <div className="relative z-10 w-full lg:w-3/5 lg:ml-auto bg-[#0d2814]
+                <div className="relative z-10 w-full lg:w-3/5 lg:ml-auto bg-[#1E3A1A]
                                 p-8 md:p-16 lg:p-20 xl:py-24 xl:px-24 mb-0 lg:my-16 xl:my-24 lg:mr-0
                                 flex flex-col justify-center
                                 [clip-path:none] lg:[clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]">
@@ -71,7 +71,7 @@ export default function GoogleAdsPricingSection() {
 
                     <div className="bg-[#f0f9fa] rounded-2xl shadow-xl overflow-hidden border border-gray-100 mt-12">
                         {/* Top Green Banner */}
-                        <div className="bg-[#38a149] py-5 text-center shadow-inner">
+                        <div className="bg-[#3AAB43] py-5 text-center shadow-inner">
                             <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
                                 {t('price_banner')}
                             </h3>
@@ -90,19 +90,19 @@ export default function GoogleAdsPricingSection() {
                                 </div>
                                 <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card1_feat1')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card1_feat2')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card1_feat3')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card1_feat4')}</span>
                                     </li>
                                 </ul>
@@ -119,19 +119,19 @@ export default function GoogleAdsPricingSection() {
                                 </div>
                                 <ul className="space-y-4 text-[15px] text-gray-600 font-[Roboto] flex-grow">
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card2_feat1')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card2_feat2')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card2_feat3')}</span>
                                     </li>
                                     <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
-                                        <i className="fas fa-check-circle text-[#2d7a36] mr-4 text-lg mt-0.5"></i>
+                                        <i className="fas fa-check-circle text-[#3AAB43] mr-4 text-lg mt-0.5"></i>
                                         <span className="leading-snug">{t('price_card2_feat4')}</span>
                                     </li>
                                 </ul>
@@ -140,7 +140,7 @@ export default function GoogleAdsPricingSection() {
 
                         {/* Bottom Get Started Button */}
                         <div className="px-6 md:px-8 pb-8 pt-2">
-                            <Link href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
+                            <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
                                 {t('price_btn')} <i className="fas fa-arrow-right"></i>
                             </Link>
                         </div>

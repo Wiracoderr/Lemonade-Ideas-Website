@@ -12,15 +12,15 @@ export default function BrandingHeroSection() {
         <div className="font-sans">
             {/* Top Banner (Optional: matches the flow of the SEO page) */}
             <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
-                <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
+                <div className="text-[#1E3A1A] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
                     {t('hero_top')}
                 </div>
-                <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
+                <button className="bg-[#1E3A1A] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-[#3AAB43] transition shadow-md" onClick={() => setIsPlaying(true)}>
                     {t('hero_btn')}
                 </button>
             </div>
 
-            <header className="bg-[#143d1f] text-white relative overflow-hidden font-sans">
+            <header className="bg-[#1E3A1A] text-white relative overflow-hidden font-sans">
                 {/* Background Image & Green Overlay */}
                 <div className="absolute inset-0 z-0">
                     {/* Desktop Version */}
@@ -44,7 +44,7 @@ export default function BrandingHeroSection() {
                         fetchPriority="high"
                     />
                     {/* Dark Green overlay at 80% opacity to give a strong green tint */}
-                    <div className="absolute inset-0 bg-[#143d1f]/80"></div>
+                    <div className="absolute inset-0 bg-[#1E3A1A]/80"></div>
                 </div>
 
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0"></div>
@@ -57,7 +57,7 @@ export default function BrandingHeroSection() {
                             <h1 className="text-[26px] md:text-[36px] lg:text-[42px] xl:text-[48px] font-[Oswald] font-bold uppercase leading-[1.1] tracking-normal drop-shadow-sm text-white">
                                 {t('hero_t1')}<br />
                                 {t('hero_t2')}<br />
-                                <span className="text-[#38b04d]">{t('hero_t3')}</span>
+                                <span className="text-white">{t('hero_t3')}</span>
                             </h1>
                             <p className="text-[14px] md:text-[17px] lg:text-[18.5px] font-bold text-white leading-[1.5] font-[Arial] mt-6 drop-shadow-sm">
                                 {t('hero_sub')}
@@ -83,7 +83,7 @@ export default function BrandingHeroSection() {
                                         />
                                         <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                             <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                                <svg className="w-8 h-8 text-[#143d1f] fill-current ml-1" viewBox="0 0 24 24">
+                                                <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
                                                     <path d="M8 5v14l11-7z" />
                                                 </svg>
                                             </div>

@@ -54,15 +54,15 @@ export default function SEOLandingPage() {
         <div className="bg-[#eef8fd] dark:bg-gray-900 text-gray-800 dark:text-gray-200 font-sans antialiased">
             {/* ... Existing header ... */}
             <div className="bg-[#eef8fd] w-full py-4 px-4 flex flex-col sm:flex-row items-center justify-center gap-6 shadow-sm z-50 relative">
-                <div className="text-[#0a2e15] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
+                <div className="text-[#1E3A1A] font-[Oswald] font-bold text-[1.35rem] md:text-2xl uppercase tracking-wider">
                     <SEOText>{t('seo_page_title')}</SEOText>
                 </div>
-                <button className="bg-[#0a2e15] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-green-900 transition shadow-md" onClick={() => setIsPlaying(true)}>
+                <button className="bg-[#1E3A1A] text-white px-8 py-3 text-sm font-bold uppercase rounded-sm hover:bg-[#3AAB43] transition shadow-md" onClick={() => setIsPlaying(true)}>
                     {t('seo_btn_video')}
                 </button>
             </div>
 
-            <header className="bg-[#143d1f] text-white relative overflow-hidden">
+            <header className="bg-[#1E3A1A] text-white relative overflow-hidden">
                 {/* Background Image & Green Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
@@ -74,7 +74,7 @@ export default function SEOLandingPage() {
                         priority
                     />
                     {/* Dark Green overlay at 60% opacity to give a strong green tint */}
-                    <div className="absolute inset-0 bg-[#143d1f]/80"></div>
+                    <div className="absolute inset-0 bg-[#1E3A1A]/80"></div>
                 </div>
 
                 <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-repeat z-0"></div>
@@ -104,7 +104,7 @@ export default function SEOLandingPage() {
                                         />
                                         <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                             <div className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-lg transition-transform group-hover:scale-110">
-                                                <svg className="w-8 h-8 text-[#143d1f] fill-current ml-1" viewBox="0 0 24 24">
+                                                <svg className="w-8 h-8 text-[#1E3A1A] fill-current ml-1" viewBox="0 0 24 24">
                                                     <path d="M8 5v14l11-7z" />
                                                 </svg>
                                             </div>

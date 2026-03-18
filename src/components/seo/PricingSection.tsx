@@ -18,7 +18,7 @@ export default function PricingSection() {
                         <span className="text-6xl md:text-9xl font-[Oswald] font-bold uppercase text-gray-200 dark:text-gray-800 tracking-widest absolute select-none pointer-events-none opacity-80 whitespace-nowrap">
                             {t('seo_price_wm')}
                         </span>
-                        <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#143d1f] dark:text-white tracking-tight text-center">
+                        <h2 className="relative z-10 text-4xl md:text-6xl font-[Oswald] font-bold uppercase text-[#1E3A1A] dark:text-white tracking-tight text-center">
                             <SEOText>{t('seo_price_sub')}</SEOText>
                         </h2>
                     </div>
@@ -30,7 +30,7 @@ export default function PricingSection() {
 
                 <div className="bg-[#f0f9fa] dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden border border-gray-100 dark:border-gray-700">
                     {/* Top Green Banner */}
-                    <div className="bg-[#38a149] py-5 text-center shadow-inner">
+                    <div className="bg-[#3AAB43] py-5 text-center shadow-inner">
                         <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
                             <SEOText>{t('seo_price_title')}</SEOText>
                         </h3>
@@ -49,19 +49,19 @@ export default function PricingSection() {
                             </div>
                             <ul className="space-y-4 text-[15px] text-gray-600 dark:text-gray-400 font-[Roboto] flex-grow">
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span><SEOText>{t('seo_pkg1_i1')}</SEOText></span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span>{t('seo_pkg1_i2')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span>{t('seo_pkg1_i3')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800 border-none">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span><SEOText>{t('seo_pkg1_i4')}</SEOText></span>
                                 </li>
                             </ul>
@@ -78,19 +78,19 @@ export default function PricingSection() {
                             </div>
                             <ul className="space-y-4 text-[15px] text-gray-600 dark:text-gray-400 font-[Roboto] flex-grow">
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span>{t('seo_pkg2_i1')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span>{t('seo_pkg2_i2')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span>{t('seo_pkg2_i3')}</span>
                                 </li>
                                 <li className="flex items-center pb-4 border-b border-dotted border-gray-200 dark:border-gray-800 border-none">
-                                    <i className="fas fa-check-circle text-[#2d7a36] dark:text-[#facc15] mr-4 text-lg"></i>
+                                    <i className="fas fa-check-circle text-[#3AAB43] dark:text-[#FED52B] mr-4 text-lg"></i>
                                     <span>{t('seo_pkg2_i4')}</span>
                                 </li>
                             </ul>
@@ -99,7 +99,7 @@ export default function PricingSection() {
 
                     {/* Bottom Get Started Button */}
                     <div className="px-6 md:px-8 pb-8 pt-2">
-                        <a href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
+                        <a href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
                             {t('seo_price_btn')} <i className="fas fa-arrow-right"></i>
                         </a>
                     </div>

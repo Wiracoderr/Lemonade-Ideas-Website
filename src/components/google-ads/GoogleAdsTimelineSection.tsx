@@ -9,7 +9,7 @@ export default function GoogleAdsTimelineSection() {
             <div className="mx-auto max-w-7xl">
                 <div className="grid lg:grid-cols-2 gap-16 items-center">
                     <div className="order-2 lg:order-1">
-                        <div className="border-l-4 border-[#38b04d] pl-6 mb-8">
+                        <div className="border-l-4 border-[#3AAB43] pl-6 mb-8">
                             <h2 className="text-3xl font-black uppercase text-gray-900 font-sans">{t('time_title')}</h2>
                         </div>
                         <div className="space-y-8 pl-2">

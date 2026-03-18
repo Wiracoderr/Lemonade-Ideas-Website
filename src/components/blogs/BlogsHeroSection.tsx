@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 export default function BlogsHeroSection() {
     const t = useTranslations('Blogs');
     return (
-        <section className="relative w-full h-[360px] md:h-[440px] overflow-hidden bg-[#143d1f] flex items-center justify-center">
+        <section className="relative w-full h-[360px] md:h-[440px] overflow-hidden bg-[#1E3A1A] flex items-center justify-center">
             {/* Background Image with Dark Green Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image

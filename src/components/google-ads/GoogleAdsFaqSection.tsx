@@ -49,10 +49,10 @@ export default function GoogleAdsFaqSection() {
                     <span className="text-[100px] md:text-[140px] font-black uppercase text-gray-100 absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 select-none pointer-events-none drop-shadow-sm z-0 w-full tracking-widest font-sans opacity-60">
                         {t('faq_watermark')}
                     </span>
-                    <h2 className="relative z-10 text-3xl md:text-4xl font-black uppercase text-[#143d1f] flex items-center justify-center gap-4 font-sans tracking-tight">
-                        <span className="w-12 h-1 bg-[#38b04d] hidden md:block"></span>
+                    <h2 className="relative z-10 text-3xl md:text-4xl font-black uppercase text-[#1E3A1A] flex items-center justify-center gap-4 font-sans tracking-tight">
+                        <span className="w-12 h-1 bg-[#3AAB43] hidden md:block"></span>
                         {t('faq_title')}
-                        <span className="w-12 h-1 bg-[#38b04d] hidden md:block"></span>
+                        <span className="w-12 h-1 bg-[#3AAB43] hidden md:block"></span>
                     </h2>
                 </div>
 
@@ -64,14 +64,14 @@ export default function GoogleAdsFaqSection() {
                             <div key={index} className="flex flex-col rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 transition-all h-fit">
                                 {/* Question Button */}
                                 <div
-                                    className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#facc15]'}`}
+                                    className={`bg-white dark:bg-gray-800 p-6 flex justify-between items-center cursor-pointer hover:shadow-md transition-all group ${isOpen ? '' : 'hover:border-[#FED52B]'}`}
                                     onClick={() => toggleFaq(index)}
                                 >
-                                    <span className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-[#38b04d] transition-colors pr-8 font-[Oswald] uppercase tracking-wide">
+                                    <span className="text-lg md:text-xl font-bold text-gray-900 group-hover:text-[#3AAB43] transition-colors pr-8 font-[Oswald] uppercase tracking-wide">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                         {t(`faq${index + 1}_q` as any) || faq.question}
                                     </span>
-                                    <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#143d1f] text-white' : 'bg-[#143d1f] text-white group-hover:text-[#facc15]'}`}>
+                                    <div className={`w-8 h-8 shrink-0 rounded-full flex items-center justify-center transition-colors shadow-sm ${isOpen ? 'bg-[#1E3A1A] text-white' : 'bg-[#1E3A1A] text-white group-hover:text-[#FED52B]'}`}>
                                         <i className={`fas fa-chevron-down transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}></i>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@ export default function GoogleAdsFaqSection() {
                                 <div
                                     className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${isOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'}`}
                                 >
-                                    <div className="overflow-hidden bg-[#143d1f] text-white">
+                                    <div className="overflow-hidden bg-[#1E3A1A] text-white">
                                         {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                         <p className="p-6 font-[Roboto] text-[15px] leading-relaxed tracking-wide shadow-inner" dangerouslySetInnerHTML={{ __html: t.raw(`faq${index + 1}_a` as any) || faq.answer }}></p>
                                     </div>

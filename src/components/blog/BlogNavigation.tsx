@@ -51,7 +51,10 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
               </div>
               <div className="flex-1 min-w-0">
                 <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">{t('prev_article')}</span>
-                <h4 className="font-['Oswald'] font-bold text-[#1E3A1A] text-[1.1rem] leading-[1.3] truncate group-hover:text-[#3AAB43] transition-colors m-0">
+                <h4 
+                  className="font-['Oswald'] font-bold text-[#1E3A1A] text-[1.1rem] leading-[1.3] truncate group-hover:text-[#3AAB43] transition-colors m-0"
+                  title={prevBlog.title}
+                >
                   {prevBlog.title}
                 </h4>
               </div>
@@ -67,7 +70,10 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
               </div>
               <div className="flex-1 min-w-0">
                 <span className="text-[0.85rem] font-bold text-gray-400 uppercase tracking-[1px] block mb-[5px]">{t('next_article')}</span>
-                <h4 className="font-['Oswald'] font-bold text-[#1E3A1A] text-[1.1rem] leading-[1.3] truncate group-hover:text-[#3AAB43] transition-colors m-0">
+                <h4 
+                  className="font-['Oswald'] font-bold text-[#1E3A1A] text-[1.1rem] leading-[1.3] truncate group-hover:text-[#3AAB43] transition-colors m-0"
+                  title={nextBlog.title}
+                >
                   {nextBlog.title}
                 </h4>
               </div>
@@ -109,7 +115,7 @@ export default function BlogNavigation({ currentSlug }: BlogNavigationProps) {
                         <i className="far fa-calendar-alt text-[#3AAB43]"></i>
                         {blog.date}
                       </div>
-                      <Link href={`/blogs/${blog.slug}`} className="block block flex-1">
+                      <Link href={`/blogs/${blog.slug}`} className="block block flex-1" title={blog.title}>
                         <h4 className="text-[1.3rem] font-['Oswald'] font-bold text-[#1E3A1A] leading-[1.3] group-hover:text-[#3AAB43] transition-colors uppercase m-0 line-clamp-2 title-ellipsis">
                           {blog.title}
                         </h4>

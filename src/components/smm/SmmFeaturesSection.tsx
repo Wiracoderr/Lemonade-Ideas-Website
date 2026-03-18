@@ -24,7 +24,7 @@ export default function SmmFeaturesSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {/* Card 1 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#1E3A1A] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-clipboard-list"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
@@ -37,7 +37,7 @@ export default function SmmFeaturesSection() {
 
                     {/* Card 2 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#1E3A1A] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-file-signature"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
@@ -50,7 +50,7 @@ export default function SmmFeaturesSection() {
 
                     {/* Card 3 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#1E3A1A] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-credit-card"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
@@ -63,7 +63,7 @@ export default function SmmFeaturesSection() {
 
                     {/* Card 4 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#1E3A1A] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-calendar-alt"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
@@ -76,7 +76,7 @@ export default function SmmFeaturesSection() {
 
                     {/* Card 5 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#1E3A1A] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-cogs"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">
@@ -89,7 +89,7 @@ export default function SmmFeaturesSection() {
 
                     {/* Card 6 */}
                     <div className="bg-[#eff8fa] dark:bg-gray-800 p-8 rounded-sm text-left transition-all duration-300 hover:-translate-y-1 hover:shadow-md group">
-                        <div className="text-[#1E3A1A] dark:text-[#facc15] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
+                        <div className="text-[#1E3A1A] dark:text-[#FED52B] text-5xl mb-5 group-hover:scale-110 transition-transform duration-300">
                             <i className="fas fa-chart-line"></i>
                         </div>
                         <h3 className="font-[Oswald] font-bold text-xl uppercase mb-4 text-[#1E3A1A] dark:text-white tracking-wide">

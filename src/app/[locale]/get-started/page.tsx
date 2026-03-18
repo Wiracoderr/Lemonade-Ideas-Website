@@ -119,7 +119,7 @@ export default function GetStartedPage() {
                 {/* Form Container */}
                 <form onSubmit={handleSubmit} className="border border-gray-200 bg-white rounded-sm shadow-sm overflow-hidden flex flex-col">
                     {/* Dark Green Header */}
-                    <div className="bg-[#143d1f] py-3 text-center">
+                    <div className="bg-[#1E3A1A] py-3 text-center">
                         <h2 className="text-white font-[Oswald] font-bold text-lg uppercase tracking-wide">
                             {t('company_info')}
                         </h2>
@@ -137,7 +137,7 @@ export default function GetStartedPage() {
                                     name="businessName"
                                     value={formData.businessName}
                                     onChange={handleInputChange}
-                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#143d1f] focus:ring-1 focus:ring-[#143d1f] transition-all"
+                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#1E3A1A] focus:ring-1 focus:ring-[#1E3A1A] transition-all"
                                     required
                                 />
                             </div>
@@ -149,7 +149,7 @@ export default function GetStartedPage() {
                                     name="yourName"
                                     value={formData.yourName}
                                     onChange={handleInputChange}
-                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#143d1f] focus:ring-1 focus:ring-[#143d1f] transition-all"
+                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#1E3A1A] focus:ring-1 focus:ring-[#1E3A1A] transition-all"
                                     required
                                 />
                             </div>
@@ -163,7 +163,7 @@ export default function GetStartedPage() {
                                     name="businessEmail"
                                     value={formData.businessEmail}
                                     onChange={handleInputChange}
-                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#143d1f] focus:ring-1 focus:ring-[#143d1f] transition-all"
+                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#1E3A1A] focus:ring-1 focus:ring-[#1E3A1A] transition-all"
                                     required
                                 />
                             </div>
@@ -175,7 +175,7 @@ export default function GetStartedPage() {
                                     name="businessPhone"
                                     value={formData.businessPhone}
                                     onChange={handleInputChange}
-                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#143d1f] focus:ring-1 focus:ring-[#143d1f] transition-all"
+                                    className="border border-gray-300 rounded-[3px] py-3 px-4 outline-none focus:border-[#1E3A1A] focus:ring-1 focus:ring-[#1E3A1A] transition-all"
                                     required
                                 />
                             </div>
@@ -197,14 +197,14 @@ export default function GetStartedPage() {
 
                         {/* Services Section */}
                         <div className="pt-6">
-                            <h3 className="text-sm font-bold text-[#143d1f] uppercase tracking-wide mb-6">
+                            <h3 className="text-sm font-bold text-[#1E3A1A] uppercase tracking-wide mb-6">
                                 {t('services_title')}
                             </h3>
                             <div className="flex flex-wrap gap-x-8 gap-y-4">
                                 <label className="flex items-center cursor-pointer group">
                                     <div className="relative flex items-center">
-                                        <input type="checkbox" name="guaranteedRanking" checked={formData.services.guaranteedRanking} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#143d1f] cursor-pointer transition-all" />
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#143d1f]">
+                                        <input type="checkbox" name="guaranteedRanking" checked={formData.services.guaranteedRanking} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#1E3A1A] cursor-pointer transition-all" />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#1E3A1A]">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                         </div>
                                     </div>
@@ -213,8 +213,8 @@ export default function GetStartedPage() {
 
                                 <label className="flex items-center cursor-pointer group">
                                     <div className="relative flex items-center">
-                                        <input type="checkbox" name="seo" checked={formData.services.seo} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#143d1f] cursor-pointer transition-all" />
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#143d1f]">
+                                        <input type="checkbox" name="seo" checked={formData.services.seo} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#1E3A1A] cursor-pointer transition-all" />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#1E3A1A]">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                         </div>
                                     </div>
@@ -223,8 +223,8 @@ export default function GetStartedPage() {
 
                                 <label className="flex items-center cursor-pointer group">
                                     <div className="relative flex items-center">
-                                        <input type="checkbox" name="googleAds" checked={formData.services.googleAds} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#143d1f] cursor-pointer transition-all" />
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#143d1f]">
+                                        <input type="checkbox" name="googleAds" checked={formData.services.googleAds} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#1E3A1A] cursor-pointer transition-all" />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#1E3A1A]">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                         </div>
                                     </div>
@@ -233,8 +233,8 @@ export default function GetStartedPage() {
 
                                 <label className="flex items-center cursor-pointer group">
                                     <div className="relative flex items-center">
-                                        <input type="checkbox" name="smm" checked={formData.services.smm} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#143d1f] cursor-pointer transition-all" />
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#143d1f]">
+                                        <input type="checkbox" name="smm" checked={formData.services.smm} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#1E3A1A] cursor-pointer transition-all" />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#1E3A1A]">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                         </div>
                                     </div>
@@ -243,8 +243,8 @@ export default function GetStartedPage() {
 
                                 <label className="flex items-center cursor-pointer group">
                                     <div className="relative flex items-center">
-                                        <input type="checkbox" name="branding" checked={formData.services.branding} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#143d1f] cursor-pointer transition-all" />
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#143d1f]">
+                                        <input type="checkbox" name="branding" checked={formData.services.branding} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#1E3A1A] cursor-pointer transition-all" />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#1E3A1A]">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                         </div>
                                     </div>
@@ -253,8 +253,8 @@ export default function GetStartedPage() {
 
                                 <label className="flex items-center cursor-pointer group">
                                     <div className="relative flex items-center">
-                                        <input type="checkbox" name="websiteDesign" checked={formData.services.websiteDesign} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#143d1f] cursor-pointer transition-all" />
-                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#143d1f]">
+                                        <input type="checkbox" name="websiteDesign" checked={formData.services.websiteDesign} onChange={handleInputChange} className="peer w-5 h-5 appearance-none border border-gray-300 rounded-sm outline-none checked:bg-white checked:border-[#1E3A1A] cursor-pointer transition-all" />
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 peer-checked:opacity-100 pointer-events-none text-[#1E3A1A]">
                                             <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                                         </div>
                                     </div>
@@ -283,7 +283,7 @@ export default function GetStartedPage() {
                             <button
                                 type="submit"
                                 disabled={submitting}
-                                className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold text-sm uppercase px-10 py-3 rounded-sm shadow-sm hover:shadow-md hover:bg-yellow-300 transition-all flex items-center justify-center min-w-[150px] disabled:opacity-50"
+                                className="bg-[#FED52B] text-[#1E3A1A] font-[Oswald] font-bold text-sm uppercase px-10 py-3 rounded-sm shadow-sm hover:shadow-md hover:bg-yellow-300 transition-all flex items-center justify-center min-w-[150px] disabled:opacity-50"
                             >
                                 {submitting ? "..." : t('form_submit')}
                             </button>

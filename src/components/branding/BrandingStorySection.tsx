@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 export default function BrandingStorySection() {
     const t = useTranslations("Branding");
     return (
-        <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#0d2814] lg:bg-black overflow-hidden group">
+        <section className="relative w-full min-h-[700px] flex flex-col lg:flex-row lg:items-center bg-[#1E3A1A] lg:bg-black overflow-hidden group">
             
             {/* Desktop Full Width Background Image */}
             <div className="absolute inset-0 z-0 hidden lg:block">
@@ -20,7 +20,7 @@ export default function BrandingStorySection() {
             </div>
 
             {/* Angled Dark Green Content Container Overlay (Floating on right side) */}
-            <div className="relative z-10 w-full lg:w-3/5 xl:w-[55%] lg:ml-auto bg-[#0d2814]
+            <div className="relative z-10 w-full lg:w-3/5 xl:w-[55%] lg:ml-auto bg-[#1E3A1A]
                             p-8 md:p-12 lg:p-16 xl:py-20 xl:px-20 mb-0 lg:my-16 xl:my-24 lg:mr-0
                             flex flex-col justify-center
                             [clip-path:none] lg:[clip-path:polygon(10%_0,100%_0,100%_100%,0%_100%)]">

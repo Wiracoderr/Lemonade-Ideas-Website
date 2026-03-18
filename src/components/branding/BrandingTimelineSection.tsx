@@ -78,8 +78,8 @@ export default function BrandingTimelineSection() {
 
                     {/* Right Side: Text Content */}
                     <div className="order-1 lg:order-2">
-                        <div className="border-l-4 border-[#38b04d] pl-6 mb-8">
-                            <h2 className="text-3xl font-black uppercase text-[#0a2e15] font-[Oswald]">{t('time_title')}</h2>
+                        <div className="border-l-4 border-[#3AAB43] pl-6 mb-8">
+                            <h2 className="text-3xl font-black uppercase text-[#1E3A1A] font-[Oswald]">{t('time_title')}</h2>
                         </div>
                         <div className="space-y-6 lg:space-y-8 pl-0 lg:pl-2">
                             <p className="text-[14px] md:text-[15px] text-gray-700 mb-6 leading-relaxed">
@@ -87,7 +87,7 @@ export default function BrandingTimelineSection() {
                             </p>
 
                             <div className="relative">
-                                <h3 className="font-bold text-[#0a2e15] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t1_title')}</h3>
+                                <h3 className="font-bold text-[#1E3A1A] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t1_title')}</h3>
                                 <p className="text-[14px] text-gray-700 leading-relaxed mb-3">
                                     {t('t1_desc')}
                                 </p>
@@ -101,7 +101,7 @@ export default function BrandingTimelineSection() {
                             </div>
 
                             <div className="relative">
-                                <h3 className="font-bold text-[#0a2e15] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t2_title')}</h3>
+                                <h3 className="font-bold text-[#1E3A1A] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t2_title')}</h3>
                                 <p className="text-[14px] text-gray-700 leading-relaxed mb-3">
                                     {t('t2_desc')}
                                 </p>
@@ -114,7 +114,7 @@ export default function BrandingTimelineSection() {
                             </div>
 
                             <div className="relative">
-                                <h3 className="font-bold text-[#0a2e15] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t3_title')}</h3>
+                                <h3 className="font-bold text-[#1E3A1A] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t3_title')}</h3>
                                 <p className="text-[14px] text-gray-700 leading-relaxed mb-3">
                                     {t('t3_desc')}
                                 </p>
@@ -127,7 +127,7 @@ export default function BrandingTimelineSection() {
                             </div>
 
                             <div className="relative">
-                                <h3 className="font-bold text-[#0a2e15] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t4_title')}</h3>
+                                <h3 className="font-bold text-[#1E3A1A] font-[Oswald] uppercase text-[16px] md:text-[18px] mb-2 tracking-wide">{t('t4_title')}</h3>
                                 <p className="text-[14px] text-gray-700 leading-relaxed mb-3">
                                     {t('t4_desc')}
                                 </p>

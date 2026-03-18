@@ -14,7 +14,7 @@ export default function WebsiteFeaturesSection() {
                         {t('feat_watermark')}
                     </h2>
                     
-                    <h2 className="text-3xl md:text-4xl font-[Oswald] font-black text-[#143d1f] uppercase relative z-10 tracking-tight leading-[1.1] mb-6">
+                    <h2 className="text-3xl md:text-4xl font-[Oswald] font-black text-[#1E3A1A] uppercase relative z-10 tracking-tight leading-[1.1] mb-6">
                         {t('feat_title')}
                     </h2>
                     
@@ -25,16 +25,16 @@ export default function WebsiteFeaturesSection() {
                     {/* 3 Pill Highlights */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-10 relative z-10 w-full mx-auto">
                         <div className="bg-[#eef8fd] rounded-lg px-6 py-4 flex items-center justify-center gap-3 w-full">
-                            <CheckCircle2 size={20} className="text-[#143d1f] fill-[#143d1f]/20 flex-shrink-0" />
-                            <span className="font-bold text-[14px] md:text-[15px] text-[#143d1f] uppercase tracking-wide">{t('feat_pill1')}</span>
+                            <CheckCircle2 size={20} className="text-[#1E3A1A] fill-[#1E3A1A]/20 flex-shrink-0" />
+                            <span className="font-bold text-[14px] md:text-[15px] text-[#1E3A1A] uppercase tracking-wide">{t('feat_pill1')}</span>
                         </div>
                         <div className="bg-[#eef8fd] rounded-lg px-6 py-4 flex items-center justify-center gap-3 w-full">
-                            <CheckCircle2 size={20} className="text-[#143d1f] fill-[#143d1f]/20 flex-shrink-0" />
-                            <span className="font-bold text-[14px] md:text-[15px] text-[#143d1f] uppercase tracking-wide">{t('feat_pill2')}</span>
+                            <CheckCircle2 size={20} className="text-[#1E3A1A] fill-[#1E3A1A]/20 flex-shrink-0" />
+                            <span className="font-bold text-[14px] md:text-[15px] text-[#1E3A1A] uppercase tracking-wide">{t('feat_pill2')}</span>
                         </div>
                         <div className="bg-[#eef8fd] rounded-lg px-6 py-4 flex items-center justify-center gap-3 w-full">
-                            <CheckCircle2 size={20} className="text-[#143d1f] fill-[#143d1f]/20 flex-shrink-0" />
-                            <span className="font-bold text-[14px] md:text-[15px] text-[#143d1f] uppercase tracking-wide">{t('feat_pill3')}</span>
+                            <CheckCircle2 size={20} className="text-[#1E3A1A] fill-[#1E3A1A]/20 flex-shrink-0" />
+                            <span className="font-bold text-[14px] md:text-[15px] text-[#1E3A1A] uppercase tracking-wide">{t('feat_pill3')}</span>
                         </div>
                     </div>
                 </div>
@@ -46,10 +46,10 @@ export default function WebsiteFeaturesSection() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
                             {/* Card 1 */}
                             <div className="bg-[#f3f9fb] p-8 rounded-sm text-left">
-                                <div className="text-[#143d1f] mb-4">
+                                <div className="text-[#1E3A1A] mb-4">
                                     <Monitor size={32} />
                                 </div>
-                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#143d1f] tracking-wide">
+                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#1E3A1A] tracking-wide">
                                     {t('feat_card1_title')}
                                 </h3>
                                 <p className="text-[12px] text-gray-700 leading-relaxed font-[Arial]">
@@ -59,10 +59,10 @@ export default function WebsiteFeaturesSection() {
 
                             {/* Card 2 */}
                             <div className="bg-[#f3f9fb] p-8 rounded-sm text-left">
-                                <div className="text-[#143d1f] mb-4">
+                                <div className="text-[#1E3A1A] mb-4">
                                     <Search size={32} />
                                 </div>
-                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#143d1f] tracking-wide">
+                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#1E3A1A] tracking-wide">
                                     {t('feat_card2_title')}
                                 </h3>
                                 <p className="text-[12px] text-gray-700 leading-relaxed font-[Arial]">
@@ -72,10 +72,10 @@ export default function WebsiteFeaturesSection() {
 
                             {/* Card 3 */}
                             <div className="bg-[#f3f9fb] p-8 rounded-sm text-left">
-                                <div className="text-[#143d1f] mb-4">
+                                <div className="text-[#1E3A1A] mb-4">
                                     <Megaphone size={32} />
                                 </div>
-                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#143d1f] tracking-wide">
+                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#1E3A1A] tracking-wide">
                                     {t('feat_card3_title')}
                                 </h3>
                                 <p className="text-[12px] text-gray-700 leading-relaxed font-[Arial]">
@@ -85,10 +85,10 @@ export default function WebsiteFeaturesSection() {
 
                             {/* Card 4 */}
                             <div className="bg-[#f3f9fb] p-8 rounded-sm text-left">
-                                <div className="text-[#143d1f] mb-4">
+                                <div className="text-[#1E3A1A] mb-4">
                                     <ShieldCheck size={32} />
                                 </div>
-                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#143d1f] tracking-wide">
+                                <h3 className="font-[Oswald] font-extrabold text-[16px] uppercase mb-3 text-[#1E3A1A] tracking-wide">
                                     {t('feat_card4_title')}
                                 </h3>
                                 <p className="text-[12px] text-gray-700 leading-relaxed font-[Arial]">
@@ -100,7 +100,7 @@ export default function WebsiteFeaturesSection() {
 
                     {/* Right Column - Text and Image */}
                     <div className="w-full lg:w-2/5 flex flex-col justify-start">
-                        <h3 className="font-[Oswald] font-black text-[24px] md:text-[28px] uppercase mb-4 text-[#143d1f] tracking-tight leading-tight">
+                        <h3 className="font-[Oswald] font-black text-[24px] md:text-[28px] uppercase mb-4 text-[#1E3A1A] tracking-tight leading-tight">
                             {t('feat_right_title')}
                         </h3>
                         <p className="text-[13px] text-gray-700 leading-relaxed font-[Arial] mb-8">

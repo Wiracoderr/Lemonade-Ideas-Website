@@ -63,7 +63,7 @@ export default function MarketingServices() {
                 </div>
             </div>
             {/* Section 2 inside guide (Guaranteed Ranking Full Bleed) */}
-            <div className="relative w-full mt-10 min-h-[550px] flex items-center overflow-hidden bg-[#1e3a29]">
+            <div className="relative w-full mt-10 min-h-[550px] flex items-center overflow-hidden bg-[#1E3A1A]">
                 <div className="absolute top-0 left-0 w-full lg:w-[120%] h-full z-0">
                     <Image
                         src="/images/Mesa de trabajo 1.webp"

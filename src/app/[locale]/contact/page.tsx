@@ -100,7 +100,7 @@ export default function ContactPage() {
             </section>
 
             {/* Bottom Contact CTA Section */}
-            <section className="bg-[#143d1f] py-24 md:py-32 px-4 relative overflow-hidden">
+            <section className="bg-[#1E3A1A] py-24 md:py-32 px-4 relative overflow-hidden">
                 {/* Texture Map Overlay */}
                 <div
                     className="absolute inset-0 opacity-[0.45] pointer-events-none"
@@ -113,8 +113,8 @@ export default function ContactPage() {
                 ></div>
 
                 {/* Light glow effects */}
-                <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#1f562e] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+                <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-[#3AAB43] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-[#3AAB43] rounded-full blur-3xl opacity-50 pointer-events-none"></div>
 
                 <div className="max-w-5xl mx-auto text-center relative z-10 text-white">
                     <h2 className="text-[26px] md:text-[36px] lg:text-[42px] font-[Oswald] font-bold uppercase leading-tight tracking-wide text-white mb-6">
@@ -128,7 +128,7 @@ export default function ContactPage() {
 
                     <a
                         href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
-                        className="bg-[#facc15] text-[#143d1f] font-[Oswald] font-bold uppercase px-6 md:px-8 py-4 rounded-xl shadow-[0_4px_20px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#143d1f] hover:shadow-[0_4px_30px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center justify-center tracking-wide group gap-4 md:gap-6 w-[90%] md:w-auto mx-auto"
+                        className="bg-[#FED52B] text-[#1E3A1A] font-[Oswald] font-bold uppercase px-6 md:px-8 py-4 rounded-xl shadow-[0_4px_20px_rgba(250,204,21,0.2)] hover:bg-white hover:text-[#1E3A1A] hover:shadow-[0_4px_30px_rgba(255,255,255,0.4)] transition-all duration-300 transform hover:-translate-y-1 inline-flex flex-row items-center justify-center tracking-wide group gap-4 md:gap-6 w-[90%] md:w-auto mx-auto"
                     >
                         <img src="/images/icon-call.svg" alt="Phone Outline Icon" className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] object-contain shrink-0" />
                         <div className="flex flex-col items-start text-left pt-1">

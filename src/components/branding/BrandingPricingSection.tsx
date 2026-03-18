@@ -17,14 +17,14 @@ export default function BrandingPricingSection() {
                         </h3>
                     </div>
 
-                    <p className="text-[#143d1f] w-full text-[16px] md:text-[18px] lg:text-[20px] font-[Oswald] font-bold text-center tracking-wide leading-[1.6] uppercase max-w-5xl mx-auto">
+                    <p className="text-[#1E3A1A] w-full text-[16px] md:text-[18px] lg:text-[20px] font-[Oswald] font-bold text-center tracking-wide leading-[1.6] uppercase max-w-5xl mx-auto">
                         {t('price_desc')}
                     </p>
                 </div>
 
                 <div className="bg-[#f0f9fa] rounded-2xl shadow-xl overflow-hidden border border-gray-200 mt-8">
                     {/* Top Green Banner */}
-                    <div className="bg-[#38b04d] py-5 text-center shadow-inner">
+                    <div className="bg-[#3AAB43] py-5 text-center shadow-inner">
                         <h3 className="text-white font-[Oswald] font-bold text-2xl md:text-3xl uppercase tracking-widest text-shadow-sm">
                             {t('price_title')}
                         </h3>
@@ -37,24 +37,24 @@ export default function BrandingPricingSection() {
                             <div className="mb-6 pb-6 border-b border-dotted border-gray-300 w-full">
                                 <h4 className="text-xl md:text-[22px] font-[Oswald] font-bold uppercase text-gray-900 mb-3 tracking-wide">{t('basic_pkg')}</h4>
                                 <div className="flex justify-center items-center">
-                                    <span className="text-4xl font-bold text-[#143d1f] font-[Oswald]">{t('basic_val')}</span>
+                                    <span className="text-4xl font-bold text-[#1E3A1A] font-[Oswald]">{t('basic_val')}</span>
                                 </div>
                             </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('basic_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('basic_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('basic_i3')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('basic_i4')}</span>
                                 </li>
                             </ul>
@@ -65,24 +65,24 @@ export default function BrandingPricingSection() {
                             <div className="mb-6 pb-6 border-b border-dotted border-gray-300 w-full">
                                 <h4 className="text-xl md:text-[22px] font-[Oswald] font-bold uppercase text-gray-900 mb-3 tracking-wide">{t('std_pkg')}</h4>
                                 <div className="flex justify-center items-center">
-                                    <span className="text-4xl font-bold text-[#143d1f] font-[Oswald]">{t('std_val')}</span>
+                                    <span className="text-4xl font-bold text-[#1E3A1A] font-[Oswald]">{t('std_val')}</span>
                                 </div>
                             </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('std_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('std_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('std_i3')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('std_i4')}</span>
                                 </li>
                             </ul>
@@ -93,20 +93,20 @@ export default function BrandingPricingSection() {
                             <div className="mb-6 pb-6 border-b border-dotted border-gray-300 w-full">
                                 <h4 className="text-xl md:text-[22px] font-[Oswald] font-bold uppercase text-gray-900 mb-3 tracking-wide">{t('prem_pkg')}</h4>
                                 <div className="flex justify-center items-center">
-                                    <span className="text-4xl font-bold text-[#143d1f] font-[Oswald]">{t('prem_val')}</span>
+                                    <span className="text-4xl font-bold text-[#1E3A1A] font-[Oswald]">{t('prem_val')}</span>
                                 </div>
                             </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('prem_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('prem_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <i className="fas fa-check-circle text-[#143d1f] mr-4 text-lg mt-0.5"></i>
+                                    <i className="fas fa-check-circle text-[#1E3A1A] mr-4 text-lg mt-0.5"></i>
                                     <span className="leading-snug">{t('prem_i3')}</span>
                                 </li>
                             </ul>
@@ -115,7 +115,7 @@ export default function BrandingPricingSection() {
 
                     {/* Bottom Get Started Button */}
                     <div className="px-6 md:px-8 pb-8 pt-2">
-                        <Link href="/get-started" className="w-full bg-[#143d1f] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#1f562e] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
+                        <Link href="/get-started" className="w-full bg-[#1E3A1A] text-white py-4 rounded-xl font-[Oswald] font-bold text-lg uppercase tracking-widest hover:bg-[#3AAB43] shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-3 decoration-none">
                             {t('price_btn')} <i className="fas fa-arrow-right"></i>
                         </Link>
                     </div>

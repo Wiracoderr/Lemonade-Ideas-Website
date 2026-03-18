@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl';
 export default function BrandingExperienceSection() {
     const t = useTranslations("Branding");
     return (
-        <section className="relative w-full font-sans flex flex-col lg:flex-row bg-[#153e20]">
+        <section className="relative w-full font-sans flex flex-col lg:flex-row bg-[#1E3A1A]">
             {/* Desktop Background Image (Right side) */}
             <div className="hidden lg:block absolute top-0 right-0 w-[55%] xl:w-[60%] h-full z-0">
                 <div className="relative w-full h-full">
@@ -21,7 +21,7 @@ export default function BrandingExperienceSection() {
             </div>
 
             {/* Content Container (Left side) */}
-            <div className="relative z-10 w-full lg:w-[60%] xl:w-[55%] bg-[#153e20] text-white py-16 lg:py-24 px-5 lg:pl-16 xl:pl-32 lg:pr-24 xl:pr-32 flex flex-col justify-center lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]">
+            <div className="relative z-10 w-full lg:w-[60%] xl:w-[55%] bg-[#1E3A1A] text-white py-16 lg:py-24 px-5 lg:pl-16 xl:pl-32 lg:pr-24 xl:pr-32 flex flex-col justify-center lg:[clip-path:polygon(0_0,100%_0,85%_100%,0_100%)]">
                 <div className="max-w-[800px] lg:max-w-2xl mx-auto lg:mx-0">
                     <h2 className="text-[28px] md:text-[30px] lg:text-[34px] xl:text-[40px] font-[Oswald] font-black uppercase mb-6 leading-[1.15] tracking-wide lg:text-left text-center">
                         {t('exp_title')}
