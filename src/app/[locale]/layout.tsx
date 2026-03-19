@@ -58,21 +58,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="color-scheme" content="light" />
-        {/*
-         * LCP Preload: Hero images (Critical path for PageSpeed)
-         */}
-        <link
-          rel="preload"
-          as="image"
-          href="/images/hero-bg-desktop.webp"
-          /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
-          /* @ts-ignore — imagesrcset / imagesizes are valid HTML but not yet in React types */
-          imageSrcSet="/images/hero-bg-mobile.webp 767w, /images/hero-bg-desktop.webp 768w"
-          imageSizes="100vw"
-          fetchPriority="high"
-        />
-        {/* LCP Resource Hint: Desktop Canvas Interactive Base Frame */}
-        <link rel="preload" as="image" href="/frames/desktop/frame_000.webp" fetchPriority="high" />
+
         {/* Font Awesome legacy CSS has been purged natively */}
       </head>
       <body

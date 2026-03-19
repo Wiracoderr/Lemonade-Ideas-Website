@@ -69,8 +69,6 @@ export default function MarketingServices() {
                         src="/images/Mesa de trabajo 1.webp"
                         alt="City connection guaranteed ranking"
                         fill
-                        priority
-                        quality={100}
                         sizes="(max-width: 1024px) 120vw, 100vw"
                         className="object-cover object-left"
                     />

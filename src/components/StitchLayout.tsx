@@ -95,7 +95,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                 <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
                     {/* Left Column (Text) */}
-                    <div className="w-full lg:w-[55%] mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left min-h-[340px] lg:min-h-0">
+                    <div className="w-full lg:w-[55%] lg:flex-none mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left min-h-[340px] lg:min-h-0">
                         {/* 4. Dense Typography */}
                         <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full">
                             {t.rich('hero_headline', {
@@ -119,7 +119,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     </div>
 
                     {/* Right Column (Video/Image Container) */}
-                    <div className="lg:w-[45%] w-full relative z-10 flex justify-end pr-2 lg:pr-6">
+                    <div className="lg:w-[45%] lg:flex-none w-full relative z-10 flex justify-end pr-2 lg:pr-6">
                         {/* 6. Thick white frame, removed giant red play button (kept minimal) */}
                         <div className="bg-black/90 shadow-[0_30px_60px_rgba(0,0,0,0.6)] aspect-[16/10] w-full max-w-[580px] flex items-center justify-center relative overflow-hidden border-[4px] lg:border-[6px] border-white">
                             {!isPlaying ? (
@@ -129,7 +129,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 >
                                     {/* Animated Video Thumbnail */}
                                     <div className="absolute inset-0 z-0 overflow-hidden rounded-[2rem]">
-                                        <Image src="/YT-home.webp" alt="Watch Video" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                        <Image src="/YT-home.webp" alt="Watch Video" fill sizes="(max-width: 1024px) 100vw, 50vw" quality={70} className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                     </div>
                                     {/* Subtle play indicator flattened DOM structure */}
                                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
