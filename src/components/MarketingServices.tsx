@@ -135,11 +135,11 @@ export default function MarketingServices() {
                         </div>
                         <div className="flex flex-col sm:flex-row gap-8 mb-8">
                             <div>
-                                <div className="text-4xl lg:text-5xl font-bold text-green-500 mb-1">4,000+</div>
+                                <div className="text-4xl lg:text-5xl font-bold text-emerald-700 mb-1">4,000+</div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">Monthly leads generated</p>
                             </div>
                             <div>
-                                <div className="text-4xl lg:text-5xl font-bold text-green-500 mb-1">90%</div>
+                                <div className="text-4xl lg:text-5xl font-bold text-emerald-700 mb-1">90%</div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">Percentage of clients seeing leads in the first week</p>
                             </div>
                         </div>

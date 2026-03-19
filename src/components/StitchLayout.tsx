@@ -53,7 +53,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
             <section className="relative bg-[#3a281e] pt-28 pb-16 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
                 {/* 1. Full-width Background Image (Optimized for Desktop and Mobile) */}
                 <div className="absolute inset-0 z-0 hidden md:block">
-                    <Image src="/images/hero-bg-desktop.webp" alt="Background Desktop" fill sizes="100vw" className="object-cover object-center opacity-70" priority fetchPriority="high" />
+                    <Image src="/images/hero-bg-desktop.webp" alt="Background Desktop" fill sizes="100vw" className="object-cover object-center opacity-70" priority />
                 </div>
                 <div className="absolute inset-0 z-0 md:hidden">
                     <Image src="/images/hero-bg-mobile.webp" alt="Background Mobile" fill sizes="100vw" className="object-cover object-left opacity-100" priority fetchPriority="high" />
@@ -362,11 +362,11 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                         </div>
                         <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-8 mb-10 w-full">
                             <div className="flex flex-col items-center lg:items-start">
-                                <div className="text-4xl lg:text-5xl font-bold text-green-500 mb-1">{t('ppc_stat1_num')}</div>
+                                <div className="text-4xl lg:text-5xl font-bold text-emerald-700 mb-1">{t('ppc_stat1_num')}</div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">{t('ppc_stat1_desc')}</p>
                             </div>
                             <div className="flex flex-col items-center lg:items-start">
-                                <div className="text-4xl lg:text-5xl font-bold text-green-500 mb-1">{t('ppc_stat2_num')}</div>
+                                <div className="text-4xl lg:text-5xl font-bold text-emerald-700 mb-1">{t('ppc_stat2_num')}</div>
                                 <p className="text-gray-600 dark:text-gray-400 text-sm">{t('ppc_stat2_desc')}</p>
                             </div>
                         </div>
@@ -665,7 +665,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center mb-12">
-                        <h5 className="text-white font-bold tracking-widest text-2xl mb-2 uppercase">{t('contact_subtitle')}</h5>
+                        <h4 className="text-white font-bold tracking-widest text-2xl mb-2 uppercase">{t('contact_subtitle')}</h4>
                         <h2 className="text-white text-3xl md:text-5xl font-display font-bold uppercase tracking-wide mt-4">{t('contact_title')}</h2>
                     </div>
 
@@ -688,7 +688,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <div className="flex flex-col items-center pr-2">
                                     <Image src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={32} height={32} className="w-8 h-auto" alt="reCAPTCHA" unoptimized />
                                     <span className="text-[8px] text-gray-500 mt-1">reCAPTCHA</span>
-                                    <span className="text-[6px] text-gray-400">Privacy - Terms</span>
+                                    <span className="text-[6px] text-gray-600">Privacy - Terms</span>
                                 </div>
                             </div>
                         </div>
