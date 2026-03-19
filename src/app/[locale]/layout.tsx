@@ -60,22 +60,16 @@ export default async function RootLayout({
         <meta name="color-scheme" content="light" />
         <link rel="preconnect" href="https://www.transparenttextures.com" />
         {/*
-         * LCP Resource Hints
-         * Preconnect + preload the first animation frame (frame_000.webp)
-         * for both mobile and desktop branches so the browser fetches it
-         * immediately — before the JS bundle executes.
-         *
-         * The `imagesrcset` attribute tells the browser which variant to
-         * preload based on viewport width, matching the JS logic in CameraScroll.
+         * LCP Preload: Hero images (Critical path for PageSpeed)
          */}
         <link
           rel="preload"
           as="image"
-          href="/frames/desktop/frame_000.webp"
-          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-          // @ts-ignore — imagesrcset / imagesizes are valid HTML but not yet in React types
-          imageSrcSet="/frames/mobile/frame_000.webp 767w, /frames/desktop/frame_000.webp 768w"
-          imageSizes="(max-width: 767px) 400px, 1080px"
+          href="/images/hero-bg-desktop.webp"
+          /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+          /* @ts-ignore — imagesrcset / imagesizes are valid HTML but not yet in React types */
+          imageSrcSet="/images/hero-bg-mobile.webp 767w, /images/hero-bg-desktop.webp 768w"
+          imageSizes="100vw"
           fetchPriority="high"
         />
         {/* Font Awesome legacy CSS has been purged natively */}

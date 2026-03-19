@@ -17,7 +17,6 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
         e.preventDefault();
         setSubmitting(true);
         const formData = new FormData(e.currentTarget);
-        const isRobotChecked = formData.get('notRobot');
         
         const payload = {
             name: formData.get('name'),
@@ -54,10 +53,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
             <section className="relative bg-[#3a281e] pt-28 pb-16 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
                 {/* 1. Full-width Background Image (Optimized for Desktop and Mobile) */}
                 <div className="absolute inset-0 z-0 hidden md:block">
-                    <Image src="/images/hero-bg-desktop.webp" alt="Background Desktop" fill sizes="100vw" className="object-cover object-center opacity-70" priority />
+                    <Image src="/images/hero-bg-desktop.webp" alt="Background Desktop" fill sizes="100vw" className="object-cover object-center opacity-70" priority fetchPriority="high" />
                 </div>
                 <div className="absolute inset-0 z-0 md:hidden">
-                    <Image src="/images/hero-bg-mobile.webp" alt="Background Mobile" fill sizes="100vw" className="object-cover object-left opacity-100" priority />
+                    <Image src="/images/hero-bg-mobile.webp" alt="Background Mobile" fill sizes="100vw" className="object-cover object-left opacity-100" priority fetchPriority="high" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/10"></div>
                 </div>
 
@@ -96,9 +95,9 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                 <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
                     {/* Left Column (Text) */}
-                    <div className="w-full lg:w-[55%] mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div className="w-full lg:w-[55%] mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left min-h-[340px] lg:min-h-[300px]">
                         {/* 4. Dense Typography */}
-                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full">
+                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full flex-grow">
                             {t.rich('hero_headline', {
                                 br: () => <br />,
                                 highlight: (chunks) => <span className="text-[#FED52B]">{chunks}</span>
