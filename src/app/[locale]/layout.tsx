@@ -57,6 +57,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <head>
+        <meta name="color-scheme" content="light" />
         <link rel="preconnect" href="https://www.transparenttextures.com" />
         {/*
          * LCP Resource Hints

@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Disables automatic OS dark mode detection in Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer utilities {
   @media (min-width: 1024px) {
     .custom-diagonal-slant {
