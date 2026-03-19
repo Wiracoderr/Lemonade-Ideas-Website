@@ -71,6 +71,8 @@ export default async function RootLayout({
           imageSizes="100vw"
           fetchPriority="high"
         />
+        {/* LCP Resource Hint: Desktop Canvas Interactive Base Frame */}
+        <link rel="preload" as="image" href="/frames/desktop/frame_000.webp" fetchPriority="high" />
         {/* Font Awesome legacy CSS has been purged natively */}
       </head>
       <body
