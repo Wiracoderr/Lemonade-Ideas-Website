@@ -229,7 +229,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                 <Image src="/services/smm-desktop.webp" alt="Social Media Management" fill sizes="(max-width: 1200px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
                             </div>
                             <div className="md:hidden absolute inset-0">
-                                <Image src="/services/smm-mobile.webp" alt="Social Media Management Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                                <Image src="/services/smm-mobile.webp" alt="Social Media Management Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" quality={60} />
                             </div>
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>

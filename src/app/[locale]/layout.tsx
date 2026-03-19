@@ -58,7 +58,6 @@ export default async function RootLayout({
     <html lang={locale}>
       <head>
         <meta name="color-scheme" content="light" />
-        <link rel="preconnect" href="https://www.transparenttextures.com" />
         {/*
          * LCP Preload: Hero images (Critical path for PageSpeed)
          */}
