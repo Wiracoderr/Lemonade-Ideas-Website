@@ -95,9 +95,9 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                 <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
                     {/* Left Column (Text) */}
-                    <div className="w-full lg:w-[55%] mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left min-h-[340px] lg:min-h-[300px]">
+                    <div className="w-full lg:w-[55%] mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left min-h-[340px] lg:min-h-0">
                         {/* 4. Dense Typography */}
-                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full flex-grow">
+                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full">
                             {t.rich('hero_headline', {
                                 br: () => <br />,
                                 highlight: (chunks) => <span className="text-[#FED52B]">{chunks}</span>
@@ -127,12 +127,10 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     className="absolute inset-0 z-20 cursor-pointer group"
                                     onClick={() => setIsPlaying(true)}
                                 >
-                                    <Image
-                                        src="/YT-home.webp"
-                                        alt="Watch Video"
-                                        fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                    />
+                                    {/* Animated Video Thumbnail */}
+                                    <div className="absolute inset-0 z-0 overflow-hidden rounded-[2rem]">
+                                        <Image src="/YT-home.webp" alt="Watch Video" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                    </div>
                                     {/* Subtle play indicator flattened DOM structure */}
                                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                         <svg className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full shadow-lg text-[#1E3A1A] fill-current transition-transform group-hover:scale-110 p-4 pl-5" viewBox="0 0 24 24">
