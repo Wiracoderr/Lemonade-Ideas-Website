@@ -1,6 +1,5 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
-import MobileHero from '@/components/MobileHero';
 import {setRequestLocale} from 'next-intl/server';
 
 // CameraScroll is desktop-only (hidden on mobile via CSS).
@@ -44,11 +43,6 @@ export default async function Home({
             {/* Desktop Hero (Hidden on Mobile) */}
             <div className="hidden md:block">
                 <CameraScrollWrapper />
-            </div>
-
-            {/* Mobile App Hero (Hidden on Desktop) */}
-            <div className="block md:hidden">
-                <MobileHero />
             </div>
 
             {/* 2. BRANDING SECTIONS (Dynamically Loaded) */}

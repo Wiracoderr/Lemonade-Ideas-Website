@@ -51,10 +51,14 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
     return (
         <div className="font-body text-gray-800 dark:text-gray-100 bg-white dark:bg-gray-900 z-20 relative">
             {children}
-            <section className="relative bg-[#3a281e] py-24 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
-                {/* 1. Full-width Background Image (Office) - Hidden on mobile to optimize LCP */}
+            <section className="relative bg-[#3a281e] pt-28 pb-16 lg:py-40 overflow-hidden min-h-[650px] flex items-center">
+                {/* 1. Full-width Background Image (Optimized for Desktop and Mobile) */}
                 <div className="absolute inset-0 z-0 hidden md:block">
-                    <Image src="/images/hero-bg.jpg" alt="Background" fill sizes="100vw" className="object-cover object-center opacity-70" priority />
+                    <Image src="/images/hero-bg-desktop.webp" alt="Background Desktop" fill sizes="100vw" className="object-cover object-center opacity-70" priority />
+                </div>
+                <div className="absolute inset-0 z-0 md:hidden">
+                    <Image src="/images/hero-bg-mobile.webp" alt="Background Mobile" fill sizes="100vw" className="object-cover object-left opacity-100" priority />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/10"></div>
                 </div>
 
                 {/* 2. Authentic SVG Curved Background (Using User's Custom "Mesa de trabajo 1.svg" Vectors) */}
@@ -92,24 +96,24 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                 <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
                     {/* Left Column (Text) */}
-                    <div className="lg:w-[55%] mb-16 lg:mb-0 relative z-10 pl-2 lg:pl-8">
+                    <div className="w-full lg:w-[55%] mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left">
                         {/* 4. Dense Typography */}
-                        <h2 className="text-[2.5rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1] mb-8 uppercase tracking-tight relative z-10">
+                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full">
                             {t.rich('hero_headline', {
                                 br: () => <br />,
                                 highlight: (chunks) => <span className="text-[#FED52B]">{chunks}</span>
                             })}
                         </h2>
-                        <p className="text-white text-[15px] font-bold tracking-wide mb-12 opacity-100 drop-shadow-md">
+                        <p className="text-white text-[15.5px] lg:text-[15px] font-bold tracking-wide mb-10 lg:mb-12 opacity-100 drop-shadow-md max-w-[310px] lg:max-w-none">
                             {t('hero_subheadline')}
                         </p>
 
                         {/* 5. Clean Buttons */}
-                        <div className="flex flex-wrap items-center gap-x-10 gap-y-6">
-                            <a className="bg-white text-[#1E3A1A] hover:bg-gray-100 font-bold py-3.5 px-8 text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition duration-300 inline-block font-sans" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
+                        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-x-10 gap-y-5 w-full mt-2 lg:mt-0">
+                            <a className="inline-block bg-[#eaf4f7] text-[#1E3A1A] hover:bg-white font-black py-4 lg:py-3.5 px-8 text-[13.5px] lg:text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition duration-300 font-sans text-center" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
                                 {t('btn_speakExpert')}
                             </a>
-                            <Link className="text-white hover:text-[#FED52B] font-bold text-sm uppercase tracking-widest transition duration-300 inline-block drop-shadow-md font-sans" href="/pricing">
+                            <Link className="inline-block text-white hover:text-[#FED52B] font-black text-[14px] lg:text-sm uppercase tracking-widest transition duration-300 drop-shadow-md font-sans text-center" href="/pricing">
                                 {t('btn_seePricing')}
                             </Link>
                         </div>
@@ -163,13 +167,12 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Service Cards */}
                         <Link href="/seo" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
-                            <Image
-                                src="/services/SEO.avif"
-                                alt="SEO"
-                                fill
-                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
-                                className="object-cover transition duration-500 group-hover:scale-110"
-                            />
+                            <div className="hidden md:block absolute inset-0">
+                                <Image src="/services/seo-desktop.webp" alt="SEO" fill sizes="(max-width: 1200px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
+                            <div className="md:hidden absolute inset-0">
+                                <Image src="/services/seo-mobile.webp" alt="SEO Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
                             {/* Base overlay for dark contrast */}
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             {/* Bottom 20% blur/gradient for text legibility like Stitch */}
@@ -180,7 +183,12 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </Link>
                         <Link href="/seochatgpt" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
-                            <Image src="/services/SEO Chat GPT.avif" alt="SEO ChatGPT" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
+                            <div className="hidden md:block absolute inset-0">
+                                <Image src="/services/seo-chatgpt-desktop.webp" alt="SEO ChatGPT" fill sizes="(max-width: 1200px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
+                            <div className="md:hidden absolute inset-0">
+                                <Image src="/services/seo-chatgpt-mobile.webp" alt="SEO ChatGPT Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -189,7 +197,12 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </Link>
                         <Link href="/google-ads" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
-                            <Image src="/services/photo-1654277041042-8927699fcfd2.avif" alt="Google Ads Management" width={400} height={256} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" sizes="(max-width: 768px) 50vw, 33vw" />
+                            <div className="hidden md:block absolute inset-0">
+                                <Image src="/services/google-ads-desktop.webp" alt="Google Ads Management" fill sizes="(max-width: 1200px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
+                            <div className="md:hidden absolute inset-0">
+                                <Image src="/services/google-ads-mobile.webp" alt="Google Ads Management Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -213,13 +226,12 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </Link>
                         <Link href="/social-media-management" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
-                            <Image
-                                src="/services/social media management.avif"
-                                alt="Social Media Management"
-                                fill
-                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
-                                className="object-cover transition duration-500 group-hover:scale-110"
-                            />
+                            <div className="hidden md:block absolute inset-0">
+                                <Image src="/services/smm-desktop.webp" alt="Social Media Management" fill sizes="(max-width: 1200px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
+                            <div className="md:hidden absolute inset-0">
+                                <Image src="/services/smm-mobile.webp" alt="Social Media Management Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
@@ -228,13 +240,12 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </Link>
                         <Link href="/branding" className="group relative min-h-[220px] sm:h-64 aspect-[4/3] sm:aspect-auto overflow-hidden rounded-lg shadow-lg cursor-pointer block">
-                            <Image
-                                src="/services/Branding.avif"
-                                alt="Branding & Strategy"
-                                fill
-                                sizes="(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw"
-                                className="object-cover transition duration-500 group-hover:scale-110"
-                            />
+                            <div className="hidden md:block absolute inset-0">
+                                <Image src="/services/branding-desktop.webp" alt="Branding & Strategy" fill sizes="(max-width: 1200px) 50vw, 33vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
+                            <div className="md:hidden absolute inset-0">
+                                <Image src="/services/branding-mobile.webp" alt="Branding & Strategy Mobile" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover transition duration-500 group-hover:scale-110" />
+                            </div>
                             <div className="absolute inset-0 bg-black/40 transition duration-300 group-hover:bg-black/20"></div>
                             <div className="absolute bottom-0 left-0 right-0 h-[30%] bg-gradient-to-t from-black/90 to-transparent"></div>
                             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
