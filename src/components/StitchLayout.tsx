@@ -93,33 +93,33 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                     </svg>
                 </div>
 
-                <div className="container mx-auto px-4 relative z-10 flex flex-col lg:flex-row items-center justify-between">
+                <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-center">
                     {/* Left Column (Text) */}
-                    <div className="w-full lg:w-[55%] lg:flex-none mb-12 lg:mb-0 relative z-10 lg:pl-8 flex flex-col items-center lg:items-start text-center lg:text-left min-h-[340px] lg:min-h-0">
+                    <div className="w-full lg:w-full lg:max-w-5xl mb-12 lg:mb-20 relative z-10 flex flex-col items-center text-center min-h-[340px] lg:min-h-0">
                         {/* 4. Dense Typography */}
-                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1] mb-6 lg:mb-8 uppercase tracking-tight relative z-10 drop-shadow-lg w-full">
+                        <h2 className="text-[2.4rem] sm:text-[3rem] md:text-[4rem] lg:text-[5.5rem] font-display font-black text-white leading-[1.05] lg:leading-[1.1] mb-6 lg:mb-10 uppercase tracking-tight relative z-10 drop-shadow-lg w-full">
                             {t.rich('hero_headline', {
                                 br: () => <br />,
                                 highlight: (chunks) => <span className="text-[#FED52B]">{chunks}</span>
                             })}
                         </h2>
-                        <p className="text-white text-[15.5px] lg:text-[15px] font-bold tracking-wide mb-10 lg:mb-12 opacity-100 drop-shadow-md max-w-[310px] lg:max-w-none">
+                        <p className="text-white text-[15.5px] lg:text-[18px] font-bold tracking-wide mb-10 lg:mb-14 opacity-100 drop-shadow-md max-w-[310px] lg:max-w-2xl mx-auto">
                             {t('hero_subheadline')}
                         </p>
 
                         {/* 5. Clean Buttons */}
-                        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-x-10 gap-y-5 w-full mt-2 lg:mt-0">
-                            <a className="inline-block bg-[#eaf4f7] text-[#1E3A1A] hover:bg-white font-black py-4 lg:py-3.5 px-8 text-[13.5px] lg:text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition duration-300 font-sans text-center" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
+                        <div className="flex flex-col lg:flex-row items-center justify-center gap-x-10 gap-y-5 w-full mt-2 lg:mt-6">
+                            <a className="inline-block bg-[#eaf4f7] text-[#1E3A1A] hover:bg-white font-black py-4 lg:py-4 px-10 text-[13.5px] lg:text-[15px] uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition duration-300 font-sans text-center" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
                                 {t('btn_speakExpert')}
                             </a>
-                            <Link className="inline-block text-white hover:text-[#FED52B] font-black text-[14px] lg:text-sm uppercase tracking-widest transition duration-300 drop-shadow-md font-sans text-center" href="/pricing">
+                            <Link className="inline-block text-white hover:text-[#FED52B] font-black text-[14px] lg:text-[15px] uppercase tracking-widest transition duration-300 drop-shadow-md font-sans text-center" href="/pricing">
                                 {t('btn_seePricing')}
                             </Link>
                         </div>
                     </div>
 
-                    {/* Right Column (Video/Image Container) */}
-                    <div className="lg:w-[45%] lg:flex-none w-full relative z-10 flex justify-end pr-2 lg:pr-6">
+                    {/* Right Column (Video/Image Container) - HIDDEN ON DESKTOP TO PROTECT CLS/PERFORMANCE */}
+                    <div className="w-full relative z-10 flex justify-end pr-2 lg:hidden">
                         {/* 6. Thick white frame, removed giant red play button (kept minimal) */}
                         <div className="bg-black/90 shadow-[0_30px_60px_rgba(0,0,0,0.6)] aspect-[16/10] w-full max-w-[580px] flex items-center justify-center relative overflow-hidden border-[4px] lg:border-[6px] border-white">
                             {!isPlaying ? (
