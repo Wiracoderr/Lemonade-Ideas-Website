@@ -55,7 +55,7 @@ export default function Header() {
             <AnimatePresence>
                 {isVisible && (
                     <m.div
-                        initial={{ scaleY: 0, opacity: 0 }}
+                        initial={{ scaleY: 1, opacity: 1 }}
                         animate={{ scaleY: 1, opacity: 1 }}
                         exit={{ scaleY: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
