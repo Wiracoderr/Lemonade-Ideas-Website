@@ -78,8 +78,8 @@ export default function MarketingServices() {
                 <div className="container mx-auto px-4 relative z-10 w-full flex justify-end lg:pr-16 xl:pr-32">
                     <div className="w-full lg:w-1/2 flex flex-col justify-center py-16">
                         <div className="text-white w-full max-w-[650px] lg:ml-auto">
-                            <h3 className="text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">SEO CHATGPT™</h3>
-                            <h4 className="text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With SEO CHATGPT™, You Don&apos;t Pay A Monthly Fee Until We Get You In Top AI Answers For 100+ Prompts.</h4>
+                            <h3 className="text-4xl font-black mb-6 font-display uppercase tracking-tight text-white leading-[1.05] drop-shadow-md">SEO CHATGPT</h3>
+                            <h4 className="text-[16px] font-bold mb-8 font-display opacity-100 leading-[1.5] drop-shadow">With SEO CHATGPT, You Don&apos;t Pay A Monthly Fee Until We Get You In Top AI Answers For 100+ Prompts.</h4>
                             <ul className="space-y-3 mb-10 text-[14px] font-semibold opacity-100 drop-shadow">
                                 <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Target hundreds of AI prompts simultaneously</span></li>
                                 <li className="flex items-start gap-3"><span className="text-xl leading-none">&bull;</span><span>Achieve AI presence quickly (typically within 7 weeks)</span></li>

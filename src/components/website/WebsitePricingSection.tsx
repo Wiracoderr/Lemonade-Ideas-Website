@@ -1,5 +1,6 @@
 import { MonitorSmartphone } from "lucide-react";
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function WebsitePricingSection() {
   const t = useTranslations("Website");
@@ -116,14 +117,12 @@ export default function WebsitePricingSection() {
                     {t('price_val')}
                   </div>
                   
-                  <a 
-                    href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
+                  <Link 
+                    href="/website/instantquote" 
                     className="bg-[#fed034] hover:bg-white text-[#1E3A1A] font-[Oswald] font-bold py-4 px-8 rounded shadow-[0_10px_20px_rgba(0,0,0,0.15)] text-[15px] uppercase tracking-wider transition-colors w-[90%] text-center"
                   >
                     {t('price_btn')}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
