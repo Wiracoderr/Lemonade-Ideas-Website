@@ -55,9 +55,17 @@ export default function SmmPricingSection() {
                                     <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_starter_feature_3')}</span>
                                 </li>
-                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                     <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_starter_feature_4')}</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
+                                    <span className="leading-snug">{t('pricing_starter_feature_5')}</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
+                                    <span className="leading-snug">{t('pricing_starter_feature_6')}</span>
                                 </li>
                             </ul>
                         </div>
@@ -83,9 +91,17 @@ export default function SmmPricingSection() {
                                     <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_growth_feature_3')}</span>
                                 </li>
-                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                     <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_growth_feature_4')}</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
+                                    <span className="leading-snug">{t('pricing_growth_feature_5')}</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
+                                    <span className="leading-snug">{t('pricing_growth_feature_6')}</span>
                                 </li>
                             </ul>
                         </div>
@@ -94,9 +110,9 @@ export default function SmmPricingSection() {
                         <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-gray-100 flex flex-col">
                             <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
                                 <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-[#1E3A1A] mb-4 tracking-wide">{t('pricing_comp_title')}</h4>
-                                <div className="flex justify-center items-center gap-2">
-                                    <span className="text-4xl md:text-5xl font-bold text-[#1E3A1A] font-[Oswald]">{t('pricing_comp_price')}</span>
-                                </div>
+                                    <span className="text-4xl md:text-5xl font-bold text-[#1E3A1A] font-[Oswald] flex items-center justify-center gap-2">
+                                        <Link href="/contact" className="hover:underline text-[#3AAB43] whitespace-nowrap">{t('pricing_comp_contact')}</Link> <span className="whitespace-nowrap">{t('pricing_comp_price')}</span>
+                                    </span>
                             </div>
                             <ul className="space-y-4 text-[13px] xl:text-[15px] text-[#1E3A1A] font-[Roboto] flex-grow">
                                 <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
@@ -115,9 +131,17 @@ export default function SmmPricingSection() {
                                     <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_4')}</span>
                                 </li>
-                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
                                     <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
                                     <span className="leading-snug">{t('pricing_comp_feature_5')}</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200">
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
+                                    <span className="leading-snug">{t('pricing_comp_feature_6')}</span>
+                                </li>
+                                <li className="flex items-start pb-4 border-b border-dotted border-gray-200 border-none">
+                                    <CheckCircle className="text-[#1E3A1A] mr-3 text-lg mt-0.5" />
+                                    <span className="leading-snug">{t('pricing_comp_feature_7')}</span>
                                 </li>
                             </ul>
                         </div>

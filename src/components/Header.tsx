@@ -6,7 +6,7 @@ import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import { m, LazyMotion, domAnimation, AnimatePresence } from "framer-motion";
 import { Mail, Phone, FileText, Menu, X } from "lucide-react";
-import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
+import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin, BrandTiktok } from "./SocialIcons";
 
 export default function Header() {
     const pathname = usePathname();
@@ -71,7 +71,7 @@ export default function Header() {
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Phone size={14} className="fill-[#1E3A1A]" />
-                                    <Link href="#" className="hover:text-yellow-600">{t('scheduleCall')}</Link>
+                                    <Link href="/get-started" className="hover:text-yellow-600">{t('scheduleCall')}</Link>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <FileText size={14} className="fill-[#1E3A1A]" />
@@ -96,6 +96,9 @@ export default function Header() {
                                 </Link>
                                 <Link href="http://www.linkedin.com/in/lemonade-ideas-080122348" aria-label="LinkedIn" className="bg-white text-[#1E3A1A] p-1.5 rounded-full hover:bg-[#FED52B] transition-colors flex items-center justify-center">
                                     <BrandLinkedin size={12} />
+                                </Link>
+                                <Link href="https://www.tiktok.com/@lemonade.ideas" aria-label="TikTok" className="bg-white text-[#1E3A1A] p-1.5 rounded-full hover:bg-[#FED52B] transition-colors flex items-center justify-center">
+                                    <BrandTiktok size={12} />
                                 </Link>
                             </div>
                         </div>
@@ -219,6 +222,7 @@ export default function Header() {
                                     <Link href="https://www.facebook.com/lemonadeidea/" aria-label="Facebook" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1E3A1A] hover:text-yellow-500"><BrandFacebook size={24} /></Link>
                                     <Link href="https://www.instagram.com/lemonade.ideas" aria-label="Instagram" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1E3A1A] hover:text-yellow-500"><BrandInstagram size={24} /></Link>
                                     <Link href="https://www.youtube.com/channel/UC1G5NWz9UbHE2L5HeIVJ2Xg" aria-label="YouTube" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1E3A1A] hover:text-yellow-500"><BrandYoutube size={24} /></Link>
+                                    <Link href="https://www.tiktok.com/@lemonade.ideas" aria-label="TikTok" onClick={() => setIsMobileMenuOpen(false)} className="text-[#1E3A1A] hover:text-yellow-500"><BrandTiktok size={24} /></Link>
                                 </div>
                             </div>
                         </m.div>

@@ -41,21 +41,22 @@ export default function BrandingPricingSection() {
                                     <span className="text-4xl font-bold text-[#1E3A1A] font-[Oswald]">{t('basic_val')}</span>
                                 </div>
                             </div>
+                            <p className="text-gray-500 italic text-[13px] mb-6 pb-4 border-b border-gray-100 w-full text-left leading-relaxed">{t('basic_focus')}</p>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('basic_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('basic_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('basic_i3')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('basic_i4')}</span>
                                 </li>
                             </ul>
@@ -69,21 +70,25 @@ export default function BrandingPricingSection() {
                                     <span className="text-4xl font-bold text-[#1E3A1A] font-[Oswald]">{t('std_val')}</span>
                                 </div>
                             </div>
+                            <p className="text-gray-500 italic text-[13px] mb-4 w-full text-left leading-relaxed">{t('std_focus')}</p>
+                            <div className="w-full bg-[#f0f9fa] text-[#1E3A1A] font-bold text-[13px] py-2 px-3 rounded-lg text-left mb-6 border border-[#cbebec]">
+                                ➕ {t('std_inc')}
+                            </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('std_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('std_i2')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('std_i3')}</span>
                                 </li>
                                 <li className="flex items-start pb-2 border-none">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('std_i4')}</span>
                                 </li>
                             </ul>
@@ -97,18 +102,30 @@ export default function BrandingPricingSection() {
                                     <span className="text-4xl font-bold text-[#1E3A1A] font-[Oswald]">{t('prem_val')}</span>
                                 </div>
                             </div>
+                            <p className="text-gray-500 italic text-[13px] mb-4 w-full text-left leading-relaxed">{t('prem_focus')}</p>
+                            <div className="w-full bg-[#f0f9fa] text-[#1E3A1A] font-bold text-[13px] py-2 px-3 rounded-lg text-left mb-6 border border-[#cbebec]">
+                                ➕ {t('prem_inc')}
+                            </div>
                             <ul className="space-y-5 text-[14px] text-gray-600 font-[Arial] flex-grow text-left w-full pl-2">
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('prem_i1')}</span>
                                 </li>
                                 <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('prem_i2')}</span>
                                 </li>
-                                <li className="flex items-start pb-2 border-none">
-                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5" />
+                                <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
                                     <span className="leading-snug">{t('prem_i3')}</span>
+                                </li>
+                                <li className="flex items-start pb-5 border-b border-dotted border-gray-200">
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
+                                    <span className="leading-snug">{t('prem_i4')}</span>
+                                </li>
+                                <li className="flex items-start pb-2 border-none">
+                                    <CheckCircle className="text-[#1E3A1A] mr-4 text-lg mt-0.5 flex-shrink-0" />
+                                    <span className="leading-snug">{t('prem_i5')}</span>
                                 </li>
                             </ul>
                         </div>

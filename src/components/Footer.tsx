@@ -1,7 +1,7 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin } from "./SocialIcons";
+import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin, BrandTiktok } from "./SocialIcons";
 import { Phone } from 'lucide-react';
 
 export default function Footer() {
@@ -48,6 +48,9 @@ export default function Footer() {
                                 <Link href="http://www.linkedin.com/in/lemonade-ideas-080122348" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" className="w-[28px] h-[28px] rounded-full bg-[#122e0f] text-white flex items-center justify-center hover:bg-[#40c34b] transition-colors">
                                     <BrandLinkedin size={14} />
                                 </Link>
+                                <Link href="https://www.tiktok.com/@lemonade.ideas" aria-label="TikTok" target="_blank" rel="noopener noreferrer" className="w-[28px] h-[28px] rounded-full bg-[#122e0f] text-white flex items-center justify-center hover:bg-[#40c34b] transition-colors">
+                                    <BrandTiktok size={14} />
+                                </Link>
                             </div>
                         </div>
 
@@ -70,7 +73,7 @@ export default function Footer() {
             
             {/* Bottom Copyright Strip */}
             <div className="bg-[#122e0f] text-white py-3.5 text-center text-[11px] font-bold tracking-wider">
-                &copy; 2025 All Rights Reserved | Lemonade Ideas
+                &copy; 2026 All Rights Reserved | Lemonade Ideas
             </div>
         </footer>
     );

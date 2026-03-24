@@ -98,8 +98,8 @@ export default function PricingCardsSection() {
                 t('plan1_f4')
             ],
             fees: [
-                { label: t('plan1_fee1_label'), amount: "$1750" },
-                { label: t('plan1_fee2_label'), amount: "$450" }
+                { label: t('plan1_fee1_label'), amount: "$2100" },
+                { label: t('plan1_fee2_label'), amount: "$1250" }
             ],
             ctaPrimary: t('btn_started'),
             ctaSecondary: t('btn_contact')
@@ -117,8 +117,8 @@ export default function PricingCardsSection() {
                 t('plan2_f6')
             ],
             fees: [
-                { label: t('plan2_fee1_label'), amount: "$1000" },
-                { label: t('plan2_fee2_label'), amount: "$750" }
+                { label: t('plan2_fee1_label'), amount: "$1940" },
+                { label: t('plan2_fee2_label'), amount: "$1125" }
             ],
             ctaPrimary: t('btn_started'),
             ctaSecondary: t('btn_contact')
@@ -136,8 +136,8 @@ export default function PricingCardsSection() {
                 t('plan3_f6')
             ],
             fees: [
-                { label: t('plan3_fee1_label'), amount: "$1000" },
-                { label: t('plan3_fee2_label'), amount: "$750" }
+                { label: t('plan3_fee1_label'), amount: "$1540" },
+                { label: t('plan3_fee2_label'), amount: "$980" }
             ],
             ctaPrimary: t('btn_started'),
             ctaSecondary: t('btn_contact')
@@ -173,7 +173,7 @@ export default function PricingCardsSection() {
                 t('plan5_f6')
             ],
             fees: [
-                { label: t('plan5_fee1_label'), amount: "$1000" }
+                { label: t('plan5_fee1_label'), amount: "$1500" }
             ],
             ctaPrimary: t('btn_started'),
             ctaSecondary: t('btn_contact')
@@ -191,7 +191,7 @@ export default function PricingCardsSection() {
                 t('plan6_f6')
             ],
             fees: [
-                { label: t('plan6_fee1_label'), amount: "$5000" }
+                { label: t('plan6_fee1_label'), amount: "$4,700" }
             ],
             ctaPrimary: t('btn_started'),
             ctaSecondary: t('btn_contact')

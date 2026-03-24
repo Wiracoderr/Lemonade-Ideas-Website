@@ -85,7 +85,7 @@ export default function GoogleAdsPricingSection() {
                                 <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
                                     <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('price_card1_title')}</h4>
                                     <div className="flex justify-center items-center gap-2">
-                                        <span className="text-5xl font-bold text-gray-900 font-[Oswald]">$1000</span>
+                                        <span className="text-5xl font-bold text-gray-900 font-[Oswald]">$1540</span>
                                         <span className="text-sm font-bold text-gray-500 uppercase">{t('price_card1_sub')}</span>
                                     </div>
                                 </div>
@@ -114,7 +114,7 @@ export default function GoogleAdsPricingSection() {
                                 <div className="text-center mb-6 pb-6 border-b border-dotted border-gray-300">
                                     <h4 className="text-xl md:text-2xl font-[Oswald] font-bold uppercase text-gray-900 mb-4 tracking-wide">{t('price_card2_title')}</h4>
                                     <div className="flex justify-center items-center gap-2">
-                                        <span className="text-5xl font-bold text-gray-900 font-[Oswald]">$750</span>
+                                        <span className="text-5xl font-bold text-gray-900 font-[Oswald]">$980</span>
                                         <span className="text-sm font-bold text-gray-500 uppercase">{t('price_card2_sub')}</span>
                                     </div>
                                 </div>
