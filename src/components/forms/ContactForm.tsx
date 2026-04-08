@@ -55,6 +55,12 @@ export default function ContactForm() {
                 const data = await res.json();
                 console.log("Success data:", data);
                 alert("Thank you! Your message has been sent successfully.");
+                
+                // Unlock the free tools suite globally for this device
+                if (typeof window !== 'undefined') {
+                    localStorage.setItem('lemonade_global_unlocked', 'true');
+                }
+
                 (e.target as HTMLFormElement).reset();
             } else {
                 const errData = await res.text();

@@ -1,11 +1,12 @@
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Image from "next/image";
 import { BrandFacebook, BrandInstagram, BrandYoutube, BrandLinkedin, BrandTiktok } from "./SocialIcons";
 import { Phone } from 'lucide-react';
 
 export default function Footer() {
     const t = useTranslations("Footer");
+    const locale = useLocale();
 
     return (
         <footer className="font-sans">
@@ -64,6 +65,7 @@ export default function Footer() {
                                 <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/website">{t('service_website')}</Link></li>
                                 <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/social-media-management">{t('service_smm')}</Link></li>
                                 <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/branding">{t('service_branding')}</Link></li>
+                                <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/free-tools">{locale === 'es' ? 'Herramientas Gratis' : 'Free Tools'}</Link></li>
                             </ul>
                             <Link href="/contact" className="inline-block bg-[#122e0f] text-white font-bold py-2.5 px-6 text-[11px] uppercase rounded-[2px] hover:bg-[#40c34b] transition mt-1">{t('contactUs')}</Link>
                         </div>
