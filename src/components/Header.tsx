@@ -67,7 +67,7 @@ export default function Header() {
                             <div className="flex-1 bg-[#f2f9fa] text-[#1E3A1A] flex items-center justify-end pr-8 gap-8 relative z-10">
                                 <div className="flex items-center gap-2">
                                     <Mail size={14} />
-                                    <a href="mailto:sales@lemonadeideas.com" className="hover:text-yellow-600">sales@lemonadeideas.com</a>
+                                    <a href="mailto:marketing@lemonadeideas.com" className="hover:text-yellow-600">marketing@lemonadeideas.com</a>
                                 </div>
                                 <div className="flex items-center gap-2">
                                     <Phone size={14} className="fill-[#1E3A1A]" />

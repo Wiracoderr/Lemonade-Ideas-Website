@@ -31,7 +31,7 @@ export default function Footer() {
                             <h4 className="font-black text-[14px] text-gray-950 mb-4 uppercase tracking-wide">{t('contactDetails')}</h4>
                             <ul className="space-y-2.5 text-[12.5px] font-semibold text-gray-800 opacity-95 leading-snug">
                                 <li><a href="tel:+12132866625" className="flex items-center gap-2 hover:text-green-700 transition"><Phone strokeWidth={2.5} size={15} className="text-[#2b8833]" /> (213) 286-6625</a></li>
-                                <li><a href="mailto:sales@lemonadeideas.com" className="flex items-center gap-2 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-[#122e0f] text-sm font-black"></i> sales@lemonadeideas.com</a></li>
+                                <li><a href="mailto:marketing@lemonadeideas.com" className="flex items-center gap-2 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-[#122e0f] text-sm font-black"></i> marketing@lemonadeideas.com</a></li>
                                 <li className="pt-2 font-bold opacity-90">
                                     209 21st Place Santa Monica 90402<br />California USA
                                 </li>
