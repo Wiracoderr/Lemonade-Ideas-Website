@@ -34,12 +34,31 @@ export default function ContactForm() {
             console.log("Fetch response received. Status:", res.status);
             
             if (res.ok) {
+                // ADDED: Ping MailerLite transparently in the background
+                try {
+                    await fetch('/api/mailerlite', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ 
+                            email: payload.email, 
+                            name: payload.name, 
+                            groupId: '184120526691633061', // Contact Group
+                            fields: {
+                                phone: payload.phone || "",
+                                company: payload.website || "", // Saving website in company field to avoid custom field conflict
+                                quoting_details: "Mensaje General de Contacto"
+                            }
+                        })
+                    });
+                } catch(e) { console.error("Error from Mailerlite", e); }
+
                 const data = await res.json();
                 console.log("Success data:", data);
                 alert("Thank you! Your message has been sent successfully.");
                 (e.target as HTMLFormElement).reset();
             } else {
                 const errData = await res.text();
+
                 console.error("Server returned an error:", res.status, errData);
                 alert(`Error submitting form: ${res.status}`);
             }

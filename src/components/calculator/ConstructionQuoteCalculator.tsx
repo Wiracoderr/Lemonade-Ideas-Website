@@ -142,14 +142,36 @@ export default function ConstructionQuoteCalculator() {
     }
   };
 
-  const submitLead = (e: React.FormEvent) => {
+  const submitLead = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmittingLead(true);
+
+    try {
+        const totals = calculateTotals();
+        await fetch('/api/mailerlite', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                email: leadData.email, 
+                name: leadData.name, 
+                groupId: '184120490023978848', // Web Quote
+                fields: {
+                    phone: leadData.phone || "",
+                    company: leadData.businessName || "",
+                    quoting_details: `Construction Quote -> Scale: ${scale}\nSEO: ${seo}\nMods: ${mod}\nAddons: ${addons.join(',')}\nBrand: ${brand}\nCopy: ${copy}`,
+                    estimated_price: `$${totals.minRange.toString()} - $${totals.maxRange.toString()}`
+                }
+            })
+        });
+    } catch(err) {
+        console.error("Mailerite API error", err);
+    }
+
     setTimeout(() => {
       setIsSubmittingLead(false);
       setShowLeadGate(false);
       setShowResults(true);
-    }, 1500);
+    }, 500);
   };
 
   // UI Components

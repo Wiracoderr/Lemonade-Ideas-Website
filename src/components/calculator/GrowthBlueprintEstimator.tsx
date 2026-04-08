@@ -160,14 +160,36 @@ export default function GrowthBlueprintEstimator() {
     }
   };
 
-  const submitLead = (e: React.FormEvent) => {
+  const submitLead = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmittingLead(true);
+
+    try {
+        const totals = calculateTotals();
+        await fetch('/api/mailerlite', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                email: leadData.email, 
+                name: leadData.name, 
+                groupId: '184120509254862349', // General Quote
+                fields: {
+                    phone: leadData.phone || "",
+                    company: leadData.businessName || "",
+                    quoting_details: `B2B Blueprint Estimator -> Brand: ${brand}\nSocial: ${social}\nHost: ${host}\nSEO: ${seo}\nAIO: ${aio}\nAds: ${ads}`,
+                    estimated_price: `$${totals.netMonthly.toString()} /mo`
+                }
+            })
+        });
+    } catch(err) {
+        console.error("Mailerite API error", err);
+    }
+
     setTimeout(() => {
       setIsSubmittingLead(false);
       setShowLeadGate(false);
       setShowResults(true);
-    }, 1500);
+    }, 500);
   };
 
   // UI Components
