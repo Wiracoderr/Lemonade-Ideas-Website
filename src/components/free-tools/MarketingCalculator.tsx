@@ -186,6 +186,7 @@ export default function MarketingCalculator() {
   const [showResults, setShowResults] = useState(false);
   
   // Phase 3 States
+  const [isUnlocked, setIsUnlocked] = useState(false);
   const [isSubmittingLead, setIsSubmittingLead] = useState(false);
   const [leadForm, setLeadForm] = useState({ name: '', email: '', phone: '', website: '', message: '' });
 
