@@ -30,7 +30,7 @@ export default function Footer() {
                         <div>
                             <h4 className="font-black text-[14px] text-gray-950 mb-4 uppercase tracking-wide">{t('contactDetails')}</h4>
                             <ul className="space-y-2.5 text-[12.5px] font-semibold text-gray-800 opacity-95 leading-snug">
-                                <li><a href="tel:+14248773789" className="flex items-center gap-2 hover:text-green-700 transition"><Phone strokeWidth={2.5} size={15} className="text-[#2b8833]" /> +1 (424) 877-3789</a></li>
+                                <li><a href="tel:+12132866625" className="flex items-center gap-2 hover:text-green-700 transition"><Phone strokeWidth={2.5} size={15} className="text-[#2b8833]" /> (213) 286-6625</a></li>
                                 <li><a href="mailto:sales@lemonadeideas.com" className="flex items-center gap-2 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-[#122e0f] text-sm font-black"></i> sales@lemonadeideas.com</a></li>
                                 <li className="pt-2 font-bold opacity-90">
                                     209 21st Place Santa Monica 90402<br />California USA
@@ -65,7 +65,7 @@ export default function Footer() {
                                 <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/website">{t('service_website')}</Link></li>
                                 <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/social-media-management">{t('service_smm')}</Link></li>
                                 <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/branding">{t('service_branding')}</Link></li>
-                                <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/free-tools">{locale === 'es' ? 'Herramientas Gratis' : 'Free Tools'}</Link></li>
+                                <li><Link className="hover:text-[#1E3A1A] transition hover:font-bold" href="/free-tools">{locale === 'es' ? 'Herramientas Gratis' : 'Tools Hub'}</Link></li>
                             </ul>
                             <Link href="/contact" className="inline-block bg-[#122e0f] text-white font-bold py-2.5 px-6 text-[11px] uppercase rounded-[2px] hover:bg-[#40c34b] transition mt-1">{t('contactUs')}</Link>
                         </div>

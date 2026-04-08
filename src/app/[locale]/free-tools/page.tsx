@@ -6,7 +6,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   const t = await getTranslations({ locale, namespace: "Metadata" });
   
   return {
-    title: locale === 'es' ? "Herramientas Gratuitas | Lemonade Ideas" : "Free Tools | Lemonade Ideas",
+    title: locale === 'es' ? "Herramientas Gratuitas | Lemonade Ideas" : "Tools Hub | Lemonade Ideas",
     description: locale === 'es' ? "Herramientas de marketing para negocios de construcción." : "Marketing tools for construction businesses.",
   };
 }
@@ -18,7 +18,7 @@ export default async function FreeToolsHub({ params: { locale } }: { params: { l
     <div className="bg-[#f4f7f6] min-h-screen py-16 px-4">
       <div className="max-w-[1400px] mx-auto mb-16 text-center">
         <h1 className="text-5xl md:text-6xl font-black text-[#1E3A1A] mb-6 uppercase font-oswald tracking-tight">
-          {locale === 'es' ? "Herramientas Gratuitas" : "Free Tools Hub"}
+          {locale === 'es' ? "Herramientas Gratuitas" : "Tools Hub"}
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto font-medium">
           {locale === 'es' 

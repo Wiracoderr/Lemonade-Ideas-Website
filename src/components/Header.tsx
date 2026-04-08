@@ -129,7 +129,7 @@ export default function Header() {
                     <Link href="/branding" className={`transition-colors ${pathname === '/branding' ? 'text-[#FED52B]' : 'text-gray-700 hover:text-[#1E3A1A]'}`}>{t('nav_branding')}</Link>
                     <Link href="/website" className={`transition-colors ${pathname === '/website' ? 'text-[#FED52B]' : 'text-gray-700 hover:text-[#1E3A1A]'}`}>{t('nav_websites')}</Link>
                     <Link href="/blogs" className={`transition-colors ${pathname === '/blogs' ? 'text-[#FED52B]' : 'text-gray-700 hover:text-[#1E3A1A]'}`}>{t('nav_blogs')}</Link>
-                    <Link href="/free-tools" className={`transition-colors ${pathname === '/free-tools' ? 'text-[#FED52B]' : 'text-gray-700 hover:text-[#1E3A1A]'}`}>{locale === 'es' ? 'Herramientas' : 'Free Tools'}</Link>
+                    <Link href="/free-tools" className={`transition-colors ${pathname === '/free-tools' ? 'text-[#FED52B]' : 'text-gray-700 hover:text-[#1E3A1A]'}`}>{locale === 'es' ? 'Herramientas' : 'Tools Hub'}</Link>
                     <Link href="/contact" className={`transition-colors ${pathname === '/contact' ? 'text-[#FED52B]' : 'text-gray-700 hover:text-[#1E3A1A]'}`}>{t('nav_contact')}</Link>
                 </nav>
 
@@ -217,7 +217,7 @@ export default function Header() {
                                 <Link href="/branding" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/branding' ? 'text-[#FED52B]' : 'hover:text-[#1E3A1A]'}`}>{t('nav_branding')}</Link>
                                 <Link href="/website" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/website' ? 'text-[#FED52B]' : 'hover:text-[#1E3A1A]'}`}>{t('nav_websites')}</Link>
                                 <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/blogs' ? 'text-[#FED52B]' : 'hover:text-[#1E3A1A]'}`}>{t('nav_blogs')}</Link>
-                                <Link href="/free-tools" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/free-tools' ? 'text-[#FED52B]' : 'hover:text-[#1E3A1A]'}`}>{locale === 'es' ? 'Herramientas' : 'Free Tools'}</Link>
+                                <Link href="/free-tools" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/free-tools' ? 'text-[#FED52B]' : 'hover:text-[#1E3A1A]'}`}>{locale === 'es' ? 'Herramientas' : 'Tools Hub'}</Link>
                                 <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className={`text-base font-bold tracking-wide transition-colors ${pathname === '/contact' ? 'text-[#FED52B]' : 'hover:text-[#1E3A1A]'}`}>{t('nav_contact')}</Link>
 
                                 <div className="mt-8 flex gap-6">
