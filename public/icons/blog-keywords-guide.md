@@ -2,15 +2,12 @@
 
 ## Pillar 1: Sales & Pipeline (Focus: Closing Deals, High-Ticket Clients)
 
-- Pipeline velocity builders
-- Fractional CMO construction
+
 
 ## Pillar 2: Digital Assets & Brand Trust
 *(Focus: Content about the website, visual proof, and conversions. These topics explain how to look like a premium, 8-figure California firm.)*
 
-- Interactive project maps
-- Hard hat branding
-- Website trust badges
+
 - Mobile first contractors
 - Core Web Vitals
 - Construction landing pages
