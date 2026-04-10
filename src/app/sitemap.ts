@@ -16,22 +16,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Map each route to every active locale
   const standardPages = routes.flatMap((route) => {
-    return routing.locales.map((locale) => ({
-      url: `${baseUrl}/${locale}${route}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: route === '' ? 1 : 0.8,
-    }));
+    return routing.locales.map((locale) => {
+      const languages: Record<string, string> = {};
+      routing.locales.forEach(l => { languages[l] = `${baseUrl}/${l}${route}`; });
+      return {
+        url: `${baseUrl}/${locale}${route}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: route === '' ? 1 : 0.8,
+        alternates: { languages }
+      };
+    });
   });
 
   // Map every blog to every active locale
   const blogPages = blogs.flatMap((blog) => {
-    return routing.locales.map((locale) => ({
-      url: `${baseUrl}/${locale}/blogs/${blog.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    }));
+    return routing.locales.map((locale) => {
+      const languages: Record<string, string> = {};
+      routing.locales.forEach(l => { languages[l] = `${baseUrl}/${l}/blogs/${blog.slug}`; });
+      return {
+        url: `${baseUrl}/${locale}/blogs/${blog.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+        alternates: { languages }
+      };
+    });
   });
 
   return [...standardPages, ...blogPages];

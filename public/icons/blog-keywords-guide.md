@@ -8,37 +8,14 @@
 *(Focus: Content about the website, visual proof, and conversions. These topics explain how to look like a premium, 8-figure California firm.)*
 
 
-- Mobile first contractors
-- Core Web Vitals
-- Construction landing pages
-- CRO for contractors (Conversion Rate Optimization)
-- Client portal setup
-- Secure website hosting
-- Multilingual construction sites
-- B2B website copywriting
-- Blueprint web design
-- Construction lead magnets
-- Lead capture forms
-- Heatmap tracking contractors
-
 ## Pillar 3: Reputation & Local Authority
 *(Focus: Content about reviews, PR, and dominating the Google Maps algorithm. Highly educational.)*
 
-- Map pack ranking
-- Google Business Profile
-- Local citation audit
-- NAP consistency check
-- Fake review removal
-- Handling negative reviews
-- Contractor reputation repair
-- BBB accreditation ROI
 - Houzz profile optimization
 - Procore directory SEO
 - Blue Book optimization
-- Construction PR agency
 - Builder award submissions
 - Crisis management contractors
-- Employer branding CA (Huge for hiring crews!)
 - B2B thought leadership
 - Local search dominance
 - Voice search contractors
@@ -59,7 +36,6 @@
 - YouTube preroll contractors
 - Yelp contractor ads
 - Nextdoor builder advertising
-- OTT advertising CA (Streaming TV ads)
 - Competitor conquesting ads
 - Click fraud protection
 - PPC budget allocation
@@ -74,3 +50,23 @@
 - SMS text marketing
 - Automated review generation
 - Local community sponsorships
+
+## Used Keywords
+- Multilingual construction sites
+- Fake review removal
+- Construction PR agency
+- Employer branding CA (Huge for hiring crews!)
+- OTT advertising CA (Streaming TV ads)
+- Secure website hosting
+- B2B website copywriting
+- Blueprint web design
+- Construction lead magnets
+- Lead capture forms
+- Heatmap tracking contractors
+- Map pack ranking
+- Google Business Profile
+- Local citation audit
+- NAP consistency check
+- Handling negative reviews
+- Contractor reputation repair
+- BBB accreditation ROI

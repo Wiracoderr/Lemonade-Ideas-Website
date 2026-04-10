@@ -14,18 +14,25 @@ const StitchLayout = dynamic(() => import("@/components/StitchLayout"), {
 // ── ISR: revalidate every 24 h → eliminates cold-start latency on Vercel ──
 export const revalidate = 86400;
 
-// ── Page metadata ─────────────────────────────────────────────────────────
-export const metadata: Metadata = {
-    title: "Lemonade Ideas — Fresh Creative Agency",
-    description:
-        "Lemonade Ideas is a creative marketing agency that turns bold ideas into fresh digital experiences.",
-    openGraph: {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+    const { locale } = await params;
+    return {
         title: "Lemonade Ideas — Fresh Creative Agency",
-        description:
-            "Lemonade Ideas is a creative marketing agency that turns bold ideas into fresh digital experiences.",
-        type: "website",
-    },
-};
+        description: "Lemonade Ideas is a creative marketing agency that turns bold ideas into fresh digital experiences.",
+        alternates: {
+            canonical: `/${locale}`,
+            languages: {
+                en: '/en',
+                es: '/es'
+            }
+        },
+        openGraph: {
+            title: "Lemonade Ideas — Fresh Creative Agency",
+            description: "Lemonade Ideas is a creative marketing agency that turns bold ideas into fresh digital experiences.",
+            type: "website",
+        },
+    };
+}
 
 export default async function Home({
     params
