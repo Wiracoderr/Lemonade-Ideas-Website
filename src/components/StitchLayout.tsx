@@ -109,7 +109,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
 
                         {/* 5. Clean Buttons */}
                         <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-start gap-x-10 gap-y-5 w-full mt-2 lg:mt-0">
-                            <a className="inline-block bg-[#eaf4f7] text-[#1E3A1A] hover:bg-white font-black py-4 lg:py-3.5 px-8 text-[13.5px] lg:text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition duration-300 font-sans text-center" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
+                            <a className="inline-block bg-[#eaf4f7] text-[#1E3A1A] hover:bg-white font-black py-4 lg:py-3.5 px-8 text-[13.5px] lg:text-sm uppercase tracking-widest rounded shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition duration-300 font-sans text-center" href="/schedule-a-call">
                                 {t('btn_speakExpert')}
                             </a>
                             <Link className="inline-block text-white hover:text-[#FED52B] font-black text-[14px] lg:text-sm uppercase tracking-widest transition duration-300 drop-shadow-md font-sans text-center" href="/pricing">

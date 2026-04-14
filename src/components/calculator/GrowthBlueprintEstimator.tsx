@@ -328,7 +328,7 @@ export default function GrowthBlueprintEstimator() {
                 </div>
             </div>
 
-            <Link href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer" className="w-full bg-[#fed034] hover:bg-yellow-400 text-[#1E3A1A] font-black text-lg uppercase tracking-widest py-5 rounded-2xl transition-all shadow-lg hover:shadow-xl flex justify-center items-center gap-3">
+            <Link href="/schedule-a-call" className="w-full bg-[#fed034] hover:bg-yellow-400 text-[#1E3A1A] font-black text-lg uppercase tracking-widest py-5 rounded-2xl transition-all shadow-lg hover:shadow-xl flex justify-center items-center gap-3">
               Schedule Blueprint Strategy Call <ChevronRight className="w-6 h-6" />
             </Link>
             

@@ -32,7 +32,7 @@ export default function MarketingHero() {
                         Are you ready for &quot;Lemonade Ideas&quot;? We can&apos;t wait to help you grow.
                     </p>
                     <div className="flex flex-wrap gap-4">
-                        <a className="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded shadow-lg transition duration-300" href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer">
+                        <a className="bg-white text-primary hover:bg-gray-100 font-bold py-3 px-8 rounded shadow-lg transition duration-300" href="/schedule-a-call">
                             SPEAK WITH OUR EXPERT
                         </a>
                         <a className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded transition duration-300" href="#">

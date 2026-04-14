@@ -21,7 +21,7 @@ export default function Footer() {
                             <p className="text-[12.5px] font-extrabold mb-4 max-w-[200px] leading-snug text-gray-800 tracking-tight uppercase">
                                 {t('tagline')}
                             </p>
-                            <Link href="/get-started" className="font-bold text-[12.5px] text-[#122e0f] flex items-center gap-1 hover:text-[#40c34b] transition tracking-tight">
+                            <Link href="/schedule-a-call" className="font-bold text-[12.5px] text-[#122e0f] flex items-center gap-1 hover:text-[#40c34b] transition tracking-tight">
                                 {t('scheduleCall')} <span className="text-[#122e0f] text-lg leading-none">&raquo;</span>
                             </Link>
                         </div>
@@ -30,7 +30,7 @@ export default function Footer() {
                         <div>
                             <h4 className="font-black text-[14px] text-gray-950 mb-4 uppercase tracking-wide">{t('contactDetails')}</h4>
                             <ul className="space-y-2.5 text-[12.5px] font-semibold text-gray-800 opacity-95 leading-snug">
-                                <li><a href="tel:+12132866625" className="flex items-center gap-2 hover:text-green-700 transition"><Phone strokeWidth={2.5} size={15} className="text-[#2b8833]" /> (213) 286-6625</a></li>
+                                <li><a href="tel:+13234860110" className="flex items-center gap-2 hover:text-green-700 transition"><Phone strokeWidth={2.5} size={15} className="text-[#2b8833]" /> +1 323 486 0110</a></li>
                                 <li><a href="mailto:marketing@lemonadeideas.com" className="flex items-center gap-2 hover:text-green-700 transition"><i className="fa-regular fa-envelope text-[#122e0f] text-sm font-black"></i> marketing@lemonadeideas.com</a></li>
                                 <li className="pt-2 font-bold opacity-90">
                                     209 21st Place Santa Monica 90402<br />California USA

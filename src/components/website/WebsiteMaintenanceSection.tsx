@@ -24,9 +24,7 @@ export default function WebsiteMaintenanceSection() {
               </li>
             </ul>
             <a 
-              href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/schedule-a-call" 
               className="block w-full text-center bg-[#1e3a1a] text-white py-4 rounded text-xs font-bold uppercase tracking-widest hover:bg-[#3AAB43] hover:text-[#1e3a1a] transition-colors"
             >
               Get Started
@@ -47,9 +45,7 @@ export default function WebsiteMaintenanceSection() {
               </li>
             </ul>
             <a 
-              href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" 
-              target="_blank" 
-              rel="noopener noreferrer"
+              href="/schedule-a-call" 
               className="block w-full text-center bg-[#1e3a1a] text-white py-4 rounded text-xs font-bold uppercase tracking-widest hover:bg-[#3AAB43] hover:text-[#1e3a1a] transition-colors"
             >
               Get Started

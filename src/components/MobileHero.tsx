@@ -32,7 +32,7 @@ export default function MobileHero() {
                 {/* Buttons Component */}
                 <div className="w-full max-w-[320px] flex flex-col gap-3">
                     <a
-                        href="https://calendly.com/lemonadeideas-consultation/30min?month=2026-03" target="_blank" rel="noopener noreferrer"
+                        href="/schedule-a-call"
                         className="w-full bg-[#FED52B] text-[#1e3a1a] font-bold py-3.5 rounded-lg text-xs uppercase tracking-wider shadow-[0_4px_20px_0_rgba(250,204,21,0.3)] text-center transition-transform active:scale-95"
                     >
                         {t('speakWithExpert')}
