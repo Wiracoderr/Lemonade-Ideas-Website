@@ -66,7 +66,8 @@ export default function WebsiteHeroSection() {
                                             alt="Watch Website Design Video"
                                             fill
                                             className="object-cover scale-[1.03] transition-transform duration-700 group-hover:scale-[1.08]"
-                                            loading="lazy"
+                                            priority
+                                            fetchPriority="high"
                                         />
                                         <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/10 transition-colors">
                                             <svg className="w-16 h-16 bg-white/90 backdrop-blur-sm rounded-full shadow-lg text-[#1E3A1A] fill-current transition-transform group-hover:scale-110 p-4 pl-5" viewBox="0 0 24 24">
