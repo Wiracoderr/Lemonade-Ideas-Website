@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://lemonadeideas.com'),
   title: "Lemonade Ideas | Build your dreams",
   description: "Internet marketing that is fast, affordable, and drives you leads.",
+  verification: {
+    google: "5Q0LR6xyYrm3WsXkDOL2UTBQA2k7mqbsNXeGsgdes_Y",
+  },
 };
 
 export function generateStaticParams() {
