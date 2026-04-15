@@ -200,7 +200,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <li className="relative pl-5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.5 before:h-1.5 before:bg-white before:rounded-full">{t('seoChatgpt_bullet5')}</li>
                                 </ul>
                                 <div>
-                                    <Link className="inline-block bg-[#f4f7f6] text-[#1E3A1A] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">
+                                    <Link className="inline-block bg-[#f4f7f6] text-[#1E3A1A] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt" aria-label={`${t('btn_learnMoreUpper')} - ${t('seoChatgpt_title')}`}>
                                         {t('btn_learnMoreUpper')}
                                     </Link>
                                 </div>
@@ -238,7 +238,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>{t('seoChatgpt_bullet4')}</span></li>
                                     <li className="flex items-start gap-3"><span className="text-[8px] mt-1.5 opacity-80">⚪</span><span>{t('seoChatgpt_bullet5')}</span></li>
                                 </ul>
-                                <Link className="inline-block bg-[#f4f7f6] text-[#1E3A1A] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt">{t('btn_learnMoreUpper')}</Link>
+                                <Link className="inline-block bg-[#f4f7f6] text-[#1E3A1A] font-black py-4 px-10 text-[13px] uppercase tracking-wider hover:bg-white transition shadow-lg w-max" href="/seochatgpt" aria-label={`${t('btn_learnMoreUpper')} - ${t('seoChatgpt_title')}`}>{t('btn_learnMoreUpper')}</Link>
                             </div>
                         </div>
                     </div>
@@ -268,7 +268,7 @@ export default function StitchLayout({ children }: { children?: React.ReactNode 
                             </div>
                         </div>
 
-                        <Link className="bg-[#1E3A1A] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="/google-ads">{t('btn_learnMore')}</Link>
+                        <Link className="bg-[#1E3A1A] hover:bg-[#2e523e] text-white font-bold py-3 px-8 rounded text-sm uppercase transition duration-300 inline-block mb-8 lg:mb-0" href="/google-ads" aria-label={`${t('btn_learnMore')} - ${t('ppc_title')}`}>{t('btn_learnMore')}</Link>
 
                         {/* MOBILE-ONLY IMAGE INSERTION (Laptop with charts) */}
                         <div className="block lg:hidden relative w-full rounded-2xl overflow-hidden shadow-xl aspect-[4/3] mt-2 border-2 border-transparent">
