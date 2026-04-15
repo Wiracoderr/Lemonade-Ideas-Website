@@ -30,8 +30,6 @@ export default function BrandingHeroSection() {
                         fill
                         className="object-cover object-center hidden md:block"
                         sizes="100vw"
-                        priority
-                        fetchPriority="low"
                     />
                     {/* Mobile Version - LCP Element */}
                     <Image

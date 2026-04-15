@@ -29,7 +29,6 @@ export default function WebsiteHeroSection() {
                         fill
                         className="object-cover object-center"
                         sizes="100vw"
-                        priority
                     />
                     {/* Dark Green overlay at 95% opacity to counteract the brighter image and match SEO tint visually */}
                     <div className="absolute inset-0 bg-[#1E3A1A]/95"></div>
