@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/construction-leads-guide/hero.png',
+          url: 'https://lemonadeideas.com/images/blogs/construction-leads-guide/hero.webp',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://lemonadeideas.com/images/blogs/construction-leads-guide/hero.png'],
+      images: ['https://lemonadeideas.com/images/blogs/construction-leads-guide/hero.webp'],
     },
   };
 }
