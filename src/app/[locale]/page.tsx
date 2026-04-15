@@ -21,9 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         title: "Lemonade Ideas — Fresh Creative Agency",
         description: "Lemonade Ideas is a creative marketing agency that turns bold ideas into fresh digital experiences.",
         alternates: {
-            canonical: `/${locale}`,
+            canonical: locale === 'en' ? '/' : `/${locale}`,
             languages: {
-                en: '/en',
+                en: '/',
                 es: '/es'
             }
         },
