@@ -7,6 +7,7 @@ import {getMessages, setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import {notFound} from 'next/navigation';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GoogleTagManager } from '@next/third-parties/google';
 import "../globals.css";
 
 const inter = Inter({
@@ -56,6 +57,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <GoogleTagManager gtmId="GTM-P6QL9S7Q" />
       <head>
         <meta name="color-scheme" content="light" />
 
