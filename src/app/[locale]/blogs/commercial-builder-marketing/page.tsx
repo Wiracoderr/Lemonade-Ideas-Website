@@ -32,6 +32,28 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
         es: `/es/blogs/commercial-builder-marketing`,
       },
     },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `https://lemonadeideas.com/${locale}/blogs/commercial-builder-marketing`,
+      siteName: 'Lemonade Ideas',
+      images: [
+        {
+          url: 'https://lemonadeideas.com/images/blogs/commercial-builder-marketing/hero.png',
+          width: 1200,
+          height: 630,
+          alt: meta.title,
+        },
+      ],
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: meta.title,
+      description: meta.description,
+      images: ['https://lemonadeideas.com/images/blogs/commercial-builder-marketing/hero.png'],
+    },
   };
 }
 

@@ -17,6 +17,36 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         'es': 'https://lemonadeideas.com/es/blogs/local-citation-audit',
       },
     },
+    openGraph: {
+      title: locale === 'es'
+        ? 'La Auditoría de Citaciones: Cómo los Datos Fragmentados Destruyen Pipe'
+        : 'The Citation Audit Imperative: How Fragmented Data Destroys Contractor',
+      description: locale === 'es'
+        ? 'Descubra cómo la inconsistencia de citaciones NAP destruye silenciosamente la visibilidad local de su contratista y cómo'
+        : 'Discover how NAP citation inconsistency silently destroys your contractor local visibility and how a professional audit ',
+      url: `https://lemonadeideas.com/${locale}/blogs/local-citation-audit`,
+      siteName: 'Lemonade Ideas',
+      images: [
+        {
+          url: 'https://lemonadeideas.com/images/blogs/local-citation-audit/hero.png',
+          width: 1200,
+          height: 630,
+          alt: 'The Citation Audit Imperative: How Fragmented Data',
+        },
+      ],
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: locale === 'es'
+        ? 'La Auditoría de Citaciones: Cómo los Datos Fragmentados Destruyen Pipe'
+        : 'The Citation Audit Imperative: How Fragmented Data Destroys Contractor',
+      description: locale === 'es'
+        ? 'Descubra cómo la inconsistencia de citaciones NAP destruye silenciosamente la visibilidad local de su contratista y cómo'
+        : 'Discover how NAP citation inconsistency silently destroys your contractor local visibility and how a professional audit ',
+      images: ['https://lemonadeideas.com/images/blogs/local-citation-audit/hero.png'],
+    },
   };
 }
 

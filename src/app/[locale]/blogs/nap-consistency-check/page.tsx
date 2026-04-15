@@ -17,6 +17,36 @@ export async function generateMetadata({ params: { locale } }: { params: { local
         'es': 'https://lemonadeideas.com/es/blogs/nap-consistency-check',
       },
     },
+    openGraph: {
+      title: locale === 'es'
+        ? 'Verificación de Consistencia NAP | Lemonade Ideas'
+        : 'NAP Consistency Check | Lemonade Ideas',
+      description: locale === 'es'
+        ? 'Descubra cómo la inconsistencia NAP destruye la visibilidad local de su empresa de construcción comercial.'
+        : 'Discover how NAP inconsistency silently destroys your commercial construction firm local visibility.',
+      url: `https://lemonadeideas.com/${locale}/blogs/nap-consistency-check`,
+      siteName: 'Lemonade Ideas',
+      images: [
+        {
+          url: 'https://lemonadeideas.com/images/blogs/nap-consistency-check/hero.png',
+          width: 1200,
+          height: 630,
+          alt: 'NAP Consistency Check',
+        },
+      ],
+      locale: locale === 'es' ? 'es_ES' : 'en_US',
+      type: 'article',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: locale === 'es'
+        ? 'Verificación de Consistencia NAP | Lemonade Ideas'
+        : 'NAP Consistency Check | Lemonade Ideas',
+      description: locale === 'es'
+        ? 'Descubra cómo la inconsistencia NAP destruye la visibilidad local de su empresa de construcción comercial.'
+        : 'Discover how NAP inconsistency silently destroys your commercial construction firm local visibility.',
+      images: ['https://lemonadeideas.com/images/blogs/nap-consistency-check/hero.png'],
+    },
   };
 }
 
