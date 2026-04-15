@@ -29,7 +29,7 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://lemonadeideas.com'),
+  metadataBase: new URL('https://www.lemonadeideas.com'),
   title: "Lemonade Ideas | Build your dreams",
   description: "Internet marketing that is fast, affordable, and drives you leads.",
   verification: {

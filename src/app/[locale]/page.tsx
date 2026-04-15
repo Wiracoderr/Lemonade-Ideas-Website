@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import {setRequestLocale} from 'next-intl/server';
+import HeroSection from "@/components/HeroSection";
 
 // CameraScroll is desktop-only (hidden on mobile via CSS).
 // Removed per user request to maximize Desktop performance score.
@@ -44,7 +45,8 @@ export default async function Home({
 
     return (
         <main className="bg-white min-h-screen text-gray-900 font-sans">
-            {/* 1. HERO DEMOLISHED (Desktop Canvas Section Removed via rules) */}
+            {/* 1. HERO (Statically imported for fast LCP) */}
+            <HeroSection />
 
             {/* 2. BRANDING SECTIONS (Dynamically Loaded) */}
             <StitchLayout />
