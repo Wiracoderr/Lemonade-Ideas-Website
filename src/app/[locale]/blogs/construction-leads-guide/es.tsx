@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Zap, Calendar, Clock, Lightbulb, XCircle, CircleDollarSign, LineChart, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
@@ -443,6 +444,17 @@ export default function BlogPost() {
               </a>
             </div>
           </div>
+        
+          <RelatedArticles
+            currentSlug="construction-leads-guide"
+            relatedSlugs={[
+              "lead-qualification-process",
+              "construction-lead-magnets",
+              "lead-capture-forms",
+              "avoiding-tire-kickers"
+            ]}
+          />
+
         </article>
       </main>
 

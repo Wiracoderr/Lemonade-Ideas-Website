@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { PenTool, Target, Layers, AlertTriangle, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, TrendingUp, Shield, DraftingCompass } from 'lucide-react';
 
 export default function BlogPost() {
@@ -203,6 +204,17 @@ export default function BlogPost() {
             </Link>
 
           </div>
+        
+          <RelatedArticles
+            currentSlug="blueprint-web-design"
+            relatedSlugs={[
+              "mobile-first-contractors-guide",
+              "fast-loading-sites",
+              "b2b-website-copywriting",
+              "lead-capture-forms"
+            ]}
+          />
+
         </article>
       </main>
 

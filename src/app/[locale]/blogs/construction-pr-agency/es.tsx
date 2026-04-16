@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Zap, Calendar, Clock, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, Shield, Target } from 'lucide-react';
 
 export default function BlogPostEs() {
@@ -230,6 +231,17 @@ export default function BlogPostEs() {
               <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
+
+        
+          <RelatedArticles
+            currentSlug="construction-pr-agency"
+            relatedSlugs={[
+              "employer-branding-ca",
+              "builder-brand-identity",
+              "contractor-video-testimonials",
+              "construction-case-studies"
+            ]}
+          />
 
         </article>
       </main>

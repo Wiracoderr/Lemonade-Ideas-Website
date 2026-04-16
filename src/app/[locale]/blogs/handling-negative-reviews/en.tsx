@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Shield, ArrowRight, Facebook, Instagram, Youtube, Linkedin, Activity, Database, AlertTriangle, Key, MousePointer2, Search, AlertOctagon, CheckCircle2, MessageSquareWarning, ShieldCheck, Siren } from 'lucide-react';
 
 export default function BlogPost() {
@@ -256,6 +257,17 @@ export default function BlogPost() {
               <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
+
+        
+          <RelatedArticles
+            currentSlug="handling-negative-reviews"
+            relatedSlugs={[
+              "fake-review-removal",
+              "contractor-reputation-repair",
+              "google-business-profile",
+              "bbb-accreditation-roi"
+            ]}
+          />
 
         </article>
       </main>

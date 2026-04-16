@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Shield, Server, Lock, AlertTriangle, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, Globe, Activity, Database, Key, Eye, MousePointer2, AlertOctagon, MapPin, CheckCircle2, Search, Target } from 'lucide-react';
 
 export default function EnglishContent() {
@@ -252,6 +253,17 @@ export default function EnglishContent() {
               <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
+
+        
+          <RelatedArticles
+            currentSlug="google-business-profile"
+            relatedSlugs={[
+              "map-pack-ranking",
+              "local-citation-audit",
+              "nap-consistency-check",
+              "fake-review-removal"
+            ]}
+          />
 
         </article>
       </main>

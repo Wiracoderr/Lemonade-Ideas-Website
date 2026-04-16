@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Smartphone, Target, AlertTriangle, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, BarChart4, DollarSign, ShieldCheck, Gauge, MonitorSmartphone } from 'lucide-react';
 
 export default function EnBlog() {
@@ -187,6 +188,17 @@ export default function EnBlog() {
               <div className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></div>
             </div>
           </div>
+
+        
+          <RelatedArticles
+            currentSlug="mobile-first-contractors-guide"
+            relatedSlugs={[
+              "fast-loading-sites",
+              "website-trust-badges",
+              "blueprint-web-design",
+              "ada-compliant-websites"
+            ]}
+          />
 
         </article>
       </main>

@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { PenTool, Target, Crosshair, AlertTriangle, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, TrendingUp, Shield, FileText } from 'lucide-react';
 
 export default function BlogPost() {
@@ -220,6 +221,17 @@ export default function BlogPost() {
             </Link>
 
           </div>
+        
+          <RelatedArticles
+            currentSlug="b2b-website-copywriting"
+            relatedSlugs={[
+              "blueprint-web-design",
+              "commercial-bid-writing",
+              "inbound-marketing-commercial-contractors",
+              "construction-lead-magnets"
+            ]}
+          />
+
         </article>
       </main>
 

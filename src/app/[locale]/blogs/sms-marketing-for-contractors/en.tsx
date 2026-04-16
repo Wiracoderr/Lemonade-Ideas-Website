@@ -4,6 +4,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Zap, Calendar, Clock, Check, XCircle, AlertTriangle, Lightbulb, ArrowRight, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
 
 export default function BlogPost() {
@@ -329,6 +330,17 @@ export default function BlogPost() {
               <a href="#" aria-label="LinkedIn" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
+
+        
+          <RelatedArticles
+            currentSlug="sms-marketing-for-contractors"
+            relatedSlugs={[
+              "automated-bid-followups",
+              "construction-crm-setup",
+              "lead-capture-forms",
+              "contractor-sales-scripts"
+            ]}
+          />
 
         </article>
       </main>

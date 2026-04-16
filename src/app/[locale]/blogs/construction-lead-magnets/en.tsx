@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Magnet, Target, Lock, AlertTriangle, Check, ArrowRight, TrendingUp, Shield, FileText } from 'lucide-react';
 
 export default function BlogPost() {
@@ -216,6 +217,17 @@ export default function BlogPost() {
             </Link>
 
           </div>
+        
+          <RelatedArticles
+            currentSlug="construction-lead-magnets"
+            relatedSlugs={[
+              "lead-capture-forms",
+              "construction-leads-guide",
+              "inbound-marketing-commercial-contractors",
+              "b2b-website-copywriting"
+            ]}
+          />
+
         </article>
       </main>
 

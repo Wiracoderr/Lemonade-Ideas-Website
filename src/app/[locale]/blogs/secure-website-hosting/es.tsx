@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Shield, Server, Lock, AlertTriangle, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, Globe, Activity, Database, Key } from 'lucide-react';
 
 export default function BlogPost() {
@@ -217,6 +218,17 @@ export default function BlogPost() {
             </Link>
 
           </div>
+        
+          <RelatedArticles
+            currentSlug="secure-website-hosting"
+            relatedSlugs={[
+              "fast-loading-sites",
+              "ada-compliant-websites",
+              "website-trust-badges",
+              "blueprint-web-design"
+            ]}
+          />
+
         </article>
       </main>
 

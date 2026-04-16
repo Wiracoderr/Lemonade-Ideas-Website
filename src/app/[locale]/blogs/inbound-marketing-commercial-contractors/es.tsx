@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import { Magnet, AlertTriangle, Check, ArrowRight, Facebook, Instagram, Youtube, Linkedin, Activity, Database, TrendingDown, Ban, BookOpen } from 'lucide-react';
 
 export default function BlogPost() {
@@ -276,6 +277,17 @@ export default function BlogPost() {
               <a href="#" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
           </div>
+
+        
+          <RelatedArticles
+            currentSlug="inbound-marketing-commercial-contractors"
+            relatedSlugs={[
+              "construction-marketing-framework",
+              "b2b-website-copywriting",
+              "construction-lead-magnets",
+              "b2b-linkedin-ads"
+            ]}
+          />
 
         </article>
       </main>

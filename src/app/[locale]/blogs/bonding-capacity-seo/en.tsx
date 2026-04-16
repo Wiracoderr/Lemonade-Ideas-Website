@@ -3,6 +3,7 @@ import CTASection from "@/components/seo/CTASection";
 import Link from "next/link";
 import Image from "next/image";
 import BlogNavigation from "@/components/blog/BlogNavigation";
+import RelatedArticles from "@/components/blog/RelatedArticles";
 import {
   Shield,
   FileText,
@@ -451,6 +452,17 @@ export default function BlogPost() {
               </a>
             </div>
           </div>
+        
+          <RelatedArticles
+            currentSlug="bonding-capacity-seo"
+            relatedSlugs={[
+              "prevailing-wage-marketing",
+              "government-contract-bids",
+              "capability-statements-ca",
+              "commercial-bid-writing"
+            ]}
+          />
+
         </article>
       </main>
 
