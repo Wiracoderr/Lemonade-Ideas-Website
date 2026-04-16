@@ -1,5 +1,5 @@
 import { useLocale } from 'next-intl';
-import { unstable_setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import ENPost from './en';
 import ESPost from './es';
 import { Metadata } from 'next';
@@ -46,7 +46,7 @@ export function generateMetadata({ params: { locale } }: { params: { locale: str
 }
 
 export default function BlogRoute({ params: { locale } }: { params: { locale: string } }) {
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
 
   if (locale === 'es') {
     return <ESPost />;

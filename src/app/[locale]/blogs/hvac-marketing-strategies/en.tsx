@@ -259,6 +259,7 @@ export default function BlogPost() {
               <a href="https://youtube.com" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#ff0000] hover:text-white hover:border-[#ff0000] transition-colors"><Youtube /></a>
               <a href="https://linkedin.com" className="w-[45px] h-[45px] rounded-full bg-gray-50 border border-gray-200 flex items-center justify-center text-[#666] hover:bg-[#0077b5] hover:text-white hover:border-[#0077b5] transition-colors"><Linkedin /></a>
             </div>
+          </div>
         
           <RelatedArticles
             currentSlug="hvac-marketing-strategies"
