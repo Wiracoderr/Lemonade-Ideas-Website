@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "pagespeed:blogs": "node scripts/analyze-blogs-pagespeed.mjs",
     "optimize": "node scripts/optimize-frames.mjs",
     "predev": "node scripts/build-frames-manifest.mjs",
     "dev": "next dev",

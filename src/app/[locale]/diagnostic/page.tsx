@@ -1,14 +1,14 @@
 import { setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import Image from "next/image";
-import EbooksForm from "./EbooksForm";
+import DiagnosticForm from "./DiagnosticForm";
 
 export const metadata: Metadata = {
-  title: "Free Ebooks | Lemonade Ideas",
-  description: "Download 4 free ebooks with proven marketing strategies for contractors and construction companies to generate leads and scale their business.",
+  title: "Free SEO & Marketing Diagnostic | Lemonade Ideas",
+  description: "Get a free manual analysis of your current SEO and marketing strategy by one of our experts. Discover hidden opportunities to scale your construction business.",
 };
 
-export default async function EbooksPage({ params }: { params: Promise<{ locale: string }> }) {
+export default async function DiagnosticPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -57,32 +57,32 @@ export default async function EbooksPage({ params }: { params: Promise<{ locale:
           <div className="mb-3">
             <span className="inline-flex items-center gap-2 text-[#FED52B] text-xs font-bold uppercase tracking-[0.25em] bg-[#FED52B]/10 px-3 py-1.5 rounded-full">
               <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" /></svg>
-              4 Free Ebooks
+              Manual Expert Analysis
             </span>
           </div>
 
           <h1
             className="text-4xl md:text-5xl lg:text-[3.4rem] font-black text-white leading-[1.08] mb-5 tracking-tight font-oswald"
           >
-            Dominate Your <span className="text-[#FED52B]">Market</span> With Data-Driven Strategies
+            Get Your Free <span className="text-[#FED52B]">Marketing & SEO</span> Diagnostic
           </h1>
 
           <p className="text-base md:text-lg text-white/70 leading-relaxed mb-4 max-w-md font-semibold">
-            Not just 1, but <span className="text-[#FED52B] font-black">4 free ebooks</span> to improve your company&apos;s growth.
+            Stop guessing where your leads are leaking. Let our experts analyze your digital presence.
           </p>
 
           <p className="text-sm md:text-base text-white/40 leading-relaxed mb-10 max-w-md">
-            Download our exclusive collection and discover the marketing frameworks that top contractors use to generate predictable leads and scale their business.
+            We will manually review your website, local SEO positioning, and current marketing efforts. This isn&apos;t an automated report; our team will build a tailored roadmap to highlight hidden opportunities to scale.
           </p>
 
           <div className="flex flex-col gap-4">
             {[
-              "Proven strategies for contractor growth",
-              "Actionable data & real case studies",
-              "4 comprehensive guides in one download",
-              "100% free — no credit card required",
+              "Expert manual analysis of your strategy",
+              "Actionable growth and SEO insights",
+              "100% free — no commitment required",
+              "Data-driven customized roadmap",
             ].map((item, i) => (
-              <div key={i} className="flex items-center gap-3 group">
+               <div key={i} className="flex items-center gap-3 group">
                 <div className="w-5 h-5 rounded-full bg-[#FED52B]/15 flex items-center justify-center flex-shrink-0 group-hover:bg-[#FED52B]/25 transition-colors">
                   <svg className="w-3 h-3 text-[#FED52B]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 </div>
@@ -94,7 +94,7 @@ export default async function EbooksPage({ params }: { params: Promise<{ locale:
 
         {/* ── RIGHT: Form Card (Client Component boundary) ── */}
         <div className="flex items-center">
-          <EbooksForm />
+          <DiagnosticForm />
         </div>
       </div>
     </div>

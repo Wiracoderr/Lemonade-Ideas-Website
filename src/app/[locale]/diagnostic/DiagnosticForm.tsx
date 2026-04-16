@@ -23,29 +23,15 @@ const BUSINESS_TYPES = [
   "Other",
 ];
 
-const ENGLISH_EBOOKS = [
-  "/ebooks/7_Point_Landing_Page_Checklist_EN.pdf",
-  "/ebooks/Synthetic_SEO_2026.pdf",
-  "/ebooks/The_Architecture_of_High_Performance_Ideation_2026.pdf",
-  "/ebooks/The_Architecture_of_Virality_2026.pdf",
-];
-
-const SPANISH_EBOOKS = [
-  "/ebooks/7_Point_Landing_Page_Checklist_ES.pdf",
-  "/ebooks/La_Arquitectura_de_la_Ideacion_de_Alto_Rendimiento_2026.pdf",
-  "/ebooks/La_Arquitectura_de_la_Viralidad_2026.pdf",
-  "/ebooks/SEO_Sintetico_2026.pdf",
-];
-
-export default function EbooksForm() {
+export default function DiagnosticForm() {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
     email: "",
     phone: "",
+    website: "",
     businessType: "",
-    wantsAdvisor: "",
-    downloadLanguage: "",
+    monthlyBudget: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
@@ -61,48 +47,11 @@ export default function EbooksForm() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Connect to MailerLite
-    try {
-      await fetch('/api/mailerlite', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: formData.email,
-          name: formData.name,
-          groupId: "184674410152592495",
-          fields: {
-            company: formData.company,
-            phone: formData.phone,
-            trade: formData.businessType,
-            wants_advisor: formData.wantsAdvisor,
-            download_language: formData.downloadLanguage
-          }
-        })
-      });
-    } catch (error) {
-      console.error("Failed to subscribe:", error);
-    }
-
-    let ebooksToDownload: string[] = [];
-    if (formData.downloadLanguage === "english" || formData.downloadLanguage === "both") {
-      ebooksToDownload = [...ebooksToDownload, ...ENGLISH_EBOOKS];
-    }
-    if (formData.downloadLanguage === "spanish" || formData.downloadLanguage === "both") {
-      ebooksToDownload = [...ebooksToDownload, ...SPANISH_EBOOKS];
-    }
-
-    ebooksToDownload.forEach((url, index) => {
-      setTimeout(() => {
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = url.split('/').pop() || "ebook.pdf";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      }, index * 500);
-    });
-
-    setSubmitted(true);
+    // Fake API call as this is not connected to any backend yet
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 1500);
   };
 
   if (submitted) {
@@ -119,10 +68,10 @@ export default function EbooksForm() {
             <svg className="w-10 h-10 text-[#1E3A1A]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-white mb-4 tracking-tight" style={{ fontFamily: "var(--font-oswald), sans-serif" }}>
-            You&apos;re In!
+            Application Received!
           </h2>
           <p className="text-lg text-white/60 leading-relaxed mb-8">
-            Check your email — your 4 free ebooks are on their way. We&apos;ll also share exclusive growth strategies built for contractors like you.
+            Our marketing experts will manually analyze your website and data. We&apos;ll be reaching out shortly to schedule your free diagnostic session.
           </p>
           <a
             href="/"
@@ -132,6 +81,7 @@ export default function EbooksForm() {
             Back to Lemonade Ideas
           </a>
         </div>
+
         <style>{`
           @keyframes fadeUp {
             from { opacity: 0; transform: translateY(24px); }
@@ -152,10 +102,10 @@ export default function EbooksForm() {
           className="text-2xl font-black text-white tracking-tight"
           style={{ fontFamily: "var(--font-oswald), sans-serif" }}
         >
-          Get Your 4 Free Ebooks
+          Request Your Diagnostic
         </h2>
         <p className="text-white/35 text-sm mt-1">
-          Fill in your details below to download instantly
+          Fill in your details below so we can begin the analysis
         </p>
       </div>
 
@@ -173,76 +123,101 @@ export default function EbooksForm() {
           onBlur={() => setFocusedField(null)}
           placeholder="John Smith"
           className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
-            focusedField === "name"
+              focusedField === "name"
               ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
               : "border-white/10 hover:border-white/20"
           }`}
         />
       </div>
 
-      <div className="relative">
-        <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
-          Company Name
-          <span className="text-white/25 normal-case tracking-normal ml-1 text-[0.65rem]">
-            (optional)
-          </span>
-        </label>
-        <input
-          type="text"
-          name="company"
-          value={formData.company}
-          onChange={handleChange}
-          onFocus={() => setFocusedField("company")}
-          onBlur={() => setFocusedField(null)}
-          placeholder="Your Company LLC"
-          className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
-            focusedField === "company"
-              ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
-              : "border-white/10 hover:border-white/20"
-          }`}
-        />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="relative">
+          <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
+            Company Name <span className="text-[#FED52B]">*</span>
+          </label>
+          <input
+            type="text"
+            name="company"
+            required
+            value={formData.company}
+            onChange={handleChange}
+            onFocus={() => setFocusedField("company")}
+            onBlur={() => setFocusedField(null)}
+            placeholder="Your Company LLC"
+            className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
+                focusedField === "company"
+                ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
+                : "border-white/10 hover:border-white/20"
+            }`}
+          />
+        </div>
+
+        <div className="relative">
+          <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
+            Website URL
+            <span className="text-white/25 normal-case tracking-normal ml-1 text-[0.65rem]">
+              (optional)
+            </span>
+          </label>
+          <input
+            type="url"
+            name="website"
+            value={formData.website}
+            onChange={handleChange}
+            onFocus={() => setFocusedField("website")}
+            onBlur={() => setFocusedField(null)}
+            placeholder="https://yoursite.com"
+            className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
+                focusedField === "website"
+                ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
+                : "border-white/10 hover:border-white/20"
+            }`}
+          />
+        </div>
       </div>
 
-      <div className="relative">
-        <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
-          Email <span className="text-[#FED52B]">*</span>
-        </label>
-        <input
-          type="email"
-          name="email"
-          required
-          value={formData.email}
-          onChange={handleChange}
-          onFocus={() => setFocusedField("email")}
-          onBlur={() => setFocusedField(null)}
-          placeholder="name@company.com"
-          className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
-            focusedField === "email"
-              ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
-              : "border-white/10 hover:border-white/20"
-          }`}
-        />
-      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="relative">
+          <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
+            Email <span className="text-[#FED52B]">*</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+            onFocus={() => setFocusedField("email")}
+            onBlur={() => setFocusedField(null)}
+            placeholder="name@company.com"
+            className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
+                focusedField === "email"
+                ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
+                : "border-white/10 hover:border-white/20"
+            }`}
+          />
+        </div>
 
-      <div className="relative">
-        <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
-          Phone Number <span className="text-[#FED52B]">*</span>
-        </label>
-        <input
-          type="tel"
-          name="phone"
-          required
-          value={formData.phone}
-          onChange={handleChange}
-          onFocus={() => setFocusedField("phone")}
-          onBlur={() => setFocusedField(null)}
-          placeholder="(555) 123-4567"
-          className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
-            focusedField === "phone"
-              ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
-              : "border-white/10 hover:border-white/20"
-          }`}
-        />
+        <div className="relative">
+          <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-1.5">
+            Phone Number <span className="text-[#FED52B]">*</span>
+          </label>
+          <input
+            type="tel"
+            name="phone"
+            required
+            value={formData.phone}
+            onChange={handleChange}
+            onFocus={() => setFocusedField("phone")}
+            onBlur={() => setFocusedField(null)}
+            placeholder="(555) 123-4567"
+            className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-white placeholder:text-white/20 text-sm transition-all duration-300 outline-none ${
+                focusedField === "phone"
+                ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
+                : "border-white/10 hover:border-white/20"
+            }`}
+          />
+        </div>
       </div>
 
       <div className="relative">
@@ -260,7 +235,7 @@ export default function EbooksForm() {
             className={`w-full bg-white/[0.05] border rounded-xl px-4 py-3 text-sm transition-all duration-300 outline-none appearance-none cursor-pointer ${
               formData.businessType ? "text-white" : "text-white/20"
             } ${
-              focusedField === "businessType"
+                focusedField === "businessType"
                 ? "border-[#FED52B]/60 shadow-[0_0_20px_rgba(254,213,43,0.08)]"
                 : "border-white/10 hover:border-white/20"
             }`}
@@ -284,68 +259,36 @@ export default function EbooksForm() {
 
       <div className="relative">
         <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-2.5">
-          Preferred Ebook Language <span className="text-[#FED52B]">*</span>
-        </label>
-        <div className="grid grid-cols-3 gap-2">
-          {[
-            { value: "english", label: "English", flag: "🇺🇸" },
-            { value: "spanish", label: "Español", flag: "🇲🇽" },
-            { value: "both", label: "Both", flag: "🌎" },
-          ].map((option) => (
-            <label
-              key={option.value}
-              className={`flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl border cursor-pointer transition-all duration-300 text-sm font-medium ${
-                formData.downloadLanguage === option.value
-                  ? "border-[#FED52B]/60 bg-[#FED52B]/10 text-[#FED52B] shadow-[0_0_20px_rgba(254,213,43,0.06)]"
-                  : "border-white/10 text-white/40 hover:border-white/20 hover:text-white/60"
-              }`}
-            >
-              <input
-                type="radio"
-                name="downloadLanguage"
-                value={option.value}
-                required
-                checked={formData.downloadLanguage === option.value}
-                onChange={handleChange}
-                className="sr-only"
-              />
-              <span className="text-base">{option.flag}</span>
-              {option.label}
-            </label>
-          ))}
-        </div>
-      </div>
-
-      <div className="relative">
-        <label className="block text-white/50 text-xs font-semibold uppercase tracking-wider mb-2.5 leading-relaxed">
-          Would you like to speak with an advisor for a personalized growth plan? <span className="text-[#FED52B]">*</span>
+          Monthly Marketing Budget <span className="text-[#FED52B]">*</span>
         </label>
         <div className="grid grid-cols-2 gap-3">
           {[
-            { value: "yes", label: "Yes, I'm interested" },
-            { value: "no", label: "Not right now" },
+            { value: "under_1k", label: "< $1,000" },
+            { value: "1k_3k", label: "$1k - $3k" },
+            { value: "3k_5k", label: "$3k - $5k" },
+            { value: "5k_plus", label: "$5k+" },
           ].map((option) => (
             <label
               key={option.value}
               className={`flex items-center justify-center gap-2 px-4 py-3 rounded-xl border cursor-pointer transition-all duration-300 text-sm font-medium ${
-                formData.wantsAdvisor === option.value
+                formData.monthlyBudget === option.value
                   ? "border-[#FED52B]/60 bg-[#FED52B]/10 text-[#FED52B] shadow-[0_0_20px_rgba(254,213,43,0.06)]"
                   : "border-white/10 text-white/40 hover:border-white/20 hover:text-white/60"
               }`}
             >
               <input
                 type="radio"
-                name="wantsAdvisor"
+                name="monthlyBudget"
                 value={option.value}
                 required
-                checked={formData.wantsAdvisor === option.value}
+                checked={formData.monthlyBudget === option.value}
                 onChange={handleChange}
                 className="sr-only"
               />
               <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition-colors ${
-                formData.wantsAdvisor === option.value ? "border-[#FED52B]" : "border-white/20"
+                formData.monthlyBudget === option.value ? "border-[#FED52B]" : "border-white/20"
               }`}>
-                {formData.wantsAdvisor === option.value && (
+                {formData.monthlyBudget === option.value && (
                   <div className="w-2 h-2 rounded-full bg-[#FED52B]" />
                 )}
               </div>
@@ -363,7 +306,7 @@ export default function EbooksForm() {
         }`}
         style={{ fontFamily: "var(--font-oswald), sans-serif" }}
       >
-        {isSubmitting ? "Processing..." : "Download 4 Free Ebooks"}
+        {isSubmitting ? "Processing..." : "Request Free Diagnostic"}
       </button>
 
       <p className="text-white/20 text-[0.65rem] text-center leading-relaxed pt-1">

@@ -56,6 +56,11 @@ const nextConfig: NextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
+
+  // ── Experimental Features ───────────────────────────────────────────────
+  experimental: {
+    optimizePackageImports: ["lucide-react", "react-icons", "recharts", "framer-motion"],
+  },
 };
 
 export default withNextIntl(nextConfig);
