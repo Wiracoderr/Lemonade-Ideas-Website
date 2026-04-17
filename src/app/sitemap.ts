@@ -3,7 +3,7 @@ import blogs from '@/data/blogs.json';
 import { routing } from '@/i18n/routing';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://lemonadeideas.com';
+  const baseUrl = 'https://www.lemonadeideas.com';
 
   // Base routes for the application
   const routes = [

@@ -10,10 +10,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'Descubra cómo los mapas de calor exponen fugas de $20M+ y optimizan el embudo de conversión para servicios de construcción comercial B2B.' 
       : 'Discover how heatmap tracking exposes $20M+ pipeline leaks and optimizes the conversion funnel for B2B commercial construction services.',
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/heatmap-tracking-contractors`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/heatmap-tracking-contractors`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/heatmap-tracking-contractors',
-        'es': 'https://lemonadeideas.com/es/blogs/heatmap-tracking-contractors',
+        'en': 'https://www.lemonadeideas.com/en/blogs/heatmap-tracking-contractors',
+        'es': 'https://www.lemonadeideas.com/es/blogs/heatmap-tracking-contractors',
       },
     },
     openGraph: {
@@ -23,11 +23,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo los mapas de calor exponen fugas de $20M+ y optimizan el embudo de conversión para servicios de construcci'
         : 'Discover how heatmap tracking exposes $20M+ pipeline leaks and optimizes the conversion funnel for B2B commercial constr',
-      url: `https://lemonadeideas.com/${locale}/blogs/heatmap-tracking-contractors`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/heatmap-tracking-contractors`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/heatmap-tracking-contractors/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/heatmap-tracking-contractors/hero.png',
           width: 1200,
           height: 630,
           alt: 'Descubra cómo los mapas de calor exponen fugas de ',
@@ -44,7 +44,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo los mapas de calor exponen fugas de $20M+ y optimizan el embudo de conversión para servicios de construcci'
         : 'Discover how heatmap tracking exposes $20M+ pipeline leaks and optimizes the conversion funnel for B2B commercial constr',
-      images: ['https://lemonadeideas.com/images/blogs/heatmap-tracking-contractors/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/heatmap-tracking-contractors/hero.png'],
     },
   };
 }

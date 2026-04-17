@@ -11,10 +11,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'Descubra el sistema de 4 fases que los contratistas comerciales de élite usan para reconstruir su autoridad digital después de una crisis reputacional catastrófica.'
       : 'Discover the 4-phase system elite commercial contractors use to rebuild digital authority after a catastrophic reputational crisis.',
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/contractor-reputation-repair`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/contractor-reputation-repair`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/contractor-reputation-repair',
-        'es': 'https://lemonadeideas.com/es/blogs/contractor-reputation-repair',
+        'en': 'https://www.lemonadeideas.com/en/blogs/contractor-reputation-repair',
+        'es': 'https://www.lemonadeideas.com/es/blogs/contractor-reputation-repair',
       },
     },
     openGraph: {
@@ -24,11 +24,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra el sistema de 4 fases que los contratistas comerciales de élite usan para reconstruir su autoridad digital desp'
         : 'Discover the 4-phase system elite commercial contractors use to rebuild digital authority after a catastrophic reputatio',
-      url: `https://lemonadeideas.com/${locale}/blogs/contractor-reputation-repair`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/contractor-reputation-repair`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/contractor-reputation-repair/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/contractor-reputation-repair/hero.png',
           width: 1200,
           height: 630,
           alt: 'Contractor Reputation Repair: The Institutional-Gr',
@@ -45,7 +45,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra el sistema de 4 fases que los contratistas comerciales de élite usan para reconstruir su autoridad digital desp'
         : 'Discover the 4-phase system elite commercial contractors use to rebuild digital authority after a catastrophic reputatio',
-      images: ['https://lemonadeideas.com/images/blogs/contractor-reputation-repair/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/contractor-reputation-repair/hero.png'],
     },
   };
 }

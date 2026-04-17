@@ -38,11 +38,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Lemonade Ideas | Build Your Dreams',
     description: 'Internet marketing that is fast, affordable, and drives you leads.',
-    url: 'https://lemonadeideas.com',
+    url: 'https://www.lemonadeideas.com',
     siteName: 'Lemonade Ideas',
     images: [
       {
-        url: 'https://lemonadeideas.com/images/og-default.jpg',
+        url: 'https://www.lemonadeideas.com/images/og-default.jpg',
         width: 1200,
         height: 630,
         alt: 'Lemonade Ideas - Construction Marketing Agency',
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Lemonade Ideas | Build Your Dreams',
     description: 'Internet marketing that is fast, affordable, and drives you leads.',
-    images: ['https://lemonadeideas.com/images/og-default.jpg'],
+    images: ['https://www.lemonadeideas.com/images/og-default.jpg'],
   },
 };
 

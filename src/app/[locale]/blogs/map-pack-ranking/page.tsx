@@ -10,10 +10,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'Por qué tu constructora comercial necesita monopolizar el Google Local 3-Pack para contratos de $50M+.' 
       : 'Why your commercial construction firm must monopolize the Google Local 3-Pack to win $50M+ contracts.',
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/map-pack-ranking`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/map-pack-ranking`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/map-pack-ranking',
-        'es': 'https://lemonadeideas.com/es/blogs/map-pack-ranking',
+        'en': 'https://www.lemonadeideas.com/en/blogs/map-pack-ranking',
+        'es': 'https://www.lemonadeideas.com/es/blogs/map-pack-ranking',
       },
     },
     openGraph: {
@@ -23,11 +23,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Por qué tu constructora comercial necesita monopolizar el Google Local 3-Pack para contratos de $50M+.'
         : 'Why your commercial construction firm must monopolize the Google Local 3-Pack to win $50M+ contracts.',
-      url: `https://lemonadeideas.com/${locale}/blogs/map-pack-ranking`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/map-pack-ranking`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/map-pack-ranking/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/map-pack-ranking/hero.png',
           width: 1200,
           height: 630,
           alt: 'Por qué tu constructora comercial necesita monopol',
@@ -44,7 +44,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Por qué tu constructora comercial necesita monopolizar el Google Local 3-Pack para contratos de $50M+.'
         : 'Why your commercial construction firm must monopolize the Google Local 3-Pack to win $50M+ contracts.',
-      images: ['https://lemonadeideas.com/images/blogs/map-pack-ranking/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/map-pack-ranking/hero.png'],
     },
   };
 }

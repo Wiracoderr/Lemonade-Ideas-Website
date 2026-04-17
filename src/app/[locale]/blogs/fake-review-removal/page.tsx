@@ -28,10 +28,10 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       title,
       description,
       type: 'article',
-      url: `https://lemonadeideas.com/${locale}/blogs/fake-review-removal`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/fake-review-removal`,
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/fake-review-removal/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/fake-review-removal/hero.png',
           width: 1200,
           height: 630,
           alt: isEs ? 'El Centro de Mando Bilingüe de Élite' : 'The Pain of Undefended Digital Margins',
@@ -42,13 +42,13 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://lemonadeideas.com/images/blogs/fake-review-removal/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/fake-review-removal/hero.png'],
     },
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/fake-review-removal`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/fake-review-removal`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/fake-review-removal',
-        'es': 'https://lemonadeideas.com/es/blogs/fake-review-removal',
+        'en': 'https://www.lemonadeideas.com/en/blogs/fake-review-removal',
+        'es': 'https://www.lemonadeideas.com/es/blogs/fake-review-removal',
       },
     },
   };

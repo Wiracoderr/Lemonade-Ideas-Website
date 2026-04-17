@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Jobsite Signage Marketing: Winning $10M Bids Before They Open",
     description:
       "A deep-dive into construction site signage marketing. Discover how premium fence mesh and crane banners generate multi-million dollar inbound leads.",
-    url: "https://lemonadeideas.com/blogs/jobsite-signage-marketing",
+    url: "https://www.lemonadeideas.com/blogs/jobsite-signage-marketing",
     images: ["/images/blogs/jobsite-signage-marketing/hero.png"],
   },
 };

@@ -28,10 +28,10 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       title,
       description,
       type: 'article',
-      url: `https://lemonadeideas.com/${locale}/blogs/construction-pr-agency`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/construction-pr-agency`,
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/construction-pr-agency/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/construction-pr-agency/hero.png',
           width: 1200,
           height: 630,
           alt: isEs ? 'La Arquitectura de la Óptica Corporativa' : 'The Architecture of Corporate Optics',
@@ -42,13 +42,13 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://lemonadeideas.com/images/blogs/construction-pr-agency/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/construction-pr-agency/hero.png'],
     },
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/construction-pr-agency`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/construction-pr-agency`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/construction-pr-agency',
-        'es': 'https://lemonadeideas.com/es/blogs/construction-pr-agency',
+        'en': 'https://www.lemonadeideas.com/en/blogs/construction-pr-agency',
+        'es': 'https://www.lemonadeideas.com/es/blogs/construction-pr-agency',
       },
     },
   };

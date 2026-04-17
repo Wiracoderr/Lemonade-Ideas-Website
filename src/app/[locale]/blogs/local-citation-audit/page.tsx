@@ -11,10 +11,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'Descubra cómo la inconsistencia de citaciones NAP destruye silenciosamente la visibilidad local de su contratista y cómo una auditoría profesional recupera su dominio algorítmico.'
       : 'Discover how NAP citation inconsistency silently destroys your contractor local visibility and how a professional audit reclaims your algorithmic dominance.',
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/local-citation-audit`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/local-citation-audit`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/local-citation-audit',
-        'es': 'https://lemonadeideas.com/es/blogs/local-citation-audit',
+        'en': 'https://www.lemonadeideas.com/en/blogs/local-citation-audit',
+        'es': 'https://www.lemonadeideas.com/es/blogs/local-citation-audit',
       },
     },
     openGraph: {
@@ -24,11 +24,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo la inconsistencia de citaciones NAP destruye silenciosamente la visibilidad local de su contratista y cómo'
         : 'Discover how NAP citation inconsistency silently destroys your contractor local visibility and how a professional audit ',
-      url: `https://lemonadeideas.com/${locale}/blogs/local-citation-audit`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/local-citation-audit`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/local-citation-audit/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/local-citation-audit/hero.png',
           width: 1200,
           height: 630,
           alt: 'The Citation Audit Imperative: How Fragmented Data',
@@ -45,7 +45,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo la inconsistencia de citaciones NAP destruye silenciosamente la visibilidad local de su contratista y cómo'
         : 'Discover how NAP citation inconsistency silently destroys your contractor local visibility and how a professional audit ',
-      images: ['https://lemonadeideas.com/images/blogs/local-citation-audit/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/local-citation-audit/hero.png'],
     },
   };
 }

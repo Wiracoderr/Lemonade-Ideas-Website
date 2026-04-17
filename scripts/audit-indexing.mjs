@@ -3,7 +3,7 @@ import { google } from 'googleapis';
 
 const KEY_FILE_PATH = 'D:\\agent manager\\Lemonade Ideas Website\\indexig-lemonade-ideas-b9ea22fc177c.json';
 const SITE_URL = 'sc-domain:lemonadeideas.com';
-const SITEMAP_URL = 'https://lemonadeideas.com/sitemap.xml';
+const SITEMAP_URL = 'https://www.lemonadeideas.com/sitemap.xml';
 
 function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));

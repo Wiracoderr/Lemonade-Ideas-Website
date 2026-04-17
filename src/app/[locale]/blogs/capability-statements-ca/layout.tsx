@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Capability Statements CA: The Key to Multi-Million Dollar Government Bids",
     description:
       "A complete guide on crafting high-converting Capability Statements for California contractors seeking government bids.",
-    url: "https://lemonadeideas.com/blogs/capability-statements-ca",
+    url: "https://www.lemonadeideas.com/blogs/capability-statements-ca",
     images: ["/images/blogs/capability-statements-ca/hero.png"],
   },
 };

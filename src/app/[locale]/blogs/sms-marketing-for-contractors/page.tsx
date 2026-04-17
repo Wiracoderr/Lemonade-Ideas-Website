@@ -33,11 +33,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://lemonadeideas.com/${locale}/blogs/sms-marketing-for-contractors`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/sms-marketing-for-contractors`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/sms-marketing-for-contractors/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/sms-marketing-for-contractors/hero.png',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://lemonadeideas.com/images/blogs/sms-marketing-for-contractors/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/sms-marketing-for-contractors/hero.png'],
     },
   };
 }

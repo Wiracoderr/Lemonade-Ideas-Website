@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Construction Marketing: The Blueprint to Stop Competing on Price",
     description:
       "A 2,500+ word deep-dive into B2B construction marketing, building a digital storefront, dominating local SEO, and running profitable paid acquisition.",
-    url: "https://lemonadeideas.com/blogs/construction-marketing-framework",
+    url: "https://www.lemonadeideas.com/blogs/construction-marketing-framework",
     images: ["/images/blogs/construction-marketing-framework/hero.png"],
   },
 };

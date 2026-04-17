@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   const metadataMap: Record<string, { title: string, description: string }> = {
     en: {
-      title: "B2B Website Copywriting: The Sentry Tone for General Contractors",
-      description: "Why your generic, family-owned website copy is aggressively destroying your chances at winning heavy commercial $30M construction projects.",
+      title: "Construction Sales Funnel: The 5-Stage Revenue Machine That Converts Cold Prospects Into $5M Contracts",
+      description: "Stop improvising your sales process. Learn the 5-stage systematic funnel that elite GCs use to convert cold prospects into signed $5M+ commercial construction contracts.",
     },
     es: {
-      title: "Copywriting B2B: El Tono Institucional Letal para Contratistas Generales",
-      description: "Por qué los discursos amigables sobre 'valores y calidez' de su constructora están liquidando instantáneamente licitaciones de $30 millones.",
+      title: "Embudo de Ventas en Construcción: La Máquina de 5 Etapas que Convierte Prospectos Fríos en Contratos de $5M",
+      description: "Deja de improvisar tu proceso de ventas. Aprende el embudo sistemático de 5 etapas que los contratistas élite usan para cerrar contratos comerciales de $5M+.",
     }
   };
 
@@ -26,20 +26,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `/${locale}/blogs/b2b-website-copywriting`,
+      canonical: `/${locale}/blogs/construction-sales-funnel`,
       languages: {
-        en: `/en/blogs/b2b-website-copywriting`,
-        es: `/es/blogs/b2b-website-copywriting`,
+        en: `/en/blogs/construction-sales-funnel`,
+        es: `/es/blogs/construction-sales-funnel`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://www.lemonadeideas.com/${locale}/blogs/b2b-website-copywriting`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/construction-sales-funnel`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://www.lemonadeideas.com/images/blogs/b2b-website-copywriting/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/construction-sales-funnel/hero.png',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://www.lemonadeideas.com/images/blogs/b2b-website-copywriting/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/construction-sales-funnel/hero.png'],
     },
   };
 }
 
 export default function BlogPostPage() {
   const locale = useLocale();
-  const slug = 'b2b-website-copywriting';
+  const slug = 'construction-sales-funnel';
   const meta = blogsData.find(b => b.slug === slug);
 
   return (

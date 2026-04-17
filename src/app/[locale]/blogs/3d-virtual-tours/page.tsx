@@ -34,11 +34,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://lemonadeideas.com/${locale}/blogs/3d-virtual-tours`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/3d-virtual-tours`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/3d-virtual-tours/hero.webp',
+          url: 'https://www.lemonadeideas.com/images/blogs/3d-virtual-tours/hero.webp',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://lemonadeideas.com/images/blogs/3d-virtual-tours/hero.webp'],
+      images: ['https://www.lemonadeideas.com/images/blogs/3d-virtual-tours/hero.webp'],
     },
   };
 }

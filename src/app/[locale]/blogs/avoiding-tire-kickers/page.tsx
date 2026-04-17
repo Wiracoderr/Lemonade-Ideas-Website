@@ -33,11 +33,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://lemonadeideas.com/${locale}/blogs/avoiding-tire-kickers`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/avoiding-tire-kickers`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/avoiding-tire-kickers/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/avoiding-tire-kickers/hero.png',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://lemonadeideas.com/images/blogs/avoiding-tire-kickers/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/avoiding-tire-kickers/hero.png'],
     },
   };
 }

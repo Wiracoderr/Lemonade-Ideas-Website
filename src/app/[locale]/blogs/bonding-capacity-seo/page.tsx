@@ -10,15 +10,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       title: "SEO de Capacidad de Fianza | Marketing para Constructoras de $50M",
       description: "Por qué los contratistas comerciales pierden licitaciones de $50M debido a la falta de pruebas digitales. Descubre cómo el SEO y la consistencia NAP afectan la capacidad de fianza institucional.",
       alternates: {
-        canonical: "https://lemonadeideas.com/es/blogs/bonding-capacity-seo",
+        canonical: "https://www.lemonadeideas.com/es/blogs/bonding-capacity-seo",
         languages: {
-          "en-US": "https://lemonadeideas.com/en/blogs/bonding-capacity-seo",
+          "en-US": "https://www.lemonadeideas.com/en/blogs/bonding-capacity-seo",
         },
       },
       openGraph: {
         title: "SEO de Capacidad de Fianza | Marketing para Constructoras de $50M",
         description: "Por qué los contratistas comerciales pierden licitaciones de $50M debido a la falta de pruebas digitales. Descubre cómo el SEO afecta la capacidad de fianza institucional.",
-        url: "https://lemonadeideas.com/es/blogs/bonding-capacity-seo",
+        url: "https://www.lemonadeideas.com/es/blogs/bonding-capacity-seo",
         siteName: "Lemonade Ideas",
         images: [
           {
@@ -45,15 +45,15 @@ export async function generateMetadata({ params: { locale } }: { params: { local
     title: "Bonding Capacity SEO | Agency for $50M General Contractors",
     description: "Why elite commercial contractors lose $50M infrastructure bids because of poor digital footprints. Learn how SEO and NAP consistency directly impact institutional bonding capacity.",
     alternates: {
-      canonical: "https://lemonadeideas.com/en/blogs/bonding-capacity-seo",
+      canonical: "https://www.lemonadeideas.com/en/blogs/bonding-capacity-seo",
       languages: {
-        "es-ES": "https://lemonadeideas.com/es/blogs/bonding-capacity-seo",
+        "es-ES": "https://www.lemonadeideas.com/es/blogs/bonding-capacity-seo",
       },
     },
     openGraph: {
       title: "Bonding Capacity SEO | Agency for $50M General Contractors",
       description: "Why elite commercial contractors lose $50M infrastructure bids because of poor digital footprints. Learn how SEO directly impacts institutional bonding capacity.",
-      url: "https://lemonadeideas.com/en/blogs/bonding-capacity-seo",
+      url: "https://www.lemonadeideas.com/en/blogs/bonding-capacity-seo",
       siteName: "Lemonade Ideas",
       images: [
         {

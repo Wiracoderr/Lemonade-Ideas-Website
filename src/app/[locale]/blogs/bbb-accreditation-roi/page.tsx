@@ -11,10 +11,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'Descubra cómo la acreditación del BBB genera retorno de inversión algorítmico, calificación de adquisiciones e infraestructura de resolución de disputas para contratistas comerciales de élite.'
       : 'Discover how BBB accreditation generates algorithmic ROI, procurement qualification, and dispute resolution infrastructure for elite commercial contractors.',
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/bbb-accreditation-roi`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/bbb-accreditation-roi`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/bbb-accreditation-roi',
-        'es': 'https://lemonadeideas.com/es/blogs/bbb-accreditation-roi',
+        'en': 'https://www.lemonadeideas.com/en/blogs/bbb-accreditation-roi',
+        'es': 'https://www.lemonadeideas.com/es/blogs/bbb-accreditation-roi',
       },
     },
     openGraph: {
@@ -24,11 +24,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo la acreditación del BBB genera retorno de inversión algorítmico, calificación de adquisiciones e infraestr'
         : 'Discover how BBB accreditation generates algorithmic ROI, procurement qualification, and dispute resolution infrastructu',
-      url: `https://lemonadeideas.com/${locale}/blogs/bbb-accreditation-roi`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/bbb-accreditation-roi`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/bbb-accreditation-roi/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/bbb-accreditation-roi/hero.png',
           width: 1200,
           height: 630,
           alt: 'BBB Accreditation ROI: Why Elite Contractors Treat',
@@ -45,7 +45,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo la acreditación del BBB genera retorno de inversión algorítmico, calificación de adquisiciones e infraestr'
         : 'Discover how BBB accreditation generates algorithmic ROI, procurement qualification, and dispute resolution infrastructu',
-      images: ['https://lemonadeideas.com/images/blogs/bbb-accreditation-roi/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/bbb-accreditation-roi/hero.png'],
     },
   };
 }

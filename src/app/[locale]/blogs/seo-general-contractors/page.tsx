@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   const metadataMap: Record<string, { title: string, description: string }> = {
     en: {
-      title: "B2B Website Copywriting: The Sentry Tone for General Contractors",
-      description: "Why your generic, family-owned website copy is aggressively destroying your chances at winning heavy commercial $30M construction projects.",
+      title: "SEO for General Contractors: The Algorithmic Blueprint for Permanent Market Supremacy",
+      description: "Why 87% of commercial buyers discover GCs through Google search. Master technical SEO, keyword intelligence, authority content, and local dominance to own your market.",
     },
     es: {
-      title: "Copywriting B2B: El Tono Institucional Letal para Contratistas Generales",
-      description: "Por qué los discursos amigables sobre 'valores y calidez' de su constructora están liquidando instantáneamente licitaciones de $30 millones.",
+      title: "SEO para Contratistas Generales: El Plano Algorítmico para la Supremacía Permanente del Mercado",
+      description: "Por qué el 87% de los compradores comerciales descubren contratistas a través de búsquedas en Google. Domina el SEO técnico, inteligencia de palabras clave y autoridad local.",
     }
   };
 
@@ -26,20 +26,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `/${locale}/blogs/b2b-website-copywriting`,
+      canonical: `/${locale}/blogs/seo-general-contractors`,
       languages: {
-        en: `/en/blogs/b2b-website-copywriting`,
-        es: `/es/blogs/b2b-website-copywriting`,
+        en: `/en/blogs/seo-general-contractors`,
+        es: `/es/blogs/seo-general-contractors`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://www.lemonadeideas.com/${locale}/blogs/b2b-website-copywriting`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/seo-general-contractors`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://www.lemonadeideas.com/images/blogs/b2b-website-copywriting/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/seo-general-contractors/hero.png',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://www.lemonadeideas.com/images/blogs/b2b-website-copywriting/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/seo-general-contractors/hero.png'],
     },
   };
 }
 
 export default function BlogPostPage() {
   const locale = useLocale();
-  const slug = 'b2b-website-copywriting';
+  const slug = 'seo-general-contractors';
   const meta = blogsData.find(b => b.slug === slug);
 
   return (

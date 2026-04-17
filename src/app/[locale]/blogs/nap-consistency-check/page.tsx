@@ -11,10 +11,10 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       ? 'Descubra cómo la inconsistencia NAP destruye silenciosamente la visibilidad local de su empresa de construcción comercial y cómo una auditoría profesional recupera su dominio algorítmico.'
       : 'Discover how NAP inconsistency silently destroys your commercial construction firm local visibility and how a professional audit reclaims your algorithmic dominance.',
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/nap-consistency-check`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/nap-consistency-check`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/nap-consistency-check',
-        'es': 'https://lemonadeideas.com/es/blogs/nap-consistency-check',
+        'en': 'https://www.lemonadeideas.com/en/blogs/nap-consistency-check',
+        'es': 'https://www.lemonadeideas.com/es/blogs/nap-consistency-check',
       },
     },
     openGraph: {
@@ -24,11 +24,11 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo la inconsistencia NAP destruye la visibilidad local de su empresa de construcción comercial.'
         : 'Discover how NAP inconsistency silently destroys your commercial construction firm local visibility.',
-      url: `https://lemonadeideas.com/${locale}/blogs/nap-consistency-check`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/nap-consistency-check`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/nap-consistency-check/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/nap-consistency-check/hero.png',
           width: 1200,
           height: 630,
           alt: 'NAP Consistency Check',
@@ -45,7 +45,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
       description: locale === 'es'
         ? 'Descubra cómo la inconsistencia NAP destruye la visibilidad local de su empresa de construcción comercial.'
         : 'Discover how NAP inconsistency silently destroys your commercial construction firm local visibility.',
-      images: ['https://lemonadeideas.com/images/blogs/nap-consistency-check/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/nap-consistency-check/hero.png'],
     },
   };
 }

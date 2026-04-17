@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Drone Site Photography: How Contractors Drive 275% ROI",
     description:
       "A 2,500+ word deep-dive into construction drone mapping, breaking down the labor cost savings, survey times, and dispute resolution.",
-    url: "https://lemonadeideas.com/blogs/drone-site-photography-roi",
+    url: "https://www.lemonadeideas.com/blogs/drone-site-photography-roi",
     images: ["/images/blogs/drone-site-photography-roi/hero.png"],
   },
 };

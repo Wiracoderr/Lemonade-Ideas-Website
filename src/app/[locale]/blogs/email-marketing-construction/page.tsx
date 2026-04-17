@@ -11,12 +11,12 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   
   const metadataMap: Record<string, { title: string, description: string }> = {
     en: {
-      title: "B2B Website Copywriting: The Sentry Tone for General Contractors",
-      description: "Why your generic, family-owned website copy is aggressively destroying your chances at winning heavy commercial $30M construction projects.",
+      title: "Email Marketing for Construction Companies: The Precision Strike Outreach That Closes $5M Contracts",
+      description: "Stop spamming your contacts. Learn how elite commercial general contractors use behavioral triggers and data-driven email automation to close $5M+ building contracts.",
     },
     es: {
-      title: "Copywriting B2B: El Tono Institucional Letal para Contratistas Generales",
-      description: "Por qué los discursos amigables sobre 'valores y calidez' de su constructora están liquidando instantáneamente licitaciones de $30 millones.",
+      title: "Email Marketing para Empresas de Construcción: El Alcance de Precisión que Cierra Contratos de $5M",
+      description: "Deja de enviar spam a tus contactos. Descubre cómo los contratistas generales élite usan disparadores de comportamiento y correos electrónicos automatizados para cerrar contratos constructivos de nivel $5M+.",
     }
   };
 
@@ -26,20 +26,20 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     title: meta.title,
     description: meta.description,
     alternates: {
-      canonical: `/${locale}/blogs/b2b-website-copywriting`,
+      canonical: `/${locale}/blogs/email-marketing-construction`,
       languages: {
-        en: `/en/blogs/b2b-website-copywriting`,
-        es: `/es/blogs/b2b-website-copywriting`,
+        en: `/en/blogs/email-marketing-construction`,
+        es: `/es/blogs/email-marketing-construction`,
       },
     },
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `https://www.lemonadeideas.com/${locale}/blogs/b2b-website-copywriting`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/email-marketing-construction`,
       siteName: 'Lemonade Ideas',
       images: [
         {
-          url: 'https://www.lemonadeideas.com/images/blogs/b2b-website-copywriting/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/email-marketing-construction/hero.png',
           width: 1200,
           height: 630,
           alt: meta.title,
@@ -52,14 +52,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       card: 'summary_large_image',
       title: meta.title,
       description: meta.description,
-      images: ['https://www.lemonadeideas.com/images/blogs/b2b-website-copywriting/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/email-marketing-construction/hero.png'],
     },
   };
 }
 
 export default function BlogPostPage() {
   const locale = useLocale();
-  const slug = 'b2b-website-copywriting';
+  const slug = 'email-marketing-construction';
   const meta = blogsData.find(b => b.slug === slug);
 
   return (

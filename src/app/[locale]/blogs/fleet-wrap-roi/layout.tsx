@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "Commercial Fleet Wrap ROI: How Contractors Drive Leads",
     description:
       "A comprehensive guide on contractor fleet wrap marketing, breaking down CPM, brand authority, and how truck wraps drive construction leads.",
-    url: "https://lemonadeideas.com/blogs/fleet-wrap-roi",
+    url: "https://www.lemonadeideas.com/blogs/fleet-wrap-roi",
     images: ["/images/blogs/fleet-wrap-roi/hero.png"],
   },
 };

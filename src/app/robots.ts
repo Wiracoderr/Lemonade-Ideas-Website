@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://lemonadeideas.com/sitemap.xml',
+    sitemap: 'https://www.lemonadeideas.com/sitemap.xml',
   };
 }

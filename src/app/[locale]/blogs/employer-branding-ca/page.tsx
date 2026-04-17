@@ -28,10 +28,10 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       title,
       description,
       type: 'article',
-      url: `https://lemonadeideas.com/${locale}/blogs/employer-branding-ca`,
+      url: `https://www.lemonadeideas.com/${locale}/blogs/employer-branding-ca`,
       images: [
         {
-          url: 'https://lemonadeideas.com/images/blogs/employer-branding-ca/hero.png',
+          url: 'https://www.lemonadeideas.com/images/blogs/employer-branding-ca/hero.png',
           width: 1200,
           height: 630,
           alt: isEs ? 'La Unidad de Tareas de Élite de Construcción' : 'The Elite Construction Task Force',
@@ -42,13 +42,13 @@ export async function generateMetadata({ params: { locale } }: Props): Promise<M
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://lemonadeideas.com/images/blogs/employer-branding-ca/hero.png'],
+      images: ['https://www.lemonadeideas.com/images/blogs/employer-branding-ca/hero.png'],
     },
     alternates: {
-      canonical: `https://lemonadeideas.com/${locale}/blogs/employer-branding-ca`,
+      canonical: `https://www.lemonadeideas.com/${locale}/blogs/employer-branding-ca`,
       languages: {
-        'en': 'https://lemonadeideas.com/en/blogs/employer-branding-ca',
-        'es': 'https://lemonadeideas.com/es/blogs/employer-branding-ca',
+        'en': 'https://www.lemonadeideas.com/en/blogs/employer-branding-ca',
+        'es': 'https://www.lemonadeideas.com/es/blogs/employer-branding-ca',
       },
     },
   };
